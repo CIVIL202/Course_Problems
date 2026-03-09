@@ -1,0 +1,9 @@
+format: jb-book
+root: index
+
+chapters:
+  - file: Module1FluidProperties
+  - file: Module2Hydrostatics
+  - file: Module3Kinematics
+  - file: Module4ConservationofEnergy
+  - file: Module5ConservationofMomentum
