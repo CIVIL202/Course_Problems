@@ -1,0 +1,7 @@
+jupyter-book==0.15.1
+matplotlib
+numpy
+pandas
+handcalcs
+Pillow
+sympy
