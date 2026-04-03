@@ -374,7 +374,7 @@ document.write(`
 \begin{aligned}
 g &amp;= 9.810 \; \;\textrm{(m/s2)}
  &amp;\rho_{water} &amp;= 1000 \; \;\textrm{(kg/m3)}
- &amp;\rho_{Hg} &amp;= 13600 \; \;\textrm{(kg/m3)}
+ &amp;\rho_{Hg} &amp;= 13550 \; \;\textrm{(kg/m3)}
 \\[10pt]
  p_{atm} &amp;= 101325 \; \;\textrm{(Pa)}
 \end{aligned}
@@ -1052,6 +1052,8 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
+t &amp;= 2 \; \;\textrm{(m)}
+\\[10pt]
 a &amp;= 12 \cdot t \\&amp;= 12 \cdot 2 \\&amp;= 24 \; \;\textrm{(m/s2)}\\[10pt]
 \end{aligned}
 \end{split}\]</div>
@@ -1228,9 +1230,26 @@ Show code cell outputs <div class="sd-summary-down docutils">
 <span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>UsageError: Cell magic `%%render` not found.
-</pre></div>
-</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+x &amp;= 3 \; \;\textrm{(m)}
+\\[10pt]
+y &amp;= 2 \; \;\textrm{(m)}
+\\[10pt]
+V_{x} &amp;= \frac{ \left( - y \right) }{ 4 } \\&amp;= \frac{ \left( - 2 \right) }{ 4 } \\&amp;= -0.50 \; \;\textrm{(m/s)}\\[10pt]
+\\[10pt]
+V_{y} &amp;= \frac{ x }{ 9 } \\&amp;= \frac{ 3 }{ 9 } \\&amp;= 0.33 \; \;\textrm{(m/s)}\\[10pt]
+\\[10pt]
+V &amp;= \sqrt { \left( V_{x} \right) ^{ 2 } + \left( V_{y} \right) ^{ 2 } } \\&amp;= \sqrt { \left( -0.50 \right) ^{ 2 } + \left( 0.33 \right) ^{ 2 } } \\&amp;= 0.60 \; \;\textrm{(m/s)}\\[10pt]
+\\[10pt]
+a_{x} &amp;= \left( \frac{ \left( - y \right) }{ 4 } \right) \cdot 0 + \left( \frac{ x }{ 9 } \right) \cdot \left( \frac{ \left( - 1 \right) }{ 4 } \right) \\&amp;= \left( \frac{ \left( - 2 \right) }{ 4 } \right) \cdot 0 + \left( \frac{ 3 }{ 9 } \right) \cdot \left( \frac{ \left( - 1 \right) }{ 4 } \right) \\&amp;= -0.08 \; \;\textrm{(m/s)}\\[10pt]
+\\[10pt]
+a_{y} &amp;= \left( \frac{ \left( - y \right) }{ 4 } \right) \cdot \left( \frac{ 1 }{ 9 } \right) + \left( \frac{ x }{ 9 } \right) \cdot 0 \\&amp;= \left( \frac{ \left( - 2 \right) }{ 4 } \right) \cdot \left( \frac{ 1 }{ 9 } \right) + \left( \frac{ 3 }{ 9 } \right) \cdot 0 \\&amp;= -0.06 \; \;\textrm{(m/s)}\\[10pt]
+\\[10pt]
+a &amp;= \sqrt { \left( a_{x} \right) ^{ 2 } + \left( a_{y} \right) ^{ 2 } } \\&amp;= \sqrt { \left( -0.08 \right) ^{ 2 } + \left( -0.06 \right) ^{ 2 } } \\&amp;= 0.10 \; \;\textrm{(m/s)}\\[10pt]
+\end{aligned}
+\end{split}\]</div>
 </div>
 </details>
 </div>
@@ -1376,6 +1395,14 @@ Hint<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
+b &amp;= 0.080 \; \;\textrm{(m)}
+\\[10pt]
+y &amp;= 0.040 \; \;\textrm{(m)}
+\\[10pt]
+V &amp;= 4 \; \;\textrm{(m/s)}
+\\[10pt]
+\rho &amp;= 1000 \; \;\textrm{(kg/m3)}
+\\[10pt]
 A &amp;= b \cdot y \\&amp;= 0.080 \cdot 0.040 \\&amp;= 0.003 \; \;\textrm{(m2)}\\[10pt]
 \\[10pt]
 \mathrm{mass}_{flux} &amp;= \rho \cdot V \cdot A \\&amp;= 1000 \cdot 4 \cdot 0.003 \\&amp;= 12.800 \; \;\textrm{(kg/s)}\\[10pt]
@@ -1432,7 +1459,11 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-V &amp;= \frac{ Q \cdot 4 }{ \pi \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 0.20 \cdot 4 }{ 3.14 \cdot \left( 0.50 \right) ^{ 2 } } \\&amp;= 1.02 \; \;\textrm{(m/s)}\\[10pt]
+D &amp;= 0.5 \; \;\textrm{(mm_flux)}
+\\[10pt]
+Q &amp;= 0.2 \; \;\textrm{(m3/s)}
+\\[10pt]
+V &amp;= \frac{ Q \cdot 4 }{ \pi \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 0.2 \cdot 4 }{ 3.1 \cdot \left( 0.5 \right) ^{ 2 } } \\&amp;= 1.0 \; \;\textrm{(m/s)}\\[10pt]
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1728,6 +1759,10 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
+y &amp;= 0.800 \; \;\textrm{(m)}
+\\[10pt]
+b &amp;= 1.200 \; \;\textrm{(m)}
+\\[10pt]
 Q &amp;= \left( \frac{ 24 }{ 4 } \cdot \left( 0.8 \right) ^{ \left( \frac{ 4 }{ 3 } \right) } \cdot b \right) - \left( \frac{ 24 }{ 4 } \cdot \left( 0 \right) ^{ \left( \frac{ 4 }{ 3 } \right) } \cdot b \right) \\&amp;= \left( \frac{ 24 }{ 4 } \cdot \left( 0.8 \right) ^{ \left( \frac{ 4 }{ 3 } \right) } \cdot 1.200 \right) - \left( \frac{ 24 }{ 4 } \cdot \left( 0 \right) ^{ \left( \frac{ 4 }{ 3 } \right) } \cdot 1.200 \right) \\&amp;= 5.347 \; \;\textrm{(m3/s)}\\[10pt]
 \end{aligned}
 \end{split}\]</div>
@@ -1932,11 +1967,15 @@ Hint<div class="sd-summary-down docutils">
 </summary>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[
+\[\begin{split}
 \begin{aligned}
+z &amp;= 0.50 \; \;\textrm{(m)}
+\\[10pt]
+b &amp;= 2 \; \;\textrm{(m)}
+\\[10pt]
 Q &amp;= \left( 0.5 \cdot 2 \cdot 2 \right) - \left( 0 \cdot 2 \cdot 2 \right) &amp;= 2.00 \; \;\textrm{(m3/s)}
 \end{aligned}
-\]</div>
+\end{split}\]</div>
 </div>
 </details>
 </div>
@@ -2088,16 +2127,16 @@ Show code cell outputs<div class="sd-summary-down docutils">
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "conda-base-py"
         },
         kernelOptions: {
-            name: "python3",
+            name: "conda-base-py",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'conda-base-py'</script>
 
                 </article>
               
