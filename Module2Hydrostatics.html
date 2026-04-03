@@ -458,7 +458,7 @@ document.write(`
 \begin{aligned}
 g &amp;= 9.810 \; \;\textrm{(m/s2)}
  &amp;\rho_{water} &amp;= 1000 \; \;\textrm{(kg/m3)}
- &amp;\rho_{Hg} &amp;= 13600 \; \;\textrm{(kg/m3)}
+ &amp;\rho_{Hg} &amp;= 13550 \; \;\textrm{(kg/m3)}
 \\[10pt]
  p_{atm} &amp;= 101325 \; \;\textrm{(Pa)}
 \end{aligned}
@@ -2377,7 +2377,7 @@ L &amp;= 6 \; \;\textrm{(m)}
 \\[10pt]
 y_{c} &amp;= L + \frac{ L_{p} }{ 2 } \\&amp;= 6 + \frac{ 4 }{ 2 } \\&amp;= 8.00 \; \;\textrm{(m)}\\[10pt]
 \\[10pt]
-h_{c} &amp;= y_{c} \cdot \sin { \left( \operatorname{radians} \theta \right) } \\&amp;= 8.00 \cdot \sin { \left( \operatorname{radians} 40 \right) } \\&amp;= 5.14 \; \;\textrm{(c)}\\[10pt]
+h_{c} &amp;= y_{c} \cdot \sin \left( \operatorname{radians} \theta \right) \\&amp;= 8.00 \cdot \sin \left( \operatorname{radians} 40 \right) \\&amp;= 5.14 \; \;\textrm{(c)}\\[10pt]
 \\[10pt]
 A &amp;= B \cdot L_{p} \\&amp;= 3 \cdot 4 \\&amp;= 12 \; \;\textrm{(m2)}\\[10pt]
 \\[10pt]
@@ -2505,7 +2505,7 @@ y_{c} &amp;= \mathrm{AB} + \frac{ \mathrm{BC} }{ 2 } \\&amp;= 4 + \frac{ 2 }{ 2 
 \\[10pt]
 A &amp;= \pi \cdot \frac{ \left( \mathrm{BC} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 2 \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \; \;\textrm{(m2)}\\[10pt]
 \\[10pt]
-h_{c} &amp;= y_{c} \cdot \sin { \left( \operatorname{radians} \theta_{1} \right) } \\&amp;= 5.00 \cdot \sin { \left( \operatorname{radians} 45 \right) } \\&amp;= 3.54 \; \;\textrm{(m)}\\[10pt]
+h_{c} &amp;= y_{c} \cdot \sin \left( \operatorname{radians} \theta_{1} \right) \\&amp;= 5.00 \cdot \sin \left( \operatorname{radians} 45 \right) \\&amp;= 3.54 \; \;\textrm{(m)}\\[10pt]
 \\[10pt]
 F &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000 \cdot 9.81 \cdot 3.54 \cdot 3.14 \\&amp;= 108961.70 \; \;\textrm{(N)}\\[10pt]
 \\[10pt]
@@ -2633,7 +2633,7 @@ y_{c} &amp;= \mathrm{AB} + \mathrm{BC} - 4 \cdot \frac{ \mathrm{BC} }{ 3 \cdot \
 \\[10pt]
 A &amp;= \pi \cdot \frac{ \left( \mathrm{BC} \right) ^{ 2 } }{ 2 } \\&amp;= 3.14 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 2 } \\&amp;= 1.57 \; \;\textrm{(m2)}\\[10pt]
 \\[10pt]
-h_{c} &amp;= y_{c} \cdot \sin { \left( \operatorname{radians} \theta_{1} \right) } \\&amp;= 3.58 \cdot \sin { \left( \operatorname{radians} 60 \right) } \\&amp;= 3.10 \; \;\textrm{(m)}\\[10pt]
+h_{c} &amp;= y_{c} \cdot \sin \left( \operatorname{radians} \theta_{1} \right) \\&amp;= 3.58 \cdot \sin \left( \operatorname{radians} 60 \right) \\&amp;= 3.10 \; \;\textrm{(m)}\\[10pt]
 \\[10pt]
 F &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000 \cdot 9.81 \cdot 3.10 \cdot 1.57 \\&amp;= 47716.31 \; \;\textrm{(N)}\\[10pt]
 \\[10pt]
@@ -3276,7 +3276,7 @@ A_{1} &amp;= \left( h - r \right) \cdot r \\&amp;= \left( 6 - 1 \right) \cdot 1 
 \begin{aligned}
 F_{r} &amp;= \sqrt { \left( F_{x} \right) ^{ 2 } + \left( W \right) ^{ 2 } } \\&amp;= \sqrt { \left( 161.87 \right) ^{ 2 } + \left( 170.26 \right) ^{ 2 } } \\&amp;= 234.93 \; \;\textrm{(kN)}\\[10pt]
 \\[10pt]
-\theta &amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ F_{x} }{ W } \right) \right) } \\&amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ 161.87 }{ 170.26 } \right) \right) } \\&amp;= 43.55 \; \;\textrm{(°)}\\[10pt]
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{x} }{ W } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 161.87 }{ 170.26 } \right) \right) \\&amp;= 43.55 \; \;\textrm{(°)}\\[10pt]
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3321,7 +3321,7 @@ X_{O} &amp;= 489.74 \; \;\textrm{(m)}
 \\[10pt]
 Y_{O} &amp;= y_{p} - h + r \\&amp;= 5.52 - 6 + 1 \\&amp;= 0.52 \; \;\textrm{(m)}\\[10pt]
 \\[10pt]
-\alpha &amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ X_{O} }{ Y_{O} } \right) \right) } \\&amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ 489.74 }{ 0.52 } \right) \right) } \\&amp;= 89.94 \; \;\textrm{(°)}\\[10pt]
+\alpha &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ X_{O} }{ Y_{O} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 489.74 }{ 0.52 } \right) \right) \\&amp;= 89.94 \; \;\textrm{(°)}\\[10pt]
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3465,48 +3465,6 @@ F_b=W\\
 \[
 Vol= b_{rec} \cdot h_{rec} \cdot  B + \frac {b_{tri} \cdot  h_{tri}}{2}
 \]</div>
-<p><strong>Solution</strong></p>
-<div class="cell tag_hide-output tag_solution docutils container">
-<div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 1
-h= 2.4 #m
-l= 14 #m
-B= 7 #m
-theta= 45 #°
-
-theta_ra=radians(theta)
-Vol= (h*l*B)+2*(((h*h*tan(theta_ra))/2)*B) #m3
-W= rho_water*g*Vol/1000 #kN
-</pre></div>
-</div>
-</div>
-<details class="hide below-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell output</span>
-<span class="expanded">Hide code cell output</span>
-</summary>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-h &amp;= 2.4 \; \;\textrm{(m)}
-\\[10pt]
-l &amp;= 14 \; \;\textrm{(m)}
-\\[10pt]
-B &amp;= 7 \; \;\textrm{(m)}
-\\[10pt]
-\theta &amp;= 45 \; \;\textrm{(°)}
-\\[10pt]
-\theta_{ra} &amp;= 0.8 \; 
-\\[10pt]
-\mathrm{Vol} &amp;= \left( h \cdot l \cdot B \right) + 2 \cdot \left( \left( \frac{ h \cdot h \cdot \tan \left( \theta_{ra} \right) }{ 2 } \right) \cdot B \right) \\&amp;= \left( 2.4 \cdot 14 \cdot 7 \right) + 2 \cdot \left( \left( \frac{ 2.4 \cdot 2.4 \cdot \tan \left( 0.8 \right) }{ 2 } \right) \cdot 7 \right) \\&amp;= 275.5 \; \;\textrm{(m3)}\\[10pt]
-\\[10pt]
-W &amp;= \rho_{water} \cdot g \cdot \frac{ \mathrm{Vol} }{ 1000 } \\&amp;= 1000 \cdot 9.8 \cdot \frac{ 275.5 }{ 1000 } \\&amp;= 2702.9 \; \;\textrm{(kN)}\\[10pt]
-\end{aligned}
-\end{split}\]</div>
-</div>
-</details>
-</div>
 </section>
 <section id="question-2-r">
 <h4>Question 2 (**)[R]<a class="headerlink" href="#question-2-r" title="Permalink to this heading">#</a></h4>
@@ -3655,7 +3613,6 @@ F_b-W=0\\
 F_b=W\\
 W=\rho g Vol_{displayed}
 \end{split}\]</div>
-<p><strong>Solution</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 4
@@ -4134,7 +4091,7 @@ theta=degrees(asin (h/(L_T-L_))) #°
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\theta &amp;= \operatorname{degrees} { \left( \arcsin \left( \frac{ h }{ L_{T} - L_{} } \right) \right) } \\&amp;= \operatorname{degrees} { \left( \arcsin \left( \frac{ 1 }{ 5 - 2.0 } \right) \right) } \\&amp;= 19.47 \; \;\textrm{(°)}\\[10pt]
+\theta &amp;= \operatorname{degrees} \left( \arcsin \left( \frac{ h }{ L_{T} - L_{} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arcsin \left( \frac{ 1 }{ 5 - 2.0 } \right) \right) \\&amp;= 19.47 \; \;\textrm{(°)}\\[10pt]
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4297,7 +4254,7 @@ X &amp;= \frac{ 4 \cdot \frac{ 2.5 }{ 2 } }{ 3 \cdot \pi } \\&amp;= \frac{ 4 \cd
 \\[10pt]
 F &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 113305.50 \right) ^{ 2 } + \left( 21188.08 \right) ^{ 2 } } \\&amp;= 115269.56 \; \;\textrm{(N)}\\[10pt]
 \\[10pt]
-\theta &amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right) } \\&amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ 21188.08 }{ 113305.50 } \right) \right) } \\&amp;= 10.59 \; \;\textrm{(°)}\\[10pt]
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 21188.08 }{ 113305.50 } \right) \right) \\&amp;= 10.59 \; \;\textrm{(°)}\\[10pt]
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4647,7 +4604,7 @@ theta= degrees(atan(F_V/F_H)) #°
 \begin{aligned}
 F &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 98.10 \right) ^{ 2 } + \left( 154.10 \right) ^{ 2 } } \\&amp;= 182.67 \; \;\textrm{(kN)}\\[10pt]
 \\[10pt]
-\theta &amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right) } \\&amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ 154.10 }{ 98.10 } \right) \right) } \\&amp;= 57.52 \; \;\textrm{(°)}\\[10pt]
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 154.10 }{ 98.10 } \right) \right) \\&amp;= 57.52 \; \;\textrm{(°)}\\[10pt]
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4702,7 +4659,7 @@ beta= degrees(atan(y_p/X)) #°
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\beta &amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ y_{p} }{ X } \right) \right) } \\&amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ 1.33 }{ 0.85 } \right) \right) } \\&amp;= 57.52 \; \;\textrm{(°)}\\[10pt]
+\beta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ y_{p} }{ X } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 1.33 }{ 0.85 } \right) \right) \\&amp;= 57.52 \; \;\textrm{(°)}\\[10pt]
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5035,7 +4992,7 @@ theta= degrees(atan(F_V/F_H)) #°
 \begin{aligned}
 F_{R} &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 309.0 \right) ^{ 2 } + \left( 289.4 \right) ^{ 2 } } \\&amp;= 423.4 \; \;\textrm{(kN)}\\[10pt]
 \\[10pt]
-\theta &amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right) } \\&amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ 289.4 }{ 309.0 } \right) \right) } \\&amp;= 43.1 \; \;\textrm{(°)}\\[10pt]
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 289.4 }{ 309.0 } \right) \right) \\&amp;= 43.1 \; \;\textrm{(°)}\\[10pt]
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5269,7 +5226,7 @@ theta= degrees(atan(F_v/F_H)) #°
 \begin{aligned}
 F_{R} &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{v} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 132.44 \right) ^{ 2 } + \left( 140.83 \right) ^{ 2 } } \\&amp;= 193.32 \; \;\textrm{(kN)}\\[10pt]
 \\[10pt]
-\theta &amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ F_{v} }{ F_{H} } \right) \right) } \\&amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ 140.83 }{ 132.44 } \right) \right) } \\&amp;= 46.76 \; \;\textrm{(°)}\\[10pt]
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{v} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 140.83 }{ 132.44 } \right) \right) \\&amp;= 46.76 \; \;\textrm{(°)}\\[10pt]
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5304,7 +5261,7 @@ alpha= degrees(atan((y_p-h_water)/X))#° The angles are igual, for that reason t
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\alpha &amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ y_{p} - h_{water} }{ X } \right) \right) } \\&amp;= \operatorname{degrees} { \left( \arctan \left( \frac{ 4.519 - 4 }{ 0.488 } \right) \right) } \\&amp;= 46.761 \; \;\textrm{(° The angles are igual, for that reason the force acts through O.)}\\[10pt]
+\alpha &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ y_{p} - h_{water} }{ X } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 4.519 - 4 }{ 0.488 } \right) \right) \\&amp;= 46.761 \; \;\textrm{(° The angles are igual, for that reason the force acts through O.)}\\[10pt]
 \end{aligned}
 \end{split}\]</div>
 </div>

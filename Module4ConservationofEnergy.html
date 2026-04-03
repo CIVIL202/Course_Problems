@@ -473,7 +473,7 @@ document.write(`
 \begin{aligned}
 g &amp;= 9.810 \; \;\textrm{(m/s2)}
  &amp;\rho_{water} &amp;= 1000 \; \;\textrm{(kg/m3)}
- &amp;\rho_{Hg} &amp;= 13600 \; \;\textrm{(kg/m3)}
+ &amp;\rho_{Hg} &amp;= 13550 \; \;\textrm{(kg/m3)}
 \\[10pt]
  p_{atm} &amp;= 101325 \; \;\textrm{(Pa)}
 \end{aligned}
@@ -5503,7 +5503,7 @@ Hint<div class="sd-summary-down docutils">
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">243</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">106</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
 <span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">f</span><span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="o">-</span><span class="mf">1.8</span><span class="o">*</span><span class="n">log10</span><span class="p">((</span><span class="n">e</span><span class="o">/</span><span class="p">(</span><span class="mf">3.7</span><span class="o">*</span><span class="n">D</span><span class="p">))</span><span class="o">**</span><span class="mf">1.11</span><span class="o">+</span><span class="p">(</span><span class="mf">6.9</span><span class="o">/</span><span class="n">Re</span><span class="p">))))</span><span class="o">**</span><span class="mi">2</span>
 <span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">h_f_b</span><span class="o">=</span> <span class="mi">8</span><span class="o">*</span><span class="n">f</span><span class="o">*</span><span class="n">L</span><span class="o">*</span><span class="n">Q</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">g</span><span class="o">*</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">D</span><span class="o">**</span><span class="mi">5</span><span class="p">)</span><span class="c1">#m</span>
 <span class="ne">----&gt; </span><span class="mi">8</span> <span class="n">h_s_b</span> <span class="o">=</span> <span class="n">K_</span><span class="o">*</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="p">)</span> <span class="c1">#m</span>
@@ -5537,7 +5537,7 @@ Hint<div class="sd-summary-down docutils">
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">244</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">107</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">h_T_a</span><span class="o">=</span> <span class="n">h_f_a</span><span class="o">+</span><span class="n">h_s_a</span> <span class="c1">#m</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">contribution_a</span><span class="o">=</span> <span class="p">(</span><span class="n">h_s_a</span><span class="o">/</span><span class="n">h_T_a</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span> <span class="c1">#percent</span>
 <span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">contribution_b</span><span class="o">=</span> <span class="p">(</span><span class="n">h_s_b</span><span class="o">/</span><span class="n">h_T_b</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span>
@@ -6914,7 +6914,7 @@ Q &amp;= [-0.075,\ -0.028,\ 0.103] \;
 \\[10pt]
 \mathrm{expr} &amp;= \left( \frac{ p_{1} }{ \gamma } \right) + \left( \frac{ P }{ \gamma \cdot Q } \right) - z_{3} - \left( \frac{ 8 \cdot f_{s} \cdot L_{s} \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{s} \right) ^{ 5 } } \right) - \left( \frac{ 8 \cdot f_{d} \cdot L_{d} \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{d} \right) ^{ 5 } } \right) \\&amp;= \left( \frac{ 35000 }{ 8000 } \right) + \left( \frac{ 1500.000 }{ 8000 \cdot [-0.075,\ -0.028,\ 0.103] } \right) - -3 - \left( \frac{ 8 \cdot 0.025 \cdot 15 \cdot \left( [-0.075,\ -0.028,\ 0.103] \right) ^{ 2 } }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.150 \right) ^{ 5 } } \right) - \left( \frac{ 8 \cdot 0.030 \cdot 60 \cdot \left( [-0.075,\ -0.028,\ 0.103] \right) ^{ 2 } }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.200 \right) ^{ 5 } } \right) \\&amp;= - 872.81 Q^{2} + 7.375 + \frac{0.188}{Q}  \\[10pt]
 \\[10pt]
-Q &amp;= \operatorname{solve} { \left( \mathrm{expr} \right) } \\&amp;= \operatorname{solve} { \left( - 872.81 Q^{2} + 7.375 + \frac{0.188}{Q} \right) } \\&amp;= [-0.075,\ -0.028,\ 0.103]  \\[10pt]
+Q &amp;= \operatorname{solve} \left( \mathrm{expr} \right) \\&amp;= \operatorname{solve} \left( - 872.81 Q^{2} + 7.375 + \frac{0.188}{Q} \right) \\&amp;= [-0.075,\ -0.028,\ 0.103]  \\[10pt]
 \\[10pt]
 Q &amp;= [-0.075,\ -0.028,\ 0.103] \; \;\textrm{(m3/s)}
 \end{aligned}
