@@ -459,7 +459,7 @@ document.write(`
 g &amp;= 9.810 \; \;\textrm{(m/s2)}
  &amp;\rho_{water} &amp;= 1000 \; \;\textrm{(kg/m3)}
  &amp;\rho_{Hg} &amp;= 13550 \; \;\textrm{(kg/m3)}
-\\[10pt]
+\\
  p_{atm} &amp;= 101325 \; \;\textrm{(Pa)}
 \end{aligned}
 \end{split}\]</div>
@@ -554,8 +554,8 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 p &amp;= 500 \cdot 1000 &amp;= 500000 \; \;\textrm{(Pa)}
-\\[10pt]
-h_{water} &amp;= \frac{ p }{ g \cdot \rho_{water} } \\&amp;= \frac{ 500000 }{ 9.81 \cdot 1000 } \\&amp;= 50.97 \; \;\textrm{(m)}\\[10pt]
+\\
+h_{water} &amp;= \frac{ p }{ g \cdot \rho_{water} } \\&amp;= \frac{ 500000 }{ 9.81 \cdot 1000 } \\&amp;= 50.97 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -574,8 +574,8 @@ h_{water} &amp;= \frac{ p }{ g \cdot \rho_{water} } \\&amp;= \frac{ 500000 }{ 9.
 \[\begin{split}
 \begin{aligned}
 \rho_{Hg_{}} &amp;= 13600 \; \;\textrm{(kg/m3)}
-\\[10pt]
-h_{Hg} &amp;= \frac{ p }{ g \cdot \rho_{Hg_{}} } \\&amp;= \frac{ 500000 }{ 9.81 \cdot 13600 } \\&amp;= 3.75 \; \;\textrm{(m)}\\[10pt]
+\\
+h_{Hg} &amp;= \frac{ p }{ g \cdot \rho_{Hg_{}} } \\&amp;= \frac{ 500000 }{ 9.81 \cdot 13600 } \\&amp;= 3.75 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -603,10 +603,10 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 s &amp;= 0.92 \; 
-\\[10pt]
-\rho_{oil} &amp;= s \cdot \rho_{water} \\&amp;= 0.92 \cdot 1000 \\&amp;= 920.00 \; \;\textrm{(kg/m3)}\\[10pt]
-\\[10pt]
-h_{oil} &amp;= \frac{ p }{ g \cdot \rho_{oil} } \\&amp;= \frac{ 500000 }{ 9.81 \cdot 920.00 } \\&amp;= 55.40 \; \;\textrm{(m)}\\[10pt]
+\\
+\rho_{oil} &amp;= s \cdot \rho_{water} \\&amp;= 0.92 \cdot 1000 \\&amp;= 920.00 \; \;\textrm{(kg/m3)}\\
+\\
+h_{oil} &amp;= \frac{ p }{ g \cdot \rho_{oil} } \\&amp;= \frac{ 500000 }{ 9.81 \cdot 920.00 } \\&amp;= 55.40 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -697,16 +697,16 @@ p_{abs}= p_{atm}+ p_{gauge}
 \[\begin{split}
 \begin{aligned}
 p_{gauge} &amp;= 305 \cdot 1000 &amp;= 305000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 h_{Hg} &amp;= \frac{ 100 }{ 1000 } &amp;= 0.1 \; \;\textrm{(m)}
-\\[10pt]
-p_{abs} &amp;= p_{atm} + p_{gauge} \\&amp;= 101325 + 305000 \\&amp;= 406325 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-p_{chamber} &amp;= \rho_{Hg} \cdot g \cdot h_{Hg} \\&amp;= 13560.0 \cdot 9.8 \cdot 0.1 \\&amp;= 13302.4 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-p_{gauge_{2}} &amp;= p_{abs} - p_{chamber} \\&amp;= 406325 - 13302.4 \\&amp;= 393022.6 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-p_{gauge2_{kPa}} &amp;= \frac{ p_{gauge_{2}} }{ 1000 } \\&amp;= \frac{ 393022.6 }{ 1000 } \\&amp;= 393.0 \; \;\textrm{(kPa)}\\[10pt]
+\\
+p_{abs} &amp;= p_{atm} + p_{gauge} \\&amp;= 101325 + 305000 \\&amp;= 406325 \; \;\textrm{(Pa)}\\
+\\
+p_{chamber} &amp;= \rho_{Hg} \cdot g \cdot h_{Hg} \\&amp;= 13560.0 \cdot 9.8 \cdot 0.1 \\&amp;= 13302.4 \; \;\textrm{(Pa)}\\
+\\
+p_{gauge_{2}} &amp;= p_{abs} - p_{chamber} \\&amp;= 406325 - 13302.4 \\&amp;= 393022.6 \; \;\textrm{(Pa)}\\
+\\
+p_{gauge2_{kPa}} &amp;= \frac{ p_{gauge_{2}} }{ 1000 } \\&amp;= \frac{ 393022.6 }{ 1000 } \\&amp;= 393.0 \; \;\textrm{(kPa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -805,14 +805,14 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 h &amp;= 2 \; \;\textrm{(m)}
-\\[10pt]
+\\
 p_{1} &amp;= 50 \cdot 1000 &amp;= 50000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 \rho_{glycerine} &amp;= 1258 \; \;\textrm{(kg/m3)}
-\\[10pt]
-p_{2} &amp;= p_{1} + \rho_{glycerine} \cdot g \cdot h \\&amp;= 50000 + 1258 \cdot 9.81 \cdot 2 \\&amp;= 74681.96 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-p_{2_{kPa}} &amp;= \frac{ p_{2} }{ 1000 } \\&amp;= \frac{ 74681.96 }{ 1000 } \\&amp;= 74.68 \; \;\textrm{(kPa)}\\[10pt]
+\\
+p_{2} &amp;= p_{1} + \rho_{glycerine} \cdot g \cdot h \\&amp;= 50000 + 1258 \cdot 9.81 \cdot 2 \\&amp;= 74681.96 \; \;\textrm{(Pa)}\\
+\\
+p_{2_{kPa}} &amp;= \frac{ p_{2} }{ 1000 } \\&amp;= \frac{ 74681.96 }{ 1000 } \\&amp;= 74.68 \; \;\textrm{(kPa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -924,20 +924,20 @@ p_{2} = p_{1} + \rho \cdot g \cdot h
 \[\begin{split}
 \begin{aligned}
 Z_{1} &amp;= 4.800 \; \;\textrm{(m)}
-\\[10pt]
+\\
 p_{1} &amp;= 34.7 \cdot 1000 &amp;= 34700.000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 Z_{2} &amp;= 2.200 \; \;\textrm{(m)}
-\\[10pt]
+\\
 p_{2} &amp;= 57.5 \cdot 1000 &amp;= 57500.000 \; \;\textrm{(Pa)}
-\\[10pt]
-h &amp;= Z_{1} - Z_{2} \\&amp;= 4.800 - 2.200 \\&amp;= 2.600 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-\rho &amp;= \frac{ p_{2} - p_{1} }{ g \cdot h } \\&amp;= \frac{ 57500.000 - 34700.000 }{ 9.810 \cdot 2.600 } \\&amp;= 893.907 \; \;\textrm{(kg/m3)}\\[10pt]
-\\[10pt]
-\gamma_{oil} &amp;= \rho \cdot \frac{ g }{ 1000 } \\&amp;= 893.907 \cdot \frac{ 9.810 }{ 1000 } \\&amp;= 8.769 \; \;\textrm{(kN/m3)}\\[10pt]
-\\[10pt]
-s_{oil} &amp;= \frac{ \rho }{ \rho_{water} } \\&amp;= \frac{ 893.907 }{ 1000 } \\&amp;= 0.894  \\[10pt]
+\\
+h &amp;= Z_{1} - Z_{2} \\&amp;= 4.800 - 2.200 \\&amp;= 2.600 \; \;\textrm{(m)}\\
+\\
+\rho &amp;= \frac{ p_{2} - p_{1} }{ g \cdot h } \\&amp;= \frac{ 57500.000 - 34700.000 }{ 9.810 \cdot 2.600 } \\&amp;= 893.907 \; \;\textrm{(kg/m3)}\\
+\\
+\gamma_{oil} &amp;= \rho \cdot \frac{ g }{ 1000 } \\&amp;= 893.907 \cdot \frac{ 9.810 }{ 1000 } \\&amp;= 8.769 \; \;\textrm{(kN/m3)}\\
+\\
+s_{oil} &amp;= \frac{ \rho }{ \rho_{water} } \\&amp;= \frac{ 893.907 }{ 1000 } \\&amp;= 0.894  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1051,14 +1051,14 @@ h_{2} = \frac{\rho_{water}\cdot h_{1}}{\rho_{oil}}
 \[\begin{split}
 \begin{aligned}
 s &amp;= 0.83 \; 
-\\[10pt]
+\\
 h_{1} &amp;= 110 + 240 &amp;= 350 \; \;\textrm{(mm)}
-\\[10pt]
-\rho_{oil} &amp;= s \cdot \rho_{water} \\&amp;= 0.83 \cdot 1000 \\&amp;= 830.00 \; \;\textrm{(kg/m3)}\\[10pt]
-\\[10pt]
+\\
+\rho_{oil} &amp;= s \cdot \rho_{water} \\&amp;= 0.83 \cdot 1000 \\&amp;= 830.00 \; \;\textrm{(kg/m3)}\\
+\\
 h_{2} &amp;= 421.69 \; \;\textrm{(Pa)}
-\\[10pt]
-h &amp;= h_{2} - 240 \\&amp;= 421.69 - 240 \\&amp;= 181.69 \; \;\textrm{(mm)}\\[10pt]
+\\
+h &amp;= h_{2} - 240 \\&amp;= 421.69 - 240 \\&amp;= 181.69 \; \;\textrm{(mm)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1151,18 +1151,18 @@ p_{in}=p_v= 70.1 kPa
 \[\begin{split}
 \begin{aligned}
 h &amp;= 1000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \rho_{sea_{water}} &amp;= 1023 \; \;\textrm{(kg/m3)}
-\\[10pt]
+\\
 g &amp;= 9.81 \; \;\textrm{(m/s2)}
-\\[10pt]
-p_{out} &amp;= p_{atm} + \rho_{sea_{water}} \cdot g \cdot h \\&amp;= 101325 + 1023 \cdot 9.81 \cdot 1000 \\&amp;= 10136955.00 \; \;\textrm{(Pa abs)}\\[10pt]
-\\[10pt]
+\\
+p_{out} &amp;= p_{atm} + \rho_{sea_{water}} \cdot g \cdot h \\&amp;= 101325 + 1023 \cdot 9.81 \cdot 1000 \\&amp;= 10136955.00 \; \;\textrm{(Pa abs)}\\
+\\
 p_{in} &amp;= 70.1 \cdot 1000 &amp;= 70100.00 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 \Delta_{p} &amp;= 10066855.00 \; \;\textrm{(Pa)}
-\\[10pt]
-\Delta_{p_{MPa}} &amp;= \frac{ \Delta_{p} }{ 1000000 } \\&amp;= \frac{ 10066855.00 }{ 1000000 } \\&amp;= 10.07 \; \;\textrm{(MPa)}\\[10pt]
+\\
+\Delta_{p_{MPa}} &amp;= \frac{ \Delta_{p} }{ 1000000 } \\&amp;= \frac{ 10066855.00 }{ 1000000 } \\&amp;= 10.07 \; \;\textrm{(MPa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1299,18 +1299,18 @@ h_{4} = h_{3} \frac{\rho_{A}}{\rho_{B}}
 \[\begin{split}
 \begin{aligned}
 h_{3} &amp;= 1.70 \; \;\textrm{(m)}
-\\[10pt]
+\\
 s_{A} &amp;= 0.72 \; 
-\\[10pt]
+\\
 s_{B} &amp;= 2.36 \; 
-\\[10pt]
+\\
 \rho_{A} &amp;= 720.00 \; \;\textrm{(kg/m3)}
-\\[10pt]
-\rho_{B} &amp;= s_{B} \cdot \rho_{water} \\&amp;= 2.36 \cdot 1000 \\&amp;= 2360.00 \; \;\textrm{(kg/m3)}\\[10pt]
-\\[10pt]
-h_{4} &amp;= h_{3} \cdot \left( \frac{ \rho_{A} }{ \rho_{B} } \right) \\&amp;= 1.70 \cdot \left( \frac{ 720.00 }{ 2360.00 } \right) \\&amp;= 0.52  \\[10pt]
-\\[10pt]
-Z_{B_{surface}} &amp;= 0.3 + h_{4} \\&amp;= 0.3 + 0.52 \\&amp;= 0.82 \; \;\textrm{(m)}\\[10pt]
+\\
+\rho_{B} &amp;= s_{B} \cdot \rho_{water} \\&amp;= 2.36 \cdot 1000 \\&amp;= 2360.00 \; \;\textrm{(kg/m3)}\\
+\\
+h_{4} &amp;= h_{3} \cdot \left( \frac{ \rho_{A} }{ \rho_{B} } \right) \\&amp;= 1.70 \cdot \left( \frac{ 720.00 }{ 2360.00 } \right) \\&amp;= 0.52  \\
+\\
+Z_{B_{surface}} &amp;= 0.3 + h_{4} \\&amp;= 0.3 + 0.52 \\&amp;= 0.82 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1338,10 +1338,10 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 h_{5} &amp;= 0.30 \; \;\textrm{(m)}
-\\[10pt]
-p_{5} &amp;= \rho_{A} \cdot g \cdot h_{3} + \rho_{B} \cdot g \cdot h_{5} \\&amp;= 720.00 \cdot 9.81 \cdot 1.70 + 2360.00 \cdot 9.81 \cdot 0.30 \\&amp;= 18.95 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-p_{5} &amp;= \frac{ p_{5} }{ 1000 } \\&amp;= \frac{ 18.95 }{ 1000 } \\&amp;= 18.95 \; \;\textrm{(kPa)}\\[10pt]
+\\
+p_{5} &amp;= \rho_{A} \cdot g \cdot h_{3} + \rho_{B} \cdot g \cdot h_{5} \\&amp;= 720.00 \cdot 9.81 \cdot 1.70 + 2360.00 \cdot 9.81 \cdot 0.30 \\&amp;= 18.95 \; \;\textrm{(Pa)}\\
+\\
+p_{5} &amp;= \frac{ p_{5} }{ 1000 } \\&amp;= \frac{ 18.95 }{ 1000 } \\&amp;= 18.95 \; \;\textrm{(kPa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1442,12 +1442,12 @@ h = \frac{p_{atm}-p_{3}}{\rho_{wat}\cdot g}
 \[\begin{split}
 \begin{aligned}
 p_{3} &amp;= 31.16 \cdot 1000 &amp;= 31160.00 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 p_{atm_{ex}} &amp;= 990 \cdot 100 &amp;= 99000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 \rho_{wat} &amp;= 977.80 \; \;\textrm{(kg/m)}
-\\[10pt]
-h &amp;= \frac{ p_{atm} - p_{3} }{ \rho_{wat} \cdot g } \\&amp;= \frac{ 98994.67 - 31160.00 }{ 977.80 \cdot 9.81 } \\&amp;= 7.07 \; \;\textrm{(m)}\\[10pt]
+\\
+h &amp;= \frac{ p_{atm} - p_{3} }{ \rho_{wat} \cdot g } \\&amp;= \frac{ 98994.67 - 31160.00 }{ 977.80 \cdot 9.81 } \\&amp;= 7.07 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1555,12 +1555,12 @@ H = \frac{\rho_{Hg} h_3}{\rho_{wat}} + h_2
 \[\begin{split}
 \begin{aligned}
 \rho_{Hg_{}} &amp;= 13600 \; \;\textrm{(kg/m3)}
-\\[10pt]
+\\
 h_{2} &amp;= 0.15 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{3} &amp;= 0.20 \; \;\textrm{(m)}
-\\[10pt]
-H &amp;= \frac{ \rho_{Hg_{}} \cdot h_{3} }{ \rho_{water} } + h_{2} \\&amp;= \frac{ 13600 \cdot 0.20 }{ 1000 } + 0.15 \\&amp;= 2.87 \; \;\textrm{(m)}\\[10pt]
+\\
+H &amp;= \frac{ \rho_{Hg_{}} \cdot h_{3} }{ \rho_{water} } + h_{2} \\&amp;= \frac{ 13600 \cdot 0.20 }{ 1000 } + 0.15 \\&amp;= 2.87 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1684,18 +1684,18 @@ p_A = \rho_{Hg}\cdot g \cdot h_{Hg} - \rho_{oil}\cdot g \cdot h_{oil} - \rho_{wa
 \[\begin{split}
 \begin{aligned}
 \rho_{Hg_{}} &amp;= 13600 \; \;\textrm{(kg/m3)}
-\\[10pt]
+\\
 s_{oil} &amp;= 0.82 \; 
-\\[10pt]
+\\
 h_{oil} &amp;= 3 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{Hg} &amp;= \frac{ 320 }{ 1000 } &amp;= 0.32 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{2} &amp;= 4 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \rho_{oil} &amp;= 820.00 \; \;\textrm{(kg/m3)}
-\\[10pt]
-p_{A} &amp;= \rho_{Hg_{}} \cdot g \cdot h_{Hg} - \left( \rho_{water} \cdot s_{oil} \cdot g \cdot h_{oil} \right) - \rho_{water} \cdot g \cdot \left( h_{2} - h_{oil} \right) \\&amp;= 13600 \cdot 9.81 \cdot 0.32 - \left( 1000 \cdot 0.82 \cdot 9.81 \cdot 3 \right) - 1000 \cdot 9.81 \cdot \left( 4 - 3 \right) \\&amp;= 8750.52 \; \;\textrm{(Pa)}\\[10pt]
+\\
+p_{A} &amp;= \rho_{Hg_{}} \cdot g \cdot h_{Hg} - \left( \rho_{water} \cdot s_{oil} \cdot g \cdot h_{oil} \right) - \rho_{water} \cdot g \cdot \left( h_{2} - h_{oil} \right) \\&amp;= 13600 \cdot 9.81 \cdot 0.32 - \left( 1000 \cdot 0.82 \cdot 9.81 \cdot 3 \right) - 1000 \cdot 9.81 \cdot \left( 4 - 3 \right) \\&amp;= 8750.52 \; \;\textrm{(Pa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1830,20 +1830,20 @@ p_A -p_B  = \rho_{kero} \cdot g \cdot h_{kero} + \rho_{Hg} \cdot g \cdot h_{Hg} 
 \[\begin{split}
 \begin{aligned}
 \rho_{Hg_{}} &amp;= 13550 \; \;\textrm{(kg/m3)}
-\\[10pt]
+\\
 \rho_{benz} &amp;= 876 \; \;\textrm{(kg/m3)}
-\\[10pt]
+\\
 \rho_{kero} &amp;= 808 \; \;\textrm{(kg/m3)}
-\\[10pt]
+\\
 h_{benz} &amp;= \frac{ 21 }{ 100 } &amp;= 0.21 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{Hg} &amp;= \frac{ 9 }{ 100 } &amp;= 0.09 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{wat} &amp;= \frac{ 41 - 15 }{ 100 } &amp;= 0.26 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{kero} &amp;= \frac{ 41 - 9 }{ 100 } &amp;= 0.32 \; \;\textrm{(m)}
-\\[10pt]
-\Delta_{p_{AB}} &amp;= \rho_{kero} \cdot g \cdot h_{kero} + \rho_{Hg_{}} \cdot g \cdot h_{Hg} - \rho_{water} \cdot g \cdot h_{wat} - \rho_{benz} \cdot g \cdot h_{benz} \\&amp;= 808 \cdot 9.81 \cdot 0.32 + 13550 \cdot 9.81 \cdot 0.09 - 1000 \cdot 9.81 \cdot 0.26 - 876 \cdot 9.81 \cdot 0.21 \\&amp;= 10144.52 \; \;\textrm{(Pa)}\\[10pt]
+\\
+\Delta_{p_{AB}} &amp;= \rho_{kero} \cdot g \cdot h_{kero} + \rho_{Hg_{}} \cdot g \cdot h_{Hg} - \rho_{water} \cdot g \cdot h_{wat} - \rho_{benz} \cdot g \cdot h_{benz} \\&amp;= 808 \cdot 9.81 \cdot 0.32 + 13550 \cdot 9.81 \cdot 0.09 - 1000 \cdot 9.81 \cdot 0.26 - 876 \cdot 9.81 \cdot 0.21 \\&amp;= 10144.52 \; \;\textrm{(Pa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1963,22 +1963,22 @@ p_A = \rho_{wat} g (h_3-h_2) - \rho_{Hg} g h_1 + \rho_{oil} g (h_1+h_4)
 \[\begin{split}
 \begin{aligned}
 \rho_{Hg_{}} &amp;= 13550 \; \;\textrm{(kg/m3)}
-\\[10pt]
+\\
 h_{3} &amp;= 0.600 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{2} &amp;= 0.200 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{1} &amp;= 0.140 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{4} &amp;= 0.090 \; \;\textrm{(m)}
-\\[10pt]
+\\
 s_{oil} &amp;= 0.830 \; 
-\\[10pt]
+\\
 \rho_{oil} &amp;= 830.000 \; \;\textrm{(kg/m3)}
-\\[10pt]
-p_{A} &amp;= \rho_{water} \cdot g \cdot \left( h_{3} - h_{2} \right) - \rho_{Hg_{}} \cdot g \cdot h_{1} + \rho_{oil} \cdot g \cdot \left( h_{1} + h_{4} \right) \\&amp;= 1000 \cdot 9.810 \cdot \left( 0.600 - 0.200 \right) - 13550 \cdot 9.810 \cdot 0.140 + 830.000 \cdot 9.810 \cdot \left( 0.140 + 0.090 \right) \\&amp;= -12812.841 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-p_{A_{abs}} &amp;= p_{A} + p_{atm} \\&amp;= -12812.841 + 98994.672 \\&amp;= 86181.831 \; \;\textrm{(Pa)}\\[10pt]
+\\
+p_{A} &amp;= \rho_{water} \cdot g \cdot \left( h_{3} - h_{2} \right) - \rho_{Hg_{}} \cdot g \cdot h_{1} + \rho_{oil} \cdot g \cdot \left( h_{1} + h_{4} \right) \\&amp;= 1000 \cdot 9.810 \cdot \left( 0.600 - 0.200 \right) - 13550 \cdot 9.810 \cdot 0.140 + 830.000 \cdot 9.810 \cdot \left( 0.140 + 0.090 \right) \\&amp;= -12812.841 \; \;\textrm{(Pa)}\\
+\\
+p_{A_{abs}} &amp;= p_{A} + p_{atm} \\&amp;= -12812.841 + 98994.672 \\&amp;= 86181.831 \; \;\textrm{(Pa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2100,20 +2100,20 @@ W=(p_g + \rho g h_{oil}) A_p
 \[\begin{split}
 \begin{aligned}
 p_{gauge} &amp;= 70000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 h_{m} &amp;= 1 \; \;\textrm{(m)}
-\\[10pt]
+\\
 S_{oil} &amp;= 0.86 \; 
-\\[10pt]
+\\
 d &amp;= 1 \; \;\textrm{(m)}
-\\[10pt]
-A &amp;= \pi \cdot \frac{ \left( d \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 4 } \\&amp;= 0.79 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-\rho_{oil} &amp;= S_{oil} \cdot \rho_{water} \\&amp;= 0.86 \cdot 1000 \\&amp;= 860.00 \; \;\textrm{(kg/m3)}\\[10pt]
-\\[10pt]
-W &amp;= \left( p_{gauge} + \rho_{oil} \cdot g \cdot h_{m} \right) \cdot A \\&amp;= \left( 70000 + 860.00 \cdot 9.81 \cdot 1 \right) \cdot 0.79 \\&amp;= 61603.96 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-W_{} &amp;= \frac{ W }{ 1000 } \\&amp;= \frac{ 61603.96 }{ 1000 } \\&amp;= 61.60 \; \;\textrm{(kN)}\\[10pt]
+\\
+A &amp;= \pi \cdot \frac{ \left( d \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 4 } \\&amp;= 0.79 \; \;\textrm{(m2)}\\
+\\
+\rho_{oil} &amp;= S_{oil} \cdot \rho_{water} \\&amp;= 0.86 \cdot 1000 \\&amp;= 860.00 \; \;\textrm{(kg/m3)}\\
+\\
+W &amp;= \left( p_{gauge} + \rho_{oil} \cdot g \cdot h_{m} \right) \cdot A \\&amp;= \left( 70000 + 860.00 \cdot 9.81 \cdot 1 \right) \cdot 0.79 \\&amp;= 61603.96 \; \;\textrm{(N)}\\
+\\
+W_{} &amp;= \frac{ W }{ 1000 } \\&amp;= \frac{ 61603.96 }{ 1000 } \\&amp;= 61.60 \; \;\textrm{(kN)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2239,20 +2239,20 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 d &amp;= 2 \; \;\textrm{(m)}
-\\[10pt]
+\\
 y_{top} &amp;= 0.50 \; \;\textrm{(m)}
-\\[10pt]
-y_{c} &amp;= y_{top} + \frac{ d }{ 2 } \\&amp;= 0.50 + \frac{ 2 }{ 2 } \\&amp;= 1.50 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
+\\
+y_{c} &amp;= y_{top} + \frac{ d }{ 2 } \\&amp;= 0.50 + \frac{ 2 }{ 2 } \\&amp;= 1.50 \; \;\textrm{(m)}\\
+\\
 h_{c} &amp;= 1.50 \; \;\textrm{(m)}
-\\[10pt]
-A &amp;= \pi \cdot \frac{ \left( d \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 2 \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-F &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000 \cdot 9.81 \cdot 1.50 \cdot 3.14 \\&amp;= 46228.54 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
+\\
+A &amp;= \pi \cdot \frac{ \left( d \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 2 \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \; \;\textrm{(m2)}\\
+\\
+F &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000 \cdot 9.81 \cdot 1.50 \cdot 3.14 \\&amp;= 46228.54 \; \;\textrm{(N)}\\
+\\
 I_{c} &amp;= 0.79 \; \;\textrm{(m4)}
-\\[10pt]
-y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I_{c} }{ A \cdot y_{c} } \\&amp;= \frac{ 3.14 \cdot \left( 1.50 \right) ^{ 2 } + 0.79 }{ 3.14 \cdot 1.50 } \\&amp;= 1.67 \; \;\textrm{(m)}\\[10pt]
+\\
+y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I_{c} }{ A \cdot y_{c} } \\&amp;= \frac{ 3.14 \cdot \left( 1.50 \right) ^{ 2 } + 0.79 }{ 3.14 \cdot 1.50 } \\&amp;= 1.67 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2368,24 +2368,24 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 B &amp;= 3 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L_{p} &amp;= 4 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \theta &amp;= 40 \; \;\textrm{(°)}
-\\[10pt]
+\\
 L &amp;= 6 \; \;\textrm{(m)}
-\\[10pt]
-y_{c} &amp;= L + \frac{ L_{p} }{ 2 } \\&amp;= 6 + \frac{ 4 }{ 2 } \\&amp;= 8.00 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-h_{c} &amp;= y_{c} \cdot \sin \left( \operatorname{radians} \theta \right) \\&amp;= 8.00 \cdot \sin \left( \operatorname{radians} 40 \right) \\&amp;= 5.14 \; \;\textrm{(c)}\\[10pt]
-\\[10pt]
-A &amp;= B \cdot L_{p} \\&amp;= 3 \cdot 4 \\&amp;= 12 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-F_{} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000 \cdot 9.81 \cdot 5.14 \cdot 12 \\&amp;= 605351.66 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-I_{c} &amp;= \frac{ B \cdot \left( L_{p} \right) ^{ 3 } }{ 12 } \\&amp;= \frac{ 3 \cdot \left( 4 \right) ^{ 3 } }{ 12 } \\&amp;= 16.00 \; \;\textrm{(m4)}\\[10pt]
-\\[10pt]
-y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I_{c} }{ A \cdot y_{c} } \\&amp;= \frac{ 12 \cdot \left( 8.00 \right) ^{ 2 } + 16.00 }{ 12 \cdot 8.00 } \\&amp;= 8.17 \; \;\textrm{(m)}\\[10pt]
+\\
+y_{c} &amp;= L + \frac{ L_{p} }{ 2 } \\&amp;= 6 + \frac{ 4 }{ 2 } \\&amp;= 8.00 \; \;\textrm{(m)}\\
+\\
+h_{c} &amp;= y_{c} \cdot \sin \left( \operatorname{radians} \theta \right) \\&amp;= 8.00 \cdot \sin \left( \operatorname{radians} 40 \right) \\&amp;= 5.14 \; \;\textrm{(c)}\\
+\\
+A &amp;= B \cdot L_{p} \\&amp;= 3 \cdot 4 \\&amp;= 12 \; \;\textrm{(m2)}\\
+\\
+F_{} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000 \cdot 9.81 \cdot 5.14 \cdot 12 \\&amp;= 605351.66 \; \;\textrm{(N)}\\
+\\
+I_{c} &amp;= \frac{ B \cdot \left( L_{p} \right) ^{ 3 } }{ 12 } \\&amp;= \frac{ 3 \cdot \left( 4 \right) ^{ 3 } }{ 12 } \\&amp;= 16.00 \; \;\textrm{(m4)}\\
+\\
+y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I_{c} }{ A \cdot y_{c} } \\&amp;= \frac{ 12 \cdot \left( 8.00 \right) ^{ 2 } + 16.00 }{ 12 \cdot 8.00 } \\&amp;= 8.17 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2494,26 +2494,26 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 \mathrm{AB} &amp;= 4 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \mathrm{BC} &amp;= 2 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \theta &amp;= 135 \; \;\textrm{(°)}
-\\[10pt]
-\theta_{1} &amp;= 180 - \theta \\&amp;= 180 - 135 \\&amp;= 45 \; \;\textrm{(°)}\\[10pt]
-\\[10pt]
-y_{c} &amp;= \mathrm{AB} + \frac{ \mathrm{BC} }{ 2 } \\&amp;= 4 + \frac{ 2 }{ 2 } \\&amp;= 5.00 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-A &amp;= \pi \cdot \frac{ \left( \mathrm{BC} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 2 \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-h_{c} &amp;= y_{c} \cdot \sin \left( \operatorname{radians} \theta_{1} \right) \\&amp;= 5.00 \cdot \sin \left( \operatorname{radians} 45 \right) \\&amp;= 3.54 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-F &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000 \cdot 9.81 \cdot 3.54 \cdot 3.14 \\&amp;= 108961.70 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-r &amp;= \frac{ \mathrm{BC} }{ 2 } \\&amp;= \frac{ 2 }{ 2 } \\&amp;= 1.00 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-I_{c} &amp;= \pi \cdot \frac{ \left( r \right) ^{ 4 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 1.00 \right) ^{ 4 } }{ 4 } \\&amp;= 0.79 \; \;\textrm{(m4)}\\[10pt]
-\\[10pt]
-y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I_{c} }{ y_{c} \cdot A } \\&amp;= \frac{ 3.14 \cdot \left( 5.00 \right) ^{ 2 } + 0.79 }{ 5.00 \cdot 3.14 } \\&amp;= 5.05 \; \;\textrm{(m)}\\[10pt]
+\\
+\theta_{1} &amp;= 180 - \theta \\&amp;= 180 - 135 \\&amp;= 45 \; \;\textrm{(°)}\\
+\\
+y_{c} &amp;= \mathrm{AB} + \frac{ \mathrm{BC} }{ 2 } \\&amp;= 4 + \frac{ 2 }{ 2 } \\&amp;= 5.00 \; \;\textrm{(m)}\\
+\\
+A &amp;= \pi \cdot \frac{ \left( \mathrm{BC} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 2 \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \; \;\textrm{(m2)}\\
+\\
+h_{c} &amp;= y_{c} \cdot \sin \left( \operatorname{radians} \theta_{1} \right) \\&amp;= 5.00 \cdot \sin \left( \operatorname{radians} 45 \right) \\&amp;= 3.54 \; \;\textrm{(m)}\\
+\\
+F &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000 \cdot 9.81 \cdot 3.54 \cdot 3.14 \\&amp;= 108961.70 \; \;\textrm{(N)}\\
+\\
+r &amp;= \frac{ \mathrm{BC} }{ 2 } \\&amp;= \frac{ 2 }{ 2 } \\&amp;= 1.00 \; \;\textrm{(m)}\\
+\\
+I_{c} &amp;= \pi \cdot \frac{ \left( r \right) ^{ 4 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 1.00 \right) ^{ 4 } }{ 4 } \\&amp;= 0.79 \; \;\textrm{(m4)}\\
+\\
+y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I_{c} }{ y_{c} \cdot A } \\&amp;= \frac{ 3.14 \cdot \left( 5.00 \right) ^{ 2 } + 0.79 }{ 5.00 \cdot 3.14 } \\&amp;= 5.05 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2622,24 +2622,24 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 \mathrm{AB} &amp;= 3 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \mathrm{BC} &amp;= 1 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \theta &amp;= 120 \; \;\textrm{(°)}
-\\[10pt]
-\theta_{1} &amp;= 180 - \theta \\&amp;= 180 - 120 \\&amp;= 60 \; \;\textrm{(°)}\\[10pt]
-\\[10pt]
-y_{c} &amp;= \mathrm{AB} + \mathrm{BC} - 4 \cdot \frac{ \mathrm{BC} }{ 3 \cdot \pi } \\&amp;= 3 + 1 - 4 \cdot \frac{ 1 }{ 3 \cdot 3.14 } \\&amp;= 3.58 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-A &amp;= \pi \cdot \frac{ \left( \mathrm{BC} \right) ^{ 2 } }{ 2 } \\&amp;= 3.14 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 2 } \\&amp;= 1.57 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-h_{c} &amp;= y_{c} \cdot \sin \left( \operatorname{radians} \theta_{1} \right) \\&amp;= 3.58 \cdot \sin \left( \operatorname{radians} 60 \right) \\&amp;= 3.10 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-F &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000 \cdot 9.81 \cdot 3.10 \cdot 1.57 \\&amp;= 47716.31 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-I &amp;= 0.1098 \cdot \left( \mathrm{BC} \right) ^{ 4 } \\&amp;= 0.1098 \cdot \left( 1 \right) ^{ 4 } \\&amp;= 0.11 \; \;\textrm{(m4)}\\[10pt]
-\\[10pt]
-y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I }{ y_{c} \cdot A } \\&amp;= \frac{ 1.57 \cdot \left( 3.58 \right) ^{ 2 } + 0.11 }{ 3.58 \cdot 1.57 } \\&amp;= 3.60 \; \;\textrm{(m)}\\[10pt]
+\\
+\theta_{1} &amp;= 180 - \theta \\&amp;= 180 - 120 \\&amp;= 60 \; \;\textrm{(°)}\\
+\\
+y_{c} &amp;= \mathrm{AB} + \mathrm{BC} - 4 \cdot \frac{ \mathrm{BC} }{ 3 \cdot \pi } \\&amp;= 3 + 1 - 4 \cdot \frac{ 1 }{ 3 \cdot 3.14 } \\&amp;= 3.58 \; \;\textrm{(m)}\\
+\\
+A &amp;= \pi \cdot \frac{ \left( \mathrm{BC} \right) ^{ 2 } }{ 2 } \\&amp;= 3.14 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 2 } \\&amp;= 1.57 \; \;\textrm{(m2)}\\
+\\
+h_{c} &amp;= y_{c} \cdot \sin \left( \operatorname{radians} \theta_{1} \right) \\&amp;= 3.58 \cdot \sin \left( \operatorname{radians} 60 \right) \\&amp;= 3.10 \; \;\textrm{(m)}\\
+\\
+F &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000 \cdot 9.81 \cdot 3.10 \cdot 1.57 \\&amp;= 47716.31 \; \;\textrm{(N)}\\
+\\
+I &amp;= 0.1098 \cdot \left( \mathrm{BC} \right) ^{ 4 } \\&amp;= 0.1098 \cdot \left( 1 \right) ^{ 4 } \\&amp;= 0.11 \; \;\textrm{(m4)}\\
+\\
+y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I }{ y_{c} \cdot A } \\&amp;= \frac{ 1.57 \cdot \left( 3.58 \right) ^{ 2 } + 0.11 }{ 3.58 \cdot 1.57 } \\&amp;= 3.60 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2800,8 +2800,8 @@ h= \sqrt {3} L_{BC}\\
 \[\begin{split}
 \begin{aligned}
 L_{BC} &amp;= 1.50 \; \;\textrm{(M)}
-\\[10pt]
-h &amp;= \sqrt { 3 } \cdot L_{BC} \\&amp;= \sqrt { 3 } \cdot 1.50 \\&amp;= 2.60 \; \;\textrm{(m)}\\[10pt]
+\\
+h &amp;= \sqrt { 3 } \cdot L_{BC} \\&amp;= \sqrt { 3 } \cdot 1.50 \\&amp;= 2.60 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2919,10 +2919,10 @@ p = \frac{4*\sigma}{D}
 \[\begin{split}
 \begin{aligned}
 d &amp;= \frac{ 2 }{ 1000 } &amp;= 0.002 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \sigma &amp;= 0.073 \; \;\textrm{(N/m)}
-\\[10pt]
-\Delta_{P} &amp;= 4 \cdot \frac{ \sigma }{ d } \\&amp;= 4 \cdot \frac{ 0.073 }{ 0.002 } \\&amp;= 147.000 \; \;\textrm{(Pa)}\\[10pt]
+\\
+\Delta_{P} &amp;= 4 \cdot \frac{ \sigma }{ d } \\&amp;= 4 \cdot \frac{ 0.073 }{ 0.002 } \\&amp;= 147.000 \; \;\textrm{(Pa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3014,10 +3014,10 @@ p =\frac {8\sigma}{d}
 \[\begin{split}
 \begin{aligned}
 d &amp;= 50 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 \sigma &amp;= 0.07 \; \;\textrm{(N/m)}
-\\[10pt]
-p &amp;= 8 \cdot \frac{ \sigma }{ \frac{ d }{ 1000 } } \\&amp;= 8 \cdot \frac{ 0.07 }{ \frac{ 50 }{ 1000 } } \\&amp;= 11.76 \; \;\textrm{(Pa)}\\[10pt]
+\\
+p &amp;= 8 \cdot \frac{ \sigma }{ \frac{ d }{ 1000 } } \\&amp;= 8 \cdot \frac{ 0.07 }{ \frac{ 50 }{ 1000 } } \\&amp;= 11.76 \; \;\textrm{(Pa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3115,20 +3115,20 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 B &amp;= 3 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h &amp;= 6 \; \;\textrm{(m)}
-\\[10pt]
+\\
 r &amp;= 1 \; \;\textrm{(m)}
-\\[10pt]
-h_{c} &amp;= h - \frac{ r }{ 2 } \\&amp;= 6 - \frac{ 1 }{ 2 } \\&amp;= 5.50 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-A &amp;= B \cdot r \\&amp;= 3 \cdot 1 \\&amp;= 3  \\[10pt]
-\\[10pt]
-F_{x} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot \frac{ A }{ 1000 } \\&amp;= 1000 \cdot 9.81 \cdot 5.50 \cdot \frac{ 3 }{ 1000 } \\&amp;= 161.87 \; \;\textrm{(kN)}\\[10pt]
-\\[10pt]
-I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 } \\&amp;= 3 \cdot \frac{ \left( 1 \right) ^{ 3 } }{ 12 } \\&amp;= 0.25 \; \;\textrm{(m4)}\\[10pt]
-\\[10pt]
-y_{p} &amp;= h_{c} + \frac{ I_{c} }{ h_{c} \cdot A } \\&amp;= 5.50 + \frac{ 0.25 }{ 5.50 \cdot 3 } \\&amp;= 5.52 \; \;\textrm{(m)}\\[10pt]
+\\
+h_{c} &amp;= h - \frac{ r }{ 2 } \\&amp;= 6 - \frac{ 1 }{ 2 } \\&amp;= 5.50 \; \;\textrm{(m)}\\
+\\
+A &amp;= B \cdot r \\&amp;= 3 \cdot 1 \\&amp;= 3  \\
+\\
+F_{x} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot \frac{ A }{ 1000 } \\&amp;= 1000 \cdot 9.81 \cdot 5.50 \cdot \frac{ 3 }{ 1000 } \\&amp;= 161.87 \; \;\textrm{(kN)}\\
+\\
+I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 } \\&amp;= 3 \cdot \frac{ \left( 1 \right) ^{ 3 } }{ 12 } \\&amp;= 0.25 \; \;\textrm{(m4)}\\
+\\
+y_{p} &amp;= h_{c} + \frac{ I_{c} }{ h_{c} \cdot A } \\&amp;= 5.50 + \frac{ 0.25 }{ 5.50 \cdot 3 } \\&amp;= 5.52 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3173,11 +3173,11 @@ w_2 = \rho g V_2 = \rho g B \frac{\pi r^{2}}{4}
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-W_{1} &amp;= \rho_{water} \cdot g \cdot B \cdot \left( h - r \right) \\&amp;= 1000 \cdot 9.81 \cdot 3 \cdot \left( 6 - 1 \right) \\&amp;= 147150.00 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-W_{2} &amp;= \rho_{water} \cdot g \cdot B \cdot \pi \cdot \frac{ \left( r \right) ^{ 2 } }{ 4 } \\&amp;= 1000 \cdot 9.81 \cdot 3 \cdot 3.14 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 4 } \\&amp;= 23114.27 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-W &amp;= \frac{ W_{1} + W_{2} }{ 1000 } \\&amp;= \frac{ 147150.00 + 23114.27 }{ 1000 } \\&amp;= 170.26 \; \;\textrm{(kN)}\\[10pt]
+W_{1} &amp;= \rho_{water} \cdot g \cdot B \cdot \left( h - r \right) \\&amp;= 1000 \cdot 9.81 \cdot 3 \cdot \left( 6 - 1 \right) \\&amp;= 147150.00 \; \;\textrm{(N)}\\
+\\
+W_{2} &amp;= \rho_{water} \cdot g \cdot B \cdot \pi \cdot \frac{ \left( r \right) ^{ 2 } }{ 4 } \\&amp;= 1000 \cdot 9.81 \cdot 3 \cdot 3.14 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 4 } \\&amp;= 23114.27 \; \;\textrm{(N)}\\
+\\
+W &amp;= \frac{ W_{1} + W_{2} }{ 1000 } \\&amp;= \frac{ 147150.00 + 23114.27 }{ 1000 } \\&amp;= 170.26 \; \;\textrm{(kN)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3237,15 +3237,17 @@ W \Delta x = W_1 \Delta x_1 +  W_2 \Delta x_2
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-A_{2} &amp;= \pi \cdot \frac{ \left( r \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 4 } \\&amp;= 0.79 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-A_{1} &amp;= \left( h - r \right) \cdot r \\&amp;= \left( 6 - 1 \right) \cdot 1 \\&amp;= 5 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-\Delta_{X_{2}} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi } \\&amp;= 4 \cdot \frac{ 1 }{ 3 \cdot 3.14 } \\&amp;= 0.42 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-\Delta_{X_{1}} &amp;= \frac{ r }{ 2 } \\&amp;= \frac{ 1 }{ 2 } \\&amp;= 0.50 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-\Delta_{X} &amp;= \frac{ W_{1} \cdot \Delta_{X_{1}} + W_{2} \cdot \Delta_{X_{2}} }{ W } \\&amp;= \frac{ 147150.00 \cdot 0.50 + 23114.27 \cdot 0.42 }{ 170.26 } \\&amp;= 489.74 \; \;\textrm{(m)}\\[10pt]
+A_{2} &amp;= \pi \cdot \frac{ \left( r \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 4 } \\&amp;= 0.79 \; \;\textrm{(m2)}\\
+\\
+A_{1} &amp;= \left( h - r \right) \cdot r \\&amp;= \left( 6 - 1 \right) \cdot 1 \\&amp;= 5 \; \;\textrm{(m2)}\\
+\\
+\Delta_{X_{2}} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi } \\&amp;= 4 \cdot \frac{ 1 }{ 3 \cdot 3.14 } \\&amp;= 0.42 \; \;\textrm{(m)}\\
+\\
+\Delta_{X_{1}} &amp;= \frac{ r }{ 2 } \\&amp;= \frac{ 1 }{ 2 } \\&amp;= 0.50 \; \;\textrm{(m)}\\
+\\
+W &amp;= 170264.27 \; \;\textrm{(N)}
+\\
+\Delta_{X} &amp;= \frac{ W_{1} \cdot \Delta_{X_{1}} + W_{2} \cdot \Delta_{X_{2}} }{ W } \\&amp;= \frac{ 147150.00 \cdot 0.50 + 23114.27 \cdot 0.42 }{ 170264.27 } \\&amp;= 0.49 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3274,9 +3276,9 @@ A_{1} &amp;= \left( h - r \right) \cdot r \\&amp;= \left( 6 - 1 \right) \cdot 1 
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-F_{r} &amp;= \sqrt { \left( F_{x} \right) ^{ 2 } + \left( W \right) ^{ 2 } } \\&amp;= \sqrt { \left( 161.87 \right) ^{ 2 } + \left( 170.26 \right) ^{ 2 } } \\&amp;= 234.93 \; \;\textrm{(kN)}\\[10pt]
-\\[10pt]
-\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{x} }{ W } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 161.87 }{ 170.26 } \right) \right) \\&amp;= 43.55 \; \;\textrm{(°)}\\[10pt]
+F_{r} &amp;= \sqrt { \left( F_{x} \right) ^{ 2 } + \left( W \right) ^{ 2 } } \\&amp;= \sqrt { \left( 161.87 \right) ^{ 2 } + \left( 170.26 \right) ^{ 2 } } \\&amp;= 234.93 \; \;\textrm{(kN)}\\
+\\
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{x} }{ W } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 161.87 }{ 170.26 } \right) \right) \\&amp;= 43.55 \; \;\textrm{(°)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3318,10 +3320,10 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 X_{O} &amp;= 489.74 \; \;\textrm{(m)}
-\\[10pt]
-Y_{O} &amp;= y_{p} - h + r \\&amp;= 5.52 - 6 + 1 \\&amp;= 0.52 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-\alpha &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ X_{O} }{ Y_{O} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 489.74 }{ 0.52 } \right) \right) \\&amp;= 89.94 \; \;\textrm{(°)}\\[10pt]
+\\
+Y_{O} &amp;= y_{p} - h + r \\&amp;= 5.52 - 6 + 1 \\&amp;= 0.52 \; \;\textrm{(m)}\\
+\\
+\alpha &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ X_{O} }{ Y_{O} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 489.74 }{ 0.52 } \right) \right) \\&amp;= 89.94 \; \;\textrm{(°)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3526,16 +3528,16 @@ F= F_b-W #N
 \[\begin{split}
 \begin{aligned}
 L &amp;= 300 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 \rho_{concrete} &amp;= 2400 \; \;\textrm{(kg/m3)}
-\\[10pt]
+\\
 \rho_{Hg} &amp;= 13600 \; \;\textrm{(kg/m3)}
-\\[10pt]
-W &amp;= \rho_{concrete} \cdot g \cdot \left( \frac{ L }{ 1000 } \right) ^{ 3 } \\&amp;= 2400 \cdot 9.81 \cdot \left( \frac{ 300 }{ 1000 } \right) ^{ 3 } \\&amp;= 635.69 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-F_{b} &amp;= \rho_{Hg} \cdot g \cdot \left( \frac{ L }{ 1000 } \right) ^{ 3 } \\&amp;= 13600 \cdot 9.81 \cdot \left( \frac{ 300 }{ 1000 } \right) ^{ 3 } \\&amp;= 3602.23 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-F &amp;= F_{b} - W \\&amp;= 3602.23 - 635.69 \\&amp;= 2966.54 \; \;\textrm{(N)}\\[10pt]
+\\
+W &amp;= \rho_{concrete} \cdot g \cdot \left( \frac{ L }{ 1000 } \right) ^{ 3 } \\&amp;= 2400 \cdot 9.81 \cdot \left( \frac{ 300 }{ 1000 } \right) ^{ 3 } \\&amp;= 635.69 \; \;\textrm{(N)}\\
+\\
+F_{b} &amp;= \rho_{Hg} \cdot g \cdot \left( \frac{ L }{ 1000 } \right) ^{ 3 } \\&amp;= 13600 \cdot 9.81 \cdot \left( \frac{ 300 }{ 1000 } \right) ^{ 3 } \\&amp;= 3602.23 \; \;\textrm{(N)}\\
+\\
+F &amp;= F_{b} - W \\&amp;= 3602.23 - 635.69 \\&amp;= 2966.54 \; \;\textrm{(N)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3571,11 +3573,11 @@ F= W-F_b #N
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-W &amp;= \rho_{concrete} \cdot g \cdot \left( \frac{ L }{ 1000 } \right) ^{ 3 } \\&amp;= 2400 \cdot 9.81 \cdot \left( \frac{ 300 }{ 1000 } \right) ^{ 3 } \\&amp;= 635.69 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-F_{b} &amp;= \rho_{water} \cdot g \cdot \left( \frac{ L }{ 1000 } \right) ^{ 3 } \\&amp;= 1000 \cdot 9.81 \cdot \left( \frac{ 300 }{ 1000 } \right) ^{ 3 } \\&amp;= 264.87 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-F &amp;= W - F_{b} \\&amp;= 635.69 - 264.87 \\&amp;= 370.82 \; \;\textrm{(N)}\\[10pt]
+W &amp;= \rho_{concrete} \cdot g \cdot \left( \frac{ L }{ 1000 } \right) ^{ 3 } \\&amp;= 2400 \cdot 9.81 \cdot \left( \frac{ 300 }{ 1000 } \right) ^{ 3 } \\&amp;= 635.69 \; \;\textrm{(N)}\\
+\\
+F_{b} &amp;= \rho_{water} \cdot g \cdot \left( \frac{ L }{ 1000 } \right) ^{ 3 } \\&amp;= 1000 \cdot 9.81 \cdot \left( \frac{ 300 }{ 1000 } \right) ^{ 3 } \\&amp;= 264.87 \; \;\textrm{(N)}\\
+\\
+F &amp;= W - F_{b} \\&amp;= 635.69 - 264.87 \\&amp;= 370.82 \; \;\textrm{(N)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3638,18 +3640,18 @@ W= rho_water*g*Vol_displayed #N
 \[\begin{split}
 \begin{aligned}
 d &amp;= \frac{ 8 }{ 100 } &amp;= 0.0800 \; \;\textrm{(m)}
-\\[10pt]
+\\
 l &amp;= \frac{ 11 }{ 100 } &amp;= 0.1100 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{out} &amp;= \frac{ 4 }{ 100 } &amp;= 0.0400 \; \;\textrm{(m)}
-\\[10pt]
-A &amp;= \pi \cdot \frac{ \left( d \right) ^{ 2 } }{ 4 } \\&amp;= 3.1416 \cdot \frac{ \left( 0.0800 \right) ^{ 2 } }{ 4 } \\&amp;= 0.0050 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-h_{in} &amp;= l - h_{out} \\&amp;= 0.1100 - 0.0400 \\&amp;= 0.0700 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-\mathrm{Vol}_{displayed} &amp;= A \cdot h_{in} \\&amp;= 0.0050 \cdot 0.0700 \\&amp;= 0.0004 \; \;\textrm{(m3)}\\[10pt]
-\\[10pt]
-W &amp;= \rho_{water} \cdot g \cdot \mathrm{Vol}_{displayed} \\&amp;= 1000 \cdot 9.8100 \cdot 0.0004 \\&amp;= 3.4517 \; \;\textrm{(N)}\\[10pt]
+\\
+A &amp;= \pi \cdot \frac{ \left( d \right) ^{ 2 } }{ 4 } \\&amp;= 3.1416 \cdot \frac{ \left( 0.0800 \right) ^{ 2 } }{ 4 } \\&amp;= 0.0050 \; \;\textrm{(m2)}\\
+\\
+h_{in} &amp;= l - h_{out} \\&amp;= 0.1100 - 0.0400 \\&amp;= 0.0700 \; \;\textrm{(m)}\\
+\\
+\mathrm{Vol}_{displayed} &amp;= A \cdot h_{in} \\&amp;= 0.0050 \cdot 0.0700 \\&amp;= 0.0004 \; \;\textrm{(m3)}\\
+\\
+W &amp;= \rho_{water} \cdot g \cdot \mathrm{Vol}_{displayed} \\&amp;= 1000 \cdot 9.8100 \cdot 0.0004 \\&amp;= 3.4517 \; \;\textrm{(N)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3701,10 +3703,10 @@ Vol= (W_air-W_water)/(g*rho_water) #m3
 \[\begin{split}
 \begin{aligned}
 W_{air} &amp;= 300 \; \;\textrm{(N)}
-\\[10pt]
+\\
 W_{water} &amp;= 232.500 \; \;\textrm{(N)}
-\\[10pt]
-\mathrm{Vol} &amp;= \frac{ W_{air} - W_{water} }{ g \cdot \rho_{water} } \\&amp;= \frac{ 300 - 232.500 }{ 9.810 \cdot 1000 } \\&amp;= 0.007 \; \;\textrm{(m3)}\\[10pt]
+\\
+\mathrm{Vol} &amp;= \frac{ W_{air} - W_{water} }{ g \cdot \rho_{water} } \\&amp;= \frac{ 300 - 232.500 }{ 9.810 \cdot 1000 } \\&amp;= 0.007 \; \;\textrm{(m3)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3782,28 +3784,28 @@ F_b= F_b_hollow+F_b_solid #N
 \[\begin{split}
 \begin{aligned}
 L &amp;= 1 \; \;\textrm{(m)}
-\\[10pt]
+\\
 W_{hollow} &amp;= 2.4 \cdot 1000 &amp;= 2400.0 \; \;\textrm{(N)}
-\\[10pt]
+\\
 W_{solid} &amp;= 10 \cdot 1000 &amp;= 10000 \; \;\textrm{(N)}
-\\[10pt]
+\\
 s &amp;= 2.4 \; 
-\\[10pt]
-W_{total} &amp;= W_{hollow} + W_{solid} \\&amp;= 2400.0 + 10000 \\&amp;= 12400.0 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-\mathrm{Vol}_{hollow} &amp;= \left( L \right) ^{ 3 } \\&amp;= \left( 1 \right) ^{ 3 } \\&amp;= 1 \; \;\textrm{(m3)}\\[10pt]
-\\[10pt]
-F_{b_{hollow}} &amp;= \rho_{water} \cdot g \cdot \mathrm{Vol}_{hollow} \\&amp;= 1000 \cdot 9.8 \cdot 1 \\&amp;= 9810.0 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-\rho_{solid} &amp;= s \cdot \rho_{water} \\&amp;= 2.4 \cdot 1000 \\&amp;= 2400.0 \; \;\textrm{(kg/m3)}\\[10pt]
-\\[10pt]
-m_{solid} &amp;= \frac{ W_{solid} }{ g } \\&amp;= \frac{ 10000 }{ 9.8 } \\&amp;= 1019.4 \; \;\textrm{(kg)}\\[10pt]
-\\[10pt]
-\mathrm{Vol}_{solid} &amp;= \frac{ m_{solid} }{ \rho_{solid} } \\&amp;= \frac{ 1019.4 }{ 2400.0 } \\&amp;= 0.4 \; \;\textrm{(m3)}\\[10pt]
-\\[10pt]
-F_{b_{solid}} &amp;= \rho_{water} \cdot g \cdot \mathrm{Vol}_{solid} \\&amp;= 1000 \cdot 9.8 \cdot 0.4 \\&amp;= 4166.7 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-F_{b} &amp;= F_{b_{hollow}} + F_{b_{solid}} \\&amp;= 9810.0 + 4166.7 \\&amp;= 13976.7 \; \;\textrm{(N)}\\[10pt]
+\\
+W_{total} &amp;= W_{hollow} + W_{solid} \\&amp;= 2400.0 + 10000 \\&amp;= 12400.0 \; \;\textrm{(N)}\\
+\\
+\mathrm{Vol}_{hollow} &amp;= \left( L \right) ^{ 3 } \\&amp;= \left( 1 \right) ^{ 3 } \\&amp;= 1 \; \;\textrm{(m3)}\\
+\\
+F_{b_{hollow}} &amp;= \rho_{water} \cdot g \cdot \mathrm{Vol}_{hollow} \\&amp;= 1000 \cdot 9.8 \cdot 1 \\&amp;= 9810.0 \; \;\textrm{(N)}\\
+\\
+\rho_{solid} &amp;= s \cdot \rho_{water} \\&amp;= 2.4 \cdot 1000 \\&amp;= 2400.0 \; \;\textrm{(kg/m3)}\\
+\\
+m_{solid} &amp;= \frac{ W_{solid} }{ g } \\&amp;= \frac{ 10000 }{ 9.8 } \\&amp;= 1019.4 \; \;\textrm{(kg)}\\
+\\
+\mathrm{Vol}_{solid} &amp;= \frac{ m_{solid} }{ \rho_{solid} } \\&amp;= \frac{ 1019.4 }{ 2400.0 } \\&amp;= 0.4 \; \;\textrm{(m3)}\\
+\\
+F_{b_{solid}} &amp;= \rho_{water} \cdot g \cdot \mathrm{Vol}_{solid} \\&amp;= 1000 \cdot 9.8 \cdot 0.4 \\&amp;= 4166.7 \; \;\textrm{(N)}\\
+\\
+F_{b} &amp;= F_{b_{hollow}} + F_{b_{solid}} \\&amp;= 9810.0 + 4166.7 \\&amp;= 13976.7 \; \;\textrm{(N)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3883,8 +3885,8 @@ Ratio_ab= (s*rho_water-rho_Hg)/(rho_water-s*rho_water)
 \[\begin{split}
 \begin{aligned}
 s &amp;= 7.850 \; 
-\\[10pt]
-\mathrm{Ratio}_{ab} &amp;= \frac{ s \cdot \rho_{water} - \rho_{Hg} }{ \rho_{water} - s \cdot \rho_{water} } \\&amp;= \frac{ 7.850 \cdot 1000 - 13600 }{ 1000 - 7.850 \cdot 1000 } \\&amp;= 0.839  \\[10pt]
+\\
+\mathrm{Ratio}_{ab} &amp;= \frac{ s \cdot \rho_{water} - \rho_{Hg} }{ \rho_{water} - s \cdot \rho_{water} } \\&amp;= \frac{ 7.850 \cdot 1000 - 13600 }{ 1000 - 7.850 \cdot 1000 } \\&amp;= 0.839  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3960,14 +3962,14 @@ Vol_foam= (rho_water*g*Vol_concrete-gamma_concrete*Vol_concrete)/(gamma_foam-rho
 \[\begin{split}
 \begin{aligned}
 L &amp;= 0.50 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \gamma_{concrete} &amp;= 23.58 \cdot 1000 &amp;= 23580.00 \; \;\textrm{(N/m3)}
-\\[10pt]
+\\
 \gamma_{foam} &amp;= 0.79 \cdot 1000 &amp;= 790.00 \; \;\textrm{(N/m3)}
-\\[10pt]
-\mathrm{Vol}_{concrete} &amp;= \left( L \right) ^{ 3 } \\&amp;= \left( 0.50 \right) ^{ 3 } \\&amp;= 0.12 \; \;\textrm{(m3)}\\[10pt]
-\\[10pt]
-\mathrm{Vol}_{foam} &amp;= \frac{ \rho_{water} \cdot g \cdot \mathrm{Vol}_{concrete} - \gamma_{concrete} \cdot \mathrm{Vol}_{concrete} }{ \gamma_{foam} - \rho_{water} \cdot g } \\&amp;= \frac{ 1000 \cdot 9.81 \cdot 0.12 - 23580.00 \cdot 0.12 }{ 790.00 - 1000 \cdot 9.81 } \\&amp;= 0.19 \; \;\textrm{(m3)}\\[10pt]
+\\
+\mathrm{Vol}_{concrete} &amp;= \left( L \right) ^{ 3 } \\&amp;= \left( 0.50 \right) ^{ 3 } \\&amp;= 0.12 \; \;\textrm{(m3)}\\
+\\
+\mathrm{Vol}_{foam} &amp;= \frac{ \rho_{water} \cdot g \cdot \mathrm{Vol}_{concrete} - \gamma_{concrete} \cdot \mathrm{Vol}_{concrete} }{ \gamma_{foam} - \rho_{water} \cdot g } \\&amp;= \frac{ 1000 \cdot 9.81 \cdot 0.12 - 23580.00 \cdot 0.12 }{ 790.00 - 1000 \cdot 9.81 } \\&amp;= 0.19 \; \;\textrm{(m3)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4065,16 +4067,16 @@ W= g*s*rho_water*wide*b*L_T #N
 \[\begin{split}
 \begin{aligned}
 s &amp;= 0.640 \; 
-\\[10pt]
+\\
 L_{T} &amp;= 5 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \mathrm{wide} &amp;= 0.140 \; \;\textrm{(m)}
-\\[10pt]
+\\
 b &amp;= 0.140 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h &amp;= 1 \; \;\textrm{(m)}
-\\[10pt]
-W &amp;= g \cdot s \cdot \rho_{water} \cdot \mathrm{wide} \cdot b \cdot L_{T} \\&amp;= 9.810 \cdot 0.640 \cdot 1000 \cdot 0.140 \cdot 0.140 \cdot 5 \\&amp;= 615.283 \; \;\textrm{(N)}\\[10pt]
+\\
+W &amp;= g \cdot s \cdot \rho_{water} \cdot \mathrm{wide} \cdot b \cdot L_{T} \\&amp;= 9.810 \cdot 0.640 \cdot 1000 \cdot 0.140 \cdot 0.140 \cdot 5 \\&amp;= 615.283 \; \;\textrm{(N)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4091,7 +4093,7 @@ theta=degrees(asin (h/(L_T-L_))) #°
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\theta &amp;= \operatorname{degrees} \left( \arcsin \left( \frac{ h }{ L_{T} - L_{} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arcsin \left( \frac{ 1 }{ 5 - 2.0 } \right) \right) \\&amp;= 19.47 \; \;\textrm{(°)}\\[10pt]
+\theta &amp;= \operatorname{degrees} \left( \arcsin \left( \frac{ h }{ L_{T} - L_{} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arcsin \left( \frac{ 1 }{ 5 - 2.0 } \right) \right) \\&amp;= 19.47 \; \;\textrm{(°)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4181,28 +4183,28 @@ y_p= y_c+ I_c/(y_c*A)#m
 \[\begin{split}
 \begin{aligned}
 s &amp;= 0.88 \; 
-\\[10pt]
+\\
 h_{1} &amp;= 2 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{2} &amp;= 2 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{3} &amp;= 2.50 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{4} &amp;= 1 \; \;\textrm{(m)}
-\\[10pt]
+\\
 B &amp;= 1 \; \;\textrm{(m)}
-\\[10pt]
-\rho &amp;= s \cdot \rho_{water} \\&amp;= 0.88 \cdot 1000 \\&amp;= 880.00 \; \;\textrm{(kg/m3)}\\[10pt]
-\\[10pt]
-F_{H} &amp;= \rho \cdot g \cdot \left( h_{1} + h_{2} + \frac{ h_{3} }{ 2 } \right) \cdot \left( h_{3} \cdot 1 \right) \\&amp;= 880.00 \cdot 9.81 \cdot \left( 2 + 2 + \frac{ 2.50 }{ 2 } \right) \cdot \left( 2.50 \cdot 1 \right) \\&amp;= 113305.50 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-y_{c} &amp;= h_{1} + h_{2} + \frac{ h_{3} }{ 2 } \\&amp;= 2 + 2 + \frac{ 2.50 }{ 2 } \\&amp;= 5.25 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-I_{c} &amp;= B \cdot \frac{ \left( h_{3} \right) ^{ 3 } }{ 12 } \\&amp;= 1 \cdot \frac{ \left( 2.50 \right) ^{ 3 } }{ 12 } \\&amp;= 1.30 \; \;\textrm{(m4)}\\[10pt]
-\\[10pt]
-A &amp;= B \cdot h_{3} \\&amp;= 1 \cdot 2.50 \\&amp;= 2.50 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-y_{p} &amp;= y_{c} + \frac{ I_{c} }{ y_{c} \cdot A } \\&amp;= 5.25 + \frac{ 1.30 }{ 5.25 \cdot 2.50 } \\&amp;= 5.35 \; \;\textrm{(m)}\\[10pt]
+\\
+\rho &amp;= s \cdot \rho_{water} \\&amp;= 0.88 \cdot 1000 \\&amp;= 880.00 \; \;\textrm{(kg/m3)}\\
+\\
+F_{H} &amp;= \rho \cdot g \cdot \left( h_{1} + h_{2} + \frac{ h_{3} }{ 2 } \right) \cdot \left( h_{3} \cdot 1 \right) \\&amp;= 880.00 \cdot 9.81 \cdot \left( 2 + 2 + \frac{ 2.50 }{ 2 } \right) \cdot \left( 2.50 \cdot 1 \right) \\&amp;= 113305.50 \; \;\textrm{(N)}\\
+\\
+y_{c} &amp;= h_{1} + h_{2} + \frac{ h_{3} }{ 2 } \\&amp;= 2 + 2 + \frac{ 2.50 }{ 2 } \\&amp;= 5.25 \; \;\textrm{(m)}\\
+\\
+I_{c} &amp;= B \cdot \frac{ \left( h_{3} \right) ^{ 3 } }{ 12 } \\&amp;= 1 \cdot \frac{ \left( 2.50 \right) ^{ 3 } }{ 12 } \\&amp;= 1.30 \; \;\textrm{(m4)}\\
+\\
+A &amp;= B \cdot h_{3} \\&amp;= 1 \cdot 2.50 \\&amp;= 2.50 \; \;\textrm{(m2)}\\
+\\
+y_{p} &amp;= y_{c} + \frac{ I_{c} }{ y_{c} \cdot A } \\&amp;= 5.25 + \frac{ 1.30 }{ 5.25 \cdot 2.50 } \\&amp;= 5.35 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4248,13 +4250,13 @@ theta= degrees(atan(F_V/F_H)) #°
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-F_{V} &amp;= \rho \cdot g \cdot \frac{ \left( \pi \cdot \left( \frac{ h_{3} }{ 2 } \right) ^{ 2 } \right) \cdot 1 }{ 2 } \\&amp;= 880.00 \cdot 9.81 \cdot \frac{ \left( 3.14 \cdot \left( \frac{ 2.50 }{ 2 } \right) ^{ 2 } \right) \cdot 1 }{ 2 } \\&amp;= 21188.08 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-X &amp;= \frac{ 4 \cdot \frac{ 2.5 }{ 2 } }{ 3 \cdot \pi } \\&amp;= \frac{ 4 \cdot \frac{ 2.5 }{ 2 } }{ 3 \cdot 3.14 } \\&amp;= 0.53 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-F &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 113305.50 \right) ^{ 2 } + \left( 21188.08 \right) ^{ 2 } } \\&amp;= 115269.56 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 21188.08 }{ 113305.50 } \right) \right) \\&amp;= 10.59 \; \;\textrm{(°)}\\[10pt]
+F_{V} &amp;= \rho \cdot g \cdot \frac{ \left( \pi \cdot \left( \frac{ h_{3} }{ 2 } \right) ^{ 2 } \right) \cdot 1 }{ 2 } \\&amp;= 880.00 \cdot 9.81 \cdot \frac{ \left( 3.14 \cdot \left( \frac{ 2.50 }{ 2 } \right) ^{ 2 } \right) \cdot 1 }{ 2 } \\&amp;= 21188.08 \; \;\textrm{(N)}\\
+\\
+X &amp;= \frac{ 4 \cdot \frac{ 2.5 }{ 2 } }{ 3 \cdot \pi } \\&amp;= \frac{ 4 \cdot \frac{ 2.5 }{ 2 } }{ 3 \cdot 3.14 } \\&amp;= 0.53 \; \;\textrm{(m)}\\
+\\
+F &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 113305.50 \right) ^{ 2 } + \left( 21188.08 \right) ^{ 2 } } \\&amp;= 115269.56 \; \;\textrm{(N)}\\
+\\
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 21188.08 }{ 113305.50 } \right) \right) \\&amp;= 10.59 \; \;\textrm{(°)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4332,12 +4334,12 @@ F_b= rho_water*g*((h_water*r+(pi*r**2)/4))*B/1000 #kN
 \[\begin{split}
 \begin{aligned}
 B &amp;= 3 \; \;\textrm{(m)}
-\\[10pt]
+\\
 r &amp;= 1 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{water} &amp;= 4 \; \;\textrm{(m)}
-\\[10pt]
-F_{b} &amp;= \rho_{water} \cdot g \cdot \left( h_{water} \cdot r + \frac{ \pi \cdot \left( r \right) ^{ 2 } }{ 4 } \right) \cdot \frac{ B }{ 1000 } \\&amp;= 1000 \cdot 9.8 \cdot \left( 4 \cdot 1 + \frac{ 3.1 \cdot \left( 1 \right) ^{ 2 } }{ 4 } \right) \cdot \frac{ 3 }{ 1000 } \\&amp;= 140.8 \; \;\textrm{(kN)}\\[10pt]
+\\
+F_{b} &amp;= \rho_{water} \cdot g \cdot \left( h_{water} \cdot r + \frac{ \pi \cdot \left( r \right) ^{ 2 } }{ 4 } \right) \cdot \frac{ B }{ 1000 } \\&amp;= 1000 \cdot 9.8 \cdot \left( 4 \cdot 1 + \frac{ 3.1 \cdot \left( 1 \right) ^{ 2 } }{ 4 } \right) \cdot \frac{ 3 }{ 1000 } \\&amp;= 140.8 \; \;\textrm{(kN)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4434,10 +4436,10 @@ p_B= rho_water*g*r/1000 #kPa
 \[\begin{split}
 \begin{aligned}
 B &amp;= 5 \; \;\textrm{(m)}
-\\[10pt]
+\\
 r &amp;= 2 \; \;\textrm{(m)}
-\\[10pt]
-p_{B} &amp;= \rho_{water} \cdot g \cdot \frac{ r }{ 1000 } \\&amp;= 1000 \cdot 9.81 \cdot \frac{ 2 }{ 1000 } \\&amp;= 19.62 \; \;\textrm{(kPa)}\\[10pt]
+\\
+p_{B} &amp;= \rho_{water} \cdot g \cdot \frac{ r }{ 1000 } \\&amp;= 1000 \cdot 9.81 \cdot \frac{ 2 }{ 1000 } \\&amp;= 19.62 \; \;\textrm{(kPa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4475,11 +4477,11 @@ F_H= rho_water*g*h_c*A/1000 #kN
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-h_{c} &amp;= \frac{ r }{ 2 } \\&amp;= \frac{ 2 }{ 2 } \\&amp;= 1.0 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-A &amp;= r \cdot B \\&amp;= 2 \cdot 5 \\&amp;= 10 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-F_{H} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot \frac{ A }{ 1000 } \\&amp;= 1000 \cdot 9.8 \cdot 1.0 \cdot \frac{ 10 }{ 1000 } \\&amp;= 98.1 \; \;\textrm{(kN)}\\[10pt]
+h_{c} &amp;= \frac{ r }{ 2 } \\&amp;= \frac{ 2 }{ 2 } \\&amp;= 1.0 \; \;\textrm{(m)}\\
+\\
+A &amp;= r \cdot B \\&amp;= 2 \cdot 5 \\&amp;= 10 \; \;\textrm{(m2)}\\
+\\
+F_{H} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot \frac{ A }{ 1000 } \\&amp;= 1000 \cdot 9.8 \cdot 1.0 \cdot \frac{ 10 }{ 1000 } \\&amp;= 98.1 \; \;\textrm{(kN)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4520,9 +4522,9 @@ y_p= (A*h_c**2+I_c)/(A*h_c) #m from top of the panel
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 } \\&amp;= 5 \cdot \frac{ \left( 2 \right) ^{ 3 } }{ 12 } \\&amp;= 3.33 \; \;\textrm{(m4)}\\[10pt]
-\\[10pt]
-y_{p} &amp;= \frac{ A \cdot \left( h_{c} \right) ^{ 2 } + I_{c} }{ A \cdot h_{c} } \\&amp;= \frac{ 10 \cdot \left( 1.00 \right) ^{ 2 } + 3.33 }{ 10 \cdot 1.00 } \\&amp;= 1.33 \; \;\textrm{(m from top of the panel)}\\[10pt]
+I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 } \\&amp;= 5 \cdot \frac{ \left( 2 \right) ^{ 3 } }{ 12 } \\&amp;= 3.33 \; \;\textrm{(m4)}\\
+\\
+y_{p} &amp;= \frac{ A \cdot \left( h_{c} \right) ^{ 2 } + I_{c} }{ A \cdot h_{c} } \\&amp;= \frac{ 10 \cdot \left( 1.00 \right) ^{ 2 } + 3.33 }{ 10 \cdot 1.00 } \\&amp;= 1.33 \; \;\textrm{(m from top of the panel)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4562,9 +4564,9 @@ X= (4*r)/(3*pi) #m
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-F_{V} &amp;= \rho_{water} \cdot g \cdot \frac{ \pi \cdot \left( r \right) ^{ 2 } }{ 4 } \cdot \frac{ B }{ 1000 } \\&amp;= 1000 \cdot 9.81 \cdot \frac{ 3.14 \cdot \left( 2 \right) ^{ 2 } }{ 4 } \cdot \frac{ 5 }{ 1000 } \\&amp;= 154.10 \; \;\textrm{(kN)}\\[10pt]
-\\[10pt]
-X &amp;= \frac{ 4 \cdot r }{ 3 \cdot \pi } \\&amp;= \frac{ 4 \cdot 2 }{ 3 \cdot 3.14 } \\&amp;= 0.85 \; \;\textrm{(m)}\\[10pt]
+F_{V} &amp;= \rho_{water} \cdot g \cdot \frac{ \pi \cdot \left( r \right) ^{ 2 } }{ 4 } \cdot \frac{ B }{ 1000 } \\&amp;= 1000 \cdot 9.81 \cdot \frac{ 3.14 \cdot \left( 2 \right) ^{ 2 } }{ 4 } \cdot \frac{ 5 }{ 1000 } \\&amp;= 154.10 \; \;\textrm{(kN)}\\
+\\
+X &amp;= \frac{ 4 \cdot r }{ 3 \cdot \pi } \\&amp;= \frac{ 4 \cdot 2 }{ 3 \cdot 3.14 } \\&amp;= 0.85 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4602,9 +4604,9 @@ theta= degrees(atan(F_V/F_H)) #°
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-F &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 98.10 \right) ^{ 2 } + \left( 154.10 \right) ^{ 2 } } \\&amp;= 182.67 \; \;\textrm{(kN)}\\[10pt]
-\\[10pt]
-\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 154.10 }{ 98.10 } \right) \right) \\&amp;= 57.52 \; \;\textrm{(°)}\\[10pt]
+F &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 98.10 \right) ^{ 2 } + \left( 154.10 \right) ^{ 2 } } \\&amp;= 182.67 \; \;\textrm{(kN)}\\
+\\
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 154.10 }{ 98.10 } \right) \right) \\&amp;= 57.52 \; \;\textrm{(°)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4659,7 +4661,7 @@ beta= degrees(atan(y_p/X)) #°
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\beta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ y_{p} }{ X } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 1.33 }{ 0.85 } \right) \right) \\&amp;= 57.52 \; \;\textrm{(°)}\\[10pt]
+\beta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ y_{p} }{ X } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 1.33 }{ 0.85 } \right) \right) \\&amp;= 57.52 \; \;\textrm{(°)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4739,18 +4741,18 @@ h=(4*sigma*cos (theta_rad))/(rho_Hg*g*d_m) #m
 \[\begin{split}
 \begin{aligned}
 d &amp;= 5 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 \mathrm{angle} &amp;= 135 \; \;\textrm{(°)}
-\\[10pt]
+\\
 d_{m} &amp;= 0.005 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \sigma &amp;= 0.510 \; \;\textrm{(N/m)}
-\\[10pt]
+\\
 \theta &amp;= 45 \; \;\textrm{(°)}
-\\[10pt]
+\\
 \theta_{rad} &amp;= 0.785 \; \;\textrm{(radians)}
-\\[10pt]
-h &amp;= \frac{ 4 \cdot \sigma \cdot \cos \left( \theta_{rad} \right) }{ \rho_{Hg} \cdot g \cdot d_{m} } \\&amp;= \frac{ 4 \cdot 0.510 \cdot \cos \left( 0.785 \right) }{ 13600 \cdot 9.810 \cdot 0.005 } \\&amp;= 0.002 \; \;\textrm{(m)}\\[10pt]
+\\
+h &amp;= \frac{ 4 \cdot \sigma \cdot \cos \left( \theta_{rad} \right) }{ \rho_{Hg} \cdot g \cdot d_{m} } \\&amp;= \frac{ 4 \cdot 0.510 \cdot \cos \left( 0.785 \right) }{ 13600 \cdot 9.810 \cdot 0.005 } \\&amp;= 0.002 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4847,20 +4849,20 @@ y_p= h_c+I_c/(h_c*A) #m
 \[\begin{split}
 \begin{aligned}
 B &amp;= 7 \; \;\textrm{(m)}
-\\[10pt]
+\\
 r &amp;= 1 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{water} &amp;= 4 \; \;\textrm{(m)}
-\\[10pt]
-h_{c} &amp;= h_{water} + \frac{ r }{ 2 } \\&amp;= 4 + \frac{ 1 }{ 2 } \\&amp;= 4.50 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-A &amp;= B \cdot r \\&amp;= 7 \cdot 1 \\&amp;= 7 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-F_{H} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot \frac{ A }{ 1000 } \\&amp;= 1000 \cdot 9.81 \cdot 4.50 \cdot \frac{ 7 }{ 1000 } \\&amp;= 309.01 \; \;\textrm{(kN)}\\[10pt]
-\\[10pt]
-I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 } \\&amp;= 7 \cdot \frac{ \left( 1 \right) ^{ 3 } }{ 12 } \\&amp;= 0.58 \; \;\textrm{(m4)}\\[10pt]
-\\[10pt]
-y_{p} &amp;= h_{c} + \frac{ I_{c} }{ h_{c} \cdot A } \\&amp;= 4.50 + \frac{ 0.58 }{ 4.50 \cdot 7 } \\&amp;= 4.52 \; \;\textrm{(m)}\\[10pt]
+\\
+h_{c} &amp;= h_{water} + \frac{ r }{ 2 } \\&amp;= 4 + \frac{ 1 }{ 2 } \\&amp;= 4.50 \; \;\textrm{(m)}\\
+\\
+A &amp;= B \cdot r \\&amp;= 7 \cdot 1 \\&amp;= 7 \; \;\textrm{(m2)}\\
+\\
+F_{H} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot \frac{ A }{ 1000 } \\&amp;= 1000 \cdot 9.81 \cdot 4.50 \cdot \frac{ 7 }{ 1000 } \\&amp;= 309.01 \; \;\textrm{(kN)}\\
+\\
+I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 } \\&amp;= 7 \cdot \frac{ \left( 1 \right) ^{ 3 } }{ 12 } \\&amp;= 0.58 \; \;\textrm{(m4)}\\
+\\
+y_{p} &amp;= h_{c} + \frac{ I_{c} }{ h_{c} \cdot A } \\&amp;= 4.50 + \frac{ 0.58 }{ 4.50 \cdot 7 } \\&amp;= 4.52 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4907,11 +4909,11 @@ F_V= F_W-F_B #kN
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-F_{W} &amp;= \rho_{water} \cdot g \cdot \left( h_{water} + r \right) \cdot r \cdot \frac{ B }{ 1000 } \\&amp;= 1000 \cdot 9.8 \cdot \left( 4 + 1 \right) \cdot 1 \cdot \frac{ 7 }{ 1000 } \\&amp;= 343.4 \; \;\textrm{(kN)}\\[10pt]
-\\[10pt]
-F_{B} &amp;= \rho_{water} \cdot g \cdot \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ B }{ 4 } \cdot \frac{1} { 1000 } \\&amp;= 1000 \cdot 9.8 \cdot 3.1 \cdot \left( 1 \right) ^{ 2 } \cdot \frac{ 7 }{ 4 } \cdot \frac{1} { 1000 } \\&amp;= 53.9 \; \;\textrm{(kN)}\\[10pt]
-\\[10pt]
-F_{V} &amp;= F_{W} - F_{B} \\&amp;= 343.4 - 53.9 \\&amp;= 289.4 \; \;\textrm{(kN)}\\[10pt]
+F_{W} &amp;= \rho_{water} \cdot g \cdot \left( h_{water} + r \right) \cdot r \cdot \frac{ B }{ 1000 } \\&amp;= 1000 \cdot 9.8 \cdot \left( 4 + 1 \right) \cdot 1 \cdot \frac{ 7 }{ 1000 } \\&amp;= 343.4 \; \;\textrm{(kN)}\\
+\\
+F_{B} &amp;= \rho_{water} \cdot g \cdot \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ B }{ 4 } \cdot \frac{1} { 1000 } \\&amp;= 1000 \cdot 9.8 \cdot 3.1 \cdot \left( 1 \right) ^{ 2 } \cdot \frac{ 7 }{ 4 } \cdot \frac{1} { 1000 } \\&amp;= 53.9 \; \;\textrm{(kN)}\\
+\\
+F_{V} &amp;= F_{W} - F_{B} \\&amp;= 343.4 - 53.9 \\&amp;= 289.4 \; \;\textrm{(kN)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4948,11 +4950,11 @@ X= (F_W*X_W -F_B*X_B)/ F_V #m
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-X_{W} &amp;= \frac{ r }{ 2 } \\&amp;= \frac{ 1 }{ 2 } \\&amp;= 0.500 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-X_{B} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi } \\&amp;= 4 \cdot \frac{ 1 }{ 3 \cdot 3.142 } \\&amp;= 0.424 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-X &amp;= \frac{ F_{W} \cdot X_{W} - F_{B} \cdot X_{B} }{ F_{V} } \\&amp;= \frac{ 343.350 \cdot 0.500 - 53.933 \cdot 0.424 }{ 289.417 } \\&amp;= 0.514 \; \;\textrm{(m)}\\[10pt]
+X_{W} &amp;= \frac{ r }{ 2 } \\&amp;= \frac{ 1 }{ 2 } \\&amp;= 0.500 \; \;\textrm{(m)}\\
+\\
+X_{B} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi } \\&amp;= 4 \cdot \frac{ 1 }{ 3 \cdot 3.142 } \\&amp;= 0.424 \; \;\textrm{(m)}\\
+\\
+X &amp;= \frac{ F_{W} \cdot X_{W} - F_{B} \cdot X_{B} }{ F_{V} } \\&amp;= \frac{ 343.350 \cdot 0.500 - 53.933 \cdot 0.424 }{ 289.417 } \\&amp;= 0.514 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4990,9 +4992,9 @@ theta= degrees(atan(F_V/F_H)) #°
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-F_{R} &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 309.0 \right) ^{ 2 } + \left( 289.4 \right) ^{ 2 } } \\&amp;= 423.4 \; \;\textrm{(kN)}\\[10pt]
-\\[10pt]
-\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 289.4 }{ 309.0 } \right) \right) \\&amp;= 43.1 \; \;\textrm{(°)}\\[10pt]
+F_{R} &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 309.0 \right) ^{ 2 } + \left( 289.4 \right) ^{ 2 } } \\&amp;= 423.4 \; \;\textrm{(kN)}\\
+\\
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 289.4 }{ 309.0 } \right) \right) \\&amp;= 43.1 \; \;\textrm{(°)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5085,20 +5087,20 @@ y_p= h_c+I_c/(h_c*A) #m
 \[\begin{split}
 \begin{aligned}
 B &amp;= 3 \; \;\textrm{(m)}
-\\[10pt]
+\\
 r &amp;= 1 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{water} &amp;= 4 \; \;\textrm{(m)}
-\\[10pt]
-h_{c} &amp;= h_{water} + \frac{ r }{ 2 } \\&amp;= 4 + \frac{ 1 }{ 2 } \\&amp;= 4.500 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-A &amp;= B \cdot r \\&amp;= 3 \cdot 1 \\&amp;= 3 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-F_{H} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot \frac{ A }{ 1000 } \\&amp;= 1000 \cdot 9.810 \cdot 4.500 \cdot \frac{ 3 }{ 1000 } \\&amp;= 132.435 \; \;\textrm{(kN)}\\[10pt]
-\\[10pt]
-I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 } \\&amp;= 3 \cdot \frac{ \left( 1 \right) ^{ 3 } }{ 12 } \\&amp;= 0.250 \; \;\textrm{(m4)}\\[10pt]
-\\[10pt]
-y_{p} &amp;= h_{c} + \frac{ I_{c} }{ h_{c} \cdot A } \\&amp;= 4.500 + \frac{ 0.250 }{ 4.500 \cdot 3 } \\&amp;= 4.519 \; \;\textrm{(m)}\\[10pt]
+\\
+h_{c} &amp;= h_{water} + \frac{ r }{ 2 } \\&amp;= 4 + \frac{ 1 }{ 2 } \\&amp;= 4.500 \; \;\textrm{(m)}\\
+\\
+A &amp;= B \cdot r \\&amp;= 3 \cdot 1 \\&amp;= 3 \; \;\textrm{(m2)}\\
+\\
+F_{H} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot \frac{ A }{ 1000 } \\&amp;= 1000 \cdot 9.810 \cdot 4.500 \cdot \frac{ 3 }{ 1000 } \\&amp;= 132.435 \; \;\textrm{(kN)}\\
+\\
+I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 } \\&amp;= 3 \cdot \frac{ \left( 1 \right) ^{ 3 } }{ 12 } \\&amp;= 0.250 \; \;\textrm{(m4)}\\
+\\
+y_{p} &amp;= h_{c} + \frac{ I_{c} }{ h_{c} \cdot A } \\&amp;= 4.500 + \frac{ 0.250 }{ 4.500 \cdot 3 } \\&amp;= 4.519 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5137,9 +5139,9 @@ F_v= rho_water*g*V/1000 #N
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-V &amp;= h_{water} \cdot r \cdot B + \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ B }{ 4 } \\&amp;= 4 \cdot 1 \cdot 3 + 3.1 \cdot \left( 1 \right) ^{ 2 } \cdot \frac{ 3 }{ 4 } \\&amp;= 14.4 \; \;\textrm{(m3)}\\[10pt]
-\\[10pt]
-F_{v} &amp;= \rho_{water} \cdot g \cdot \frac{ V }{ 1000 } \\&amp;= 1000 \cdot 9.8 \cdot \frac{ 14.4 }{ 1000 } \\&amp;= 140.8 \; \;\textrm{(N)}\\[10pt]
+V &amp;= h_{water} \cdot r \cdot B + \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ B }{ 4 } \\&amp;= 4 \cdot 1 \cdot 3 + 3.1 \cdot \left( 1 \right) ^{ 2 } \cdot \frac{ 3 }{ 4 } \\&amp;= 14.4 \; \;\textrm{(m3)}\\
+\\
+F_{v} &amp;= \rho_{water} \cdot g \cdot \frac{ V }{ 1000 } \\&amp;= 1000 \cdot 9.8 \cdot \frac{ 14.4 }{ 1000 } \\&amp;= 140.8 \; \;\textrm{(N)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5183,15 +5185,15 @@ X= (W_circle*X_circle+W_rect*X_rect)/(W_circle+W_rect)#m
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-X_{circle} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi } \\&amp;= 4 \cdot \frac{ 1 }{ 3 \cdot 3.142 } \\&amp;= 0.424 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-X_{rect} &amp;= \frac{ r }{ 2 } \\&amp;= \frac{ 1 }{ 2 } \\&amp;= 0.500 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-W_{circle} &amp;= \rho_{water} \cdot g \cdot \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ B }{ 4 } \\&amp;= 1000 \cdot 9.810 \cdot 3.142 \cdot \left( 1 \right) ^{ 2 } \cdot \frac{ 3 }{ 4 } \\&amp;= 23114.268 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-W_{rect} &amp;= \rho_{water} \cdot g \cdot B \cdot r \cdot h_{water} \\&amp;= 1000 \cdot 9.810 \cdot 3 \cdot 1 \cdot 4 \\&amp;= 117720.000 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-X &amp;= \frac{ W_{circle} \cdot X_{circle} + W_{rect} \cdot X_{rect} }{ W_{circle} + W_{rect} } \\&amp;= \frac{ 23114.268 \cdot 0.424 + 117720.000 \cdot 0.500 }{ 23114.268 + 117720.000 } \\&amp;= 0.488 \; \;\textrm{(m)}\\[10pt]
+X_{circle} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi } \\&amp;= 4 \cdot \frac{ 1 }{ 3 \cdot 3.142 } \\&amp;= 0.424 \; \;\textrm{(m)}\\
+\\
+X_{rect} &amp;= \frac{ r }{ 2 } \\&amp;= \frac{ 1 }{ 2 } \\&amp;= 0.500 \; \;\textrm{(m)}\\
+\\
+W_{circle} &amp;= \rho_{water} \cdot g \cdot \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ B }{ 4 } \\&amp;= 1000 \cdot 9.810 \cdot 3.142 \cdot \left( 1 \right) ^{ 2 } \cdot \frac{ 3 }{ 4 } \\&amp;= 23114.268 \; \;\textrm{(N)}\\
+\\
+W_{rect} &amp;= \rho_{water} \cdot g \cdot B \cdot r \cdot h_{water} \\&amp;= 1000 \cdot 9.810 \cdot 3 \cdot 1 \cdot 4 \\&amp;= 117720.000 \; \;\textrm{(N)}\\
+\\
+X &amp;= \frac{ W_{circle} \cdot X_{circle} + W_{rect} \cdot X_{rect} }{ W_{circle} + W_{rect} } \\&amp;= \frac{ 23114.268 \cdot 0.424 + 117720.000 \cdot 0.500 }{ 23114.268 + 117720.000 } \\&amp;= 0.488 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5224,9 +5226,9 @@ theta= degrees(atan(F_v/F_H)) #°
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-F_{R} &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{v} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 132.44 \right) ^{ 2 } + \left( 140.83 \right) ^{ 2 } } \\&amp;= 193.32 \; \;\textrm{(kN)}\\[10pt]
-\\[10pt]
-\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{v} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 140.83 }{ 132.44 } \right) \right) \\&amp;= 46.76 \; \;\textrm{(°)}\\[10pt]
+F_{R} &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{v} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 132.44 \right) ^{ 2 } + \left( 140.83 \right) ^{ 2 } } \\&amp;= 193.32 \; \;\textrm{(kN)}\\
+\\
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{v} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 140.83 }{ 132.44 } \right) \right) \\&amp;= 46.76 \; \;\textrm{(°)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5261,7 +5263,7 @@ alpha= degrees(atan((y_p-h_water)/X))#° The angles are igual, for that reason t
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\alpha &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ y_{p} - h_{water} }{ X } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 4.519 - 4 }{ 0.488 } \right) \right) \\&amp;= 46.761 \; \;\textrm{(° The angles are igual, for that reason the force acts through O.)}\\[10pt]
+\alpha &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ y_{p} - h_{water} }{ X } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 4.519 - 4 }{ 0.488 } \right) \right) \\&amp;= 46.761 \; \;\textrm{(° The angles are igual, for that reason the force acts through O.)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5309,15 +5311,15 @@ X= (W_circle*X_circle+W_rect*X_rect)/(W_circle+W_rect)#m
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-X_{circle} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi } \\&amp;= 4 \cdot \frac{ 1 }{ 3 \cdot 3.142 } \\&amp;= 0.424 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-X_{rect} &amp;= \frac{ r }{ 2 } \\&amp;= \frac{ 1 }{ 2 } \\&amp;= 0.500 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-W_{circle} &amp;= \rho_{water} \cdot g \cdot \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ \mathrm{wide} }{ 4 } \\&amp;= 1000 \cdot 9.810 \cdot 3.142 \cdot \left( 1 \right) ^{ 2 } \cdot \frac{ 0.140 }{ 4 } \\&amp;= 1078.666 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-W_{rect} &amp;= \rho_{water} \cdot g \cdot \mathrm{wide} \cdot r \cdot h_{water} \\&amp;= 1000 \cdot 9.810 \cdot 0.140 \cdot 1 \cdot 4 \\&amp;= 5493.600 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-X &amp;= \frac{ W_{circle} \cdot X_{circle} + W_{rect} \cdot X_{rect} }{ W_{circle} + W_{rect} } \\&amp;= \frac{ 1078.666 \cdot 0.424 + 5493.600 \cdot 0.500 }{ 1078.666 + 5493.600 } \\&amp;= 0.488 \; \;\textrm{(m)}\\[10pt]
+X_{circle} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi } \\&amp;= 4 \cdot \frac{ 1 }{ 3 \cdot 3.142 } \\&amp;= 0.424 \; \;\textrm{(m)}\\
+\\
+X_{rect} &amp;= \frac{ r }{ 2 } \\&amp;= \frac{ 1 }{ 2 } \\&amp;= 0.500 \; \;\textrm{(m)}\\
+\\
+W_{circle} &amp;= \rho_{water} \cdot g \cdot \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ \mathrm{wide} }{ 4 } \\&amp;= 1000 \cdot 9.810 \cdot 3.142 \cdot \left( 1 \right) ^{ 2 } \cdot \frac{ 0.140 }{ 4 } \\&amp;= 1078.666 \; \;\textrm{(N)}\\
+\\
+W_{rect} &amp;= \rho_{water} \cdot g \cdot \mathrm{wide} \cdot r \cdot h_{water} \\&amp;= 1000 \cdot 9.810 \cdot 0.140 \cdot 1 \cdot 4 \\&amp;= 5493.600 \; \;\textrm{(N)}\\
+\\
+X &amp;= \frac{ W_{circle} \cdot X_{circle} + W_{rect} \cdot X_{rect} }{ W_{circle} + W_{rect} } \\&amp;= \frac{ 1078.666 \cdot 0.424 + 5493.600 \cdot 0.500 }{ 1078.666 + 5493.600 } \\&amp;= 0.488 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5337,16 +5339,16 @@ X &amp;= \frac{ W_{circle} \cdot X_{circle} + W_{rect} \cdot X_{rect} }{ W_{circ
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "conda-base-py"
+            mode: "python"
         },
         kernelOptions: {
-            name: "conda-base-py",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'conda-base-py'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
