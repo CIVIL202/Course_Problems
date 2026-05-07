@@ -465,6 +465,8 @@ document.write(`
 </div>
 <div class="cell tag_remove-input docutils container">
 </div>
+<div class="cell tag_remove-input docutils container">
+</div>
 <p>Global variables:</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
@@ -474,7 +476,7 @@ document.write(`
 g &amp;= 9.810 \; \;\textrm{(m/s2)}
  &amp;\rho_{water} &amp;= 1000 \; \;\textrm{(kg/m3)}
  &amp;\rho_{Hg} &amp;= 13550 \; \;\textrm{(kg/m3)}
-\\[10pt]
+\\
  p_{atm} &amp;= 101325 \; \;\textrm{(Pa)}
 \end{aligned}
 \end{split}\]</div>
@@ -560,14 +562,14 @@ velocity_m = \frac{V^2}{2g}
 \[\begin{split}
 \begin{aligned}
 D &amp;= 0.100 \; \;\textrm{(m)}
-\\[10pt]
+\\
 V &amp;= 0.200 \; \;\textrm{(m/s)}
-\\[10pt]
+\\
 p &amp;= 120 \; \;\textrm{(kPa)}
-\\[10pt]
-\mathrm{pressure}_{m} &amp;= \frac{ p \cdot 1000 }{ \rho_{water} \cdot g } \\&amp;= \frac{ 120 \cdot 1000 }{ 1000 \cdot 9.810 } \\&amp;= 12.232 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-\mathrm{velocity}_{m} &amp;= \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= \frac{ \left( 0.200 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 0.002 \; \;\textrm{(m)}\\[10pt]
+\\
+\mathrm{pressure}_{m} &amp;= \frac{ p \cdot 1000 }{ \rho_{water} \cdot g } \\&amp;= \frac{ 120 \cdot 1000 }{ 1000 \cdot 9.810 } \\&amp;= 12.232 \; \;\textrm{(m)}\\
+\\
+\mathrm{velocity}_{m} &amp;= \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= \frac{ \left( 0.200 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 0.002 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -627,12 +629,12 @@ p_B=(\frac{p_A}{\rho g}+\frac{V_{A}^2}{2g}-\frac{V_{B}^2}{2g}-z_{B})\rho g
 \[\begin{split}
 \begin{aligned}
 \mathrm{pressure}_{m} &amp;= 12.23 \; \;\textrm{(m)}
-\\[10pt]
+\\
 z_{B} &amp;= 6 \; \;\textrm{(m)}
-\\[10pt]
-p_{B} &amp;= \left( \mathrm{pressure}_{m} - z_{B} \right) \cdot \rho_{water} \cdot g \\&amp;= \left( 12.23 - 6 \right) \cdot 1000 \cdot 9.81 \\&amp;= 61135.92 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-p_{B_{}} &amp;= \frac{ p_{B} }{ 1000 } \\&amp;= \frac{ 61135.92 }{ 1000 } \\&amp;= 61.14 \; \;\textrm{(kPa)}\\[10pt]
+\\
+p_{B} &amp;= \left( \mathrm{pressure}_{m} - z_{B} \right) \cdot \rho_{water} \cdot g \\&amp;= \left( 12.23 - 6 \right) \cdot 1000 \cdot 9.81 \\&amp;= 61135.92 \; \;\textrm{(Pa)}\\
+\\
+p_{B_{}} &amp;= \frac{ p_{B} }{ 1000 } \\&amp;= \frac{ 61135.92 }{ 1000 } \\&amp;= 61.14 \; \;\textrm{(kPa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -694,8 +696,8 @@ Before or after you dive into full calculations, try estimating the velocity hea
 \[\begin{split}
 \begin{aligned}
 V &amp;= 3 \; \;\textrm{(m/s)}
-\\[10pt]
-\mathrm{velocity}_{m} &amp;= \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= \frac{ \left( 3 \right) ^{ 2 } }{ 2 \cdot 9.81 } \\&amp;= 0.46 \; \;\textrm{(m)}\\[10pt]
+\\
+\mathrm{velocity}_{m} &amp;= \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= \frac{ \left( 3 \right) ^{ 2 } }{ 2 \cdot 9.81 } \\&amp;= 0.46 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -764,14 +766,14 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D &amp;= 0.10 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \rho &amp;= 96 \; \;\textrm{(kg/m3)}
-\\[10pt]
+\\
 Q &amp;= 0.06 \; \;\textrm{(m3/s)}
-\\[10pt]
-V &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.06 }{ 3.14 \cdot \frac{ \left( 0.10 \right) ^{ 2 } }{ 4 } } \\&amp;= 7.64 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-\mathrm{velocity}_{m} &amp;= \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= \frac{ \left( 7.64 \right) ^{ 2 } }{ 2 \cdot 9.81 } \\&amp;= 2.97 \; \;\textrm{(m)}\\[10pt]
+\\
+V &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.06 }{ 3.14 \cdot \frac{ \left( 0.10 \right) ^{ 2 } }{ 4 } } \\&amp;= 7.64 \; \;\textrm{(m3/s)}\\
+\\
+\mathrm{velocity}_{m} &amp;= \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= \frac{ \left( 7.64 \right) ^{ 2 } }{ 2 \cdot 9.81 } \\&amp;= 2.97 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -802,10 +804,10 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 \mathrm{pressure}_{m} &amp;= 12 \; \;\textrm{(m)}
-\\[10pt]
-p &amp;= \mathrm{pressure}_{m} \cdot \rho \cdot g \\&amp;= 12 \cdot 96 \cdot 9.81 \\&amp;= 11301.12 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-p_{} &amp;= \frac{ p }{ 1000 } \\&amp;= \frac{ 11301.12 }{ 1000 } \\&amp;= 11.30 \; \;\textrm{(kPa)}\\[10pt]
+\\
+p &amp;= \mathrm{pressure}_{m} \cdot \rho \cdot g \\&amp;= 12 \cdot 96 \cdot 9.81 \\&amp;= 11301.12 \; \;\textrm{(Pa)}\\
+\\
+p_{} &amp;= \frac{ p }{ 1000 } \\&amp;= \frac{ 11301.12 }{ 1000 } \\&amp;= 11.30 \; \;\textrm{(kPa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -891,14 +893,14 @@ Q= V*A
 \[\begin{split}
 \begin{aligned}
 D_{tank} &amp;= 1.5000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h &amp;= 0.8000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{small} &amp;= 20 \; \;\textrm{(mm)}
-\\[10pt]
-V &amp;= \sqrt { h \cdot 2 \cdot g } \\&amp;= \sqrt { 0.8000 \cdot 2 \cdot 9.8100 } \\&amp;= 3.9618 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-Q_{a} &amp;= V \cdot \pi \cdot \frac{ \left( \frac{ D_{small} }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 3.9618 \cdot 3.1416 \cdot \frac{ \left( \frac{ 20 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.0012 \; \;\textrm{(m3/s)}\\[10pt]
+\\
+V &amp;= \sqrt { h \cdot 2 \cdot g } \\&amp;= \sqrt { 0.8000 \cdot 2 \cdot 9.8100 } \\&amp;= 3.9618 \; \;\textrm{(m/s)}\\
+\\
+Q_{a} &amp;= V \cdot \pi \cdot \frac{ \left( \frac{ D_{small} }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 3.9618 \cdot 3.1416 \cdot \frac{ \left( \frac{ 20 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.0012 \; \;\textrm{(m3/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -926,10 +928,10 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 h_{b} &amp;= 0.3000 \; \;\textrm{(m)}
-\\[10pt]
-V &amp;= \sqrt { h_{b} \cdot 2 \cdot g } \\&amp;= \sqrt { 0.3000 \cdot 2 \cdot 9.8100 } \\&amp;= 2.4261 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-Q_{b} &amp;= V \cdot \pi \cdot \frac{ \left( \frac{ D_{small} }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 2.4261 \cdot 3.1416 \cdot \frac{ \left( \frac{ 20 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.0008 \; \;\textrm{(m3/s)}\\[10pt]
+\\
+V &amp;= \sqrt { h_{b} \cdot 2 \cdot g } \\&amp;= \sqrt { 0.3000 \cdot 2 \cdot 9.8100 } \\&amp;= 2.4261 \; \;\textrm{(m/s)}\\
+\\
+Q_{b} &amp;= V \cdot \pi \cdot \frac{ \left( \frac{ D_{small} }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 2.4261 \cdot 3.1416 \cdot \frac{ \left( \frac{ 20 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.0008 \; \;\textrm{(m3/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -973,7 +975,7 @@ A_1= \frac{\pi D^2}{4}
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-V_{1} &amp;= Q_{a} \cdot \frac{ 4 }{ \pi \cdot \left( D_{tank} \right) ^{ 2 } } \cdot 1000 \\&amp;= 0.00 \cdot \frac{ 4 }{ 3.14 \cdot \left( 1.50 \right) ^{ 2 } } \cdot 1000 \\&amp;= 0.70 \; \;\textrm{(mm/s)}\\[10pt]
+V_{1} &amp;= Q_{a} \cdot \frac{ 4 }{ \pi \cdot \left( D_{tank} \right) ^{ 2 } } \cdot 1000 \\&amp;= 0.00 \cdot \frac{ 4 }{ 3.14 \cdot \left( 1.50 \right) ^{ 2 } } \cdot 1000 \\&amp;= 0.70 \; \;\textrm{(mm/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1041,17 +1043,17 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D_{pipe} &amp;= 1 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{nozzle} &amp;= 0.200 \; \;\textrm{(m)}
-\\[10pt]
+\\
 V_{nozzle} &amp;= 3 \; \;\textrm{(m/s)}
-\\[10pt]
-A_{nozzle} &amp;= \pi \cdot \frac{ \left( D_{nozzle} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.200 \right) ^{ 2 } }{ 4 } \\&amp;= 0.031 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q &amp;= V_{nozzle} \cdot A_{nozzle} \\&amp;= 3 \cdot 0.031 \\&amp;= 0.094 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-A_{pipe} &amp;= \pi \cdot \frac{ \left( D_{pipe} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 4 } \\&amp;= 0.785 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
+\\
+A_{nozzle} &amp;= \pi \cdot \frac{ \left( D_{nozzle} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.200 \right) ^{ 2 } }{ 4 } \\&amp;= 0.031 \; \;\textrm{(m2)}\\
+\\
+Q &amp;= V_{nozzle} \cdot A_{nozzle} \\&amp;= 3 \cdot 0.031 \\&amp;= 0.094 \; \;\textrm{(m3/s)}\\
+\\
+A_{pipe} &amp;= \pi \cdot \frac{ \left( D_{pipe} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 4 } \\&amp;= 0.785 \; \;\textrm{(m2)}\\
+\\
 V_{pipe} &amp;= 0.120 \; \;\textrm{(m/s)}
 \end{aligned}
 \end{split}\]</div>
@@ -1095,9 +1097,9 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-p_{pipe} &amp;= \left( \frac{ \left( V_{nozzle} \right) ^{ 2 } }{ 2 \cdot g } - \frac{ \left( V_{pipe} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \frac{ \left( 3 \right) ^{ 2 } }{ 2 \cdot 9.81 } - \frac{ \left( 0.12 \right) ^{ 2 } }{ 2 \cdot 9.81 } \right) \cdot 1000 \cdot 9.81 \\&amp;= 4492.80 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-p_{pipe_{}} &amp;= \frac{ p_{pipe} }{ 1000 } \\&amp;= \frac{ 4492.80 }{ 1000 } \\&amp;= 4.49 \; \;\textrm{(kPa)}\\[10pt]
+p_{pipe} &amp;= \left( \frac{ \left( V_{nozzle} \right) ^{ 2 } }{ 2 \cdot g } - \frac{ \left( V_{pipe} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \frac{ \left( 3 \right) ^{ 2 } }{ 2 \cdot 9.81 } - \frac{ \left( 0.12 \right) ^{ 2 } }{ 2 \cdot 9.81 } \right) \cdot 1000 \cdot 9.81 \\&amp;= 4492.80 \; \;\textrm{(Pa)}\\
+\\
+p_{pipe_{}} &amp;= \frac{ p_{pipe} }{ 1000 } \\&amp;= \frac{ 4492.80 }{ 1000 } \\&amp;= 4.49 \; \;\textrm{(kPa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1169,12 +1171,12 @@ V= \sqrt {2gh}
 \[\begin{split}
 \begin{aligned}
 D &amp;= 100 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 z &amp;= 5 \; \;\textrm{(m)}
-\\[10pt]
-V &amp;= \sqrt { z \cdot 2 \cdot g } \\&amp;= \sqrt { 5 \cdot 2 \cdot 9.81 } \\&amp;= 9.90 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-Q_{b} &amp;= V \cdot \pi \cdot \frac{ \left( \frac{ D }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 9.90 \cdot 3.14 \cdot \frac{ \left( \frac{ 100 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.08 \; \;\textrm{(m3/s)}\\[10pt]
+\\
+V &amp;= \sqrt { z \cdot 2 \cdot g } \\&amp;= \sqrt { 5 \cdot 2 \cdot 9.81 } \\&amp;= 9.90 \; \;\textrm{(m/s)}\\
+\\
+Q_{b} &amp;= V \cdot \pi \cdot \frac{ \left( \frac{ D }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 9.90 \cdot 3.14 \cdot \frac{ \left( \frac{ 100 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.08 \; \;\textrm{(m3/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1234,18 +1236,18 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 \rho &amp;= 940 \; \;\textrm{(kg/m3)}
-\\[10pt]
+\\
 D_{1} &amp;= \frac{ 120 }{ 1000 } &amp;= 0.120 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{2} &amp;= \frac{ 90 }{ 1000 } &amp;= 0.090 \; \;\textrm{(m)}
-\\[10pt]
+\\
 p_{1} &amp;= 280 \cdot 1000 &amp;= 280000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 V_{1} &amp;= 5 \; \;\textrm{(m/s)}
-\\[10pt]
-A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.120 \right) ^{ 2 } }{ 4 } \\&amp;= 0.011 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q &amp;= V_{1} \cdot A_{1} \\&amp;= 5 \cdot 0.011 \\&amp;= 0.057 \; \;\textrm{(m3/s)}\\[10pt]
+\\
+A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.120 \right) ^{ 2 } }{ 4 } \\&amp;= 0.011 \; \;\textrm{(m2)}\\
+\\
+Q &amp;= V_{1} \cdot A_{1} \\&amp;= 5 \cdot 0.011 \\&amp;= 0.057 \; \;\textrm{(m3/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1289,13 +1291,13 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 0.09 \right) ^{ 2 } }{ 4 } \\&amp;= 0.01 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-V_{2} &amp;= \frac{ Q }{ A_{2} } \\&amp;= \frac{ 0.06 }{ 0.01 } \\&amp;= 8.89 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-p_{2} &amp;= \left( \frac{ p_{1} }{ \rho \cdot g } + \frac{ \left( V_{1} \right) ^{ 2 } }{ 2 \cdot g } - \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho \cdot g \\&amp;= \left( \frac{ 280000 }{ 940 \cdot 9.81 } + \frac{ \left( 5 \right) ^{ 2 } }{ 2 \cdot 9.81 } - \frac{ \left( 8.89 \right) ^{ 2 } }{ 2 \cdot 9.81 } \right) \cdot 940 \cdot 9.81 \\&amp;= 254614.20 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-p_{2_{}} &amp;= \frac{ p_{2} }{ 1000 } \\&amp;= \frac{ 254614.20 }{ 1000 } \\&amp;= 254.61 \; \;\textrm{(kPa)}\\[10pt]
+A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 0.09 \right) ^{ 2 } }{ 4 } \\&amp;= 0.01 \; \;\textrm{(m2)}\\
+\\
+V_{2} &amp;= \frac{ Q }{ A_{2} } \\&amp;= \frac{ 0.06 }{ 0.01 } \\&amp;= 8.89 \; \;\textrm{(m/s)}\\
+\\
+p_{2} &amp;= \left( \frac{ p_{1} }{ \rho \cdot g } + \frac{ \left( V_{1} \right) ^{ 2 } }{ 2 \cdot g } - \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho \cdot g \\&amp;= \left( \frac{ 280000 }{ 940 \cdot 9.81 } + \frac{ \left( 5 \right) ^{ 2 } }{ 2 \cdot 9.81 } - \frac{ \left( 8.89 \right) ^{ 2 } }{ 2 \cdot 9.81 } \right) \cdot 940 \cdot 9.81 \\&amp;= 254614.20 \; \;\textrm{(Pa)}\\
+\\
+p_{2_{}} &amp;= \frac{ p_{2} }{ 1000 } \\&amp;= \frac{ 254614.20 }{ 1000 } \\&amp;= 254.61 \; \;\textrm{(kPa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1433,16 +1435,16 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D &amp;= 0.10 \; \;\textrm{(m)}
-\\[10pt]
+\\
 V &amp;= 0.25 \; \;\textrm{(m/s)}
-\\[10pt]
+\\
 z &amp;= 2.50 \; \;\textrm{(m)}
-\\[10pt]
+\\
 p &amp;= 120000 \; \;\textrm{(Pa)}
-\\[10pt]
-\mathrm{EGL} &amp;= \frac{ p }{ \rho_{water} \cdot g } + \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g } + z \\&amp;= \frac{ 120000 }{ 1000 \cdot 9.81 } + \frac{ \left( 0.25 \right) ^{ 2 } }{ 2 \cdot 9.81 } + 2.50 \\&amp;= 14.74 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-\mathrm{HGL} &amp;= \frac{ p }{ \rho_{water} \cdot g } + z \\&amp;= \frac{ 120000 }{ 1000 \cdot 9.81 } + 2.50 \\&amp;= 14.73 \; \;\textrm{(m)}\\[10pt]
+\\
+\mathrm{EGL} &amp;= \frac{ p }{ \rho_{water} \cdot g } + \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g } + z \\&amp;= \frac{ 120000 }{ 1000 \cdot 9.81 } + \frac{ \left( 0.25 \right) ^{ 2 } }{ 2 \cdot 9.81 } + 2.50 \\&amp;= 14.74 \; \;\textrm{(m)}\\
+\\
+\mathrm{HGL} &amp;= \frac{ p }{ \rho_{water} \cdot g } + z \\&amp;= \frac{ 120000 }{ 1000 \cdot 9.81 } + 2.50 \\&amp;= 14.73 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1497,12 +1499,12 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D &amp;= 200 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 h &amp;= 4.500 \; \;\textrm{(m)}
-\\[10pt]
-V &amp;= \sqrt { h \cdot 2 \cdot g } \\&amp;= \sqrt { 4.500 \cdot 2 \cdot 9.810 } \\&amp;= 9.396 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-Q &amp;= V \cdot \pi \cdot \frac{ \left( \frac{ D }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 9.396 \cdot 3.142 \cdot \frac{ \left( \frac{ 200 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.295 \; \;\textrm{(m3/s)}\\[10pt]
+\\
+V &amp;= \sqrt { h \cdot 2 \cdot g } \\&amp;= \sqrt { 4.500 \cdot 2 \cdot 9.810 } \\&amp;= 9.396 \; \;\textrm{(m/s)}\\
+\\
+Q &amp;= V \cdot \pi \cdot \frac{ \left( \frac{ D }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 9.396 \cdot 3.142 \cdot \frac{ \left( \frac{ 200 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.295 \; \;\textrm{(m3/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1607,18 +1609,18 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 h &amp;= \frac{ 200 }{ 1000 } &amp;= 0.2000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{1} &amp;= \frac{ 100 }{ 1000 } &amp;= 0.1000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{2} &amp;= \frac{ 50 }{ 1000 } &amp;= 0.0500 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{3} &amp;= \frac{ 100 }{ 1000 } &amp;= 0.1000 \; \;\textrm{(m)}
-\\[10pt]
-V_{3} &amp;= \sqrt { 2 \cdot g \cdot h } \\&amp;= \sqrt { 2 \cdot 9.8100 \cdot 0.2000 } \\&amp;= 1.9809 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-A_{3} &amp;= \pi \cdot \frac{ \left( D_{3} \right) ^{ 2 } }{ 4 } \\&amp;= 3.1416 \cdot \frac{ \left( 0.1000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.0079 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q &amp;= V_{3} \cdot A_{3} \\&amp;= 1.9809 \cdot 0.0079 \\&amp;= 0.0156 \; \;\textrm{(m3/s)}\\[10pt]
+\\
+V_{3} &amp;= \sqrt { 2 \cdot g \cdot h } \\&amp;= \sqrt { 2 \cdot 9.8100 \cdot 0.2000 } \\&amp;= 1.9809 \; \;\textrm{(m/s)}\\
+\\
+A_{3} &amp;= \pi \cdot \frac{ \left( D_{3} \right) ^{ 2 } }{ 4 } \\&amp;= 3.1416 \cdot \frac{ \left( 0.1000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.0079 \; \;\textrm{(m2)}\\
+\\
+Q &amp;= V_{3} \cdot A_{3} \\&amp;= 1.9809 \cdot 0.0079 \\&amp;= 0.0156 \; \;\textrm{(m3/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1645,13 +1647,13 @@ Hint<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-V_{2} &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.02 }{ 3.14 \cdot \frac{ \left( 0.05 \right) ^{ 2 } }{ 4 } } \\&amp;= 7.92 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
+V_{2} &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.02 }{ 3.14 \cdot \frac{ \left( 0.05 \right) ^{ 2 } }{ 4 } } \\&amp;= 7.92 \; \;\textrm{(m/s)}\\
+\\
 z_{1} &amp;= 0.20 \; \;\textrm{(m)}
-\\[10pt]
-p_{2} &amp;= \left( z_{1} - \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho_{water} \cdot g \\&amp;= \left( 0.20 - \frac{ \left( 7.92 \right) ^{ 2 } }{ 2 \cdot 9.81 } \right) \cdot 1000 \cdot 9.81 \\&amp;= -29430.00 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-p_{2_{}} &amp;= \frac{ p_{2} }{ 1000 } \\&amp;= \frac{ -29430.00 }{ 1000 } \\&amp;= -29.43 \; \;\textrm{(kPa)}\\[10pt]
+\\
+p_{2} &amp;= \left( z_{1} - \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho_{water} \cdot g \\&amp;= \left( 0.20 - \frac{ \left( 7.92 \right) ^{ 2 } }{ 2 \cdot 9.81 } \right) \cdot 1000 \cdot 9.81 \\&amp;= -29430.00 \; \;\textrm{(Pa)}\\
+\\
+p_{2_{}} &amp;= \frac{ p_{2} }{ 1000 } \\&amp;= \frac{ -29430.00 }{ 1000 } \\&amp;= -29.43 \; \;\textrm{(kPa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1813,22 +1815,22 @@ z_1=\frac{p_2}{\gamma}+\frac{V_2^2}{2g}
 \[\begin{split}
 \begin{aligned}
 z_{1} &amp;= 5 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{1} &amp;= 200 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 D_{2} &amp;= 100 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 D_{3} &amp;= 100 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 z_{t} &amp;= 9 \; \;\textrm{(m)}
-\\[10pt]
-V_{3} &amp;= \sqrt { 2 \cdot g \cdot z_{t} } \\&amp;= \sqrt { 2 \cdot 9.81 \cdot 9 } \\&amp;= 13.29 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-Q_{3} &amp;= V_{3} \cdot \pi \cdot \frac{ \left( \frac{ D_{3} }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 13.29 \cdot 3.14 \cdot \frac{ \left( \frac{ 100 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.10 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-V_{2} &amp;= Q_{3} \cdot \frac{ 4 }{ \pi \cdot \left( \frac{ D_{1} }{ 1000 } \right) ^{ 2 } } \\&amp;= 0.10 \cdot \frac{ 4 }{ 3.14 \cdot \left( \frac{ 200 }{ 1000 } \right) ^{ 2 } } \\&amp;= 3.32 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-p_{2} &amp;= \frac{ \left( z_{1} - \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho_{water} \cdot g }{ 1000 } \\&amp;= \frac{ \left( 5 - \frac{ \left( 3.32 \right) ^{ 2 } }{ 2 \cdot 9.81 } \right) \cdot 1000 \cdot 9.81 }{ 1000 } \\&amp;= 43.53 \; \;\textrm{(kPa)}\\[10pt]
+\\
+V_{3} &amp;= \sqrt { 2 \cdot g \cdot z_{t} } \\&amp;= \sqrt { 2 \cdot 9.81 \cdot 9 } \\&amp;= 13.29 \; \;\textrm{(m/s)}\\
+\\
+Q_{3} &amp;= V_{3} \cdot \pi \cdot \frac{ \left( \frac{ D_{3} }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 13.29 \cdot 3.14 \cdot \frac{ \left( \frac{ 100 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.10 \; \;\textrm{(m3/s)}\\
+\\
+V_{2} &amp;= Q_{3} \cdot \frac{ 4 }{ \pi \cdot \left( \frac{ D_{1} }{ 1000 } \right) ^{ 2 } } \\&amp;= 0.10 \cdot \frac{ 4 }{ 3.14 \cdot \left( \frac{ 200 }{ 1000 } \right) ^{ 2 } } \\&amp;= 3.32 \; \;\textrm{(m/s)}\\
+\\
+p_{2} &amp;= \frac{ \left( z_{1} - \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho_{water} \cdot g }{ 1000 } \\&amp;= \frac{ \left( 5 - \frac{ \left( 3.32 \right) ^{ 2 } }{ 2 \cdot 9.81 } \right) \cdot 1000 \cdot 9.81 }{ 1000 } \\&amp;= 43.53 \; \;\textrm{(kPa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1907,10 +1909,10 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 V_{1} &amp;= 0 \; \;\textrm{(m/s)}
-\\[10pt]
+\\
 V_{2} &amp;= 2 \; \;\textrm{(m/s)}
-\\[10pt]
-\Delta_{p} &amp;= \frac{ \left( \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho_{water} \cdot g }{ 1000 } \\&amp;= \frac{ \left( \frac{ \left( 2 \right) ^{ 2 } }{ 2 \cdot 9.8 } \right) \cdot 1000 \cdot 9.8 }{ 1000 } \\&amp;= 2.0 \; \;\textrm{(kPa)}\\[10pt]
+\\
+\Delta_{p} &amp;= \frac{ \left( \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho_{water} \cdot g }{ 1000 } \\&amp;= \frac{ \left( \frac{ \left( 2 \right) ^{ 2 } }{ 2 \cdot 9.8 } \right) \cdot 1000 \cdot 9.8 }{ 1000 } \\&amp;= 2.0 \; \;\textrm{(kPa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1940,7 +1942,7 @@ Hint<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-h &amp;= \Delta_{p} \cdot \frac{ 1000 }{ \rho_{water} \cdot g } \\&amp;= 2.000 \cdot \frac{ 1000 }{ 1000 \cdot 9.810 } \\&amp;= 0.204 \; \;\textrm{(m)}\\[10pt]
+h &amp;= \Delta_{p} \cdot \frac{ 1000 }{ \rho_{water} \cdot g } \\&amp;= 2.000 \cdot \frac{ 1000 }{ 1000 \cdot 9.810 } \\&amp;= 0.204 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1968,8 +1970,8 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 h &amp;= 0.15 \; \;\textrm{(m)}
-\\[10pt]
-V &amp;= \sqrt { 2 \cdot g \cdot h } \\&amp;= \sqrt { 2 \cdot 9.81 \cdot 0.15 } \\&amp;= 1.72 \; \;\textrm{(m/s)}\\[10pt]
+\\
+V &amp;= \sqrt { 2 \cdot g \cdot h } \\&amp;= \sqrt { 2 \cdot 9.81 \cdot 0.15 } \\&amp;= 1.72 \; \;\textrm{(m/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2051,12 +2053,12 @@ EGL= \frac{p}{\gamma} + \frac{V^2}{2g}+ z
 \[\begin{split}
 \begin{aligned}
 D &amp;= 50 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 h_{pit} &amp;= 150 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 h_{p} &amp;= 90 \; \;\textrm{(mm)}
-\\[10pt]
-V &amp;= \sqrt { 2 \cdot g \cdot \left( \left( \frac{ h_{pit} }{ 1000 } \right) - \frac{ h_{p} }{ 1000 } \right) } \\&amp;= \sqrt { 2 \cdot 9.81 \cdot \left( \left( \frac{ 150 }{ 1000 } \right) - \frac{ 90 }{ 1000 } \right) } \\&amp;= 1.08 \; \;\textrm{(m/s)}\\[10pt]
+\\
+V &amp;= \sqrt { 2 \cdot g \cdot \left( \left( \frac{ h_{pit} }{ 1000 } \right) - \frac{ h_{p} }{ 1000 } \right) } \\&amp;= \sqrt { 2 \cdot 9.81 \cdot \left( \left( \frac{ 150 }{ 1000 } \right) - \frac{ 90 }{ 1000 } \right) } \\&amp;= 1.08 \; \;\textrm{(m/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2087,7 +2089,7 @@ Hint<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\Delta_{p} &amp;= \rho_{water} \cdot \frac{ \left( V \right) ^{ 2 } }{ 2 } \\&amp;= 1000 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 2 } \\&amp;= 589 \; \;\textrm{(Pa)}\\[10pt]
+\Delta_{p} &amp;= \rho_{water} \cdot \frac{ \left( V \right) ^{ 2 } }{ 2 } \\&amp;= 1000 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 2 } \\&amp;= 589 \; \;\textrm{(Pa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2192,28 +2194,28 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 V_{1} &amp;= 3 \; \;\textrm{(m/s)}
-\\[10pt]
+\\
 D_{1} &amp;= \frac{ 200 }{ 1000 } &amp;= 0.20 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{2} &amp;= \frac{ 120 }{ 1000 } &amp;= 0.12 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{3} &amp;= \frac{ 80 }{ 1000 } &amp;= 0.08 \; \;\textrm{(m)}
-\\[10pt]
+\\
 p_{1} &amp;= 350000 \; \;\textrm{(Pa)}
-\\[10pt]
-Q &amp;= V_{1} \cdot \left( \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \right) \\&amp;= 3 \cdot \left( 3.14 \cdot \frac{ \left( 0.20 \right) ^{ 2 } }{ 4 } \right) \\&amp;= 0.09 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-V_{2} &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.09 }{ 3.14 \cdot \frac{ \left( 0.12 \right) ^{ 2 } }{ 4 } } \\&amp;= 8.33 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-p_{2} &amp;= \left( \frac{ p_{1} }{ \rho_{water} \cdot g } + \frac{ \left( V_{1} \right) ^{ 2 } }{ 2 \cdot g } - \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \frac{ 350000 }{ 1000 \cdot 9.81 } + \frac{ \left( 3 \right) ^{ 2 } }{ 2 \cdot 9.81 } - \frac{ \left( 8.33 \right) ^{ 2 } }{ 2 \cdot 9.81 } \right) \cdot 1000 \cdot 9.81 \\&amp;= 319777.78 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-p_{2_{}} &amp;= \frac{ p_{2} }{ 1000 } \\&amp;= \frac{ 319777.78 }{ 1000 } \\&amp;= 319.78 \; \;\textrm{(kPa)}\\[10pt]
-\\[10pt]
-V_{3} &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D_{3} \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.09 }{ 3.14 \cdot \frac{ \left( 0.08 \right) ^{ 2 } }{ 4 } } \\&amp;= 18.75 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-p_{3} &amp;= \left( \frac{ p_{2} }{ \rho_{water} \cdot g } + \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } - \frac{ \left( V_{3} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \frac{ 319777.78 }{ 1000 \cdot 9.81 } + \frac{ \left( 8.33 \right) ^{ 2 } }{ 2 \cdot 9.81 } - \frac{ \left( 18.75 \right) ^{ 2 } }{ 2 \cdot 9.81 } \right) \cdot 1000 \cdot 9.81 \\&amp;= 178718.75 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-p_{3_{}} &amp;= \frac{ p_{3} }{ 1000 } \\&amp;= \frac{ 178718.75 }{ 1000 } \\&amp;= 178.72 \; \;\textrm{(kPa)}\\[10pt]
+\\
+Q &amp;= V_{1} \cdot \left( \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \right) \\&amp;= 3 \cdot \left( 3.14 \cdot \frac{ \left( 0.20 \right) ^{ 2 } }{ 4 } \right) \\&amp;= 0.09 \; \;\textrm{(m3/s)}\\
+\\
+V_{2} &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.09 }{ 3.14 \cdot \frac{ \left( 0.12 \right) ^{ 2 } }{ 4 } } \\&amp;= 8.33 \; \;\textrm{(m/s)}\\
+\\
+p_{2} &amp;= \left( \frac{ p_{1} }{ \rho_{water} \cdot g } + \frac{ \left( V_{1} \right) ^{ 2 } }{ 2 \cdot g } - \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \frac{ 350000 }{ 1000 \cdot 9.81 } + \frac{ \left( 3 \right) ^{ 2 } }{ 2 \cdot 9.81 } - \frac{ \left( 8.33 \right) ^{ 2 } }{ 2 \cdot 9.81 } \right) \cdot 1000 \cdot 9.81 \\&amp;= 319777.78 \; \;\textrm{(Pa)}\\
+\\
+p_{2_{}} &amp;= \frac{ p_{2} }{ 1000 } \\&amp;= \frac{ 319777.78 }{ 1000 } \\&amp;= 319.78 \; \;\textrm{(kPa)}\\
+\\
+V_{3} &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D_{3} \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.09 }{ 3.14 \cdot \frac{ \left( 0.08 \right) ^{ 2 } }{ 4 } } \\&amp;= 18.75 \; \;\textrm{(m/s)}\\
+\\
+p_{3} &amp;= \left( \frac{ p_{2} }{ \rho_{water} \cdot g } + \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } - \frac{ \left( V_{3} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \frac{ 319777.78 }{ 1000 \cdot 9.81 } + \frac{ \left( 8.33 \right) ^{ 2 } }{ 2 \cdot 9.81 } - \frac{ \left( 18.75 \right) ^{ 2 } }{ 2 \cdot 9.81 } \right) \cdot 1000 \cdot 9.81 \\&amp;= 178718.75 \; \;\textrm{(Pa)}\\
+\\
+p_{3_{}} &amp;= \frac{ p_{3} }{ 1000 } \\&amp;= \frac{ 178718.75 }{ 1000 } \\&amp;= 178.72 \; \;\textrm{(kPa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2310,14 +2312,14 @@ Q= \frac{Vol}{t}
 \[\begin{split}
 \begin{aligned}
 Q_{t} &amp;= 24 \; \;\textrm{(L/s)}
-\\[10pt]
+\\
 V &amp;= 4 \; \;\textrm{(m3)}
-\\[10pt]
+\\
 t &amp;= 3 \; \;\textrm{(min)}
-\\[10pt]
-Q_{a} &amp;= \frac{ V \cdot 1000 }{ t \cdot 60 } \\&amp;= \frac{ 4 \cdot 1000 }{ 3 \cdot 60 } \\&amp;= 22.222 \; \;\textrm{(L/s)}\\[10pt]
-\\[10pt]
-C_{d} &amp;= \frac{ Q_{a} }{ Q_{t} } \\&amp;= \frac{ 22.222 }{ 24 } \\&amp;= 0.926  \\[10pt]
+\\
+Q_{a} &amp;= \frac{ V \cdot 1000 }{ t \cdot 60 } \\&amp;= \frac{ 4 \cdot 1000 }{ 3 \cdot 60 } \\&amp;= 22.222 \; \;\textrm{(L/s)}\\
+\\
+C_{d} &amp;= \frac{ Q_{a} }{ Q_{t} } \\&amp;= \frac{ 22.222 }{ 24 } \\&amp;= 0.926  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2379,14 +2381,14 @@ Q_a= AV
 \[\begin{split}
 \begin{aligned}
 Q_{t} &amp;= \frac{ 3 }{ 1000 } &amp;= 0.003 \; \;\textrm{(m3/s)}
-\\[10pt]
+\\
 A &amp;= 0.400 \; \;\textrm{(m2)}
-\\[10pt]
+\\
 V &amp;= \frac{ 4 }{ 1000 } &amp;= 0.004 \; \;\textrm{(m/s)}
-\\[10pt]
-Q_{a} &amp;= A \cdot V \\&amp;= 0.400 \cdot 0.004 \\&amp;= 0.002 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-C_{d} &amp;= \frac{ Q_{a} }{ Q_{t} } \\&amp;= \frac{ 0.002 }{ 0.003 } \\&amp;= 0.533  \\[10pt]
+\\
+Q_{a} &amp;= A \cdot V \\&amp;= 0.400 \cdot 0.004 \\&amp;= 0.002 \; \;\textrm{(m3/s)}\\
+\\
+C_{d} &amp;= \frac{ Q_{a} }{ Q_{t} } \\&amp;= \frac{ 0.002 }{ 0.003 } \\&amp;= 0.533  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2450,18 +2452,18 @@ Q_a= VA
 \[\begin{split}
 \begin{aligned}
 Q_{t} &amp;= 13 \; \;\textrm{(L/s)}
-\\[10pt]
+\\
 h &amp;= 70 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 D &amp;= 0.100 \; \;\textrm{(m)}
-\\[10pt]
-V &amp;= \sqrt { 2 \cdot g \cdot \left( \frac{ h }{ 1000 } \right) } \\&amp;= \sqrt { 2 \cdot 9.810 \cdot \left( \frac{ 70 }{ 1000 } \right) } \\&amp;= 1.172 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-Q_{a} &amp;= V \cdot \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 1.172 \cdot 3.142 \cdot \frac{ \left( 0.100 \right) ^{ 2 } }{ 4 } \\&amp;= 0.009 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-Q_{a_{m}} &amp;= Q_{a} \cdot 1000 \\&amp;= 0.009 \cdot 1000 \\&amp;= 9.204 \; \;\textrm{(L/s)}\\[10pt]
-\\[10pt]
-C_{d} &amp;= \frac{ Q_{a_{m}} }{ Q_{t} } \\&amp;= \frac{ 9.204 }{ 13 } \\&amp;= 0.708  \\[10pt]
+\\
+V &amp;= \sqrt { 2 \cdot g \cdot \left( \frac{ h }{ 1000 } \right) } \\&amp;= \sqrt { 2 \cdot 9.810 \cdot \left( \frac{ 70 }{ 1000 } \right) } \\&amp;= 1.172 \; \;\textrm{(m/s)}\\
+\\
+Q_{a} &amp;= V \cdot \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 1.172 \cdot 3.142 \cdot \frac{ \left( 0.100 \right) ^{ 2 } }{ 4 } \\&amp;= 0.009 \; \;\textrm{(m3/s)}\\
+\\
+Q_{a_{m}} &amp;= Q_{a} \cdot 1000 \\&amp;= 0.009 \cdot 1000 \\&amp;= 9.204 \; \;\textrm{(L/s)}\\
+\\
+C_{d} &amp;= \frac{ Q_{a_{m}} }{ Q_{t} } \\&amp;= \frac{ 9.204 }{ 13 } \\&amp;= 0.708  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2540,18 +2542,18 @@ Q= b \cdot \sqrt {2 \cdot g \cdot (y_1 -y_2)} \cdot (\frac {y_1 \cdot y_2}{\sqrt
 \[\begin{split}
 \begin{aligned}
 b &amp;= 2 \; \;\textrm{(m)}
-\\[10pt]
+\\
 z &amp;= 1 \; \;\textrm{(m)}
-\\[10pt]
+\\
 y_{1} &amp;= 2.500 \; \;\textrm{(m)}
-\\[10pt]
+\\
 y_{2} &amp;= 0.500 \; \;\textrm{(m)}
-\\[10pt]
-A_{1} &amp;= b \cdot y_{1} \\&amp;= 2 \cdot 2.500 \\&amp;= 5.000 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-A_{2} &amp;= b \cdot y_{2} \\&amp;= 2 \cdot 0.500 \\&amp;= 1.000 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q_{t} &amp;= b \cdot \sqrt { 2 \cdot g \cdot \left( y_{1} - y_{2} \right) } \cdot \left( \frac{ y_{1} \cdot y_{2} }{ \sqrt { \left( y_{1} \right) ^{ 2 } - \left( y_{2} \right) ^{ 2 } } } \right) \\&amp;= 2 \cdot \sqrt { 2 \cdot 9.810 \cdot \left( 2.500 - 0.500 \right) } \cdot \left( \frac{ 2.500 \cdot 0.500 }{ \sqrt { \left( 2.500 \right) ^{ 2 } - \left( 0.500 \right) ^{ 2 } } } \right) \\&amp;= 6.393 \; \;\textrm{(m3/s)}\\[10pt]
+\\
+A_{1} &amp;= b \cdot y_{1} \\&amp;= 2 \cdot 2.500 \\&amp;= 5.000 \; \;\textrm{(m2)}\\
+\\
+A_{2} &amp;= b \cdot y_{2} \\&amp;= 2 \cdot 0.500 \\&amp;= 1.000 \; \;\textrm{(m2)}\\
+\\
+Q_{t} &amp;= b \cdot \sqrt { 2 \cdot g \cdot \left( y_{1} - y_{2} \right) } \cdot \left( \frac{ y_{1} \cdot y_{2} }{ \sqrt { \left( y_{1} \right) ^{ 2 } - \left( y_{2} \right) ^{ 2 } } } \right) \\&amp;= 2 \cdot \sqrt { 2 \cdot 9.810 \cdot \left( 2.500 - 0.500 \right) } \cdot \left( \frac{ 2.500 \cdot 0.500 }{ \sqrt { \left( 2.500 \right) ^{ 2 } - \left( 0.500 \right) ^{ 2 } } } \right) \\&amp;= 6.393 \; \;\textrm{(m3/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2631,15 +2633,15 @@ Q= b \cdot \sqrt {2 \cdot g \cdot (y_1 -y_2)} \cdot (\frac {y_1 \cdot y_2}{\sqrt
 \[\begin{split}
 \begin{aligned}
 b &amp;= 1.200 \; \;\textrm{(m)}
-\\[10pt]
+\\
 y_{1} &amp;= 1.200 \; \;\textrm{(m)}
-\\[10pt]
+\\
 y_{2} &amp;= 0.400 \; \;\textrm{(m)}
-\\[10pt]
+\\
 Q_{a} &amp;= 1.600 \; \;\textrm{(m3/s)}
-\\[10pt]
-Q_{t} &amp;= b \cdot \sqrt { 2 \cdot g \cdot \left( y_{1} - y_{2} \right) } \cdot \left( \frac{ y_{1} \cdot y_{2} }{ \sqrt { \left( y_{1} \right) ^{ 2 } - \left( y_{2} \right) ^{ 2 } } } \right) \\&amp;= 1.200 \cdot \sqrt { 2 \cdot 9.810 \cdot \left( 1.200 - 0.400 \right) } \cdot \left( \frac{ 1.200 \cdot 0.400 }{ \sqrt { \left( 1.200 \right) ^{ 2 } - \left( 0.400 \right) ^{ 2 } } } \right) \\&amp;= 2.017 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
+\\
+Q_{t} &amp;= b \cdot \sqrt { 2 \cdot g \cdot \left( y_{1} - y_{2} \right) } \cdot \left( \frac{ y_{1} \cdot y_{2} }{ \sqrt { \left( y_{1} \right) ^{ 2 } - \left( y_{2} \right) ^{ 2 } } } \right) \\&amp;= 1.200 \cdot \sqrt { 2 \cdot 9.810 \cdot \left( 1.200 - 0.400 \right) } \cdot \left( \frac{ 1.200 \cdot 0.400 }{ \sqrt { \left( 1.200 \right) ^{ 2 } - \left( 0.400 \right) ^{ 2 } } } \right) \\&amp;= 2.017 \; \;\textrm{(m3/s)}\\
+\\
 C_{d} &amp;= 0.793 \; 
 \end{aligned}
 \end{split}\]</div>
@@ -2684,16 +2686,16 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D_{1} &amp;= \frac{ 120 }{ 1000 } &amp;= 0.120 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{2} &amp;= \frac{ 50 }{ 1000 } &amp;= 0.050 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{p} &amp;= 0.050 \; \;\textrm{(m)}
-\\[10pt]
-A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.120 \right) ^{ 2 } }{ 4 } \\&amp;= 0.011 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.050 \right) ^{ 2 } }{ 4 } \\&amp;= 0.002 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q &amp;= \left( \sqrt { 2 \cdot g \cdot h_{p} } \cdot \left( \frac{ A_{1} \cdot A_{2} }{ \sqrt { \left( A_{1} \right) ^{ 2 } - \left( A_{2} \right) ^{ 2 } } } \right) \right) \cdot 1000 \\&amp;= \left( \sqrt { 2 \cdot 9.810 \cdot 0.050 } \cdot \left( \frac{ 0.011 \cdot 0.002 }{ \sqrt { \left( 0.011 \right) ^{ 2 } - \left( 0.002 \right) ^{ 2 } } } \right) \right) \cdot 1000 \\&amp;= 1.975 \; \;\textrm{(L/s)}\\[10pt]
+\\
+A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.120 \right) ^{ 2 } }{ 4 } \\&amp;= 0.011 \; \;\textrm{(m2)}\\
+\\
+A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.050 \right) ^{ 2 } }{ 4 } \\&amp;= 0.002 \; \;\textrm{(m2)}\\
+\\
+Q &amp;= \left( \sqrt { 2 \cdot g \cdot h_{p} } \cdot \left( \frac{ A_{1} \cdot A_{2} }{ \sqrt { \left( A_{1} \right) ^{ 2 } - \left( A_{2} \right) ^{ 2 } } } \right) \right) \cdot 1000 \\&amp;= \left( \sqrt { 2 \cdot 9.810 \cdot 0.050 } \cdot \left( \frac{ 0.011 \cdot 0.002 }{ \sqrt { \left( 0.011 \right) ^{ 2 } - \left( 0.002 \right) ^{ 2 } } } \right) \right) \cdot 1000 \\&amp;= 1.975 \; \;\textrm{(L/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2739,22 +2741,22 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D_{1} &amp;= 120 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 D_{2} &amp;= 50 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 \mathrm{SG} &amp;= 13.500 \; 
-\\[10pt]
+\\
 \Delta_{h} &amp;= 20 \; \;\textrm{(mm)}
-\\[10pt]
-A_{1} &amp;= \pi \cdot \frac{ \left( \frac{ D_{1} }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( \frac{ 120 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.011 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-A_{2} &amp;= \pi \cdot \frac{ \left( \frac{ D_{2} }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( \frac{ 50 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.002 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-\rho_{Hg} &amp;= \mathrm{SG} \cdot \rho_{water} \\&amp;= 13.500 \cdot 1000 \\&amp;= 13500.000 \; \;\textrm{(kg/m3)}\\[10pt]
-\\[10pt]
-\Delta_{p} &amp;= \left( \rho_{Hg} - \rho_{water} \right) \cdot g \cdot \left( \frac{ \Delta_{h} }{ 1000 } \right) \\&amp;= \left( 13500.000 - 1000 \right) \cdot 9.810 \cdot \left( \frac{ 20 }{ 1000 } \right) \\&amp;= 2452.500 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-Q &amp;= \sqrt { 2 \cdot \left( \frac{ \Delta_{p} }{ \rho_{water} } \right) } \cdot \left( \frac{ A_{1} \cdot A_{2} }{ \sqrt { \left( A_{1} \right) ^{ 2 } - \left( A_{2} \right) ^{ 2 } } } \right) \\&amp;= \sqrt { 2 \cdot \left( \frac{ 2452.500 }{ 1000 } \right) } \cdot \left( \frac{ 0.011 \cdot 0.002 }{ \sqrt { \left( 0.011 \right) ^{ 2 } - \left( 0.002 \right) ^{ 2 } } } \right) \\&amp;= 0.004 \; \;\textrm{(m3/s)}\\[10pt]
+\\
+A_{1} &amp;= \pi \cdot \frac{ \left( \frac{ D_{1} }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( \frac{ 120 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.011 \; \;\textrm{(m2)}\\
+\\
+A_{2} &amp;= \pi \cdot \frac{ \left( \frac{ D_{2} }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( \frac{ 50 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.002 \; \;\textrm{(m2)}\\
+\\
+\rho_{Hg} &amp;= \mathrm{SG} \cdot \rho_{water} \\&amp;= 13.500 \cdot 1000 \\&amp;= 13500.000 \; \;\textrm{(kg/m3)}\\
+\\
+\Delta_{p} &amp;= \left( \rho_{Hg} - \rho_{water} \right) \cdot g \cdot \left( \frac{ \Delta_{h} }{ 1000 } \right) \\&amp;= \left( 13500.000 - 1000 \right) \cdot 9.810 \cdot \left( \frac{ 20 }{ 1000 } \right) \\&amp;= 2452.500 \; \;\textrm{(Pa)}\\
+\\
+Q &amp;= \sqrt { 2 \cdot \left( \frac{ \Delta_{p} }{ \rho_{water} } \right) } \cdot \left( \frac{ A_{1} \cdot A_{2} }{ \sqrt { \left( A_{1} \right) ^{ 2 } - \left( A_{2} \right) ^{ 2 } } } \right) \\&amp;= \sqrt { 2 \cdot \left( \frac{ 2452.500 }{ 1000 } \right) } \cdot \left( \frac{ 0.011 \cdot 0.002 }{ \sqrt { \left( 0.011 \right) ^{ 2 } - \left( 0.002 \right) ^{ 2 } } } \right) \\&amp;= 0.004 \; \;\textrm{(m3/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2803,20 +2805,20 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D_{1} &amp;= \frac{ 180 }{ 1000 } &amp;= 0.18 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{2} &amp;= \frac{ 60 }{ 1000 } &amp;= 0.06 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h &amp;= \frac{ 70 }{ 1000 } &amp;= 0.07 \; \;\textrm{(m)}
-\\[10pt]
+\\
 C_{d} &amp;= 0.95 \; 
-\\[10pt]
-A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 0.18 \right) ^{ 2 } }{ 4 } \\&amp;= 0.03 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 0.06 \right) ^{ 2 } }{ 4 } \\&amp;= 0.00 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q_{t} &amp;= \left( \sqrt { 2 \cdot g \cdot h } \cdot \left( \frac{ A_{1} \cdot A_{2} }{ \sqrt { \left( A_{1} \right) ^{ 2 } - \left( A_{2} \right) ^{ 2 } } } \right) \right) \cdot 1000 \\&amp;= \left( \sqrt { 2 \cdot 9.81 \cdot 0.07 } \cdot \left( \frac{ 0.03 \cdot 0.00 }{ \sqrt { \left( 0.03 \right) ^{ 2 } - \left( 0.00 \right) ^{ 2 } } } \right) \right) \cdot 1000 \\&amp;= 3.33 \; \;\textrm{(L/s)}\\[10pt]
-\\[10pt]
-Q_{a} &amp;= C_{d} \cdot Q_{t} \\&amp;= 0.95 \cdot 3.33 \\&amp;= 3.17 \; \;\textrm{(L/s)}\\[10pt]
+\\
+A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 0.18 \right) ^{ 2 } }{ 4 } \\&amp;= 0.03 \; \;\textrm{(m2)}\\
+\\
+A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 0.06 \right) ^{ 2 } }{ 4 } \\&amp;= 0.00 \; \;\textrm{(m2)}\\
+\\
+Q_{t} &amp;= \left( \sqrt { 2 \cdot g \cdot h } \cdot \left( \frac{ A_{1} \cdot A_{2} }{ \sqrt { \left( A_{1} \right) ^{ 2 } - \left( A_{2} \right) ^{ 2 } } } \right) \right) \cdot 1000 \\&amp;= \left( \sqrt { 2 \cdot 9.81 \cdot 0.07 } \cdot \left( \frac{ 0.03 \cdot 0.00 }{ \sqrt { \left( 0.03 \right) ^{ 2 } - \left( 0.00 \right) ^{ 2 } } } \right) \right) \cdot 1000 \\&amp;= 3.33 \; \;\textrm{(L/s)}\\
+\\
+Q_{a} &amp;= C_{d} \cdot Q_{t} \\&amp;= 0.95 \cdot 3.33 \\&amp;= 3.17 \; \;\textrm{(L/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2871,20 +2873,20 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D_{o} &amp;= 30 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 D_{p} &amp;= 80 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 \Delta_{h} &amp;= 300 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 C_{d} &amp;= 0.6000 \; 
-\\[10pt]
-A_{1} &amp;= \pi \cdot \frac{ \left( \frac{ D_{p} }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 3.1416 \cdot \frac{ \left( \frac{ 80 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.0050 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-A_{2} &amp;= \pi \cdot \frac{ \left( \frac{ D_{o} }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 3.1416 \cdot \frac{ \left( \frac{ 30 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.0007 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q_{t} &amp;= \sqrt { 2 \cdot g \cdot \frac{ \Delta_{h} }{ 1000 } } \cdot \left( \frac{ A_{1} \cdot A_{2} }{ \sqrt { \left( A_{1} \right) ^{ 2 } - \left( A_{2} \right) ^{ 2 } } } \right) \\&amp;= \sqrt { 2 \cdot 9.8100 \cdot \frac{ 300 }{ 1000 } } \cdot \left( \frac{ 0.0050 \cdot 0.0007 }{ \sqrt { \left( 0.0050 \right) ^{ 2 } - \left( 0.0007 \right) ^{ 2 } } } \right) \\&amp;= 0.0017 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-Q_{a} &amp;= C_{d} \cdot Q_{t} \cdot 1000 \\&amp;= 0.6000 \cdot 0.0017 \cdot 1000 \\&amp;= 1.0393 \; \;\textrm{(L/s)}\\[10pt]
+\\
+A_{1} &amp;= \pi \cdot \frac{ \left( \frac{ D_{p} }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 3.1416 \cdot \frac{ \left( \frac{ 80 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.0050 \; \;\textrm{(m2)}\\
+\\
+A_{2} &amp;= \pi \cdot \frac{ \left( \frac{ D_{o} }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 3.1416 \cdot \frac{ \left( \frac{ 30 }{ 1000 } \right) ^{ 2 } }{ 4 } \\&amp;= 0.0007 \; \;\textrm{(m2)}\\
+\\
+Q_{t} &amp;= \sqrt { 2 \cdot g \cdot \frac{ \Delta_{h} }{ 1000 } } \cdot \left( \frac{ A_{1} \cdot A_{2} }{ \sqrt { \left( A_{1} \right) ^{ 2 } - \left( A_{2} \right) ^{ 2 } } } \right) \\&amp;= \sqrt { 2 \cdot 9.8100 \cdot \frac{ 300 }{ 1000 } } \cdot \left( \frac{ 0.0050 \cdot 0.0007 }{ \sqrt { \left( 0.0050 \right) ^{ 2 } - \left( 0.0007 \right) ^{ 2 } } } \right) \\&amp;= 0.0017 \; \;\textrm{(m3/s)}\\
+\\
+Q_{a} &amp;= C_{d} \cdot Q_{t} \cdot 1000 \\&amp;= 0.6000 \cdot 0.0017 \cdot 1000 \\&amp;= 1.0393 \; \;\textrm{(L/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2970,26 +2972,26 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D_{1} &amp;= \frac{ 120 }{ 1000 } &amp;= 0.12000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{2} &amp;= \frac{ 50 }{ 1000 } &amp;= 0.05000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \Delta_{h} &amp;= \frac{ 80 }{ 1000 } &amp;= 0.08000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 V_{jet} &amp;= 3 \; \;\textrm{(m/s)}
-\\[10pt]
+\\
 D_{jet} &amp;= 0.02000 \; \;\textrm{(m)}
-\\[10pt]
-A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14159 \cdot \frac{ \left( 0.12000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.01131 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14159 \cdot \frac{ \left( 0.05000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.00196 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q_{t} &amp;= \sqrt { 2 \cdot g \cdot \Delta_{h} } \cdot \left( \frac{ A_{1} \cdot A_{2} }{ \sqrt { \left( A_{1} \right) ^{ 2 } - \left( A_{2} \right) ^{ 2 } } } \right) \\&amp;= \sqrt { 2 \cdot 9.81000 \cdot 0.08000 } \cdot \left( \frac{ 0.01131 \cdot 0.00196 }{ \sqrt { \left( 0.01131 \right) ^{ 2 } - \left( 0.00196 \right) ^{ 2 } } } \right) \\&amp;= 0.00250 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-A_{jet} &amp;= \pi \cdot \frac{ \left( D_{jet} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14159 \cdot \frac{ \left( 0.02000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.00031 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q_{a} &amp;= V_{jet} \cdot A_{jet} \\&amp;= 3 \cdot 0.00031 \\&amp;= 0.00094 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-C_{d} &amp;= \frac{ Q_{a} }{ Q_{t} } \\&amp;= \frac{ 0.00094 }{ 0.00250 } \\&amp;= 0.37731  \\[10pt]
+\\
+A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14159 \cdot \frac{ \left( 0.12000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.01131 \; \;\textrm{(m2)}\\
+\\
+A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14159 \cdot \frac{ \left( 0.05000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.00196 \; \;\textrm{(m2)}\\
+\\
+Q_{t} &amp;= \sqrt { 2 \cdot g \cdot \Delta_{h} } \cdot \left( \frac{ A_{1} \cdot A_{2} }{ \sqrt { \left( A_{1} \right) ^{ 2 } - \left( A_{2} \right) ^{ 2 } } } \right) \\&amp;= \sqrt { 2 \cdot 9.81000 \cdot 0.08000 } \cdot \left( \frac{ 0.01131 \cdot 0.00196 }{ \sqrt { \left( 0.01131 \right) ^{ 2 } - \left( 0.00196 \right) ^{ 2 } } } \right) \\&amp;= 0.00250 \; \;\textrm{(m3/s)}\\
+\\
+A_{jet} &amp;= \pi \cdot \frac{ \left( D_{jet} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14159 \cdot \frac{ \left( 0.02000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.00031 \; \;\textrm{(m2)}\\
+\\
+Q_{a} &amp;= V_{jet} \cdot A_{jet} \\&amp;= 3 \cdot 0.00031 \\&amp;= 0.00094 \; \;\textrm{(m3/s)}\\
+\\
+C_{d} &amp;= \frac{ Q_{a} }{ Q_{t} } \\&amp;= \frac{ 0.00094 }{ 0.00250 } \\&amp;= 0.37731  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3028,9 +3030,9 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-V_{1} &amp;= \frac{ Q_{a} }{ \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.001 }{ 3.142 \cdot \frac{ \left( 0.120 \right) ^{ 2 } }{ 4 } } \\&amp;= 0.083 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-p_{1} &amp;= \left( \frac{ \left( V_{jet} \right) ^{ 2 } }{ 2 \cdot g } - \frac{ \left( V_{1} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \frac{ \left( 3 \right) ^{ 2 } }{ 2 \cdot 9.810 } - \frac{ \left( 0.083 \right) ^{ 2 } }{ 2 \cdot 9.810 } \right) \cdot 1000 \cdot 9.810 \\&amp;= 4496.528 \; \;\textrm{(Pa)}\\[10pt]
+V_{1} &amp;= \frac{ Q_{a} }{ \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.001 }{ 3.142 \cdot \frac{ \left( 0.120 \right) ^{ 2 } }{ 4 } } \\&amp;= 0.083 \; \;\textrm{(m/s)}\\
+\\
+p_{1} &amp;= \left( \frac{ \left( V_{jet} \right) ^{ 2 } }{ 2 \cdot g } - \frac{ \left( V_{1} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \frac{ \left( 3 \right) ^{ 2 } }{ 2 \cdot 9.810 } - \frac{ \left( 0.083 \right) ^{ 2 } }{ 2 \cdot 9.810 } \right) \cdot 1000 \cdot 9.810 \\&amp;= 4496.528 \; \;\textrm{(Pa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3103,28 +3105,28 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D_{AB} &amp;= 0.040 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L_{AB} &amp;= 5 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{BC} &amp;= 0.030 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L_{BC} &amp;= 3 \; \;\textrm{(m)}
-\\[10pt]
+\\
 Q &amp;= 0.002 \; \;\textrm{(m3/s)}
-\\[10pt]
+\\
 p_{A} &amp;= 250000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 h_{f} &amp;= 1.450 \; \;\textrm{(m)}
-\\[10pt]
-A_{AB} &amp;= \pi \cdot \frac{ \left( D_{AB} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.040 \right) ^{ 2 } }{ 4 } \\&amp;= 0.001 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-V_{A} &amp;= \frac{ Q }{ A_{AB} } \\&amp;= \frac{ 0.002 }{ 0.001 } \\&amp;= 1.393 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-A_{BC} &amp;= \pi \cdot \frac{ \left( D_{BC} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.030 \right) ^{ 2 } }{ 4 } \\&amp;= 0.001 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-V_{C} &amp;= \frac{ Q }{ A_{BC} } \\&amp;= \frac{ 0.002 }{ 0.001 } \\&amp;= 2.476 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-p_{C} &amp;= \left( \frac{ p_{A} }{ \rho_{water} \cdot g } + \frac{ \left( V_{A} \right) ^{ 2 } }{ 2 \cdot g } - L_{AB} - \frac{ \left( V_{C} \right) ^{ 2 } }{ 2 \cdot g } - h_{f} \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \frac{ 250000 }{ 1000 \cdot 9.810 } + \frac{ \left( 1.393 \right) ^{ 2 } }{ 2 \cdot 9.810 } - 5 - \frac{ \left( 2.476 \right) ^{ 2 } }{ 2 \cdot 9.810 } - 1.450 \right) \cdot 1000 \cdot 9.810 \\&amp;= 184630.522 \; \;\textrm{(Pa)}\\[10pt]
+\\
+A_{AB} &amp;= \pi \cdot \frac{ \left( D_{AB} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.040 \right) ^{ 2 } }{ 4 } \\&amp;= 0.001 \; \;\textrm{(m2)}\\
+\\
+V_{A} &amp;= \frac{ Q }{ A_{AB} } \\&amp;= \frac{ 0.002 }{ 0.001 } \\&amp;= 1.393 \; \;\textrm{(m/s)}\\
+\\
+A_{BC} &amp;= \pi \cdot \frac{ \left( D_{BC} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.030 \right) ^{ 2 } }{ 4 } \\&amp;= 0.001 \; \;\textrm{(m2)}\\
+\\
+V_{C} &amp;= \frac{ Q }{ A_{BC} } \\&amp;= \frac{ 0.002 }{ 0.001 } \\&amp;= 2.476 \; \;\textrm{(m/s)}\\
+\\
+p_{C} &amp;= \left( \frac{ p_{A} }{ \rho_{water} \cdot g } + \frac{ \left( V_{A} \right) ^{ 2 } }{ 2 \cdot g } - L_{AB} - \frac{ \left( V_{C} \right) ^{ 2 } }{ 2 \cdot g } - h_{f} \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \frac{ 250000 }{ 1000 \cdot 9.810 } + \frac{ \left( 1.393 \right) ^{ 2 } }{ 2 \cdot 9.810 } - 5 - \frac{ \left( 2.476 \right) ^{ 2 } }{ 2 \cdot 9.810 } - 1.450 \right) \cdot 1000 \cdot 9.810 \\&amp;= 184630.522 \; \;\textrm{(Pa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3201,12 +3203,12 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 h_{1} &amp;= 6.300 \; \;\textrm{(m)}
-\\[10pt]
+\\
 z_{1} &amp;= 20 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{f} &amp;= 1.090 \; \;\textrm{(m)}
-\\[10pt]
-h_{2} &amp;= \left( + z_{1} \right) + h_{1} - h_{f} \\&amp;= \left( + 20 \right) + 6.300 - 1.090 \\&amp;= 25.210 \; \;\textrm{(m)}\\[10pt]
+\\
+h_{2} &amp;= \left( + z_{1} \right) + h_{1} - h_{f} \\&amp;= \left( + 20 \right) + 6.300 - 1.090 \\&amp;= 25.210 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3244,7 +3246,7 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-h_{2} &amp;= \left( + z_{1} \right) + h_{1} + h_{f} \\&amp;= \left( + 20 \right) + 6.300 + 1.090 \\&amp;= 27.390 \; \;\textrm{(m)}\\[10pt]
+h_{2} &amp;= \left( + z_{1} \right) + h_{1} + h_{f} \\&amp;= \left( + 20 \right) + 6.300 + 1.090 \\&amp;= 27.390 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3316,16 +3318,16 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 Q &amp;= 0.00631 \; \;\textrm{(m3/s)}
-\\[10pt]
+\\
 D &amp;= \frac{ 50 }{ 1000 } &amp;= 0.05000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{f} &amp;= 11.58000 \; \;\textrm{(m)}
-\\[10pt]
-A_{2} &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.14159 \cdot \frac{ \left( 0.05000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.00196 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-v_{2} &amp;= \frac{ Q }{ A_{2} } \\&amp;= \frac{ 0.00631 }{ 0.00196 } \\&amp;= 3.21366 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-z_{1} &amp;= \frac{ \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g } + h_{f} \\&amp;= \frac{ \left( 3.21366 \right) ^{ 2 } }{ 2 \cdot 9.81000 } + 11.58000 \\&amp;= 12.10638 \; \;\textrm{(m)}\\[10pt]
+\\
+A_{2} &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.14159 \cdot \frac{ \left( 0.05000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.00196 \; \;\textrm{(m2)}\\
+\\
+v_{2} &amp;= \frac{ Q }{ A_{2} } \\&amp;= \frac{ 0.00631 }{ 0.00196 } \\&amp;= 3.21366 \; \;\textrm{(m/s)}\\
+\\
+z_{1} &amp;= \frac{ \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g } + h_{f} \\&amp;= \frac{ \left( 3.21366 \right) ^{ 2 } }{ 2 \cdot 9.81000 } + 11.58000 \\&amp;= 12.10638 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3385,16 +3387,16 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 p_{A} &amp;= 170 \cdot 1000 &amp;= 170000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 p_{B} &amp;= 275 \cdot 1000 &amp;= 275000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 S &amp;= 0.85 \; 
-\\[10pt]
-\rho &amp;= S \cdot \rho_{water} \\&amp;= 0.85 \cdot 1000 \\&amp;= 850.00  \\[10pt]
-\\[10pt]
+\\
+\rho &amp;= S \cdot \rho_{water} \\&amp;= 0.85 \cdot 1000 \\&amp;= 850.00  \\
+\\
 Z_{A} &amp;= 10.50 \; \;\textrm{(m)}
-\\[10pt]
-h_{f} &amp;= \frac{ p_{A} }{ \rho \cdot g } + Z_{A} - \frac{ p_{B} }{ \rho \cdot g } \\&amp;= \frac{ 170000 }{ 850.00 \cdot 9.81 } + 10.50 - \frac{ 275000 }{ 850.00 \cdot 9.81 } \\&amp;= -2.09 \; \;\textrm{(m)}\\[10pt]
+\\
+h_{f} &amp;= \frac{ p_{A} }{ \rho \cdot g } + Z_{A} - \frac{ p_{B} }{ \rho \cdot g } \\&amp;= \frac{ 170000 }{ 850.00 \cdot 9.81 } + 10.50 - \frac{ 275000 }{ 850.00 \cdot 9.81 } \\&amp;= -2.09 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3491,30 +3493,30 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 z_{3} &amp;= -5 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{f_{12}} &amp;= 1.5000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{f_{23}} &amp;= 2.4000 \; \;\textrm{(m)}
-\\[10pt]
-v_{3} &amp;= \sqrt { \left( \left( - z_{3} \right) - h_{f_{12}} - h_{f_{23}} \right) \cdot 2 \cdot g } \\&amp;= \sqrt { \left( \left( - -5 \right) - 1.5000 - 2.4000 \right) \cdot 2 \cdot 9.8100 } \\&amp;= 4.6456 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
+\\
+v_{3} &amp;= \sqrt { \left( \left( - z_{3} \right) - h_{f_{12}} - h_{f_{23}} \right) \cdot 2 \cdot g } \\&amp;= \sqrt { \left( \left( - -5 \right) - 1.5000 - 2.4000 \right) \cdot 2 \cdot 9.8100 } \\&amp;= 4.6456 \; \;\textrm{(m/s)}\\
+\\
 D &amp;= \frac{ 50 }{ 1000 } &amp;= 0.0500 \; \;\textrm{(m)}
-\\[10pt]
-A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.1416 \cdot \frac{ \left( 0.0500 \right) ^{ 2 } }{ 4 } \\&amp;= 0.0020 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q &amp;= V_{3} \cdot A \\&amp;= 18.7500 \cdot 0.0020 \\&amp;= 0.0368 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
+\\
+A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.1416 \cdot \frac{ \left( 0.0500 \right) ^{ 2 } }{ 4 } \\&amp;= 0.0020 \; \;\textrm{(m2)}\\
+\\
+Q &amp;= V_{3} \cdot A \\&amp;= 18.7500 \cdot 0.0020 \\&amp;= 0.0368 \; \;\textrm{(m3/s)}\\
+\\
 Q_{Lps} &amp;= 36.8155 \; \;\textrm{(L/s)}
-\\[10pt]
+\\
 z_{2} &amp;= 2 \; \;\textrm{(m)}
-\\[10pt]
+\\
 V_{2} &amp;= 18.7500 \; \;\textrm{(m/s)}
-\\[10pt]
+\\
 S_{oil} &amp;= 0.8200 \; 
-\\[10pt]
-\rho_{oil} &amp;= S_{oil} \cdot \rho_{water} \\&amp;= 0.8200 \cdot 1000 \\&amp;= 820.0000  \\[10pt]
-\\[10pt]
-p_{2} &amp;= \left( \left( - z_{2} \right) - \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } - h_{f_{12}} \right) \cdot \rho_{oil} \cdot g \\&amp;= \left( \left( - 2 \right) - \frac{ \left( 18.7500 \right) ^{ 2 } }{ 2 \cdot 9.8100 } - 1.5000 \right) \cdot 820.0000 \cdot 9.8100 \\&amp;= -172295.3250 \; \;\textrm{(Pa)}\\[10pt]
+\\
+\rho_{oil} &amp;= S_{oil} \cdot \rho_{water} \\&amp;= 0.8200 \cdot 1000 \\&amp;= 820.0000  \\
+\\
+p_{2} &amp;= \left( \left( - z_{2} \right) - \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } - h_{f_{12}} \right) \cdot \rho_{oil} \cdot g \\&amp;= \left( \left( - 2 \right) - \frac{ \left( 18.7500 \right) ^{ 2 } }{ 2 \cdot 9.8100 } - 1.5000 \right) \cdot 820.0000 \cdot 9.8100 \\&amp;= -172295.3250 \; \;\textrm{(Pa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3583,26 +3585,26 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 m &amp;= 15 \; \;\textrm{(kg/s)}
-\\[10pt]
-Q &amp;= \frac{ m }{ \rho_{water} } \\&amp;= \frac{ 15 }{ 1000 } \\&amp;= 0.015 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
+\\
+Q &amp;= \frac{ m }{ \rho_{water} } \\&amp;= \frac{ 15 }{ 1000 } \\&amp;= 0.015 \; \;\textrm{(m3/s)}\\
+\\
 D_{1} &amp;= \frac{ 8 }{ 100 } &amp;= 0.080 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{2} &amp;= \frac{ 5 }{ 100 } &amp;= 0.050 \; \;\textrm{(m)}
-\\[10pt]
-A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.080 \right) ^{ 2 } }{ 4 } \\&amp;= 0.005 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.050 \right) ^{ 2 } }{ 4 } \\&amp;= 0.002 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-v_{1} &amp;= \frac{ Q }{ A_{1} } \\&amp;= \frac{ 0.015 }{ 0.005 } \\&amp;= 2.984 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-v_{2} &amp;= \frac{ Q }{ A_{2} } \\&amp;= \frac{ 0.015 }{ 0.002 } \\&amp;= 7.639 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
+\\
+A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.080 \right) ^{ 2 } }{ 4 } \\&amp;= 0.005 \; \;\textrm{(m2)}\\
+\\
+A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.050 \right) ^{ 2 } }{ 4 } \\&amp;= 0.002 \; \;\textrm{(m2)}\\
+\\
+v_{1} &amp;= \frac{ Q }{ A_{1} } \\&amp;= \frac{ 0.015 }{ 0.005 } \\&amp;= 2.984 \; \;\textrm{(m/s)}\\
+\\
+v_{2} &amp;= \frac{ Q }{ A_{2} } \\&amp;= \frac{ 0.015 }{ 0.002 } \\&amp;= 7.639 \; \;\textrm{(m/s)}\\
+\\
 p_{1} &amp;= 180 \cdot 1000 &amp;= 180000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 z_{2} &amp;= 12 \; \;\textrm{(m)}
-\\[10pt]
-h_{f12} &amp;= \frac{ p_{1} }{ \rho_{water} \cdot g } + \frac{ \left( v_{1} \right) ^{ 2 } }{ 2 \cdot g } - z_{2} - \frac{ \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= \frac{ 180000 }{ 1000 \cdot 9.810 } + \frac{ \left( 2.984 \right) ^{ 2 } }{ 2 \cdot 9.810 } - 12 - \frac{ \left( 7.639 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 3.828 \; \;\textrm{(m)}\\[10pt]
+\\
+h_{f12} &amp;= \frac{ p_{1} }{ \rho_{water} \cdot g } + \frac{ \left( v_{1} \right) ^{ 2 } }{ 2 \cdot g } - z_{2} - \frac{ \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= \frac{ 180000 }{ 1000 \cdot 9.810 } + \frac{ \left( 2.984 \right) ^{ 2 } }{ 2 \cdot 9.810 } - 12 - \frac{ \left( 7.639 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 3.828 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3679,16 +3681,16 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 p_{atm} &amp;= 90000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 p_{vap} &amp;= 2340.00 \; \;\textrm{(Pa abs)}
-\\[10pt]
+\\
 v_{B} &amp;= 1.80 \; \;\textrm{(m/s)}
-\\[10pt]
+\\
 \rho &amp;= 1000 \; \;\textrm{(kg/m3)}
-\\[10pt]
-h_{f} &amp;= 1.6 \cdot \frac{ \left( v_{B} \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= 1.6 \cdot \frac{ \left( 1.80 \right) ^{ 2 } }{ 2 \cdot 9.81 } \\&amp;= 0.26 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-z_{B} &amp;= \frac{ p_{atm} - p_{vap} }{ \rho \cdot g } - \frac{ \left( v_{B} \right) ^{ 2 } }{ 2 \cdot g } - h_{f} \\&amp;= \frac{ 90000 - 2340.00 }{ 1000 \cdot 9.81 } - \frac{ \left( 1.80 \right) ^{ 2 } }{ 2 \cdot 9.81 } - 0.26 \\&amp;= 8.51 \; \;\textrm{(m)}\\[10pt]
+\\
+h_{f} &amp;= 1.6 \cdot \frac{ \left( v_{B} \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= 1.6 \cdot \frac{ \left( 1.80 \right) ^{ 2 } }{ 2 \cdot 9.81 } \\&amp;= 0.26 \; \;\textrm{(m)}\\
+\\
+z_{B} &amp;= \frac{ p_{atm} - p_{vap} }{ \rho \cdot g } - \frac{ \left( v_{B} \right) ^{ 2 } }{ 2 \cdot g } - h_{f} \\&amp;= \frac{ 90000 - 2340.00 }{ 1000 \cdot 9.81 } - \frac{ \left( 1.80 \right) ^{ 2 } }{ 2 \cdot 9.81 } - 0.26 \\&amp;= 8.51 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3715,18 +3717,18 @@ z_B = (p_atm-p_vap)/(rho*g)-v_B**2/(2*g)-h_f #m
 \[\begin{split}
 \begin{aligned}
 p_{atm} &amp;= 90000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 p_{vap} &amp;= 49000 \; \;\textrm{(Pa abs)}
-\\[10pt]
+\\
 v_{B} &amp;= 1.80 \; \;\textrm{(m/s)}
-\\[10pt]
+\\
 \gamma_{gas} &amp;= 8000 \; \;\textrm{(N/m3)}
-\\[10pt]
+\\
 \rho &amp;= 815.49 \; \;\textrm{(kg/m3)}
-\\[10pt]
-h_{f} &amp;= 1.6 \cdot \frac{ \left( v_{B} \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= 1.6 \cdot \frac{ \left( 1.80 \right) ^{ 2 } }{ 2 \cdot 9.81 } \\&amp;= 0.26 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-z_{B} &amp;= \frac{ p_{atm} - p_{vap} }{ \rho \cdot g } - \frac{ \left( v_{B} \right) ^{ 2 } }{ 2 \cdot g } - h_{f} \\&amp;= \frac{ 90000 - 49000 }{ 815.49 \cdot 9.81 } - \frac{ \left( 1.80 \right) ^{ 2 } }{ 2 \cdot 9.81 } - 0.26 \\&amp;= 4.70 \; \;\textrm{(m)}\\[10pt]
+\\
+h_{f} &amp;= 1.6 \cdot \frac{ \left( v_{B} \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= 1.6 \cdot \frac{ \left( 1.80 \right) ^{ 2 } }{ 2 \cdot 9.81 } \\&amp;= 0.26 \; \;\textrm{(m)}\\
+\\
+z_{B} &amp;= \frac{ p_{atm} - p_{vap} }{ \rho \cdot g } - \frac{ \left( v_{B} \right) ^{ 2 } }{ 2 \cdot g } - h_{f} \\&amp;= \frac{ 90000 - 49000 }{ 815.49 \cdot 9.81 } - \frac{ \left( 1.80 \right) ^{ 2 } }{ 2 \cdot 9.81 } - 0.26 \\&amp;= 4.70 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3742,10 +3744,10 @@ z_{B} &amp;= \frac{ p_{atm} - p_{vap} }{ \rho \cdot g } - \frac{ \left( v_{B} \r
 \[\begin{split}
 \begin{aligned}
 \gamma &amp;= 8 \; \;\textrm{(kN/m3)}
-\\[10pt]
+\\
 p_{\nu} &amp;= 49 \; \;\textrm{(kN/m2 abs)}
-\\[10pt]
-z_{B} &amp;= \frac{ 90 - p_{\nu} }{ \gamma } - 0.429 \\&amp;= \frac{ 90 - 49 }{ 8 } - 0.429 \\&amp;= 4.70 \; \;\textrm{(m)}\\[10pt]
+\\
+z_{B} &amp;= \frac{ 90 - p_{\nu} }{ \gamma } - 0.429 \\&amp;= \frac{ 90 - 49 }{ 8 } - 0.429 \\&amp;= 4.70 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3842,14 +3844,14 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 z_{1} &amp;= 20 \; \;\textrm{(m)}
-\\[10pt]
+\\
 p_{vap} &amp;= \left( - 93 \right) \cdot 1000 &amp;= -93000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 h_{f13} &amp;= 15 \; \;\textrm{(m)}
-\\[10pt]
+\\
 Q &amp;= 0.016 \; \;\textrm{(m3/s)}
-\\[10pt]
-D_{3} &amp;= \left( \frac{ 8 \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( z_{1} - \left( \frac{ p_{3} }{ \rho_{water} \cdot g } \right) - \left( \frac{ 1 }{ 2 } \right) \cdot h_{f13} \right) } \right) ^{ \left( \frac{ 1 }{ 4 } \right) } \\&amp;= \left( \frac{ 8 \cdot \left( 0.016 \right) ^{ 2 } }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 20 - \left( \frac{ 178718.750 }{ 1000 \cdot 9.810 } \right) - \left( \frac{ 1 }{ 2 } \right) \cdot 15 \right) } \right) ^{ \left( \frac{ 1 }{ 4 } \right) } \\&amp;= 0.031+0.031j \; \;\textrm{(m)}\\[10pt]
+\\
+D_{3} &amp;= \left( \frac{ 8 \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( z_{1} - \left( \frac{ p_{3} }{ \rho_{water} \cdot g } \right) - \left( \frac{ 1 }{ 2 } \right) \cdot h_{f13} \right) } \right) ^{ \left( \frac{ 1 }{ 4 } \right) } \\&amp;= \left( \frac{ 8 \cdot \left( 0.016 \right) ^{ 2 } }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 20 - \left( \frac{ 178718.750 }{ 1000 \cdot 9.810 } \right) - \left( \frac{ 1 }{ 2 } \right) \cdot 15 \right) } \right) ^{ \left( \frac{ 1 }{ 4 } \right) } \\&amp;= 0.031+0.031j \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3887,16 +3889,16 @@ Answer<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 v &amp;= 36 \; \;\textrm{(m/s)}
-\\[10pt]
+\\
 D &amp;= \frac{ 150 }{ 1000 } &amp;= 0.150 \; \;\textrm{(m)}
-\\[10pt]
-A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.150 \right) ^{ 2 } }{ 4 } \\&amp;= 0.018 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
+\\
+A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.150 \right) ^{ 2 } }{ 4 } \\&amp;= 0.018 \; \;\textrm{(m2)}\\
+\\
 p_{t} &amp;= 100 \; \;\textrm{(m)}
-\\[10pt]
-Q &amp;= v \cdot A \\&amp;= 36 \cdot 0.018 \\&amp;= 0.636 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-P &amp;= \frac{ \rho_{water} \cdot g \cdot p_{t} \cdot Q }{ 1000 } \\&amp;= \frac{ 1000 \cdot 9.810 \cdot 100 \cdot 0.636 }{ 1000 } \\&amp;= 624.085 \; \;\textrm{(kW)}\\[10pt]
+\\
+Q &amp;= v \cdot A \\&amp;= 36 \cdot 0.018 \\&amp;= 0.636 \; \;\textrm{(m3/s)}\\
+\\
+P &amp;= \frac{ \rho_{water} \cdot g \cdot p_{t} \cdot Q }{ 1000 } \\&amp;= \frac{ 1000 \cdot 9.810 \cdot 100 \cdot 0.636 }{ 1000 } \\&amp;= 624.085 \; \;\textrm{(kW)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3952,18 +3954,18 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 h_{f} &amp;= 13 \; \;\textrm{(m)}
-\\[10pt]
+\\
 z_{2} &amp;= 155 \; \;\textrm{(m)}
-\\[10pt]
+\\
 Q &amp;= 7.50 \; \;\textrm{(m3/s)}
-\\[10pt]
-h_{pump} &amp;= z_{2} + h_{f} \\&amp;= 155 + 13 \\&amp;= 168 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-P_{out} &amp;= \frac{ \rho_{water} \cdot g \cdot h_{pump} \cdot Q }{ 1000000 } \\&amp;= \frac{ 1000 \cdot 9.81 \cdot 168 \cdot 7.50 }{ 1000000 } \\&amp;= 12.36 \; \;\textrm{(MW)}\\[10pt]
-\\[10pt]
+\\
+h_{pump} &amp;= z_{2} + h_{f} \\&amp;= 155 + 13 \\&amp;= 168 \; \;\textrm{(m)}\\
+\\
+P_{out} &amp;= \frac{ \rho_{water} \cdot g \cdot h_{pump} \cdot Q }{ 1000000 } \\&amp;= \frac{ 1000 \cdot 9.81 \cdot 168 \cdot 7.50 }{ 1000000 } \\&amp;= 12.36 \; \;\textrm{(MW)}\\
+\\
 \eta &amp;= 0.90 \; 
-\\[10pt]
-P_{in} &amp;= \frac{ P_{out} }{ \eta } \\&amp;= \frac{ 12.36 }{ 0.90 } \\&amp;= 13.73 \; \;\textrm{(MW)}\\[10pt]
+\\
+P_{in} &amp;= \frac{ P_{out} }{ \eta } \\&amp;= \frac{ 12.36 }{ 0.90 } \\&amp;= 13.73 \; \;\textrm{(MW)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4015,28 +4017,28 @@ h_p = \frac{p_2}{\gamma}+\frac{V_2^2}{2g}- \frac{p_1}{\gamma}-\frac{V_1^2}{2g}
 \[\begin{split}
 \begin{aligned}
 Q &amp;= \frac{ 70 }{ 1000 } &amp;= 0.070 \; \;\textrm{(m3/s)}
-\\[10pt]
+\\
 D_{1} &amp;= \frac{ 180 }{ 1000 } &amp;= 0.180 \; \;\textrm{(m)}
-\\[10pt]
-A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.180 \right) ^{ 2 } }{ 4 } \\&amp;= 0.025 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
+\\
+A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.180 \right) ^{ 2 } }{ 4 } \\&amp;= 0.025 \; \;\textrm{(m2)}\\
+\\
 D_{2} &amp;= \frac{ 120 }{ 1000 } &amp;= 0.120 \; \;\textrm{(m)}
-\\[10pt]
-A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.120 \right) ^{ 2 } }{ 4 } \\&amp;= 0.011 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-V_{1} &amp;= \frac{ Q }{ A_{1} } \\&amp;= \frac{ 0.070 }{ 0.025 } \\&amp;= 2.751 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-V_{2} &amp;= \frac{ Q }{ A_{2} } \\&amp;= \frac{ 0.070 }{ 0.011 } \\&amp;= 6.189 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
+\\
+A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.120 \right) ^{ 2 } }{ 4 } \\&amp;= 0.011 \; \;\textrm{(m2)}\\
+\\
+V_{1} &amp;= \frac{ Q }{ A_{1} } \\&amp;= \frac{ 0.070 }{ 0.025 } \\&amp;= 2.751 \; \;\textrm{(m/s)}\\
+\\
+V_{2} &amp;= \frac{ Q }{ A_{2} } \\&amp;= \frac{ 0.070 }{ 0.011 } \\&amp;= 6.189 \; \;\textrm{(m/s)}\\
+\\
 p_{1} &amp;= 35 \cdot 1000 &amp;= 35000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 p_{2} &amp;= 120 \cdot 1000 &amp;= 120000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 s &amp;= 0.820 \; 
-\\[10pt]
-h_{p} &amp;= \frac{ p_{2} }{ s \cdot \rho_{water} \cdot g } + \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } - \frac{ p_{1} }{ s \cdot \rho_{water} \cdot g } - \frac{ \left( V_{1} \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= \frac{ 120000 }{ 0.820 \cdot 1000 \cdot 9.810 } + \frac{ \left( 6.189 \right) ^{ 2 } }{ 2 \cdot 9.810 } - \frac{ 35000 }{ 0.820 \cdot 1000 \cdot 9.810 } - \frac{ \left( 2.751 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 12.133 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-P &amp;= \frac{ s \cdot \rho_{water} \cdot g \cdot Q \cdot h_{p} }{ 1000 } \\&amp;= \frac{ 0.820 \cdot 1000 \cdot 9.810 \cdot 0.070 \cdot 12.133 }{ 1000 } \\&amp;= 6.832 \; \;\textrm{(kW)}\\[10pt]
+\\
+h_{p} &amp;= \frac{ p_{2} }{ s \cdot \rho_{water} \cdot g } + \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } - \frac{ p_{1} }{ s \cdot \rho_{water} \cdot g } - \frac{ \left( V_{1} \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= \frac{ 120000 }{ 0.820 \cdot 1000 \cdot 9.810 } + \frac{ \left( 6.189 \right) ^{ 2 } }{ 2 \cdot 9.810 } - \frac{ 35000 }{ 0.820 \cdot 1000 \cdot 9.810 } - \frac{ \left( 2.751 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 12.133 \; \;\textrm{(m)}\\
+\\
+P &amp;= \frac{ s \cdot \rho_{water} \cdot g \cdot Q \cdot h_{p} }{ 1000 } \\&amp;= \frac{ 0.820 \cdot 1000 \cdot 9.810 \cdot 0.070 \cdot 12.133 }{ 1000 } \\&amp;= 6.832 \; \;\textrm{(kW)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4107,22 +4109,22 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 z_{1} &amp;= 325 \; \;\textrm{(m)}
-\\[10pt]
+\\
 v_{2} &amp;= 75 \; \;\textrm{(m/s)}
-\\[10pt]
-h_{f} &amp;= z_{1} - \frac{ \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= 325 - \frac{ \left( 75 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 38.303 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
+\\
+h_{f} &amp;= z_{1} - \frac{ \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= 325 - \frac{ \left( 75 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 38.303 \; \;\textrm{(m)}\\
+\\
 D_{2} &amp;= 0.250 \; \;\textrm{(m)}
-\\[10pt]
-A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.250 \right) ^{ 2 } }{ 4 } \\&amp;= 0.049 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q &amp;= A_{2} \cdot v_{2} \\&amp;= 0.049 \cdot 75 \\&amp;= 3.682 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-P_{lost} &amp;= \frac{ \rho_{water} \cdot g \cdot Q \cdot h_{f} }{ 1 \times 10 ^ {6} } \\&amp;= \frac{ 1000 \cdot 9.810 \cdot 3.682 \cdot 38.303 }{ 1 \times 10 ^ {6} } \\&amp;= 1.383 \; \;\textrm{(MW)}\\[10pt]
-\\[10pt]
-h_{j} &amp;= \frac{ \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= \frac{ \left( 75 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 286.697 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-P_{jet} &amp;= \frac{ \rho_{water} \cdot g \cdot Q \cdot h_{j} }{ 1 \times 10 ^ {6} } \\&amp;= \frac{ 1000 \cdot 9.810 \cdot 3.682 \cdot 286.697 }{ 1 \times 10 ^ {6} } \\&amp;= 10.354 \; \;\textrm{(MW)}\\[10pt]
+\\
+A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.250 \right) ^{ 2 } }{ 4 } \\&amp;= 0.049 \; \;\textrm{(m2)}\\
+\\
+Q &amp;= A_{2} \cdot v_{2} \\&amp;= 0.049 \cdot 75 \\&amp;= 3.682 \; \;\textrm{(m3/s)}\\
+\\
+P_{lost} &amp;= \frac{ \rho_{water} \cdot g \cdot Q \cdot h_{f} }{ 1 \times 10 ^ {6} } \\&amp;= \frac{ 1000 \cdot 9.810 \cdot 3.682 \cdot 38.303 }{ 1 \times 10 ^ {6} } \\&amp;= 1.383 \; \;\textrm{(MW)}\\
+\\
+h_{j} &amp;= \frac{ \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= \frac{ \left( 75 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 286.697 \; \;\textrm{(m)}\\
+\\
+P_{jet} &amp;= \frac{ \rho_{water} \cdot g \cdot Q \cdot h_{j} }{ 1 \times 10 ^ {6} } \\&amp;= \frac{ 1000 \cdot 9.810 \cdot 3.682 \cdot 286.697 }{ 1 \times 10 ^ {6} } \\&amp;= 10.354 \; \;\textrm{(MW)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4162,12 +4164,12 @@ Answer<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 \nu &amp;= 0.001 \; \;\textrm{(m2/s)}
-\\[10pt]
+\\
 D &amp;= 0.100 \; \;\textrm{(m)}
-\\[10pt]
+\\
 v &amp;= 5 \; \;\textrm{(m/s)}
-\\[10pt]
-\mathrm{Re} &amp;= \frac{ v \cdot D }{ \nu } \\&amp;= \frac{ 5 \cdot 0.100 }{ 0.001 } \\&amp;= 500.000 \; \;\textrm{($\text{Re &lt; 2000, thus laminar flow }$)}\\[10pt]
+\\
+\mathrm{Re} &amp;= \frac{ v \cdot D }{ \nu } \\&amp;= \frac{ 5 \cdot 0.100 }{ 0.001 } \\&amp;= 500.000 \; \;\textrm{($\text{Re &lt; 2000, thus laminar flow }$)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4201,12 +4203,12 @@ Answer<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D &amp;= 0.10000000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 V &amp;= 5 \; \;\textrm{(m/s)}
-\\[10pt]
+\\
 \nu &amp;= 0.00000114 \; \;\textrm{(m2/s)}
-\\[10pt]
-\mathrm{Re} &amp;= V \cdot \frac{ D }{ \nu } \\&amp;= 5 \cdot \frac{ 0.10000000 }{ 0.00000114 } \\&amp;= 438596.49122807 \; \;\textrm{($\text{Re &gt; 4000, thus turbulent}$)}\\[10pt]
+\\
+\mathrm{Re} &amp;= V \cdot \frac{ D }{ \nu } \\&amp;= 5 \cdot \frac{ 0.10000000 }{ 0.00000114 } \\&amp;= 438596.49122807 \; \;\textrm{($\text{Re &gt; 4000, thus turbulent}$)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4240,16 +4242,16 @@ Answer<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 \nu &amp;= 0.00000114 \; 
-\\[10pt]
+\\
 D &amp;= 0.10000000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \mathrm{Re} &amp;= 2000 \; 
-\\[10pt]
-v &amp;= \frac{ \nu \cdot \mathrm{Re} }{ D } \\&amp;= \frac{ 0.00000114 \cdot 2000 }{ 0.10000000 } \\&amp;= 0.02280000 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.14159265 \cdot \frac{ \left( 0.10000000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.00785398 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q &amp;= v \cdot A \cdot 1000 \\&amp;= 0.02280000 \cdot 0.00785398 \cdot 1000 \\&amp;= 0.17907078 \; \;\textrm{(L/s)}\\[10pt]
+\\
+v &amp;= \frac{ \nu \cdot \mathrm{Re} }{ D } \\&amp;= \frac{ 0.00000114 \cdot 2000 }{ 0.10000000 } \\&amp;= 0.02280000 \; \;\textrm{(m/s)}\\
+\\
+A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.14159265 \cdot \frac{ \left( 0.10000000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.00785398 \; \;\textrm{(m2)}\\
+\\
+Q &amp;= v \cdot A \cdot 1000 \\&amp;= 0.02280000 \cdot 0.00785398 \cdot 1000 \\&amp;= 0.17907078 \; \;\textrm{(L/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4301,18 +4303,18 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D &amp;= 0.10000000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L &amp;= 1000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \nu &amp;= 0.00000114 \; \;\textrm{($ \text{m2/s; From water properties table}$)}
-\\[10pt]
-v &amp;= 2000 \cdot \frac{ \nu }{ D } \\&amp;= 2000 \cdot \frac{ 0.00000114 }{ 0.10000000 } \\&amp;= 0.02280000 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.14159265 \cdot \frac{ \left( 0.10000000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.00785398 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q &amp;= v \cdot A \\&amp;= 0.02280000 \cdot 0.00785398 \\&amp;= 0.00017907 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-Q_{} &amp;= Q \cdot 1000 \\&amp;= 0.00017907 \cdot 1000 \\&amp;= 0.17907078 \; \;\textrm{(L/s)}\\[10pt]
+\\
+v &amp;= 2000 \cdot \frac{ \nu }{ D } \\&amp;= 2000 \cdot \frac{ 0.00000114 }{ 0.10000000 } \\&amp;= 0.02280000 \; \;\textrm{(m/s)}\\
+\\
+A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.14159265 \cdot \frac{ \left( 0.10000000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.00785398 \; \;\textrm{(m2)}\\
+\\
+Q &amp;= v \cdot A \\&amp;= 0.02280000 \cdot 0.00785398 \\&amp;= 0.00017907 \; \;\textrm{(m3/s)}\\
+\\
+Q_{} &amp;= Q \cdot 1000 \\&amp;= 0.00017907 \cdot 1000 \\&amp;= 0.17907078 \; \;\textrm{(L/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4330,7 +4332,7 @@ Q_{} &amp;= Q \cdot 1000 \\&amp;= 0.00017907 \cdot 1000 \\&amp;= 0.17907078 \; \
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.00000114 \cdot 0.02280000 \cdot 1000 }{ 9.81000000 \cdot \left( 0.10000000 \right) ^{ 2 } } \\&amp;= 0.00847853 \; \;\textrm{(m)}\\[10pt]
+h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.00000114 \cdot 0.02280000 \cdot 1000 }{ 9.81000000 \cdot \left( 0.10000000 \right) ^{ 2 } } \\&amp;= 0.00847853 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4364,20 +4366,20 @@ a) \;4.23 \; m \;of \;oil
 \[\begin{split}
 \begin{aligned}
 \mu &amp;= 0.04800 \; \;\textrm{(kg/m)}
-\\[10pt]
+\\
 \rho &amp;= 800 \; \;\textrm{(kg/m3)}
-\\[10pt]
+\\
 D &amp;= 0.02500 \; \;\textrm{(m)}
-\\[10pt]
+\\
 v &amp;= 0.30000 \; \;\textrm{(m/s)}
-\\[10pt]
+\\
 L &amp;= 45 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \nu &amp;= 0.00006 \; 
-\\[10pt]
-\mathrm{Re} &amp;= \frac{ v \cdot D }{ \nu } \\&amp;= \frac{ 0.30000 \cdot 0.02500 }{ 0.00006 } \\&amp;= 125.00000  \\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ 32 \cdot \mu \cdot L \cdot v }{ \rho \cdot g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.04800 \cdot 45 \cdot 0.30000 }{ 800 \cdot 9.81000 \cdot \left( 0.02500 \right) ^{ 2 } } \\&amp;= 4.22752 \; \;\textrm{(m)}\\[10pt]
+\\
+\mathrm{Re} &amp;= \frac{ v \cdot D }{ \nu } \\&amp;= \frac{ 0.30000 \cdot 0.02500 }{ 0.00006 } \\&amp;= 125.00000  \\
+\\
+h_{f} &amp;= \frac{ 32 \cdot \mu \cdot L \cdot v }{ \rho \cdot g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.04800 \cdot 45 \cdot 0.30000 }{ 800 \cdot 9.81000 \cdot \left( 0.02500 \right) ^{ 2 } } \\&amp;= 4.22752 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4439,20 +4441,20 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D &amp;= 0.10000000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L &amp;= 1000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 e &amp;= 0.00001000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \mathrm{Re}_{L} &amp;= 1500 \; \;\textrm{(Laminar)}
-\\[10pt]
+\\
 \mathrm{Re}_{T} &amp;= 150000 \; \;\textrm{(Turbulent)}
-\\[10pt]
+\\
 \nu &amp;= 1.14 \cdot \left( 10 \right) ^{ -6 } &amp;= 0.00000114 \; \;\textrm{(m/s2)}
-\\[10pt]
-v &amp;= \mathrm{Re}_{L} \cdot \frac{ \nu }{ D } \\&amp;= 1500 \cdot \frac{ 0.00000114 }{ 0.10000000 } \\&amp;= 0.01710000 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.00000114 \cdot 0.01710000 \cdot 1000 }{ 9.81000000 \cdot \left( 0.10000000 \right) ^{ 2 } } \\&amp;= 0.00635890 \; \;\textrm{(m)}\\[10pt]
+\\
+v &amp;= \mathrm{Re}_{L} \cdot \frac{ \nu }{ D } \\&amp;= 1500 \cdot \frac{ 0.00000114 }{ 0.10000000 } \\&amp;= 0.01710000 \; \;\textrm{(m/s)}\\
+\\
+h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.00000114 \cdot 0.01710000 \cdot 1000 }{ 9.81000000 \cdot \left( 0.10000000 \right) ^{ 2 } } \\&amp;= 0.00635890 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4471,11 +4473,11 @@ h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-v &amp;= \frac{ \mathrm{Re}_{T} \cdot \nu }{ D } \\&amp;= \frac{ 150000 \cdot 0.00000114 }{ 0.10000000 } \\&amp;= 1.71000000 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \frac{ 6.9 }{ \mathrm{Re}_{T} } \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.00001000 }{ 3.7 \cdot 0.10000000 } \right) ^{ 1.11 } + \frac{ 6.9 }{ 150000 } \right) } \right) ^{ 2 } \\&amp;= 0.01697843  \\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.01697843 \cdot 1000 \cdot \left( 1.71000000 \right) ^{ 2 } }{ 2 \cdot 9.81000000 \cdot 0.10000000 } \\&amp;= 25.30408777 \; \;\textrm{(m)}\\[10pt]
+v &amp;= \frac{ \mathrm{Re}_{T} \cdot \nu }{ D } \\&amp;= \frac{ 150000 \cdot 0.00000114 }{ 0.10000000 } \\&amp;= 1.71000000 \; \;\textrm{(m/s)}\\
+\\
+f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \frac{ 6.9 }{ \mathrm{Re}_{T} } \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.00001000 }{ 3.7 \cdot 0.10000000 } \right) ^{ 1.11 } + \frac{ 6.9 }{ 150000 } \right) } \right) ^{ 2 } \\&amp;= 0.01697843  \\
+\\
+h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.01697843 \cdot 1000 \cdot \left( 1.71000000 \right) ^{ 2 } }{ 2 \cdot 9.81000000 \cdot 0.10000000 } \\&amp;= 25.30408777 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4497,12 +4499,12 @@ h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D
 \[\begin{split}
 \begin{aligned}
 D &amp;= 0.20000000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 e &amp;= 0.00010000 \; \;\textrm{(m)}
-\\[10pt]
-v &amp;= \mathrm{Re}_{L} \cdot \frac{ \nu }{ D } \\&amp;= 1500 \cdot \frac{ 0.00000114 }{ 0.20000000 } \\&amp;= 0.00855000 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.00000114 \cdot 0.00855000 \cdot 1000 }{ 9.81000000 \cdot \left( 0.20000000 \right) ^{ 2 } } \\&amp;= 0.00079486 \; \;\textrm{(m)}\\[10pt]
+\\
+v &amp;= \mathrm{Re}_{L} \cdot \frac{ \nu }{ D } \\&amp;= 1500 \cdot \frac{ 0.00000114 }{ 0.20000000 } \\&amp;= 0.00855000 \; \;\textrm{(m/s)}\\
+\\
+h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.00000114 \cdot 0.00855000 \cdot 1000 }{ 9.81000000 \cdot \left( 0.20000000 \right) ^{ 2 } } \\&amp;= 0.00079486 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4521,11 +4523,11 @@ h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-v &amp;= \frac{ \mathrm{Re}_{T} \cdot \nu }{ D } \\&amp;= \frac{ 150000 \cdot 0.00000114 }{ 0.20000000 } \\&amp;= 0.85500000 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \frac{ 6.9 }{ \mathrm{Re}_{T} } \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.00010000 }{ 3.7 \cdot 0.20000000 } \right) ^{ 1.11 } + \frac{ 6.9 }{ 150000 } \right) } \right) ^{ 2 } \\&amp;= 0.01915105  \\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.01915105 \cdot 1000 \cdot \left( 0.85500000 \right) ^{ 2 } }{ 2 \cdot 9.81000000 \cdot 0.20000000 } \\&amp;= 3.56776153 \; \;\textrm{(m)}\\[10pt]
+v &amp;= \frac{ \mathrm{Re}_{T} \cdot \nu }{ D } \\&amp;= \frac{ 150000 \cdot 0.00000114 }{ 0.20000000 } \\&amp;= 0.85500000 \; \;\textrm{(m/s)}\\
+\\
+f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \frac{ 6.9 }{ \mathrm{Re}_{T} } \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.00010000 }{ 3.7 \cdot 0.20000000 } \right) ^{ 1.11 } + \frac{ 6.9 }{ 150000 } \right) } \right) ^{ 2 } \\&amp;= 0.01915105  \\
+\\
+h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.01915105 \cdot 1000 \cdot \left( 0.85500000 \right) ^{ 2 } }{ 2 \cdot 9.81000000 \cdot 0.20000000 } \\&amp;= 3.56776153 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4547,14 +4549,14 @@ h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D
 \[\begin{split}
 \begin{aligned}
 D &amp;= 0.15000000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 e &amp;= 0.00001000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L &amp;= 2000 \; \;\textrm{(m)}
-\\[10pt]
-v &amp;= \mathrm{Re}_{L} \cdot \frac{ \nu }{ D } \\&amp;= 1500 \cdot \frac{ 0.00000114 }{ 0.15000000 } \\&amp;= 0.01140000 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.00000114 \cdot 0.01140000 \cdot 2000 }{ 9.81000000 \cdot \left( 0.15000000 \right) ^{ 2 } } \\&amp;= 0.00376824 \; \;\textrm{(m)}\\[10pt]
+\\
+v &amp;= \mathrm{Re}_{L} \cdot \frac{ \nu }{ D } \\&amp;= 1500 \cdot \frac{ 0.00000114 }{ 0.15000000 } \\&amp;= 0.01140000 \; \;\textrm{(m/s)}\\
+\\
+h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.00000114 \cdot 0.01140000 \cdot 2000 }{ 9.81000000 \cdot \left( 0.15000000 \right) ^{ 2 } } \\&amp;= 0.00376824 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4573,11 +4575,11 @@ h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-v &amp;= \frac{ \mathrm{Re}_{T} \cdot \nu }{ D } \\&amp;= \frac{ 150000 \cdot 0.00000114 }{ 0.15000000 } \\&amp;= 1.14000000 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \frac{ 6.9 }{ \mathrm{Re}_{T} } \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.00001000 }{ 3.7 \cdot 0.15000000 } \right) ^{ 1.11 } + \frac{ 6.9 }{ 150000 } \right) } \right) ^{ 2 } \\&amp;= 0.01677900  \\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.01677900 \cdot 2000 \cdot \left( 1.14000000 \right) ^{ 2 } }{ 2 \cdot 9.81000000 \cdot 0.15000000 } \\&amp;= 14.81888643 \; \;\textrm{(m)}\\[10pt]
+v &amp;= \frac{ \mathrm{Re}_{T} \cdot \nu }{ D } \\&amp;= \frac{ 150000 \cdot 0.00000114 }{ 0.15000000 } \\&amp;= 1.14000000 \; \;\textrm{(m/s)}\\
+\\
+f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \frac{ 6.9 }{ \mathrm{Re}_{T} } \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.00001000 }{ 3.7 \cdot 0.15000000 } \right) ^{ 1.11 } + \frac{ 6.9 }{ 150000 } \right) } \right) ^{ 2 } \\&amp;= 0.01677900  \\
+\\
+h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.01677900 \cdot 2000 \cdot \left( 1.14000000 \right) ^{ 2 } }{ 2 \cdot 9.81000000 \cdot 0.15000000 } \\&amp;= 14.81888643 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4624,34 +4626,34 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D &amp;= 0.10000000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L &amp;= 1000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 e &amp;= 0.00010000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 Q &amp;= 0.01000000 \; \;\textrm{(m3/s)}
-\\[10pt]
+\\
 \nu &amp;= 0.00000114 \; \;\textrm{(m2/s)}
-\\[10pt]
-A &amp;= \frac{ \pi \cdot \left( D \right) ^{ 2 } }{ 4 } \\&amp;= \frac{ 3.14159265 \cdot \left( 0.10000000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.00785398 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-v &amp;= \frac{ Q }{ A } \\&amp;= \frac{ 0.01000000 }{ 0.00785398 } \\&amp;= 1.27323954 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-\mathrm{Re} &amp;= \frac{ v \cdot D }{ \nu } \\&amp;= \frac{ 1.27323954 \cdot 0.10000000 }{ 0.00000114 } \\&amp;= 111687.67936273 \; \;\textrm{(&gt; 4000, thus turbulent)}\\[10pt]
-\\[10pt]
-f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \frac{ 6.9 }{ \mathrm{Re} } \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.00010000 }{ 3.7 \cdot 0.10000000 } \right) ^{ 1.11 } + \frac{ 6.9 }{ 111687.67936273 } \right) } \right) ^{ 2 } \\&amp;= 0.02175750  \\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.02175750 \cdot 1000 \cdot \left( 1.27323954 \right) ^{ 2 } }{ 2 \cdot 9.81000000 \cdot 0.10000000 } \\&amp;= 17.97753725 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-Q_{2} &amp;= Q \cdot 2 \\&amp;= 0.01000000 \cdot 2 \\&amp;= 0.02000000 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-v_{2} &amp;= \frac{ Q_{2} }{ A } \\&amp;= \frac{ 0.02000000 }{ 0.00785398 } \\&amp;= 2.54647909 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-\mathrm{Re}_{2} &amp;= \frac{ v_{2} \cdot D }{ \nu } \\&amp;= \frac{ 2.54647909 \cdot 0.10000000 }{ 0.00000114 } \\&amp;= 223375.35872547 \; \;\textrm{(&gt; 4000, thus turbulent)}\\[10pt]
-\\[10pt]
-f_{2} &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \frac{ 6.9 }{ \mathrm{Re}_{2} } \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.00010000 }{ 3.7 \cdot 0.10000000 } \right) ^{ 1.11 } + \frac{ 6.9 }{ 223375.35872547 } \right) } \right) ^{ 2 } \\&amp;= 0.02079274  \\[10pt]
-\\[10pt]
-h_{f_{2}} &amp;= \frac{ f_{2} \cdot L \cdot \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.02079274 \cdot 1000 \cdot \left( 2.54647909 \right) ^{ 2 } }{ 2 \cdot 9.81000000 \cdot 0.10000000 } \\&amp;= 68.72156289 \; \;\textrm{(m)}\\[10pt]
+\\
+A &amp;= \frac{ \pi \cdot \left( D \right) ^{ 2 } }{ 4 } \\&amp;= \frac{ 3.14159265 \cdot \left( 0.10000000 \right) ^{ 2 } }{ 4 } \\&amp;= 0.00785398 \; \;\textrm{(m2)}\\
+\\
+v &amp;= \frac{ Q }{ A } \\&amp;= \frac{ 0.01000000 }{ 0.00785398 } \\&amp;= 1.27323954 \; \;\textrm{(m/s)}\\
+\\
+\mathrm{Re} &amp;= \frac{ v \cdot D }{ \nu } \\&amp;= \frac{ 1.27323954 \cdot 0.10000000 }{ 0.00000114 } \\&amp;= 111687.67936273 \; \;\textrm{(&gt; 4000, thus turbulent)}\\
+\\
+f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \frac{ 6.9 }{ \mathrm{Re} } \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.00010000 }{ 3.7 \cdot 0.10000000 } \right) ^{ 1.11 } + \frac{ 6.9 }{ 111687.67936273 } \right) } \right) ^{ 2 } \\&amp;= 0.02175750  \\
+\\
+h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.02175750 \cdot 1000 \cdot \left( 1.27323954 \right) ^{ 2 } }{ 2 \cdot 9.81000000 \cdot 0.10000000 } \\&amp;= 17.97753725 \; \;\textrm{(m)}\\
+\\
+Q_{2} &amp;= Q \cdot 2 \\&amp;= 0.01000000 \cdot 2 \\&amp;= 0.02000000 \; \;\textrm{(m3/s)}\\
+\\
+v_{2} &amp;= \frac{ Q_{2} }{ A } \\&amp;= \frac{ 0.02000000 }{ 0.00785398 } \\&amp;= 2.54647909 \; \;\textrm{(m/s)}\\
+\\
+\mathrm{Re}_{2} &amp;= \frac{ v_{2} \cdot D }{ \nu } \\&amp;= \frac{ 2.54647909 \cdot 0.10000000 }{ 0.00000114 } \\&amp;= 223375.35872547 \; \;\textrm{(&gt; 4000, thus turbulent)}\\
+\\
+f_{2} &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \frac{ 6.9 }{ \mathrm{Re}_{2} } \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.00010000 }{ 3.7 \cdot 0.10000000 } \right) ^{ 1.11 } + \frac{ 6.9 }{ 223375.35872547 } \right) } \right) ^{ 2 } \\&amp;= 0.02079274  \\
+\\
+h_{f_{2}} &amp;= \frac{ f_{2} \cdot L \cdot \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.02079274 \cdot 1000 \cdot \left( 2.54647909 \right) ^{ 2 } }{ 2 \cdot 9.81000000 \cdot 0.10000000 } \\&amp;= 68.72156289 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4695,24 +4697,24 @@ b) \;4.5 \; m
 \[\begin{split}
 \begin{aligned}
 D &amp;= \frac{ 150 }{ 1000 } &amp;= 0.150 \; \;\textrm{(m)}
-\\[10pt]
+\\
 e &amp;= \frac{ 0.2 }{ 1000 } &amp;= 0.000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L &amp;= 500 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \nu &amp;= 0.000 \; \;\textrm{(m/s2)}
-\\[10pt]
+\\
 \mathrm{Re} &amp;= 2000 \; 
-\\[10pt]
-v &amp;= \mathrm{Re} \cdot \frac{ \nu }{ D } \\&amp;= 2000 \cdot \frac{ 0.000 }{ 0.150 } \\&amp;= 0.015 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-A &amp;= \frac{ \pi \cdot \left( D \right) ^{ 2 } }{ 4 } \\&amp;= \frac{ 3.142 \cdot \left( 0.150 \right) ^{ 2 } }{ 4 } \\&amp;= 0.018 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q &amp;= v \cdot A \\&amp;= 0.015 \cdot 0.018 \\&amp;= 0.000 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-Q_{L} &amp;= Q \cdot 1000 \\&amp;= 0.000 \cdot 1000 \\&amp;= 0.269 \; \;\textrm{(L/s)}\\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.000 \cdot 0.015 \cdot 500 }{ 9.810 \cdot \left( 0.150 \right) ^{ 2 } } \\&amp;= 0.001 \; \;\textrm{(m)}\\[10pt]
+\\
+v &amp;= \mathrm{Re} \cdot \frac{ \nu }{ D } \\&amp;= 2000 \cdot \frac{ 0.000 }{ 0.150 } \\&amp;= 0.015 \; \;\textrm{(m/s)}\\
+\\
+A &amp;= \frac{ \pi \cdot \left( D \right) ^{ 2 } }{ 4 } \\&amp;= \frac{ 3.142 \cdot \left( 0.150 \right) ^{ 2 } }{ 4 } \\&amp;= 0.018 \; \;\textrm{(m2)}\\
+\\
+Q &amp;= v \cdot A \\&amp;= 0.015 \cdot 0.018 \\&amp;= 0.000 \; \;\textrm{(m3/s)}\\
+\\
+Q_{L} &amp;= Q \cdot 1000 \\&amp;= 0.000 \cdot 1000 \\&amp;= 0.269 \; \;\textrm{(L/s)}\\
+\\
+h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.000 \cdot 0.015 \cdot 500 }{ 9.810 \cdot \left( 0.150 \right) ^{ 2 } } \\&amp;= 0.001 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4731,12 +4733,12 @@ h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 
 \[\begin{split}
 \begin{aligned}
 v &amp;= 2 \; \;\textrm{(m/s)}
-\\[10pt]
-\mathrm{Re} &amp;= \frac{ v \cdot D }{ \nu } \\&amp;= \frac{ 2 \cdot 0.150 }{ 0.000 } \\&amp;= 263157.895 \; \;\textrm{(Turbulent)}\\[10pt]
-\\[10pt]
-f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.000 }{ 3.7 \cdot 0.150 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 263157.895 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.022  \\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.022 \cdot 500 \cdot \left( 2 \right) ^{ 2 } }{ 2 \cdot 9.810 \cdot 0.150 } \\&amp;= 14.897 \; \;\textrm{(m)}\\[10pt]
+\\
+\mathrm{Re} &amp;= \frac{ v \cdot D }{ \nu } \\&amp;= \frac{ 2 \cdot 0.150 }{ 0.000 } \\&amp;= 263157.895 \; \;\textrm{(Turbulent)}\\
+\\
+f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.000 }{ 3.7 \cdot 0.150 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 263157.895 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.022  \\
+\\
+h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.022 \cdot 500 \cdot \left( 2 \right) ^{ 2 } }{ 2 \cdot 9.810 \cdot 0.150 } \\&amp;= 14.897 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4755,18 +4757,18 @@ h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D
 \[\begin{split}
 \begin{aligned}
 L &amp;= 1000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D &amp;= 0.1500 \; \;\textrm{(m)}
-\\[10pt]
+\\
 e &amp;= 0.0002 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \mathrm{Re} &amp;= 100000 \; 
-\\[10pt]
-v &amp;= \frac{ \mathrm{Re} \cdot \nu }{ D } \\&amp;= \frac{ 100000 \cdot 0.0000 }{ 0.1500 } \\&amp;= 0.7600 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.0002 }{ 3.7 \cdot 0.1500 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 100000 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.0231  \\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.0231 \cdot 1000 \cdot \left( 0.7600 \right) ^{ 2 } }{ 2 \cdot 9.8100 \cdot 0.1500 } \\&amp;= 4.5263 \; \;\textrm{(m)}\\[10pt]
+\\
+v &amp;= \frac{ \mathrm{Re} \cdot \nu }{ D } \\&amp;= \frac{ 100000 \cdot 0.0000 }{ 0.1500 } \\&amp;= 0.7600 \; \;\textrm{(m/s)}\\
+\\
+f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.0002 }{ 3.7 \cdot 0.1500 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 100000 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.0231  \\
+\\
+h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.0231 \cdot 1000 \cdot \left( 0.7600 \right) ^{ 2 } }{ 2 \cdot 9.8100 \cdot 0.1500 } \\&amp;= 4.5263 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4841,20 +4843,20 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D &amp;= 0.10000000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L &amp;= 1000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \nu &amp;= 1.14 \cdot \left( 10 \right) ^{ -6 } &amp;= 0.00000114 \; \;\textrm{(m2/s)}
-\\[10pt]
+\\
 \mathrm{Re} &amp;= 2000 \; 
-\\[10pt]
-v &amp;= \frac{ \mathrm{Re} \cdot \nu }{ D } \\&amp;= \frac{ 2000 \cdot 0.00000114 }{ 0.10000000 } \\&amp;= 0.02280000 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
+\\
+v &amp;= \frac{ \mathrm{Re} \cdot \nu }{ D } \\&amp;= \frac{ 2000 \cdot 0.00000114 }{ 0.10000000 } \\&amp;= 0.02280000 \; \;\textrm{(m/s)}\\
+\\
 A &amp;= 0.00785398 \; \;\textrm{(m2)}
-\\[10pt]
-Q &amp;= v \cdot A \\&amp;= 0.02280000 \cdot 0.00785398 \\&amp;= 0.00017907 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-Q_{L} &amp;= Q \cdot 1000 \\&amp;= 0.00017907 \cdot 1000 \\&amp;= 0.17907078 \; \;\textrm{(L/s)}\\[10pt]
+\\
+Q &amp;= v \cdot A \\&amp;= 0.02280000 \cdot 0.00785398 \\&amp;= 0.00017907 \; \;\textrm{(m3/s)}\\
+\\
+Q_{L} &amp;= Q \cdot 1000 \\&amp;= 0.00017907 \cdot 1000 \\&amp;= 0.17907078 \; \;\textrm{(L/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4882,7 +4884,7 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.00000 \cdot 0.02280 \cdot 1000 }{ 9.81000 \cdot \left( 0.10000 \right) ^{ 2 } } \\&amp;= 0.00848 \; \;\textrm{(m)}\\[10pt]
+h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.00000 \cdot 0.02280 \cdot 1000 }{ 9.81000 \cdot \left( 0.10000 \right) ^{ 2 } } \\&amp;= 0.00848 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4913,9 +4915,9 @@ f=\frac {64}{Re}
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-f &amp;= \frac{ 64 }{ \mathrm{Re} } \\&amp;= \frac{ 64 }{ 2000 } \\&amp;= 0.03200  \\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot D \cdot g } \\&amp;= \frac{ 0.03200 \cdot 1000 \cdot \left( 0.02280 \right) ^{ 2 } }{ 2 \cdot 0.10000 \cdot 9.81000 } \\&amp;= 0.00848 \; \;\textrm{(m)}\\[10pt]
+f &amp;= \frac{ 64 }{ \mathrm{Re} } \\&amp;= \frac{ 64 }{ 2000 } \\&amp;= 0.03200  \\
+\\
+h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot D \cdot g } \\&amp;= \frac{ 0.03200 \cdot 1000 \cdot \left( 0.02280 \right) ^{ 2 } }{ 2 \cdot 0.10000 \cdot 9.81000 } \\&amp;= 0.00848 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4958,20 +4960,20 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 \mu &amp;= 0.048000 \; \;\textrm{(kg/m.s)}
-\\[10pt]
+\\
 \rho &amp;= 800 \; \;\textrm{(kg/m3)}
-\\[10pt]
+\\
 D &amp;= 0.025000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 v &amp;= 0.300000 \; \;\textrm{(m/s)}
-\\[10pt]
+\\
 L &amp;= 45 \; \;\textrm{(m)}
-\\[10pt]
-\nu &amp;= \frac{ \mu }{ \rho } \\&amp;= \frac{ 0.048000 }{ 800 } \\&amp;= 0.000060 \; \;\textrm{(m2/s)}\\[10pt]
-\\[10pt]
-\mathrm{Re} &amp;= \frac{ v \cdot D }{ \nu } \\&amp;= \frac{ 0.300000 \cdot 0.025000 }{ 0.000060 } \\&amp;= 125.000000 \; \;\textrm{(&lt; 2000, thus laminar)}\\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.000060 \cdot 0.300000 \cdot 45 }{ 9.810000 \cdot \left( 0.025000 \right) ^{ 2 } } \\&amp;= 4.227523 \; \;\textrm{(m)}\\[10pt]
+\\
+\nu &amp;= \frac{ \mu }{ \rho } \\&amp;= \frac{ 0.048000 }{ 800 } \\&amp;= 0.000060 \; \;\textrm{(m2/s)}\\
+\\
+\mathrm{Re} &amp;= \frac{ v \cdot D }{ \nu } \\&amp;= \frac{ 0.300000 \cdot 0.025000 }{ 0.000060 } \\&amp;= 125.000000 \; \;\textrm{(&lt; 2000, thus laminar)}\\
+\\
+h_{f} &amp;= \frac{ 32 \cdot \nu \cdot v \cdot L }{ g \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 32 \cdot 0.000060 \cdot 0.300000 \cdot 45 }{ 9.810000 \cdot \left( 0.025000 \right) ^{ 2 } } \\&amp;= 4.227523 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5002,9 +5004,9 @@ f=\frac {64}{Re}
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-f &amp;= \frac{ 64 }{ \mathrm{Re} } \\&amp;= \frac{ 64 }{ 125.00 } \\&amp;= 0.51  \\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.51 \cdot 45 \cdot \left( 0.30 \right) ^{ 2 } }{ 2 \cdot 9.81 \cdot 0.03 } \\&amp;= 4.23 \; \;\textrm{(m)}\\[10pt]
+f &amp;= \frac{ 64 }{ \mathrm{Re} } \\&amp;= \frac{ 64 }{ 125.00 } \\&amp;= 0.51  \\
+\\
+h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.51 \cdot 45 \cdot \left( 0.30 \right) ^{ 2 } }{ 2 \cdot 9.81 \cdot 0.03 } \\&amp;= 4.23 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5069,10 +5071,10 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 a &amp;= 2 \; \;\textrm{(m)}
-\\[10pt]
+\\
 b &amp;= 4 \; \;\textrm{(m)}
-\\[10pt]
-D &amp;= \frac{ 2 \cdot a \cdot b }{ a + b } \\&amp;= \frac{ 2 \cdot 2 \cdot 4 }{ 2 + 4 } \\&amp;= 2.67 \; \;\textrm{(m)}\\[10pt]
+\\
+D &amp;= \frac{ 2 \cdot a \cdot b }{ a + b } \\&amp;= \frac{ 2 \cdot 2 \cdot 4 }{ 2 + 4 } \\&amp;= 2.67 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5108,20 +5110,20 @@ Answer<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D &amp;= 0.1000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L &amp;= 150 \; \;\textrm{(m)}
-\\[10pt]
+\\
 e &amp;= 0.0005 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \nu &amp;= 0.0000 \; \;\textrm{(m2/s)}
-\\[10pt]
+\\
 v &amp;= 1 \; \;\textrm{(m/s)}
-\\[10pt]
-\mathrm{Re} &amp;= \frac{ v \cdot D }{ \nu } \\&amp;= \frac{ 1 \cdot 0.1000 }{ 0.0000 } \\&amp;= 87719.2982 \; \;\textrm{(Turbulent)}\\[10pt]
-\\[10pt]
-f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.0005 }{ 3.7 \cdot 0.1000 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 87719.2982 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.0314  \\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.0314 \cdot 150 \cdot \left( 1 \right) ^{ 2 } }{ 2 \cdot 9.8100 \cdot 0.1000 } \\&amp;= 2.4002 \; \;\textrm{(m)}\\[10pt]
+\\
+\mathrm{Re} &amp;= \frac{ v \cdot D }{ \nu } \\&amp;= \frac{ 1 \cdot 0.1000 }{ 0.0000 } \\&amp;= 87719.2982 \; \;\textrm{(Turbulent)}\\
+\\
+f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.0005 }{ 3.7 \cdot 0.1000 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 87719.2982 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.0314  \\
+\\
+h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= \frac{ 0.0314 \cdot 150 \cdot \left( 1 \right) ^{ 2 } }{ 2 \cdot 9.8100 \cdot 0.1000 } \\&amp;= 2.4002 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5180,15 +5182,15 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-a &amp;= \frac{ \sqrt { \pi } \cdot D }{ 2 } \\&amp;= \frac{ \sqrt { 3.142 } \cdot 0.100 }{ 2 } \\&amp;= 0.089 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-R_{h} &amp;= \frac{ a }{ 4 } \\&amp;= \frac{ 0.089 }{ 4 } \\&amp;= 0.022 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-\mathrm{Re} &amp;= \frac{ v \cdot 4 \cdot R_{h} }{ \nu } \\&amp;= \frac{ 1 \cdot 4 \cdot 0.022 }{ 0.000 } \\&amp;= 77739.204 \; \;\textrm{(Turbulent)}\\[10pt]
-\\[10pt]
-f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot 4 \cdot R_{h} } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.001 }{ 3.7 \cdot 4 \cdot 0.022 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 77739.204 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.033  \\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot 4 \cdot R_{h} } \\&amp;= \frac{ 0.033 \cdot 150 \cdot \left( 1 \right) ^{ 2 } }{ 2 \cdot 9.810 \cdot 4 \cdot 0.022 } \\&amp;= 2.811 \; \;\textrm{(m)}\\[10pt]
+a &amp;= \frac{ \sqrt { \pi } \cdot D }{ 2 } \\&amp;= \frac{ \sqrt { 3.142 } \cdot 0.100 }{ 2 } \\&amp;= 0.089 \; \;\textrm{(m)}\\
+\\
+R_{h} &amp;= \frac{ a }{ 4 } \\&amp;= \frac{ 0.089 }{ 4 } \\&amp;= 0.022 \; \;\textrm{(m)}\\
+\\
+\mathrm{Re} &amp;= \frac{ v \cdot 4 \cdot R_{h} }{ \nu } \\&amp;= \frac{ 1 \cdot 4 \cdot 0.022 }{ 0.000 } \\&amp;= 77739.204 \; \;\textrm{(Turbulent)}\\
+\\
+f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot 4 \cdot R_{h} } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.001 }{ 3.7 \cdot 4 \cdot 0.022 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 77739.204 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.033  \\
+\\
+h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot 4 \cdot R_{h} } \\&amp;= \frac{ 0.033 \cdot 150 \cdot \left( 1 \right) ^{ 2 } }{ 2 \cdot 9.810 \cdot 4 \cdot 0.022 } \\&amp;= 2.811 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5265,20 +5267,20 @@ h_f= (f*L*v**2)/(2*g*4*R_h) #m
 \[\begin{split}
 \begin{aligned}
 a &amp;= 4 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L &amp;= 100 \; \;\textrm{(m)}
-\\[10pt]
+\\
 v &amp;= 2 \; \;\textrm{(m/s)}
-\\[10pt]
+\\
 e &amp;= \frac{ 0.2 }{ 1000 } &amp;= 0.000200 \; \;\textrm{(mm)}
-\\[10pt]
-R_{h} &amp;= \frac{ a \cdot \sqrt { 3 } }{ 12 } \\&amp;= \frac{ 4 \cdot \sqrt { 3 } }{ 12 } \\&amp;= 0.577350 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-\mathrm{Re} &amp;= \frac{ v \cdot 4 \cdot R_{h} }{ \nu } \\&amp;= \frac{ 2 \cdot 4 \cdot 0.577350 }{ 0.000001 } \\&amp;= 4051580.836418 \; \;\textrm{(Turbulent)}\\[10pt]
-\\[10pt]
-f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot 4 \cdot R_{h} } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.000200 }{ 3.7 \cdot 4 \cdot 0.577350 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 4051580.836418 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.012110  \\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot 4 \cdot R_{h} } \\&amp;= \frac{ 0.012110 \cdot 100 \cdot \left( 2 \right) ^{ 2 } }{ 2 \cdot 9.810000 \cdot 4 \cdot 0.577350 } \\&amp;= 0.106910 \; \;\textrm{(m)}\\[10pt]
+\\
+R_{h} &amp;= \frac{ a \cdot \sqrt { 3 } }{ 12 } \\&amp;= \frac{ 4 \cdot \sqrt { 3 } }{ 12 } \\&amp;= 0.577350 \; \;\textrm{(m)}\\
+\\
+\mathrm{Re} &amp;= \frac{ v \cdot 4 \cdot R_{h} }{ \nu } \\&amp;= \frac{ 2 \cdot 4 \cdot 0.577350 }{ 0.000001 } \\&amp;= 4051580.836418 \; \;\textrm{(Turbulent)}\\
+\\
+f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot 4 \cdot R_{h} } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.000200 }{ 3.7 \cdot 4 \cdot 0.577350 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 4051580.836418 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.012110  \\
+\\
+h_{f} &amp;= \frac{ f \cdot L \cdot \left( v \right) ^{ 2 } }{ 2 \cdot g \cdot 4 \cdot R_{h} } \\&amp;= \frac{ 0.012110 \cdot 100 \cdot \left( 2 \right) ^{ 2 } }{ 2 \cdot 9.810000 \cdot 4 \cdot 0.577350 } \\&amp;= 0.106910 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5327,16 +5329,16 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D &amp;= 0.100 \; \;\textrm{(m)}
-\\[10pt]
+\\
 Q &amp;= 0.010 \; \;\textrm{(m3/s)}
-\\[10pt]
+\\
 k &amp;= 0.190 \; 
-\\[10pt]
-A &amp;= \frac{ \pi \cdot \left( D \right) ^{ 2 } }{ 4 } \\&amp;= \frac{ 3.142 \cdot \left( 0.100 \right) ^{ 2 } }{ 4 } \\&amp;= 0.008 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-v &amp;= \frac{ Q }{ A } \\&amp;= \frac{ 0.010 }{ 0.008 } \\&amp;= 1.273 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-h_{s} &amp;= k \cdot \frac{ \left( v \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= 0.190 \cdot \frac{ \left( 1.273 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 0.016 \; \;\textrm{(m)}\\[10pt]
+\\
+A &amp;= \frac{ \pi \cdot \left( D \right) ^{ 2 } }{ 4 } \\&amp;= \frac{ 3.142 \cdot \left( 0.100 \right) ^{ 2 } }{ 4 } \\&amp;= 0.008 \; \;\textrm{(m2)}\\
+\\
+v &amp;= \frac{ Q }{ A } \\&amp;= \frac{ 0.010 }{ 0.008 } \\&amp;= 1.273 \; \;\textrm{(m/s)}\\
+\\
+h_{s} &amp;= k \cdot \frac{ \left( v \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= 0.190 \cdot \frac{ \left( 1.273 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 0.016 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5364,16 +5366,16 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D &amp;= 0.100 \; \;\textrm{(m)}
-\\[10pt]
+\\
 Q &amp;= 0.020 \; \;\textrm{(m3/s)}
-\\[10pt]
+\\
 k &amp;= 0.190 \; 
-\\[10pt]
-A &amp;= \frac{ \pi \cdot \left( D \right) ^{ 2 } }{ 4 } \\&amp;= \frac{ 3.142 \cdot \left( 0.100 \right) ^{ 2 } }{ 4 } \\&amp;= 0.008 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-v &amp;= \frac{ Q }{ A } \\&amp;= \frac{ 0.020 }{ 0.008 } \\&amp;= 2.546 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-h_{s} &amp;= k \cdot \frac{ \left( v \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= 0.190 \cdot \frac{ \left( 2.546 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 0.063 \; \;\textrm{(m)}\\[10pt]
+\\
+A &amp;= \frac{ \pi \cdot \left( D \right) ^{ 2 } }{ 4 } \\&amp;= \frac{ 3.142 \cdot \left( 0.100 \right) ^{ 2 } }{ 4 } \\&amp;= 0.008 \; \;\textrm{(m2)}\\
+\\
+v &amp;= \frac{ Q }{ A } \\&amp;= \frac{ 0.020 }{ 0.008 } \\&amp;= 2.546 \; \;\textrm{(m/s)}\\
+\\
+h_{s} &amp;= k \cdot \frac{ \left( v \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= 0.190 \cdot \frac{ \left( 2.546 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 0.063 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5401,16 +5403,16 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D &amp;= 0.100 \; \;\textrm{(m)}
-\\[10pt]
+\\
 Q &amp;= 0.010 \; \;\textrm{(m3/s)}
-\\[10pt]
+\\
 k &amp;= 0.900 \; 
-\\[10pt]
-A &amp;= \frac{ \pi \cdot \left( D \right) ^{ 2 } }{ 4 } \\&amp;= \frac{ 3.142 \cdot \left( 0.100 \right) ^{ 2 } }{ 4 } \\&amp;= 0.008 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-v &amp;= \frac{ Q }{ A } \\&amp;= \frac{ 0.010 }{ 0.008 } \\&amp;= 1.273 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-h_{s} &amp;= k \cdot \frac{ \left( v \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= 0.900 \cdot \frac{ \left( 1.273 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 0.074 \; \;\textrm{(m)}\\[10pt]
+\\
+A &amp;= \frac{ \pi \cdot \left( D \right) ^{ 2 } }{ 4 } \\&amp;= \frac{ 3.142 \cdot \left( 0.100 \right) ^{ 2 } }{ 4 } \\&amp;= 0.008 \; \;\textrm{(m2)}\\
+\\
+v &amp;= \frac{ Q }{ A } \\&amp;= \frac{ 0.010 }{ 0.008 } \\&amp;= 1.273 \; \;\textrm{(m/s)}\\
+\\
+h_{s} &amp;= k \cdot \frac{ \left( v \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= 0.900 \cdot \frac{ \left( 1.273 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 0.074 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5456,28 +5458,28 @@ Hint<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 D &amp;= \frac{ 100 }{ 1000 } &amp;= 0.100 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L &amp;= 1000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 e &amp;= \frac{ 0.01 }{ 1000 } &amp;= 0.000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \mathrm{Re} &amp;= 4000 \; 
-\\[10pt]
+\\
 \nu &amp;= 1.14 \cdot \left( 10 \right) ^{ -6 } &amp;= 0.000 \; \;\textrm{(m2/s)}
-\\[10pt]
-v &amp;= \nu \cdot \frac{ \mathrm{Re} }{ D } \\&amp;= 0.000 \cdot \frac{ 4000 }{ 0.100 } \\&amp;= 0.046  \\[10pt]
-\\[10pt]
-A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.100 \right) ^{ 2 } }{ 4 } \\&amp;= 0.008 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q &amp;= v \cdot A \\&amp;= 0.046 \cdot 0.008 \\&amp;= 0.000 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.000 }{ 3.7 \cdot 0.100 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 4000 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.040  \\[10pt]
-\\[10pt]
-h_{f_{a}} &amp;= 8 \cdot f \cdot L \cdot \frac{ \left( Q \right) ^{ 2 } }{ g \cdot \left( \pi \right) ^{ 2 } \cdot \left( D \right) ^{ 5 } } \\&amp;= 8 \cdot 0.040 \cdot 1000 \cdot \frac{ \left( 0.000 \right) ^{ 2 } }{ 9.810 \cdot \left( 3.142 \right) ^{ 2 } \cdot \left( 0.100 \right) ^{ 5 } } \\&amp;= 0.043 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-h_{s_{a}} &amp;= 0.1 \cdot h_{f_{a}} \\&amp;= 0.1 \cdot 0.043 \\&amp;= 0.004 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-k_{} &amp;= h_{s_{a}} \cdot g \cdot \frac{ 2 }{ \left( v \right) ^{ 2 } } \\&amp;= 0.004 \cdot 9.810 \cdot \frac{ 2 }{ \left( 0.046 \right) ^{ 2 } } \\&amp;= 40.485  \\[10pt]
+\\
+v &amp;= \nu \cdot \frac{ \mathrm{Re} }{ D } \\&amp;= 0.000 \cdot \frac{ 4000 }{ 0.100 } \\&amp;= 0.046  \\
+\\
+A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.100 \right) ^{ 2 } }{ 4 } \\&amp;= 0.008 \; \;\textrm{(m2)}\\
+\\
+Q &amp;= v \cdot A \\&amp;= 0.046 \cdot 0.008 \\&amp;= 0.000 \; \;\textrm{(m3/s)}\\
+\\
+f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.000 }{ 3.7 \cdot 0.100 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 4000 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.040  \\
+\\
+h_{f_{a}} &amp;= 8 \cdot f \cdot L \cdot \frac{ \left( Q \right) ^{ 2 } }{ g \cdot \left( \pi \right) ^{ 2 } \cdot \left( D \right) ^{ 5 } } \\&amp;= 8 \cdot 0.040 \cdot 1000 \cdot \frac{ \left( 0.000 \right) ^{ 2 } }{ 9.810 \cdot \left( 3.142 \right) ^{ 2 } \cdot \left( 0.100 \right) ^{ 5 } } \\&amp;= 0.043 \; \;\textrm{(m)}\\
+\\
+h_{s_{a}} &amp;= 0.1 \cdot h_{f_{a}} \\&amp;= 0.1 \cdot 0.043 \\&amp;= 0.004 \; \;\textrm{(m)}\\
+\\
+k_{} &amp;= h_{s_{a}} \cdot g \cdot \frac{ 2 }{ \left( v \right) ^{ 2 } } \\&amp;= 0.004 \cdot 9.810 \cdot \frac{ 2 }{ \left( 0.046 \right) ^{ 2 } } \\&amp;= 40.485  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5501,17 +5503,30 @@ Hint<div class="sd-summary-down docutils">
 <span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">106</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">f</span><span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="o">-</span><span class="mf">1.8</span><span class="o">*</span><span class="n">log10</span><span class="p">((</span><span class="n">e</span><span class="o">/</span><span class="p">(</span><span class="mf">3.7</span><span class="o">*</span><span class="n">D</span><span class="p">))</span><span class="o">**</span><span class="mf">1.11</span><span class="o">+</span><span class="p">(</span><span class="mf">6.9</span><span class="o">/</span><span class="n">Re</span><span class="p">))))</span><span class="o">**</span><span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">h_f_b</span><span class="o">=</span> <span class="mi">8</span><span class="o">*</span><span class="n">f</span><span class="o">*</span><span class="n">L</span><span class="o">*</span><span class="n">Q</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">g</span><span class="o">*</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">D</span><span class="o">**</span><span class="mi">5</span><span class="p">)</span><span class="c1">#m</span>
-<span class="ne">----&gt; </span><span class="mi">8</span> <span class="n">h_s_b</span> <span class="o">=</span> <span class="n">K_</span><span class="o">*</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="p">)</span> <span class="c1">#m</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="n">h_T_b</span><span class="o">=</span> <span class="n">h_s_b</span><span class="o">+</span><span class="n">h_f_b</span>
-
-<span class="ne">NameError</span>: name &#39;K_&#39; is not defined
-</pre></div>
-</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+D &amp;= \frac{ 100 }{ 1000 } &amp;= 0.100 \; \;\textrm{(m)}
+\\
+\mathrm{Re} &amp;= \left( 10 \right) ^{ 5 } &amp;= 100000  
+\\
+v &amp;= \nu \cdot \frac{ \mathrm{Re} }{ D } \\&amp;= 0.000 \cdot \frac{ 100000 }{ 0.100 } \\&amp;= 1.140  \\
+\\
+A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.100 \right) ^{ 2 } }{ 4 } \\&amp;= 0.008 \; \;\textrm{(m2)}\\
+\\
+Q &amp;= v \cdot A \\&amp;= 1.140 \cdot 0.008 \\&amp;= 0.009 \; \;\textrm{(m3/s)}\\
+\\
+k_{} &amp;= 40.485 \; 
+\\
+f &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e }{ 3.7 \cdot D } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.000 }{ 3.7 \cdot 0.100 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 100000 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.018  \\
+\\
+h_{f_{b}} &amp;= 8 \cdot f \cdot L \cdot \frac{ \left( Q \right) ^{ 2 } }{ g \cdot \left( \pi \right) ^{ 2 } \cdot \left( D \right) ^{ 5 } } \\&amp;= 8 \cdot 0.018 \cdot 1000 \cdot \frac{ \left( 0.009 \right) ^{ 2 } }{ 9.810 \cdot \left( 3.142 \right) ^{ 2 } \cdot \left( 0.100 \right) ^{ 5 } } \\&amp;= 12.099 \; \;\textrm{(m)}\\
+\\
+h_{s_{b}} &amp;= k_{} \cdot \frac{ \left( v \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= 40.485 \cdot \frac{ \left( 1.140 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 2.682 \; \;\textrm{(m)}\\
+\\
+h_{T_{b}} &amp;= h_{s_{b}} + h_{f_{b}} \\&amp;= 2.682 + 12.099 \\&amp;= 14.780 \; \;\textrm{(m)}\\
+\end{aligned}
+\end{split}\]</div>
 </div>
 </details>
 </div>
@@ -5535,16 +5550,16 @@ Hint<div class="sd-summary-down docutils">
 <span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">107</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">h_T_a</span><span class="o">=</span> <span class="n">h_f_a</span><span class="o">+</span><span class="n">h_s_a</span> <span class="c1">#m</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">contribution_a</span><span class="o">=</span> <span class="p">(</span><span class="n">h_s_a</span><span class="o">/</span><span class="n">h_T_a</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span> <span class="c1">#percent</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">contribution_b</span><span class="o">=</span> <span class="p">(</span><span class="n">h_s_b</span><span class="o">/</span><span class="n">h_T_b</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span>
-
-<span class="ne">NameError</span>: name &#39;h_s_b&#39; is not defined
-</pre></div>
-</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+h_{T_{a}} &amp;= h_{f_{a}} + h_{s_{a}} \\&amp;= 0.043 + 0.004 \\&amp;= 0.047 \; \;\textrm{(m)}\\
+\\
+\mathrm{contribution}_{a} &amp;= \left( \frac{ h_{s_{a}} }{ h_{T_{a}} } \right) \cdot 100 \\&amp;= \left( \frac{ 0.004 }{ 0.047 } \right) \cdot 100 \\&amp;= 9.091 \; \;\textrm{(percent)}\\
+\\
+\mathrm{contribution}_{b} &amp;= \left( \frac{ h_{s_{b}} }{ h_{T_{b}} } \right) \cdot 100 \\&amp;= \left( \frac{ 2.682 }{ 14.780 } \right) \cdot 100 \\&amp;= 18.144 \; \;\textrm{(percent)}\\
+\end{aligned}
+\end{split}\]</div>
 </div>
 </details>
 </div>
@@ -5631,22 +5646,22 @@ h_f= \frac {8fLQ^2}{\pi ^2gD^5}
 \[\begin{split}
 \begin{aligned}
 L_{1} &amp;= 1000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{1} &amp;= \frac{ 300 }{ 1000 } &amp;= 0.300 \; \;\textrm{(m)}
-\\[10pt]
+\\
 f_{1} &amp;= 0.024 \; 
-\\[10pt]
+\\
 L_{2} &amp;= 500 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{2} &amp;= \frac{ 100 }{ 1000 } &amp;= 0.100 \; \;\textrm{(m)}
-\\[10pt]
+\\
 f_{2} &amp;= 0.024 \; 
-\\[10pt]
+\\
 D_{E} &amp;= \frac{ 300 }{ 1000 } &amp;= 0.300 \; \;\textrm{(m)}
-\\[10pt]
+\\
 f_{E} &amp;= 0.024 \; 
-\\[10pt]
-L_{E} &amp;= \left( \frac{ L_{1} }{ \left( D_{1} \right) ^{ 5 } } + \frac{ L_{2} }{ \left( D_{2} \right) ^{ 5 } } \right) \cdot \left( D_{E} \right) ^{ 5 } \\&amp;= \left( \frac{ 1000 }{ \left( 0.300 \right) ^{ 5 } } + \frac{ 500 }{ \left( 0.100 \right) ^{ 5 } } \right) \cdot \left( 0.300 \right) ^{ 5 } \\&amp;= 122500.000 \; \;\textrm{(m)}\\[10pt]
+\\
+L_{E} &amp;= \left( \frac{ L_{1} }{ \left( D_{1} \right) ^{ 5 } } + \frac{ L_{2} }{ \left( D_{2} \right) ^{ 5 } } \right) \cdot \left( D_{E} \right) ^{ 5 } \\&amp;= \left( \frac{ 1000 }{ \left( 0.300 \right) ^{ 5 } } + \frac{ 500 }{ \left( 0.100 \right) ^{ 5 } } \right) \cdot \left( 0.300 \right) ^{ 5 } \\&amp;= 122500.000 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5717,24 +5732,24 @@ Show code cell outputs <div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 L_{1} &amp;= 1000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{1} &amp;= \frac{ 500 }{ 1000 } &amp;= 0.500 \; \;\textrm{(m)}
-\\[10pt]
+\\
 f_{1} &amp;= 0.020 \; 
-\\[10pt]
+\\
 L_{2} &amp;= 1000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{2} &amp;= \frac{ 1500 }{ 1000 } &amp;= 1.500 \; \;\textrm{(m)}
-\\[10pt]
+\\
 f_{2} &amp;= 0.022 \; 
-\\[10pt]
+\\
 D_{E} &amp;= \frac{ 1500 }{ 1000 } &amp;= 1.500 \; \;\textrm{(m)}
-\\[10pt]
+\\
 f_{E} &amp;= 0.022 \; 
-\\[10pt]
+\\
 h_{f} &amp;= 30 \; \;\textrm{(m)}
-\\[10pt]
-L_{E} &amp;= \frac{ \left( f_{1} \cdot \frac{ L_{1} }{ \left( D_{1} \right) ^{ 5 } } + f_{2} \cdot \frac{ L_{2} }{ \left( D_{2} \right) ^{ 5 } } \right) \cdot \left( D_{E} \right) ^{ 5 } }{ f_{E} } \\&amp;= \frac{ \left( 0.020 \cdot \frac{ 1000 }{ \left( 0.500 \right) ^{ 5 } } + 0.022 \cdot \frac{ 1000 }{ \left( 1.500 \right) ^{ 5 } } \right) \cdot \left( 1.500 \right) ^{ 5 } }{ 0.022 } \\&amp;= 221909.091 \; \;\textrm{(m)}\\[10pt]
+\\
+L_{E} &amp;= \frac{ \left( f_{1} \cdot \frac{ L_{1} }{ \left( D_{1} \right) ^{ 5 } } + f_{2} \cdot \frac{ L_{2} }{ \left( D_{2} \right) ^{ 5 } } \right) \cdot \left( D_{E} \right) ^{ 5 } }{ f_{E} } \\&amp;= \frac{ \left( 0.020 \cdot \frac{ 1000 }{ \left( 0.500 \right) ^{ 5 } } + 0.022 \cdot \frac{ 1000 }{ \left( 1.500 \right) ^{ 5 } } \right) \cdot \left( 1.500 \right) ^{ 5 } }{ 0.022 } \\&amp;= 221909.091 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5774,9 +5789,9 @@ Q^2=\frac{h_f \pi^2 gD_E^5}{8 f_E L_E}
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-Q_{E} &amp;= \left( \frac{ h_{f} \cdot \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{E} \right) ^{ 5 } }{ 8 \cdot f_{E} \cdot L_{E} } \right) ^{ 0.5 } \\&amp;= \left( \frac{ 30 \cdot \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 1.500 \right) ^{ 5 } }{ 8 \cdot 0.022 \cdot 221909.091 } \right) ^{ 0.5 } \\&amp;= 0.752 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-Q_{E_{}} &amp;= Q_{E} \cdot 1000 \\&amp;= 0.752 \cdot 1000 \\&amp;= 751.500 \; \;\textrm{(L/s)}\\[10pt]
+Q_{E} &amp;= \left( \frac{ h_{f} \cdot \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{E} \right) ^{ 5 } }{ 8 \cdot f_{E} \cdot L_{E} } \right) ^{ 0.5 } \\&amp;= \left( \frac{ 30 \cdot \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 1.500 \right) ^{ 5 } }{ 8 \cdot 0.022 \cdot 221909.091 } \right) ^{ 0.5 } \\&amp;= 0.752 \; \;\textrm{(m3/s)}\\
+\\
+Q_{E_{}} &amp;= Q_{E} \cdot 1000 \\&amp;= 0.752 \cdot 1000 \\&amp;= 751.500 \; \;\textrm{(L/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5825,7 +5840,7 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-H_{B} &amp;= h_{f} - \frac{ 8 \cdot f_{1} \cdot L_{1} \cdot \left( Q_{E} \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{1} \right) ^{ 5 } } \\&amp;= 30 - \frac{ 8 \cdot 0.020 \cdot 1000 \cdot \left( 0.752 \right) ^{ 2 } }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.500 \right) ^{ 5 } } \\&amp;= 0.135 \; \;\textrm{(m)}\\[10pt]
+H_{B} &amp;= h_{f} - \frac{ 8 \cdot f_{1} \cdot L_{1} \cdot \left( Q_{E} \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{1} \right) ^{ 5 } } \\&amp;= 30 - \frac{ 8 \cdot 0.020 \cdot 1000 \cdot \left( 0.752 \right) ^{ 2 } }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.500 \right) ^{ 5 } } \\&amp;= 0.135 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5960,24 +5975,24 @@ Q=\sqrt{\frac{z_1}{\frac{8f_EL_E}{\pi^2gD_E^5}+\frac{8}{\pi^2gD_2^4}}}
 \[\begin{split}
 \begin{aligned}
 L_{E} &amp;= 137.187 \; \;\textrm{(m)}
-\\[10pt]
+\\
 z_{2} &amp;= 50 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L_{1} &amp;= 200 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{1} &amp;= \frac{ 350 }{ 1000 } &amp;= 0.350 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L_{2} &amp;= 100 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{2} &amp;= \frac{ 250 }{ 1000 } &amp;= 0.250 \; \;\textrm{(m)}
-\\[10pt]
+\\
 z_{1} &amp;= 40 \; \;\textrm{(m)}
-\\[10pt]
+\\
 f &amp;= 0.060 \; 
-\\[10pt]
+\\
 D_{E} &amp;= 0.250 \; \;\textrm{(m)}
-\\[10pt]
-L_{E} &amp;= \frac{ \left( \frac{ f \cdot L_{1} }{ \left( D_{1} \right) ^{ 5 } } + \frac{ f \cdot L_{2} }{ \left( D_{2} \right) ^{ 5 } } \right) \cdot \left( D_{E} \right) ^{ 5 } }{ f } \\&amp;= \frac{ \left( \frac{ 0.060 \cdot 200 }{ \left( 0.350 \right) ^{ 5 } } + \frac{ 0.060 \cdot 100 }{ \left( 0.250 \right) ^{ 5 } } \right) \cdot \left( 0.250 \right) ^{ 5 } }{ 0.060 } \\&amp;= 137.187 \; \;\textrm{(m)}\\[10pt]
+\\
+L_{E} &amp;= \frac{ \left( \frac{ f \cdot L_{1} }{ \left( D_{1} \right) ^{ 5 } } + \frac{ f \cdot L_{2} }{ \left( D_{2} \right) ^{ 5 } } \right) \cdot \left( D_{E} \right) ^{ 5 } }{ f } \\&amp;= \frac{ \left( \frac{ 0.060 \cdot 200 }{ \left( 0.350 \right) ^{ 5 } } + \frac{ 0.060 \cdot 100 }{ \left( 0.250 \right) ^{ 5 } } \right) \cdot \left( 0.250 \right) ^{ 5 } }{ 0.060 } \\&amp;= 137.187 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5994,10 +6009,10 @@ L_{E} &amp;= \frac{ \left( \frac{ f \cdot L_{1} }{ \left( D_{1} \right) ^{ 5 } }
 \[\begin{split}
 \begin{aligned}
 Z_{1} &amp;= 50 \; \;\textrm{(m)}
-\\[10pt]
-Q &amp;= \sqrt { \frac{ Z_{1} }{ \frac{ 8 \cdot f \cdot L_{E} }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{E} \right) ^{ 5 } } + \frac{ 8 }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{2} \right) ^{ 4 } } } } \\&amp;= \sqrt { \frac{ 50 }{ \frac{ 8 \cdot 0.060 \cdot 137.187 }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.250 \right) ^{ 5 } } + \frac{ 8 }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.250 \right) ^{ 4 } } } } \\&amp;= 0.264 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-Q_{} &amp;= Q \cdot 1000 \\&amp;= 0.264 \cdot 1000 \\&amp;= 263.964 \; \;\textrm{(L/s)}\\[10pt]
+\\
+Q &amp;= \sqrt { \frac{ Z_{1} }{ \frac{ 8 \cdot f \cdot L_{E} }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{E} \right) ^{ 5 } } + \frac{ 8 }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{2} \right) ^{ 4 } } } } \\&amp;= \sqrt { \frac{ 50 }{ \frac{ 8 \cdot 0.060 \cdot 137.187 }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.250 \right) ^{ 5 } } + \frac{ 8 }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.250 \right) ^{ 4 } } } } \\&amp;= 0.264 \; \;\textrm{(m3/s)}\\
+\\
+Q_{} &amp;= Q \cdot 1000 \\&amp;= 0.264 \cdot 1000 \\&amp;= 263.964 \; \;\textrm{(L/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -6058,16 +6073,16 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 Z_{1} &amp;= 40 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D &amp;= 0.35 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L &amp;= 200 \; \;\textrm{(m)}
-\\[10pt]
-V_{2} &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.26 }{ 3.14 \cdot \frac{ \left( 0.35 \right) ^{ 2 } }{ 4 } } \\&amp;= 2.74 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-h_{f} &amp;= \frac{ 8 \cdot f \cdot L \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D \right) ^{ 5 } } \\&amp;= \frac{ 8 \cdot 0.06 \cdot 200 \cdot \left( 0.26 \right) ^{ 2 } }{ \left( 3.14 \right) ^{ 2 } \cdot 9.81 \cdot \left( 0.35 \right) ^{ 5 } } \\&amp;= 13.15  \\[10pt]
-\\[10pt]
-h_{pressure} &amp;= Z_{1} - \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } - h_{f} \\&amp;= 40 - \frac{ \left( 2.74 \right) ^{ 2 } }{ 2 \cdot 9.81 } - 13.15 \\&amp;= 26.46 \; \;\textrm{(m)}\\[10pt]
+\\
+V_{2} &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.26 }{ 3.14 \cdot \frac{ \left( 0.35 \right) ^{ 2 } }{ 4 } } \\&amp;= 2.74 \; \;\textrm{(m/s)}\\
+\\
+h_{f} &amp;= \frac{ 8 \cdot f \cdot L \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D \right) ^{ 5 } } \\&amp;= \frac{ 8 \cdot 0.06 \cdot 200 \cdot \left( 0.26 \right) ^{ 2 } }{ \left( 3.14 \right) ^{ 2 } \cdot 9.81 \cdot \left( 0.35 \right) ^{ 5 } } \\&amp;= 13.15  \\
+\\
+h_{pressure} &amp;= Z_{1} - \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } - h_{f} \\&amp;= 40 - \frac{ \left( 2.74 \right) ^{ 2 } }{ 2 \cdot 9.81 } - 13.15 \\&amp;= 26.46 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -6117,12 +6132,12 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 Z_{C} &amp;= 40 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D &amp;= 0.25 \; \;\textrm{(m)}
-\\[10pt]
-V_{C} &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.26 }{ 3.14 \cdot \frac{ \left( 0.25 \right) ^{ 2 } }{ 4 } } \\&amp;= 5.38 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-h_{pressure} &amp;= Z_{C} - \frac{ \left( V_{C} \right) ^{ 2 } }{ 2 \cdot g } - h_{f} \\&amp;= 40 - \frac{ \left( 5.38 \right) ^{ 2 } }{ 2 \cdot 9.81 } - 13.15 \\&amp;= 25.37 \; \;\textrm{(m)}\\[10pt]
+\\
+V_{C} &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.26 }{ 3.14 \cdot \frac{ \left( 0.25 \right) ^{ 2 } }{ 4 } } \\&amp;= 5.38 \; \;\textrm{(m/s)}\\
+\\
+h_{pressure} &amp;= Z_{C} - \frac{ \left( V_{C} \right) ^{ 2 } }{ 2 \cdot g } - h_{f} \\&amp;= 40 - \frac{ \left( 5.38 \right) ^{ 2 } }{ 2 \cdot 9.81 } - 13.15 \\&amp;= 25.37 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -6218,16 +6233,16 @@ D_E=((\sqrt{\frac{D_1^5}{f_1L_1}}+\sqrt{\frac{D_2^5}{f_2L_2}})^2(f_EL_E))^{1/5}
 \[\begin{split}
 \begin{aligned}
 D_{1} &amp;= 0.100 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{2} &amp;= 0.200 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L &amp;= 1000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 f &amp;= 0.035 \; 
-\\[10pt]
-D_{E} &amp;= \left( \left( \sqrt { \frac{ \left( D_{1} \right) ^{ 5 } }{ f \cdot L } } + \sqrt { \frac{ \left( D_{2} \right) ^{ 5 } }{ f \cdot L } } \right) ^{ 2 } \cdot \left( f \cdot L \right) \right) ^{ \left( \frac{ 1 }{ 5 } \right) } \\&amp;= \left( \left( \sqrt { \frac{ \left( 0.100 \right) ^{ 5 } }{ 0.035 \cdot 1000 } } + \sqrt { \frac{ \left( 0.200 \right) ^{ 5 } }{ 0.035 \cdot 1000 } } \right) ^{ 2 } \cdot \left( 0.035 \cdot 1000 \right) \right) ^{ \left( \frac{ 1 }{ 5 } \right) } \\&amp;= 0.213 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-D_{E_{}} &amp;= D_{E} \cdot 1000 \\&amp;= 0.213 \cdot 1000 \\&amp;= 213.456 \; \;\textrm{(mm)}\\[10pt]
+\\
+D_{E} &amp;= \left( \left( \sqrt { \frac{ \left( D_{1} \right) ^{ 5 } }{ f \cdot L } } + \sqrt { \frac{ \left( D_{2} \right) ^{ 5 } }{ f \cdot L } } \right) ^{ 2 } \cdot \left( f \cdot L \right) \right) ^{ \left( \frac{ 1 }{ 5 } \right) } \\&amp;= \left( \left( \sqrt { \frac{ \left( 0.100 \right) ^{ 5 } }{ 0.035 \cdot 1000 } } + \sqrt { \frac{ \left( 0.200 \right) ^{ 5 } }{ 0.035 \cdot 1000 } } \right) ^{ 2 } \cdot \left( 0.035 \cdot 1000 \right) \right) ^{ \left( \frac{ 1 }{ 5 } \right) } \\&amp;= 0.213 \; \;\textrm{(m)}\\
+\\
+D_{E_{}} &amp;= D_{E} \cdot 1000 \\&amp;= 0.213 \cdot 1000 \\&amp;= 213.456 \; \;\textrm{(mm)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -6310,24 +6325,24 @@ Q= \sqrt {\frac{\pi^2 h_fgD^5}{8fL}}\\
 \[\begin{split}
 \begin{aligned}
 D &amp;= \frac{ 200 }{ 1000 } &amp;= 0.200 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L &amp;= 500 \; \;\textrm{(m)}
-\\[10pt]
+\\
 f &amp;= 0.025 \; 
-\\[10pt]
+\\
 D_{p} &amp;= \frac{ 500 }{ 1000 } &amp;= 0.500 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L_{p} &amp;= 500 \; \;\textrm{(m)}
-\\[10pt]
+\\
 f_{p} &amp;= 0.030 \; 
-\\[10pt]
+\\
 Q &amp;= \frac{ 600 }{ 1000 } &amp;= 0.600 \; \;\textrm{(m3/s)}
-\\[10pt]
+\\
 L_{E} &amp;= 500 \; \;\textrm{(m)}
-\\[10pt]
+\\
 f_{E} &amp;= 0.030 \; 
-\\[10pt]
-D_{E} &amp;= \left( \left( \left( \frac{ \left( D \right) ^{ 5 } }{ f \cdot L } \right) ^{ 0.5 } + \left( \frac{ \left( D_{p} \right) ^{ 5 } }{ f_{p} \cdot L_{p} } \right) ^{ 0.5 } \right) ^{ 2 } \cdot f_{E} \cdot L_{E} \right) ^{ \left( \frac{ 1 }{ 5 } \right) } \\&amp;= \left( \left( \left( \frac{ \left( 0.200 \right) ^{ 5 } }{ 0.025 \cdot 500 } \right) ^{ 0.5 } + \left( \frac{ \left( 0.500 \right) ^{ 5 } }{ 0.030 \cdot 500 } \right) ^{ 0.5 } \right) ^{ 2 } \cdot 0.030 \cdot 500 \right) ^{ \left( \frac{ 1 }{ 5 } \right) } \\&amp;= 0.521 \; \;\textrm{(m)}\\[10pt]
+\\
+D_{E} &amp;= \left( \left( \left( \frac{ \left( D \right) ^{ 5 } }{ f \cdot L } \right) ^{ 0.5 } + \left( \frac{ \left( D_{p} \right) ^{ 5 } }{ f_{p} \cdot L_{p} } \right) ^{ 0.5 } \right) ^{ 2 } \cdot f_{E} \cdot L_{E} \right) ^{ \left( \frac{ 1 }{ 5 } \right) } \\&amp;= \left( \left( \left( \frac{ \left( 0.200 \right) ^{ 5 } }{ 0.025 \cdot 500 } \right) ^{ 0.5 } + \left( \frac{ \left( 0.500 \right) ^{ 5 } }{ 0.030 \cdot 500 } \right) ^{ 0.5 } \right) ^{ 2 } \cdot 0.030 \cdot 500 \right) ^{ \left( \frac{ 1 }{ 5 } \right) } \\&amp;= 0.521 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -6367,7 +6382,7 @@ h_f= \frac{8fLQ^2}{\pi^2 gD^5}\\
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-h_{f} &amp;= \frac{ 8 \cdot f_{E} \cdot L_{E} \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{E} \right) ^{ 5 } } \\&amp;= \frac{ 8 \cdot 0.03 \cdot 500 \cdot \left( 0.60 \right) ^{ 2 } }{ \left( 3.14 \right) ^{ 2 } \cdot 9.81 \cdot \left( 0.52 \right) ^{ 5 } } \\&amp;= 11.57 \; \;\textrm{(m)}\\[10pt]
+h_{f} &amp;= \frac{ 8 \cdot f_{E} \cdot L_{E} \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{E} \right) ^{ 5 } } \\&amp;= \frac{ 8 \cdot 0.03 \cdot 500 \cdot \left( 0.60 \right) ^{ 2 } }{ \left( 3.14 \right) ^{ 2 } \cdot 9.81 \cdot \left( 0.52 \right) ^{ 5 } } \\&amp;= 11.57 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -6408,9 +6423,9 @@ Q= \sqrt {\frac{\pi^2 h_fgD^5}{8fL}}\\
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-Q_{1} &amp;= \left( \frac{ h_{f} \cdot \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D \right) ^{ 5 } }{ 8 \cdot f \cdot L } \right) ^{ 0.5 } \\&amp;= \left( \frac{ 11.571 \cdot \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.200 \right) ^{ 5 } }{ 8 \cdot 0.025 \cdot 500 } \right) ^{ 0.5 } \\&amp;= 0.060 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-Q_{1_{}} &amp;= Q_{1} \cdot 1000 \\&amp;= 0.060 \cdot 1000 \\&amp;= 59.874 \; \;\textrm{(L/s)}\\[10pt]
+Q_{1} &amp;= \left( \frac{ h_{f} \cdot \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D \right) ^{ 5 } }{ 8 \cdot f \cdot L } \right) ^{ 0.5 } \\&amp;= \left( \frac{ 11.571 \cdot \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.200 \right) ^{ 5 } }{ 8 \cdot 0.025 \cdot 500 } \right) ^{ 0.5 } \\&amp;= 0.060 \; \;\textrm{(m3/s)}\\
+\\
+Q_{1_{}} &amp;= Q_{1} \cdot 1000 \\&amp;= 0.060 \cdot 1000 \\&amp;= 59.874 \; \;\textrm{(L/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -6427,9 +6442,9 @@ Q_{1_{}} &amp;= Q_{1} \cdot 1000 \\&amp;= 0.060 \cdot 1000 \\&amp;= 59.874 \; \;
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-Q_{2} &amp;= \left( \frac{ h_{f} \cdot \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{p} \right) ^{ 5 } }{ 8 \cdot f_{p} \cdot L_{p} } \right) ^{ 0.5 } \\&amp;= \left( \frac{ 11.571 \cdot \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.500 \right) ^{ 5 } }{ 8 \cdot 0.030 \cdot 500 } \right) ^{ 0.5 } \\&amp;= 0.540 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-Q_{2_{}} &amp;= Q_{2} \cdot 1000 \\&amp;= 0.540 \cdot 1000 \\&amp;= 540.126 \; \;\textrm{(L/s)}\\[10pt]
+Q_{2} &amp;= \left( \frac{ h_{f} \cdot \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{p} \right) ^{ 5 } }{ 8 \cdot f_{p} \cdot L_{p} } \right) ^{ 0.5 } \\&amp;= \left( \frac{ 11.571 \cdot \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.500 \right) ^{ 5 } }{ 8 \cdot 0.030 \cdot 500 } \right) ^{ 0.5 } \\&amp;= 0.540 \; \;\textrm{(m3/s)}\\
+\\
+Q_{2_{}} &amp;= Q_{2} \cdot 1000 \\&amp;= 0.540 \cdot 1000 \\&amp;= 540.126 \; \;\textrm{(L/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -6447,7 +6462,7 @@ Q_{2_{}} &amp;= Q_{2} \cdot 1000 \\&amp;= 0.540 \cdot 1000 \\&amp;= 540.126 \; \
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-Q_{T} &amp;= Q_{1_{}} + Q_{2_{}} \\&amp;= 60 + 540 \\&amp;= 600 \; \;\textrm{(L/s)}\\[10pt]
+Q_{T} &amp;= Q_{1_{}} + Q_{2_{}} \\&amp;= 60 + 540 \\&amp;= 600 \; \;\textrm{(L/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -6521,18 +6536,18 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 L &amp;= 3000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D &amp;= \frac{ 200 }{ 1000 } &amp;= 0.2 \; \;\textrm{(m)}
-\\[10pt]
+\\
 f &amp;= 0.1 \; 
-\\[10pt]
+\\
 z_{2} &amp;= 20 \; \;\textrm{(m)}
-\\[10pt]
+\\
 V &amp;= 2 \; \;\textrm{(m/s)}
-\\[10pt]
-h_{f} &amp;= f \cdot L \cdot \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= 0.1 \cdot 3000 \cdot \frac{ \left( 2 \right) ^{ 2 } }{ 2 \cdot 9.8 \cdot 0.2 } \\&amp;= 373.1 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-h_{p} &amp;= z_{2} + \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g } + h_{f} \\&amp;= 20 + \frac{ \left( 2 \right) ^{ 2 } }{ 2 \cdot 9.8 } + 373.1 \\&amp;= 393.3 \; \;\textrm{(m)}\\[10pt]
+\\
+h_{f} &amp;= f \cdot L \cdot \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g \cdot D } \\&amp;= 0.1 \cdot 3000 \cdot \frac{ \left( 2 \right) ^{ 2 } }{ 2 \cdot 9.8 \cdot 0.2 } \\&amp;= 373.1 \; \;\textrm{(m)}\\
+\\
+h_{p} &amp;= z_{2} + \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g } + h_{f} \\&amp;= 20 + \frac{ \left( 2 \right) ^{ 2 } }{ 2 \cdot 9.8 } + 373.1 \\&amp;= 393.3 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -6605,50 +6620,50 @@ Show code cell outputs <div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 T &amp;= 15 \; \;\textrm{(°C)}
-\\[10pt]
+\\
 \Delta_{z} &amp;= 50 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L_{s} &amp;= 600 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{s} &amp;= 0.200000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 e_{s} &amp;= 0.000200 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L_{d} &amp;= 2000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{d} &amp;= 0.150000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 e_{d} &amp;= 0.000200 \; \;\textrm{(m)}
-\\[10pt]
+\\
 k_{s} &amp;= 80 \; 
-\\[10pt]
+\\
 k_{d} &amp;= 200 \; 
-\\[10pt]
+\\
 Q &amp;= 0.040000 \; \;\textrm{(m3/s)}
-\\[10pt]
+\\
 \nu &amp;= 0.000001 \; \;\textrm{(m2/s)}
-\\[10pt]
-v_{s} &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D_{s} \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.040000 }{ 3.141593 \cdot \frac{ \left( 0.200000 \right) ^{ 2 } }{ 4 } } \\&amp;= 1.273240 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-\mathrm{Re}_{s} &amp;= v_{s} \cdot \frac{ D_{s} }{ \nu } \\&amp;= 1.273240 \cdot \frac{ 0.200000 }{ 0.000001 } \\&amp;= 223375.358725  \\[10pt]
-\\[10pt]
-f_{s} &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e_{s} }{ 3.7 \cdot D_{s} } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re}_{s} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.000200 }{ 3.7 \cdot 0.200000 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 223375.358725 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.020793  \\[10pt]
-\\[10pt]
-h_{fs} &amp;= \frac{ f_{s} \cdot L_{s} \cdot \left( v_{s} \right) ^{ 2 } }{ 2 \cdot g \cdot D_{s} } \\&amp;= \frac{ 0.020793 \cdot 600 \cdot \left( 1.273240 \right) ^{ 2 } }{ 2 \cdot 9.810000 \cdot 0.200000 } \\&amp;= 5.154117 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-h_{ss} &amp;= k_{s} \cdot \left( \frac{ \left( v_{s} \right) ^{ 2 } }{ 2 \cdot g } \right) \\&amp;= 80 \cdot \left( \frac{ \left( 1.273240 \right) ^{ 2 } }{ 2 \cdot 9.810000 } \right) \\&amp;= 6.610149 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-v_{d} &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D_{d} \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.040000 }{ 3.141593 \cdot \frac{ \left( 0.150000 \right) ^{ 2 } }{ 4 } } \\&amp;= 2.263537 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-\mathrm{Re}_{d} &amp;= v_{d} \cdot \frac{ D_{d} }{ \nu } \\&amp;= 2.263537 \cdot \frac{ 0.150000 }{ 0.000001 } \\&amp;= 297833.811634  \\[10pt]
-\\[10pt]
-f_{d} &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e_{d} }{ 3.7 \cdot D_{d} } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re}_{d} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.000200 }{ 3.7 \cdot 0.150000 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 297833.811634 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.021832  \\[10pt]
-\\[10pt]
-h_{fd} &amp;= \frac{ f_{d} \cdot L_{d} \cdot \left( v_{d} \right) ^{ 2 } }{ 2 \cdot g \cdot D_{d} } \\&amp;= \frac{ 0.021832 \cdot 2000 \cdot \left( 2.263537 \right) ^{ 2 } }{ 2 \cdot 9.810000 \cdot 0.150000 } \\&amp;= 76.018183 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-h_{sd} &amp;= k_{d} \cdot \left( \frac{ \left( v_{d} \right) ^{ 2 } }{ 2 \cdot g } \right) \\&amp;= 200 \cdot \left( \frac{ \left( 2.263537 \right) ^{ 2 } }{ 2 \cdot 9.810000 } \right) \\&amp;= 52.228334 \; \;\textrm{(m)}\\[10pt]
-\\[10pt]
-h_{p} &amp;= \Delta_{z} + h_{fs} + h_{ss} + h_{fd} + h_{sd} \\&amp;= 50 + 5.154117 + 6.610149 + 76.018183 + 52.228334 \\&amp;= 190.010783 \; \;\textrm{(m)}\\[10pt]
+\\
+v_{s} &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D_{s} \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.040000 }{ 3.141593 \cdot \frac{ \left( 0.200000 \right) ^{ 2 } }{ 4 } } \\&amp;= 1.273240 \; \;\textrm{(m/s)}\\
+\\
+\mathrm{Re}_{s} &amp;= v_{s} \cdot \frac{ D_{s} }{ \nu } \\&amp;= 1.273240 \cdot \frac{ 0.200000 }{ 0.000001 } \\&amp;= 223375.358725  \\
+\\
+f_{s} &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e_{s} }{ 3.7 \cdot D_{s} } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re}_{s} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.000200 }{ 3.7 \cdot 0.200000 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 223375.358725 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.020793  \\
+\\
+h_{fs} &amp;= \frac{ f_{s} \cdot L_{s} \cdot \left( v_{s} \right) ^{ 2 } }{ 2 \cdot g \cdot D_{s} } \\&amp;= \frac{ 0.020793 \cdot 600 \cdot \left( 1.273240 \right) ^{ 2 } }{ 2 \cdot 9.810000 \cdot 0.200000 } \\&amp;= 5.154117 \; \;\textrm{(m)}\\
+\\
+h_{ss} &amp;= k_{s} \cdot \left( \frac{ \left( v_{s} \right) ^{ 2 } }{ 2 \cdot g } \right) \\&amp;= 80 \cdot \left( \frac{ \left( 1.273240 \right) ^{ 2 } }{ 2 \cdot 9.810000 } \right) \\&amp;= 6.610149 \; \;\textrm{(m)}\\
+\\
+v_{d} &amp;= \frac{ Q }{ \pi \cdot \frac{ \left( D_{d} \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 0.040000 }{ 3.141593 \cdot \frac{ \left( 0.150000 \right) ^{ 2 } }{ 4 } } \\&amp;= 2.263537 \; \;\textrm{(m/s)}\\
+\\
+\mathrm{Re}_{d} &amp;= v_{d} \cdot \frac{ D_{d} }{ \nu } \\&amp;= 2.263537 \cdot \frac{ 0.150000 }{ 0.000001 } \\&amp;= 297833.811634  \\
+\\
+f_{d} &amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ e_{d} }{ 3.7 \cdot D_{d} } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ \mathrm{Re}_{d} } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 1.8 \right) \cdot \log_{10} \left( \left( \frac{ 0.000200 }{ 3.7 \cdot 0.150000 } \right) ^{ 1.11 } + \left( \frac{ 6.9 }{ 297833.811634 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.021832  \\
+\\
+h_{fd} &amp;= \frac{ f_{d} \cdot L_{d} \cdot \left( v_{d} \right) ^{ 2 } }{ 2 \cdot g \cdot D_{d} } \\&amp;= \frac{ 0.021832 \cdot 2000 \cdot \left( 2.263537 \right) ^{ 2 } }{ 2 \cdot 9.810000 \cdot 0.150000 } \\&amp;= 76.018183 \; \;\textrm{(m)}\\
+\\
+h_{sd} &amp;= k_{d} \cdot \left( \frac{ \left( v_{d} \right) ^{ 2 } }{ 2 \cdot g } \right) \\&amp;= 200 \cdot \left( \frac{ \left( 2.263537 \right) ^{ 2 } }{ 2 \cdot 9.810000 } \right) \\&amp;= 52.228334 \; \;\textrm{(m)}\\
+\\
+h_{p} &amp;= \Delta_{z} + h_{fs} + h_{ss} + h_{fd} + h_{sd} \\&amp;= 50 + 5.154117 + 6.610149 + 76.018183 + 52.228334 \\&amp;= 190.010783 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -6701,8 +6716,8 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 \eta &amp;= 0.75 \; 
-\\[10pt]
-P &amp;= \frac{ \frac{ \rho_{water} \cdot g \cdot h_{p} \cdot Q }{ \eta } }{ 1000 } \\&amp;= \frac{ \frac{ 1000 \cdot 9.81 \cdot 190.01 \cdot 0.04 }{ 0.75 } }{ 1000 } \\&amp;= 99.41 \; \;\textrm{(kW)}\\[10pt]
+\\
+P &amp;= \frac{ \frac{ \rho_{water} \cdot g \cdot h_{p} \cdot Q }{ \eta } }{ 1000 } \\&amp;= \frac{ \frac{ 1000 \cdot 9.81 \cdot 190.01 \cdot 0.04 }{ 0.75 } }{ 1000 } \\&amp;= 99.41 \; \;\textrm{(kW)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -6771,28 +6786,28 @@ Show code cell outputs<div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 z &amp;= 50 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L &amp;= 2000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D &amp;= \frac{ 150 }{ 1000 } &amp;= 0.150 \; \;\textrm{(mm)}
-\\[10pt]
+\\
 e &amp;= \frac{ 0.2 }{ 1000 } &amp;= 0.000 \; \;\textrm{(m)}
-\\[10pt]
+\\
 k &amp;= 200 \; 
-\\[10pt]
+\\
 Q &amp;= 50 \; \;\textrm{(L/s)}
-\\[10pt]
-Q_{m} &amp;= \frac{ Q }{ 1000 } \\&amp;= \frac{ 50 }{ 1000 } \\&amp;= 0.050 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
+\\
+Q_{m} &amp;= \frac{ Q }{ 1000 } \\&amp;= \frac{ 50 }{ 1000 } \\&amp;= 0.050 \; \;\textrm{(m3/s)}\\
+\\
 \eta &amp;= 0.750 \; 
-\\[10pt]
-V &amp;= Q_{m} \cdot \frac{ 4 }{ \pi \cdot \left( D \right) ^{ 2 } } \\&amp;= 0.050 \cdot \frac{ 4 }{ 3.142 \cdot \left( 0.150 \right) ^{ 2 } } \\&amp;= 2.829 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-\mathrm{Re} &amp;= V \cdot \frac{ D }{ \nu } \\&amp;= 2.829 \cdot \frac{ 0.150 }{ 0.000 } \\&amp;= 372292.265  \\[10pt]
-\\[10pt]
-f &amp;= \left( \frac{ 1 }{ \left( - 2 \right) \cdot \log_{10} \left( \frac{ 5.74 }{ \left( \mathrm{Re} \right) ^{ 0.9 } } + \left( \frac{ e }{ 3.7 \cdot D } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 2 \right) \cdot \log_{10} \left( \frac{ 5.74 }{ \left( 372292.265 \right) ^{ 0.9 } } + \left( \frac{ 0.000 }{ 3.7 \cdot 0.150 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.022  \\[10pt]
-\\[10pt]
-h_{p} &amp;= z + f \cdot L \cdot \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g \cdot D } + k \cdot \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= 50 + 0.022 \cdot 2000 \cdot \frac{ \left( 2.829 \right) ^{ 2 } }{ 2 \cdot 9.810 \cdot 0.150 } + 200 \cdot \frac{ \left( 2.829 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 250.594 \; \;\textrm{(m)}\\[10pt]
+\\
+V &amp;= Q_{m} \cdot \frac{ 4 }{ \pi \cdot \left( D \right) ^{ 2 } } \\&amp;= 0.050 \cdot \frac{ 4 }{ 3.142 \cdot \left( 0.150 \right) ^{ 2 } } \\&amp;= 2.829 \; \;\textrm{(m/s)}\\
+\\
+\mathrm{Re} &amp;= V \cdot \frac{ D }{ \nu } \\&amp;= 2.829 \cdot \frac{ 0.150 }{ 0.000 } \\&amp;= 372292.265  \\
+\\
+f &amp;= \left( \frac{ 1 }{ \left( - 2 \right) \cdot \log_{10} \left( \frac{ 5.74 }{ \left( \mathrm{Re} \right) ^{ 0.9 } } + \left( \frac{ e }{ 3.7 \cdot D } \right) \right) } \right) ^{ 2 } \\&amp;= \left( \frac{ 1 }{ \left( - 2 \right) \cdot \log_{10} \left( \frac{ 5.74 }{ \left( 372292.265 \right) ^{ 0.9 } } + \left( \frac{ 0.000 }{ 3.7 \cdot 0.150 } \right) \right) } \right) ^{ 2 } \\&amp;= 0.022  \\
+\\
+h_{p} &amp;= z + f \cdot L \cdot \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g \cdot D } + k \cdot \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= 50 + 0.022 \cdot 2000 \cdot \frac{ \left( 2.829 \right) ^{ 2 } }{ 2 \cdot 9.810 \cdot 0.150 } + 200 \cdot \frac{ \left( 2.829 \right) ^{ 2 } }{ 2 \cdot 9.810 } \\&amp;= 250.594 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -6810,9 +6825,9 @@ h_{p} &amp;= z + f \cdot L \cdot \frac{ \left( V \right) ^{ 2 } }{ 2 \cdot g \cd
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-P &amp;= \rho_{water} \cdot g \cdot h_{p} \cdot \frac{ Q_{m} }{ \eta } \\&amp;= 1000 \cdot 9.81 \cdot 250.59 \cdot \frac{ 0.05 }{ 0.75 } \\&amp;= 163888.30 \; \;\textrm{(W)}\\[10pt]
-\\[10pt]
-P_{} &amp;= \frac{ P }{ 1000 } \\&amp;= \frac{ 163888.30 }{ 1000 } \\&amp;= 163.89 \; \;\textrm{(kW)}\\[10pt]
+P &amp;= \rho_{water} \cdot g \cdot h_{p} \cdot \frac{ Q_{m} }{ \eta } \\&amp;= 1000 \cdot 9.81 \cdot 250.59 \cdot \frac{ 0.05 }{ 0.75 } \\&amp;= 163888.30 \; \;\textrm{(W)}\\
+\\
+P_{} &amp;= \frac{ P }{ 1000 } \\&amp;= \frac{ 163888.30 }{ 1000 } \\&amp;= 163.89 \; \;\textrm{(kW)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -6889,33 +6904,33 @@ Show code cell outputs <div class="sd-summary-down docutils">
 \[\begin{split}
 \begin{aligned}
 P &amp;= 1500.000 \; \;\textrm{(W)}
-\\[10pt]
+\\
 p_{1} &amp;= 35000 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 \gamma &amp;= 8000 \; \;\textrm{(N/m3)}
-\\[10pt]
+\\
 z_{2} &amp;= 4.500 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L_{s} &amp;= 15 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{s} &amp;= 0.150 \; \;\textrm{(m)}
-\\[10pt]
+\\
 f_{s} &amp;= 0.025 \; 
-\\[10pt]
+\\
 L_{d} &amp;= 60 \; \;\textrm{(m)}
-\\[10pt]
+\\
 D_{d} &amp;= 0.200 \; \;\textrm{(m)}
-\\[10pt]
+\\
 f_{d} &amp;= 0.030 \; 
-\\[10pt]
+\\
 z_{3} &amp;= -3 \; \;\textrm{(m)}
-\\[10pt]
+\\
 Q &amp;= [-0.075,\ -0.028,\ 0.103] \; 
-\\[10pt]
-\mathrm{expr} &amp;= \left( \frac{ p_{1} }{ \gamma } \right) + \left( \frac{ P }{ \gamma \cdot Q } \right) - z_{3} - \left( \frac{ 8 \cdot f_{s} \cdot L_{s} \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{s} \right) ^{ 5 } } \right) - \left( \frac{ 8 \cdot f_{d} \cdot L_{d} \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{d} \right) ^{ 5 } } \right) \\&amp;= \left( \frac{ 35000 }{ 8000 } \right) + \left( \frac{ 1500.000 }{ 8000 \cdot [-0.075,\ -0.028,\ 0.103] } \right) - -3 - \left( \frac{ 8 \cdot 0.025 \cdot 15 \cdot \left( [-0.075,\ -0.028,\ 0.103] \right) ^{ 2 } }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.150 \right) ^{ 5 } } \right) - \left( \frac{ 8 \cdot 0.030 \cdot 60 \cdot \left( [-0.075,\ -0.028,\ 0.103] \right) ^{ 2 } }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.200 \right) ^{ 5 } } \right) \\&amp;= - 872.81 Q^{2} + 7.375 + \frac{0.188}{Q}  \\[10pt]
-\\[10pt]
-Q &amp;= \operatorname{solve} \left( \mathrm{expr} \right) \\&amp;= \operatorname{solve} \left( - 872.81 Q^{2} + 7.375 + \frac{0.188}{Q} \right) \\&amp;= [-0.075,\ -0.028,\ 0.103]  \\[10pt]
-\\[10pt]
+\\
+\mathrm{expr} &amp;= \left( \frac{ p_{1} }{ \gamma } \right) + \left( \frac{ P }{ \gamma \cdot Q } \right) - z_{3} - \left( \frac{ 8 \cdot f_{s} \cdot L_{s} \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{s} \right) ^{ 5 } } \right) - \left( \frac{ 8 \cdot f_{d} \cdot L_{d} \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{d} \right) ^{ 5 } } \right) \\&amp;= \left( \frac{ 35000 }{ 8000 } \right) + \left( \frac{ 1500.000 }{ 8000 \cdot [-0.075,\ -0.028,\ 0.103] } \right) - -3 - \left( \frac{ 8 \cdot 0.025 \cdot 15 \cdot \left( [-0.075,\ -0.028,\ 0.103] \right) ^{ 2 } }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.150 \right) ^{ 5 } } \right) - \left( \frac{ 8 \cdot 0.030 \cdot 60 \cdot \left( [-0.075,\ -0.028,\ 0.103] \right) ^{ 2 } }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.200 \right) ^{ 5 } } \right) \\&amp;= - 872.81 Q^{2} + 7.375 + \frac{0.188}{Q}  \\
+\\
+Q &amp;= \operatorname{solve} \left( \mathrm{expr} \right) \\&amp;= \operatorname{solve} \left( - 872.81 Q^{2} + 7.375 + \frac{0.188}{Q} \right) \\&amp;= [-0.075,\ -0.028,\ 0.103]  \\
+\\
 Q &amp;= [-0.075,\ -0.028,\ 0.103] \; \;\textrm{(m3/s)}
 \end{aligned}
 \end{split}\]</div>
@@ -6979,11 +6994,11 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-v_{2} &amp;= \frac{ Q }{ \pi \cdot \left( \frac{ \left( D_{s} \right) ^{ 2 } }{ 4 } \right) } \\&amp;= \frac{ 0.10 }{ 3.14 \cdot \left( \frac{ \left( 0.15 \right) ^{ 2 } }{ 4 } \right) } \\&amp;= 5.83 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-p_{2} &amp;= \left( \frac{ p_{1} }{ \gamma } - z_{2} - \frac{ \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g } - \left( \frac{ 8 \cdot f_{s} \cdot L_{s} \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{s} \right) ^{ 5 } } \right) \right) \cdot \gamma \\&amp;= \left( \frac{ 35000 }{ 8000 } - 4.50 - \frac{ \left( 5.83 \right) ^{ 2 } }{ 2 \cdot 9.81 } - \left( \frac{ 8 \cdot 0.03 \cdot 15 \cdot \left( 0.10 \right) ^{ 2 } }{ \left( 3.14 \right) ^{ 2 } \cdot 9.81 \cdot \left( 0.15 \right) ^{ 5 } } \right) \right) \cdot 8000 \\&amp;= -49482.91 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-p_{2_{}} &amp;= \frac{ p_{2} }{ 1000 } \\&amp;= \frac{ -49482.91 }{ 1000 } \\&amp;= -49.48 \; \;\textrm{(kPa)}\\[10pt]
+v_{2} &amp;= \frac{ Q }{ \pi \cdot \left( \frac{ \left( D_{s} \right) ^{ 2 } }{ 4 } \right) } \\&amp;= \frac{ 0.10 }{ 3.14 \cdot \left( \frac{ \left( 0.15 \right) ^{ 2 } }{ 4 } \right) } \\&amp;= 5.83 \; \;\textrm{(m/s)}\\
+\\
+p_{2} &amp;= \left( \frac{ p_{1} }{ \gamma } - z_{2} - \frac{ \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g } - \left( \frac{ 8 \cdot f_{s} \cdot L_{s} \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{s} \right) ^{ 5 } } \right) \right) \cdot \gamma \\&amp;= \left( \frac{ 35000 }{ 8000 } - 4.50 - \frac{ \left( 5.83 \right) ^{ 2 } }{ 2 \cdot 9.81 } - \left( \frac{ 8 \cdot 0.03 \cdot 15 \cdot \left( 0.10 \right) ^{ 2 } }{ \left( 3.14 \right) ^{ 2 } \cdot 9.81 \cdot \left( 0.15 \right) ^{ 5 } } \right) \right) \cdot 8000 \\&amp;= -49482.91 \; \;\textrm{(Pa)}\\
+\\
+p_{2_{}} &amp;= \frac{ p_{2} }{ 1000 } \\&amp;= \frac{ -49482.91 }{ 1000 } \\&amp;= -49.48 \; \;\textrm{(kPa)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -7052,20 +7067,20 @@ NPSH_{available}= \frac {p_{abs}-P{vap}}{\rho g} + \frac {V_s^2}{2g}
 \[\begin{split}
 \begin{aligned}
 p_{vap} &amp;= 2.3 \cdot 1000 &amp;= 2300.00 \; \;\textrm{(Pa)}
-\\[10pt]
+\\
 V_{s} &amp;= 2 \; \;\textrm{(m/s)}
-\\[10pt]
+\\
 h_{f} &amp;= 1.20 \; \;\textrm{(m)}
-\\[10pt]
+\\
 h_{m} &amp;= 0.50 \; \;\textrm{(m)}
-\\[10pt]
+\\
 z_{2} &amp;= 2 \; \;\textrm{(m)}
-\\[10pt]
+\\
 p_{atm} &amp;= 90 \cdot 1000 &amp;= 90000 \; \;\textrm{(Pa)}
-\\[10pt]
-p_{2} &amp;= \left( \frac{ p_{atm} }{ \rho_{water} \cdot g } - \frac{ \left( V_{s} \right) ^{ 2 } }{ 2 \cdot g } - h_{f} - h_{m} - z_{2} \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \frac{ 90000 }{ 1000 \cdot 9.81 } - \frac{ \left( 2 \right) ^{ 2 } }{ 2 \cdot 9.81 } - 1.20 - 0.50 - 2 \right) \cdot 1000 \cdot 9.81 \\&amp;= 51703.00 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-\mathrm{NPSH}_{available} &amp;= \frac{ p_{2} - p_{vap} }{ \rho_{water} \cdot g } + \frac{ \left( V_{s} \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= \frac{ 51703.00 - 2300.00 }{ 1000 \cdot 9.81 } + \frac{ \left( 2 \right) ^{ 2 } }{ 2 \cdot 9.81 } \\&amp;= 5.24 \; \;\textrm{(m)}\\[10pt]
+\\
+p_{2} &amp;= \left( \frac{ p_{atm} }{ \rho_{water} \cdot g } - \frac{ \left( V_{s} \right) ^{ 2 } }{ 2 \cdot g } - h_{f} - h_{m} - z_{2} \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \frac{ 90000 }{ 1000 \cdot 9.81 } - \frac{ \left( 2 \right) ^{ 2 } }{ 2 \cdot 9.81 } - 1.20 - 0.50 - 2 \right) \cdot 1000 \cdot 9.81 \\&amp;= 51703.00 \; \;\textrm{(Pa)}\\
+\\
+\mathrm{NPSH}_{available} &amp;= \frac{ p_{2} - p_{vap} }{ \rho_{water} \cdot g } + \frac{ \left( V_{s} \right) ^{ 2 } }{ 2 \cdot g } \\&amp;= \frac{ 51703.00 - 2300.00 }{ 1000 \cdot 9.81 } + \frac{ \left( 2 \right) ^{ 2 } }{ 2 \cdot 9.81 } \\&amp;= 5.24 \; \;\textrm{(m)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -7173,26 +7188,26 @@ Q= V_C* A_C
 \[\begin{split}
 \begin{aligned}
 D &amp;= 0.350 \; \;\textrm{(m)}
-\\[10pt]
+\\
 f &amp;= 0.016 \; 
-\\[10pt]
+\\
 L_{BC} &amp;= 12 \; \;\textrm{(m)}
-\\[10pt]
+\\
 L_{DE} &amp;= 920 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \mathrm{dz} &amp;= 48 \; \;\textrm{(m)}
-\\[10pt]
+\\
 T &amp;= 15 \; \;\textrm{(°C)}
-\\[10pt]
+\\
 z_{C} &amp;= 6 \; \;\textrm{(m)}
-\\[10pt]
+\\
 \mathrm{NPSH}_{required} &amp;= 2 \; \;\textrm{(m)}
-\\[10pt]
-V_{C} &amp;= \sqrt { \frac{ 2 \cdot g \cdot D }{ f \cdot L_{BC} } \cdot \left( 9.16 - 2.16 - z_{C} \right) } \\&amp;= \sqrt { \frac{ 2 \cdot 9.810 \cdot 0.350 }{ 0.016 \cdot 12 } \cdot \left( 9.16 - 2.16 - 6 \right) } \\&amp;= 5.980 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.350 \right) ^{ 2 } }{ 4 } \\&amp;= 0.096 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q &amp;= A \cdot V_{C} \\&amp;= 0.096 \cdot 5.980 \\&amp;= 0.575 \; \;\textrm{(m3/s)}\\[10pt]
+\\
+V_{C} &amp;= \sqrt { \frac{ 2 \cdot g \cdot D }{ f \cdot L_{BC} } \cdot \left( 9.16 - 2.16 - z_{C} \right) } \\&amp;= \sqrt { \frac{ 2 \cdot 9.810 \cdot 0.350 }{ 0.016 \cdot 12 } \cdot \left( 9.16 - 2.16 - 6 \right) } \\&amp;= 5.980 \; \;\textrm{(m/s)}\\
+\\
+A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.350 \right) ^{ 2 } }{ 4 } \\&amp;= 0.096 \; \;\textrm{(m2)}\\
+\\
+Q &amp;= A \cdot V_{C} \\&amp;= 0.096 \cdot 5.980 \\&amp;= 0.575 \; \;\textrm{(m3/s)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -7211,16 +7226,16 @@ Q &amp;= A \cdot V_{C} \\&amp;= 0.096 \cdot 5.980 \\&amp;= 0.575 \; \;\textrm{(m
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "conda-base-py"
+            mode: "python"
         },
         kernelOptions: {
-            name: "conda-base-py",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'conda-base-py'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
