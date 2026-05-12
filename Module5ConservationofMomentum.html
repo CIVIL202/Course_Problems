@@ -366,18 +366,29 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="module-5-conservation-of-momentum">
 <h1>Module 5: Conservation of Momentum<a class="headerlink" href="#module-5-conservation-of-momentum" title="Permalink to this heading">#</a></h1>
+<p>Global variables:</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}
+\[
 \begin{aligned}
-g &amp;= 9.810 \; \;\textrm{(m/s2)}
- &amp;\rho_{water} &amp;= 1000 \; \;\textrm{(kg/m3)}
- &amp;\rho_{Hg} &amp;= 13550 \; \;\textrm{(kg/m3)}
-\\[10pt]
- p_{atm} &amp;= 101325 \; \;\textrm{(Pa)}
+\rho_{water} &amp;= 1000\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
+ &amp;\rho_{Hg} &amp;= 13600\ \mathrm{kg} \cdot \mathrm{m}^{-3} \;
 \end{aligned}
-\end{split}\]</div>
+\]</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[
+\begin{aligned}
+g &amp;= 9.810\ \mathrm{m} \cdot \mathrm{s}^{-2} \; 
+ &amp;p_{atm} &amp;= 101.325\ \mathrm{kPa} \;
+\end{aligned}
+\]</div>
 </div>
 </div>
 <section id="problems-for-lecture-28-conservation-of-linear-momentum">
@@ -413,7 +424,9 @@ Hint<div class="sd-summary-down docutils">
 <p class="sd-card-text">Find the velocities before and after the gate using the Energy equation.</p>
 <p class="sd-card-text">Apply Newton’s Second Law to find the horizontal force.</p>
 </div>
-</details><hr class="docutils" />
+</details><div class="cell tag_remove-input docutils container">
+</div>
+<hr class="docutils" />
 </section>
 <section id="question-2">
 <h3>Question 2 (***)<a class="headerlink" href="#question-2" title="Permalink to this heading">#</a></h3>
@@ -431,7 +444,7 @@ Answer<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(
-147.7 \; MN\; to \; the \; right
+147.73 \; MN\; to \; the \; right
 \)</span></p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -496,7 +509,9 @@ F_1 - F_2 -R_x = \rho Q (v_2 - v_1)
 \rho g \frac{y_1}{2} A_1 - \rho g \frac{y_2}{2} A_2 - F = \rho Q (v_2 - v_1)
 \]</div>
 </div>
-</details><div class="cell tag_remove-input tag_hide-output docutils container">
+</details><div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input tag_hide-output docutils container">
 <details class="hide above-output">
 <summary aria-label="Toggle hidden content">
 <span class="collapsed">Show code cell outputs</span>
@@ -506,27 +521,25 @@ F_1 - F_2 -R_x = \rho Q (v_2 - v_1)
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-b &amp;= 100 \; \;\textrm{(m)}
-\\[10pt]
-y_{1} &amp;= 20 \; \;\textrm{(m)}
-\\[10pt]
-y_{2} &amp;= 1.500 \; \;\textrm{(m)}
-\\[10pt]
-h_{f} &amp;= 1.200 \; \;\textrm{(m)}
-\\[10pt]
-v_{1} &amp;= \left( \frac{ \left( y_{1} - y_{2} - h_{f} \right) \cdot 2 \cdot g }{ \left( \frac{ y_{1} }{ y_{2} } \right) ^{ 2 } - 1 } \right) ^{ 0.5 } \\&amp;= \left( \frac{ \left( 20 - 1.500 - 1.200 \right) \cdot 2 \cdot 9.810 }{ \left( \frac{ 20 }{ 1.500 } \right) ^{ 2 } - 1 } \right) ^{ 0.5 } \\&amp;= 1.386 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-v_{2} &amp;= y_{1} \cdot \frac{ v_{1} }{ y_{2} } \\&amp;= 20 \cdot \frac{ 1.386 }{ 1.500 } \\&amp;= 18.476 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-Q &amp;= v_{1} \cdot y_{1} \cdot b \\&amp;= 1.386 \cdot 20 \cdot 100 \\&amp;= 2771.333 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-A_{1} &amp;= b \cdot y_{1} \\&amp;= 100 \cdot 20 \\&amp;= 2000 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-A_{2} &amp;= b \cdot y_{2} \\&amp;= 100 \cdot 1.500 \\&amp;= 150.000 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-R_{x} &amp;= \rho_{water} \cdot g \cdot \frac{ y_{1} }{ 2 } \cdot A_{1} - \rho_{water} \cdot g \cdot \frac{ y_{2} }{ 2 } \cdot A_{2} - \rho_{water} \cdot Q \cdot \left( v_{2} - v_{1} \right) \\&amp;= 1000 \cdot 9.810 \cdot \frac{ 20 }{ 2 } \cdot 2000 - 1000 \cdot 9.810 \cdot \frac{ 1.500 }{ 2 } \cdot 150.000 - 1000 \cdot 2771.333 \cdot \left( 18.476 - 1.386 \right) \\&amp;= 147734607.558 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-R_{xMN} &amp;= 147.735 \; \;\textrm{(MN)}
+b &amp;= 100.00\ \mathrm{m} \; 
+\\
+y_{1} &amp;= 20.00\ \mathrm{m} \; 
+\\
+y_{2} &amp;= 1.50\ \mathrm{m} \; 
+\\
+h_{f} &amp;= 1.20\ \mathrm{m} \; 
+\\
+v_{1} &amp;= \left( \frac{ \left( y_{1} - y_{2} - h_{f} \right) \cdot 2 \cdot g }{ \left( \frac{ y_{1} }{ y_{2} } \right) ^{ 2 } - 1 } \right) ^{ 0.5 } \\&amp;= \left( \frac{ \left( 20.00\ \mathrm{m} - 1.50\ \mathrm{m} - 1.20\ \mathrm{m} \right) \cdot 2 \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} }{ \left( \frac{ 20.00\ \mathrm{m} }{ 1.50\ \mathrm{m} } \right) ^{ 2 } - 1 } \right) ^{ 0.5 } \\&amp;= 1.39\ \mathrm{m} \cdot \mathrm{s}^{-1.0}  \\
+\\
+v_{2} &amp;= y_{1} \cdot \frac{ v_{1} }{ y_{2} } \\&amp;= 20.00\ \mathrm{m} \cdot \frac{ 1.39\ \mathrm{m} \cdot \mathrm{s}^{-1.0} }{ 1.50\ \mathrm{m} } \\&amp;= 18.48\ \mathrm{m} \cdot \mathrm{s}^{-1.0}  \\
+\\
+Q &amp;= v_{1} \cdot y_{1} \cdot b \\&amp;= 1.39\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \cdot 20.00\ \mathrm{m} \cdot 100.00\ \mathrm{m} \\&amp;= 2771.33\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0}  \\
+\\
+A_{1} &amp;= b \cdot y_{1} \\&amp;= 100.00\ \mathrm{m} \cdot 20.00\ \mathrm{m} \\&amp;= 2000.00\ \mathrm{m}^{2}  \\
+\\
+A_{2} &amp;= b \cdot y_{2} \\&amp;= 100.00\ \mathrm{m} \cdot 1.50\ \mathrm{m} \\&amp;= 150.00\ \mathrm{m}^{2}  \\
+\\
+R_{x} &amp;= \rho_{water} \cdot g \cdot \frac{ y_{1} }{ 2 } \cdot A_{1} - \rho_{water} \cdot g \cdot \frac{ y_{2} }{ 2 } \cdot A_{2} - \rho_{water} \cdot Q \cdot \left( v_{2} - v_{1} \right) \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \frac{ 20.00\ \mathrm{m} }{ 2 } \cdot 2000.00\ \mathrm{m}^{2} - 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \frac{ 1.50\ \mathrm{m} }{ 2 } \cdot 150.00\ \mathrm{m}^{2} - 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 2771.33\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0} \cdot \left( 18.48\ \mathrm{m} \cdot \mathrm{s}^{-1.0} - 1.39\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \right) \\&amp;= 147.73\ \mathrm{MN}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -539,7 +552,7 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">The force on the structure is on the same site but opposite in direction (<span class="math notranslate nohighlight">\(N \mathrm{III}\)</span>）: <span class="math notranslate nohighlight">\(F_x = 147.735 MN\)</span> to the right.</p>
+<p class="sd-card-text">The force on the structure is on the same site but opposite in direction (<span class="math notranslate nohighlight">\(N \mathrm{III}\)</span>）: <span class="math notranslate nohighlight">\(F_x = 147.73 MN\)</span> to the right.</p>
 </div>
 </details><hr class="docutils" />
 </section>
@@ -559,7 +572,7 @@ Answer<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(
-12.2 \; m^3/s\; ;\;11.98\;kN\;to\;the\;right
+12.18 \; m^3/s\; ;\;11.97\;kN\;to\;the\;right
 \)</span></p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -573,7 +586,11 @@ Hint<div class="sd-summary-down docutils">
 <p class="sd-card-text">Find the velocities using the Energy equation.</p>
 <p class="sd-card-text">Apply Newton’s Second Law to find the horizontal force.</p>
 </div>
-</details></section>
+</details><div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+</section>
 </section>
 <section id="problems-for-lecture-29-conservation-of-linear-momentum-2">
 <h2>Problems for Lecture 29: Conservation of Linear Momentum 2<a class="headerlink" href="#problems-for-lecture-29-conservation-of-linear-momentum-2" title="Permalink to this heading">#</a></h2>
@@ -607,7 +624,9 @@ Hint<div class="sd-summary-down docutils">
 <p class="sd-card-text">Use the continuity equation to find the velocity at the nozzle exit.</p>
 <p class="sd-card-text">Apply <span class="math notranslate nohighlight">\(N \mathrm{II}\)</span> equation in the x-Direction to calculate the force on the nozzle.</p>
 </div>
-</details><hr class="docutils" />
+</details><div class="cell tag_remove-input docutils container">
+</div>
+<hr class="docutils" />
 </section>
 <section id="id2">
 <h3>Question 2 (**)<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
@@ -691,7 +710,9 @@ P_2=(\frac {P_1}{\rho g}+\frac{v_1^2}{2g}-\frac{v_2^2}{2g}) \rho g
 P_1A_1-P_2A_2-R_x = \rho Q (v_2-v_1)\\
 \end{split}\]</div>
 </div>
-</details><div class="cell tag_remove-input tag_hide-output docutils container">
+</details><div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input tag_hide-output docutils container">
 <details class="hide above-output">
 <summary aria-label="Toggle hidden content">
 <span class="collapsed">Show code cell outputs</span>
@@ -701,27 +722,39 @@ P_1A_1-P_2A_2-R_x = \rho Q (v_2-v_1)\\
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-D_{1} &amp;= \frac{ 750 }{ 1000 } &amp;= 0.750 \; \;\textrm{(m)}
-\\[10pt]
-D_{2} &amp;= \frac{ 500 }{ 1000 } &amp;= 0.500 \; \;\textrm{(m)}
-\\[10pt]
-p_{1} &amp;= 650 \cdot 1000 &amp;= 650000 \; \;\textrm{(Pa)}
-\\[10pt]
-v_{1} &amp;= 2.800 \; \;\textrm{(m/s)}
-\\[10pt]
-v_{2} &amp;= \frac{ v_{1} \cdot \left( \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \right) }{ \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } } \\&amp;= \frac{ 2.800 \cdot \left( 3.142 \cdot \frac{ \left( 0.750 \right) ^{ 2 } }{ 4 } \right) }{ 3.142 \cdot \frac{ \left( 0.500 \right) ^{ 2 } }{ 4 } } \\&amp;= 6.300 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-p_{2} &amp;= \left( \left( \frac{ p_{1} }{ \rho_{water} \cdot g } \right) + \left( \frac{ \left( v_{1} \right) ^{ 2 } }{ 2 \cdot g } \right) - \left( \frac{ \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g } \right) \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \left( \frac{ 650000 }{ 1000 \cdot 9.810 } \right) + \left( \frac{ \left( 2.800 \right) ^{ 2 } }{ 2 \cdot 9.810 } \right) - \left( \frac{ \left( 6.300 \right) ^{ 2 } }{ 2 \cdot 9.810 } \right) \right) \cdot 1000 \cdot 9.810 \\&amp;= 634075.000 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.750 \right) ^{ 2 } }{ 4 } \\&amp;= 0.442 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.500 \right) ^{ 2 } }{ 4 } \\&amp;= 0.196 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q &amp;= v_{1} \cdot A_{1} \\&amp;= 2.800 \cdot 0.442 \\&amp;= 1.237 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-R_{x} &amp;= p_{1} \cdot A_{1} - p_{2} \cdot A_{2} - \rho_{water} \cdot Q \cdot \left( v_{2} - v_{1} \right) \\&amp;= 650000 \cdot 0.442 - 634075.000 \cdot 0.196 - 1000 \cdot 1.237 \cdot \left( 6.300 - 2.800 \right) \\&amp;= 158331.361 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-R_{x_{}} &amp;= \frac{ R_{x} }{ 1000 } \\&amp;= \frac{ 158331.361 }{ 1000 } \\&amp;= 158.331 \; \;\textrm{(kN)}\\[10pt]
+D_{1} &amp;= 750\ \mathrm{mm} \; 
+\\
+D_{2} &amp;= 500\ \mathrm{mm} \; 
+\\
+p_{1} &amp;= 650\ \mathrm{kPa} \; 
+\\
+A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 }  = 3 \cdot \frac{ \left( 750\ \mathrm{mm} \right) ^{ 2 } }{ 4 } &amp;= 441786\ \mathrm{mm}^{2}  
+\\
+A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 }  = 3 \cdot \frac{ \left( 500\ \mathrm{mm} \right) ^{ 2 } }{ 4 } &amp;= 196350\ \mathrm{mm}^{2}  
+\end{aligned}
+\end{split}\]</div>
+</div>
+</details>
+</div>
+<div class="cell tag_remove-input tag_hide-output docutils container">
+<details class="hide above-output">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+v_{1} &amp;= 2.80\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \; 
+\\
+v_{2} &amp;= \frac{ v_{1} \cdot A_{1} }{ A_{2} }  = \frac{ 2.80\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \cdot 441786.47\ \mathrm{mm}^{2} }{ 196349.54\ \mathrm{mm}^{2} } &amp;= 6.30\ \mathrm{m} \cdot \mathrm{s}^{-1.0}  
+\\
+p_{2} &amp;= \left( \left( \frac{ p_{1} }{ \rho_{water} \cdot g } \right) + \left( \frac{ \left( v_{1} \right) ^{ 2 } }{ 2 \cdot g } \right) - \left( \frac{ \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g } \right) \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \left( \frac{ 650.00\ \mathrm{kPa} }{ 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} } \right) + \left( \frac{ \left( 2.80\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \right) ^{ 2 } }{ 2 \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} } \right) - \left( \frac{ \left( 6.30\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \right) ^{ 2 } }{ 2 \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} } \right) \right) \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \\&amp;= 634.08\ \mathrm{kPa}  \\
+\\
+Q &amp;= v_{1} \cdot A_{1}  = 2.80\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \cdot 441786.47\ \mathrm{mm}^{2} &amp;= 1.24\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0}  
+\\
+R_{x} &amp;= p_{1} \cdot A_{1} - p_{2} \cdot A_{2} - \rho_{water} \cdot Q \cdot \left( v_{2} - v_{1} \right) \\&amp;= 650.00\ \mathrm{kPa} \cdot 441786.47\ \mathrm{mm}^{2} - 634.08\ \mathrm{kPa} \cdot 196349.54\ \mathrm{mm}^{2} - 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 1.24\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0} \cdot \left( 6.30\ \mathrm{m} \cdot \mathrm{s}^{-1.0} - 2.80\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \right) \\&amp;= 158.33\ \mathrm{kN}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -792,7 +825,9 @@ Hint<div class="sd-summary-down docutils">
 <p class="sd-card-text">Use conservation of energy (Bernoulli equation) to find the exit pressure.</p>
 <p class="sd-card-text">Apply conservation of momentum in the x and z directions to calculate the force components on the bend.</p>
 </div>
-</details><hr class="docutils" />
+</details><div class="cell tag_remove-input docutils container">
+</div>
+<hr class="docutils" />
 </section>
 <section id="question-2-r">
 <h3>Question 2 (***)[R]<a class="headerlink" href="#question-2-r" title="Permalink to this heading">#</a></h3>
@@ -805,7 +840,7 @@ Answer<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(
-11.6 \; kN\;;\;6.2\;kN
+11.58 \; kN\;;\;6.21\;kN
 \)</span></p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -857,7 +892,9 @@ p_1A_1-R_x = \rho Q (v_{2x}-v_{1x})\\
 R_z-p_2A_2 = \rho Q (v_{2z}-v_{1z})\\
 \end{split}\]</div>
 </div>
-</details><div class="cell tag_remove-input tag_hide-output docutils container">
+</details><div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input tag_hide-output docutils container">
 <details class="hide above-output">
 <summary aria-label="Toggle hidden content">
 <span class="collapsed">Show code cell outputs</span>
@@ -867,27 +904,41 @@ R_z-p_2A_2 = \rho Q (v_{2z}-v_{1z})\\
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-v_{1} &amp;= 3 \; \;\textrm{(m/s)}
-\\[10pt]
-p_{1} &amp;= 50 \cdot 1000 &amp;= 50000 \; \;\textrm{(Pa)}
-\\[10pt]
-D_{1} &amp;= \frac{ 500 }{ 1000 } &amp;= 0.500 \; \;\textrm{(m)}
-\\[10pt]
-D_{2} &amp;= \frac{ 250 }{ 1000 } &amp;= 0.250 \; \;\textrm{(m)}
-\\[10pt]
-A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.500 \right) ^{ 2 } }{ 4 } \\&amp;= 0.196 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.250 \right) ^{ 2 } }{ 4 } \\&amp;= 0.049 \; \;\textrm{(m2)}\\[10pt]
-\\[10pt]
-Q &amp;= v_{1} \cdot A_{1} \\&amp;= 3 \cdot 0.196 \\&amp;= 0.589 \; \;\textrm{(m3/s)}\\[10pt]
-\\[10pt]
-v_{2} &amp;= \frac{ Q }{ A_{2} } \\&amp;= \frac{ 0.589 }{ 0.049 } \\&amp;= 12.000 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-p_{2} &amp;= \left( \left( \frac{ p_{1} }{ \rho_{water} \cdot g } \right) + \left( \frac{ \left( v_{1} \right) ^{ 2 } }{ 2 \cdot g } \right) - \left( \frac{ \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g } \right) \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \left( \frac{ 50000 }{ 1000 \cdot 9.810 } \right) + \left( \frac{ \left( 3 \right) ^{ 2 } }{ 2 \cdot 9.810 } \right) - \left( \frac{ \left( 12.000 \right) ^{ 2 } }{ 2 \cdot 9.810 } \right) \right) \cdot 1000 \cdot 9.810 \\&amp;= -17500.000 \; \;\textrm{(Pa)}\\[10pt]
-\\[10pt]
-R_{x} &amp;= p_{1} \cdot A_{1} - \rho_{water} \cdot Q \cdot \left( 0 - v_{1} \right) \\&amp;= 50000 \cdot 0.196 - 1000 \cdot 0.589 \cdot \left( 0 - 3 \right) \\&amp;= 11584.623 \; \;\textrm{(N)}\\[10pt]
-\\[10pt]
-R_{z} &amp;= \rho_{water} \cdot Q \cdot \left( v_{2} - 0 \right) + p_{2} \cdot A_{2} \\&amp;= 1000 \cdot 0.589 \cdot \left( 12.000 - 0 \right) + -17500.000 \cdot 0.049 \\&amp;= 6209.554 \; \;\textrm{(N)}\\[10pt]
+v_{1} &amp;= 3\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \; 
+\\
+p_{1} &amp;= 50\ \mathrm{kPa} \; 
+\\
+D_{1} &amp;= 500\ \mathrm{mm} \; 
+\\
+D_{2} &amp;= 250\ \mathrm{mm} \; 
+\\
+A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 }  = 3 \cdot \frac{ \left( 500\ \mathrm{mm} \right) ^{ 2 } }{ 4 } &amp;= 196350\ \mathrm{mm}^{2}  
+\\
+A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 }  = 3 \cdot \frac{ \left( 250\ \mathrm{mm} \right) ^{ 2 } }{ 4 } &amp;= 49087\ \mathrm{mm}^{2}  
+\end{aligned}
+\end{split}\]</div>
+</div>
+</details>
+</div>
+<div class="cell tag_remove-input tag_hide-output docutils container">
+<details class="hide above-output">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+Q &amp;= v_{1} \cdot A_{1}  = 3.00\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \cdot 196349.54\ \mathrm{mm}^{2} &amp;= 0.59\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0}  
+\\
+v_{2} &amp;= \frac{ Q }{ A_{2} }  = \frac{ 0.59\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0} }{ 49087.39\ \mathrm{mm}^{2} } &amp;= 12.00\ \mathrm{m} \cdot \mathrm{s}^{-1.0}  
+\\
+p_{2} &amp;= \left( \left( \frac{ p_{1} }{ \rho_{water} \cdot g } \right) + \left( \frac{ \left( v_{1} \right) ^{ 2 } }{ 2 \cdot g } \right) - \left( \frac{ \left( v_{2} \right) ^{ 2 } }{ 2 \cdot g } \right) \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \left( \frac{ 50.00\ \mathrm{kPa} }{ 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} } \right) + \left( \frac{ \left( 3.00\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \right) ^{ 2 } }{ 2 \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} } \right) - \left( \frac{ \left( 12.00\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \right) ^{ 2 } }{ 2 \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} } \right) \right) \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \\&amp;= -17.50\ \mathrm{kPa}  \\
+\\
+R_{x} &amp;= p_{1} \cdot A_{1} - \rho_{water} \cdot Q \cdot \left( 0 \cdot \frac{ \mathrm{si.m} }{ \mathrm{si.s} } - v_{1} \right)  = 50.00\ \mathrm{kPa} \cdot 196349.54\ \mathrm{mm}^{2} - 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 0.59\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0} \cdot \left( 0 \cdot \frac{ si.m }{ si.s } - 3.00\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \right) &amp;= 11.58\ \mathrm{kN}  
+\\
+R_{z} &amp;= \rho_{water} \cdot Q \cdot \left( v_{2} - 0 \cdot \frac{ \mathrm{si.m} }{ \mathrm{si.s} } \right) + p_{2} \cdot A_{2}  = 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 0.59\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0} \cdot \left( 12.00\ \mathrm{m} \cdot \mathrm{s}^{-1.0} - 0 \cdot \frac{ si.m }{ si.s } \right) + -17.50\ \mathrm{kPa} \cdot 49087.39\ \mathrm{mm}^{2} &amp;= 6.21\ \mathrm{kN}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -900,7 +951,7 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">The force on the bend in the x direction is 11.584 kN to the right and the force in y direction is 6.2 kN down. (NⅢ）</p>
+<p class="sd-card-text">The force on the bend in the x direction is 11.58 kN to the right and the force in y direction is 6.21 kN down. (NⅢ）</p>
 </div>
 </details><hr class="docutils" />
 </section>
@@ -920,12 +971,14 @@ Answer<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(
-142 \; N\;to\;the\;right
+141.37 \; N\;to\;the\;right
 \)</span></p>
 </div>
 </details><p>Use conservation of mass to find the water velocity through the holes.</p>
 <p>Apply the Bernoulli euqation to find the pressure difference.</p>
 <p>Use conservation of momentum to calculate the force on the perforated plate.</p>
+<div class="cell tag_remove-input docutils container">
+</div>
 <hr class="docutils" />
 </section>
 <section id="question-4">
@@ -978,7 +1031,9 @@ Q_1=Q_2+Q_3
 v_1A_1=v_2A_2+v_3A_3
 \]</div>
 </div>
-</details><p><strong>Question 4 (b)</strong></p>
+</details><div class="cell tag_remove-input docutils container">
+</div>
+<p><strong>Question 4 (b)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Hint<div class="sd-summary-down docutils">
@@ -1039,7 +1094,22 @@ F= \sqrt{F_x^2+F_y^2}
 <span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
-<img alt="_images/056a33fc5b40add5ce21b4bc54763067d981d7c5c970f3ed66008c35dc6c7217.png" src="_images/056a33fc5b40add5ce21b4bc54763067d981d7c5c970f3ed66008c35dc6c7217.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">102</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;figures/139s.png&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">img</span>
+
+<span class="nn">File ~/.local/lib/python3.12/site-packages/PIL/Image.py:3635,</span> in <span class="ni">open</span><span class="nt">(fp, mode, formats)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3633</span> <span class="k">if</span> <span class="n">is_path</span><span class="p">(</span><span class="n">fp</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">3634</span>     <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">fspath</span><span class="p">(</span><span class="n">fp</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">3635</span>     <span class="n">fp</span> <span class="o">=</span> <span class="n">builtins</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3636</span>     <span class="n">exclusive_fp</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="g g-Whitespace">   </span><span class="mi">3637</span> <span class="k">else</span><span class="p">:</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;figures/139s.png&#39;
+</pre></div>
+</div>
 </div>
 </details>
 </div>
@@ -1097,7 +1167,9 @@ v_2= 1.8 v_1
 \frac {p_1}{\rho g}+\frac{v_1^2}{2g}=\frac{(1.8 v_1)^2}{2g}+h_f\\
 \end{split}\]</div>
 </div>
-</details></section>
+</details><div class="cell tag_remove-input docutils container">
+</div>
+</section>
 </section>
 <section id="problems-for-lecture-31-conservation-of-linear-momentum-4">
 <h2>Problems for Lecture 31: Conservation of Linear Momentum 4<a class="headerlink" href="#problems-for-lecture-31-conservation-of-linear-momentum-4" title="Permalink to this heading">#</a></h2>
@@ -1128,7 +1200,9 @@ Hint<div class="sd-summary-down docutils">
 <p class="sd-card-text">Ignore friction losses.</p>
 <p class="sd-card-text">Apply NⅡ.</p>
 </div>
-</details><hr class="docutils" />
+</details><div class="cell tag_remove-input docutils container">
+</div>
+<hr class="docutils" />
 </section>
 <section id="id4">
 <h3>Question 2 (***)<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
@@ -1205,7 +1279,9 @@ Hint<div class="sd-summary-down docutils">
 <p class="sd-card-text">Ignore friction losses.</p>
 <p class="sd-card-text">Apply NⅡ.</p>
 </div>
-</details><hr class="docutils" />
+</details><div class="cell tag_remove-input docutils container">
+</div>
+<hr class="docutils" />
 </section>
 <section id="question-4-r">
 <h3>Question 4 (***)[R]<a class="headerlink" href="#question-4-r" title="Permalink to this heading">#</a></h3>
@@ -1260,7 +1336,9 @@ v_{2x}= v_2*cos (180-\theta)
 -R_x= \rho Q(-v_{2x}-v_{1x})
 \]</div>
 </div>
-</details><p><strong>Question 4 (b)</strong></p>
+</details><div class="cell tag_remove-input docutils container">
+</div>
+<p><strong>Question 4 (b)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Hint<div class="sd-summary-down docutils">
@@ -1333,7 +1411,9 @@ Hint<div class="sd-summary-down docutils">
 <p class="sd-card-text">Calculate the celerity of the transient wave c.</p>
 <p class="sd-card-text">Calculate the pressure increase using the Joukowski equation.</p>
 </div>
-</details><hr class="docutils" />
+</details><div class="cell tag_remove-input docutils container">
+</div>
+<hr class="docutils" />
 </section>
 <section id="id7">
 <h3>Question 2 (**)<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
@@ -1379,7 +1459,9 @@ From Table A.4, <span class="math notranslate nohighlight">\(E_v= 1030 x10^6 N/m
 \text{difference} = \left( \frac{c_2 - c_1}{c_2} \right)  100
 \]</div>
 </div>
-</details><div class="cell tag_hide-output tag_remove-input docutils container">
+</details><div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_hide-output tag_remove-input docutils container">
 <details class="hide above-output">
 <summary aria-label="Toggle hidden content">
 <span class="collapsed">Show code cell outputs</span>
@@ -1389,19 +1471,19 @@ From Table A.4, <span class="math notranslate nohighlight">\(E_v= 1030 x10^6 N/m
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-T &amp;= 20 \; \;\textrm{(°C)}
-\\[10pt]
-\rho &amp;= 1000 \; \;\textrm{(kg/m3)}
-\\[10pt]
-\rho_{20} &amp;= 998.20 \; \;\textrm{(kg/m3)}
-\\[10pt]
-E_{v} &amp;= 2180000000.00 \; \;\textrm{(N/m2)}
-\\[10pt]
-c_{1} &amp;= \sqrt { \frac{ E_{v} }{ \rho } } \\&amp;= \sqrt { \frac{ 2180000000.00 }{ 1000 } } \\&amp;= 1476.48 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-c_{2} &amp;= \sqrt { \frac{ E_{v} }{ \rho_{20} } } \\&amp;= \sqrt { \frac{ 2180000000.00 }{ 998.20 } } \\&amp;= 1477.81 \; \;\textrm{(m/s)}\\[10pt]
-\\[10pt]
-\mathrm{difference} &amp;= \left( \frac{ c_{2} - c_{1} }{ c_{2} } \right) \cdot 100 \\&amp;= \left( \frac{ 1477.81 - 1476.48 }{ 1477.81 } \right) \cdot 100 \\&amp;= 0.09 \; \;\textrm{(%)}\\[10pt]
+T &amp;= 20 \; 
+\\
+\rho &amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
+\\
+\rho_{20} &amp;= 998.20\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
+\\
+E_{v} &amp;= 2.18\ \mathrm{GPa} \; 
+\\
+c_{1} &amp;= \left( \frac{ E_{v} }{ \rho } \right) ^{ \left( \frac{ 1 }{ 2 } \right) } \\&amp;= \left( \frac{ 2.18\ \mathrm{GPa} }{ 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} } \right) ^{ \left( \frac{ 1 }{ 2 } \right) } \\&amp;= 1476.48\ \mathrm{m} \cdot \mathrm{s}^{-1.0}  \\
+\\
+c_{2} &amp;= \left( \frac{ E_{v} }{ \rho_{20} } \right) ^{ \left( \frac{ 1 }{ 2 } \right) } \\&amp;= \left( \frac{ 2.18\ \mathrm{GPa} }{ 998.20\ \mathrm{kg} \cdot \mathrm{m}^{-3} } \right) ^{ \left( \frac{ 1 }{ 2 } \right) } \\&amp;= 1477.81\ \mathrm{m} \cdot \mathrm{s}^{-1.0}  \\
+\\
+\mathrm{difference} &amp;= \left( \frac{ c_{2} - c_{1} }{ c_{2} } \right) \cdot 100  = \left( \frac{ 1477.81\ \mathrm{m} \cdot \mathrm{s}^{-1.0} - 1476.48\ \mathrm{m} \cdot \mathrm{s}^{-1.0} }{ 1477.81\ \mathrm{m} \cdot \mathrm{s}^{-1.0} } \right) \cdot 100 &amp;= 0.09 \; \;\textrm{(％)}
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1433,7 +1515,9 @@ Hint<div class="sd-summary-down docutils">
 <p class="sd-card-text">Calculate the celerity of the transient wave c.</p>
 <p class="sd-card-text">Calculate the pressure increase using the Joukowski equation.</p>
 </div>
-</details></section>
+</details><div class="cell tag_remove-input docutils container">
+</div>
+</section>
 </section>
 </section>
 
@@ -1446,16 +1530,16 @@ Hint<div class="sd-summary-down docutils">
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "conda-base-py"
+            mode: "python"
         },
         kernelOptions: {
-            name: "conda-base-py",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'conda-base-py'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
