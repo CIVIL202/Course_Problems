@@ -3639,30 +3639,20 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-z_{3} &amp;= -5.00\ \mathrm{m} \; 
-\\
-h_{f_{12}} &amp;= 1.50\ \mathrm{m} \; 
-\\
-h_{f_{23}} &amp;= 2.40\ \mathrm{m} \; 
-\\
-v_{3} &amp;= \left( \left( \left( - z_{3} \right) - h_{f_{12}} - h_{f_{23}} \right) \cdot 2 \cdot g \right) ^{ \left( \frac{ 1 }{ 2 } \right) } \\&amp;= \left( \left( \left( - -5.00\ \mathrm{m} \right) - 1.50\ \mathrm{m} - 2.40\ \mathrm{m} \right) \cdot 2 \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \right) ^{ \left( \frac{ 1 }{ 2 } \right) } \\&amp;= 4.65\ \mathrm{m} \cdot \mathrm{s}^{-1}  \\
-\\
-V_{2} &amp;= 4.65\ \mathrm{m} \cdot \mathrm{s}^{-1} \; 
-\\
-D &amp;= 50.00\ \mathrm{mm} \; 
-\\
-A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 }  = 3.14 \cdot \frac{ \left( 50.00\ \mathrm{mm} \right) ^{ 2 } }{ 4 } &amp;= 1963.50\ \mathrm{mm}^{2}  
-\\
-z_{2} &amp;= 2 \; 
-\\
-S_{oil} &amp;= 0.82 \; 
-\\
-\rho_{oil} &amp;= S_{oil} \cdot \rho_{water}  = 0.82 \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} &amp;= 820.00\ \mathrm{kg} \cdot \mathrm{m}^{-3}  
-\end{aligned}
-\end{split}\]</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">103</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">v_3</span> <span class="o">=</span> <span class="p">((</span><span class="o">-</span><span class="n">z_3</span> <span class="o">-</span> <span class="n">h_f_12</span> <span class="o">-</span> <span class="n">h_f_23</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">g</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">V_2</span> <span class="o">=</span> <span class="n">v_3</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">D</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">A</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">D</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="mi">4</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="n">z_2</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="n">S_oil</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">rho_oil</span> <span class="o">=</span> <span class="n">S_oil</span> <span class="o">*</span> <span class="n">rho_water</span>
+
+<span class="ne">NameError</span>: name &#39;z_2&#39; is not defined
+</pre></div>
+</div>
 </div>
 </details>
 </div>
@@ -3673,16 +3663,16 @@ S_{oil} &amp;= 0.82 \;
 <span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-Q &amp;= v_{3} \cdot A  = 4.6456\ \mathrm{m} \cdot \mathrm{s}^{-1} \cdot 1963.4954\ \mathrm{mm}^{2} &amp;= 0.0091\ \mathrm{m}^{3} \cdot \mathrm{s}^{-1}  
-\\
-Q_{Lps} &amp;= 0.0091\ \mathrm{m}^{3} \cdot \mathrm{s}^{-1} \; 
-\\
-p_{2} &amp;= \left( \left( - z_{2} \right) - \frac{ \left( V_{2} \right) ^{ 2 } }{ 2 \cdot g } - h_{f_{12}} \right) \cdot \rho_{oil} \cdot g \\&amp;= \left( \left( - 2 \right) - \frac{ \left( 4.6456\ \mathrm{m} \cdot \mathrm{s}^{-1} \right) ^{ 2 } }{ 2 \cdot 9.8100\ \mathrm{m} \cdot \mathrm{s}^{-2} } - 1.5000\ \mathrm{m} \right) \cdot 820.0000\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.8100\ \mathrm{m} \cdot \mathrm{s}^{-2} \\&amp;= -37.0033\ \mathrm{kPa}  \\
-\end{aligned}
-\end{split}\]</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">104</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">Q</span> <span class="o">=</span> <span class="n">v_3</span> <span class="o">*</span> <span class="n">A</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">Q_Lps</span> <span class="o">=</span> <span class="n">Q</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">p_2</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="n">z_2</span> <span class="o">-</span> <span class="n">V_2</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">g</span><span class="p">)</span> <span class="o">-</span> <span class="n">h_f_12</span><span class="p">)</span> <span class="o">*</span> <span class="n">rho_oil</span> <span class="o">*</span> <span class="n">g</span>
+
+<span class="ne">NameError</span>: name &#39;z_2&#39; is not defined
+</pre></div>
+</div>
 </div>
 </details>
 </div>
@@ -7389,9 +7379,9 @@ z_{3} &amp;= -3.000\ \mathrm{m} \;
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\mathrm{expr} &amp;= \left( \frac{ p_{1} }{ \gamma } \right) + \left( \frac{ P }{ \gamma \cdot Q } \right) - z_{3} - \left( \frac{ 8 \cdot f_{s} \cdot L_{s} \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{s} \right) ^{ 5 } } \right) - \left( \frac{ 8 \cdot f_{d} \cdot L_{d} \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{d} \right) ^{ 5 } } \right) \\&amp;= \left( \frac{ 35000 }{ 8000 } \right) + \left( \frac{ 1500.000 }{ 8000 \cdot [-0.075,\ -0.028,\ 0.103] } \right) - -3 - \left( \frac{ 8 \cdot 0.025 \cdot 15 \cdot \left( [-0.075,\ -0.028,\ 0.103] \right) ^{ 2 } }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.150 \right) ^{ 5 } } \right) - \left( \frac{ 8 \cdot 0.030 \cdot 60 \cdot \left( [-0.075,\ -0.028,\ 0.103] \right) ^{ 2 } }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810 \cdot \left( 0.200 \right) ^{ 5 } } \right) \\&amp;= - 872.81 Q^{2} + 7.375 + \frac{0.188}{Q}  \\
+\mathrm{expr} &amp;= \left( \frac{ p_{1} }{ \gamma } \right) + \left( \frac{ P }{ \gamma \cdot Q } \right) - z_{3} - \left( \frac{ 8 \cdot f_{s} \cdot L_{s} \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{s} \right) ^{ 5 } } \right) - \left( \frac{ 8 \cdot f_{d} \cdot L_{d} \cdot \left( Q \right) ^{ 2 } }{ \left( \pi \right) ^{ 2 } \cdot g \cdot \left( D_{d} \right) ^{ 5 } } \right) \\&amp;= \left( \frac{ 35000 }{ 8000 } \right) + \left( \frac{ 1500.000 }{ 8000 \cdot [-2.894,\ -0.025,\ 2.919] } \right) - -3 - \left( \frac{ 8 \cdot 0.025 \cdot 15 \cdot \left( [-2.894,\ -0.025,\ 2.919] \right) ^{ 2 } }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \left( 0.150 \right) ^{ 5 } } \right) - \left( \frac{ 8 \cdot 0.030 \cdot 60 \cdot \left( [-2.894,\ -0.025,\ 2.919] \right) ^{ 2 } }{ \left( 3.142 \right) ^{ 2 } \cdot 9.810\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \left( 0.200 \right) ^{ 5 } } \right) \\&amp;= - 0.873 Q^{2} + 7.375 + \frac{0.188}{Q}  \\
 \\
-Q &amp;= \operatorname{solve} \left( \mathrm{expr} \right) \\&amp;= \operatorname{solve} \left( - 872.81 Q^{2} + 7.375 + \frac{0.188}{Q} \right) \\&amp;= [-0.075,\ -0.028,\ 0.103]  \\
+Q &amp;= \operatorname{solve} \left( \mathrm{expr} \right) \\&amp;= \operatorname{solve} \left( - 0.873 Q^{2} + 7.375 + \frac{0.188}{Q} \right) \\&amp;= [-2.894,\ -0.025,\ 2.919]  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -7523,29 +7513,26 @@ NPSH_{available}= \frac {p_{abs}-P{vap}}{\rho g} + \frac {V_s^2}{2g}
 <span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">420</span><span class="p">],</span> <span class="n">line</span> <span class="mi">7</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">h_f</span><span class="o">=</span> <span class="mf">1.2</span> <span class="c1">#m</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">h_m</span><span class="o">=</span> <span class="mf">0.5</span> <span class="c1">#m</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">z_2</span><span class="o">=</span> <span class="mi">2</span><span class="c1">#m</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">p_atm</span> <span class="o">=</span> <span class="mi">90</span><span class="o">*</span><span class="mi">1000</span> <span class="c1">#Pa</span>
-<span class="ne">----&gt; </span><span class="mi">7</span> <span class="n">p_2</span><span class="o">=</span> <span class="p">(</span><span class="n">p_atm</span><span class="o">/</span><span class="p">(</span><span class="n">rho_water</span><span class="o">*</span><span class="n">g</span><span class="p">)</span><span class="o">-</span><span class="n">V_s</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="p">)</span><span class="o">-</span><span class="n">h_f</span><span class="o">-</span><span class="n">h_m</span><span class="o">-</span><span class="n">z_2</span><span class="p">)</span><span class="o">*</span><span class="n">rho_water</span><span class="o">*</span><span class="n">g</span> <span class="c1">#Pa</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="n">NPSH_available</span><span class="o">=</span> <span class="p">(</span><span class="n">p_2</span><span class="o">-</span><span class="n">p_vap</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">rho_water</span><span class="o">*</span><span class="n">g</span><span class="p">)</span><span class="o">+</span><span class="n">V_s</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="p">)</span> <span class="c1">#m</span>
-
-<span class="nn">File /usr/local/python/3.12.1/lib/python3.12/site-packages/forallpeople/__init__.py:474,</span> in <span class="ni">Physical.__sub__</span><span class="nt">(self, other)</span>
-<span class="g g-Whitespace">    </span><span class="mi">472</span>             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Cannot subtract between </span><span class="si">{</span><span class="bp">self</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">other</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">473</span>     <span class="k">else</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">474</span>         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">475</span>             <span class="sa">f</span><span class="s2">&quot;Cannot subtract between </span><span class="si">{</span><span class="bp">self</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">other</span><span class="si">}</span><span class="s2">:&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">476</span>             <span class="o">+</span> <span class="s2">&quot;.dimensions attributes are incompatible (not equal)&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">477</span>         <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">478</span> <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">479</span>     <span class="k">try</span><span class="p">:</span>
-
-<span class="ne">ValueError</span>: Cannot subtract between 9.174 kg⁻¹·m²·s² and 0.204 m⁻¹·s²:.dimensions attributes are incompatible (not equal)
-</pre></div>
-</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+p_{vap} &amp;= 2.30\ \mathrm{kPa} \; 
+\\
+V_{s} &amp;= 2.00\ \mathrm{m} \cdot \mathrm{s}^{-1} \; 
+\\
+h_{f} &amp;= 1.20\ \mathrm{m} \; 
+\\
+h_{m} &amp;= 500.00\ \mathrm{mm} \; 
+\\
+z_{2} &amp;= 2.00\ \mathrm{m} \; 
+\\
+p_{atm} &amp;= 90.00\ \mathrm{kPa} \; 
+\\
+p_{2} &amp;= \left( \left( \frac{ p_{atm} }{ \rho_{water} \cdot g } - \frac{ \left( V_{s} \right) ^{ 2 } }{ 2 \cdot g } - h_{f} - h_{m} - z_{2} \right) \cdot \rho_{water} \cdot g \right) \\&amp;= \left( \left( \frac{ 90.00\ \mathrm{kPa} }{ 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} } - \frac{ \left( 2.00\ \mathrm{m} \cdot \mathrm{s}^{-1} \right) ^{ 2 } }{ 2 \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} } - 1.20\ \mathrm{m} - 500.00\ \mathrm{mm} - 2.00\ \mathrm{m} \right) \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \right) \\&amp;= 51.70\ \mathrm{kPa}  \\
+\\
+\mathrm{NPSH}_{available} &amp;= \left( \frac{ p_{2} - p_{vap} }{ \rho_{water} \cdot g } + \frac{ \left( V_{s} \right) ^{ 2 } }{ 2 \cdot g } \right) \\&amp;= \left( \frac{ 51.70\ \mathrm{kPa} - 2.30\ \mathrm{kPa} }{ 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} } + \frac{ \left( 2.00\ \mathrm{m} \cdot \mathrm{s}^{-1} \right) ^{ 2 } }{ 2 \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} } \right) \\&amp;= 5.24\ \mathrm{m}  \\
+\end{aligned}
+\end{split}\]</div>
 </div>
 </details>
 </div>
@@ -7650,27 +7637,25 @@ Q= V_C* A_C
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-D &amp;= 0.350 \; \;\textrm{(m)}
+D &amp;= 350.000\ \mathrm{mm} \; 
 \\
 f &amp;= 0.016 \; 
 \\
-L_{BC} &amp;= 12 \; \;\textrm{(m)}
+L_{BC} &amp;= 12.000\ \mathrm{m} \; 
 \\
-L_{DE} &amp;= 920 \; \;\textrm{(m)}
+L_{DE} &amp;= 920.000\ \mathrm{m} \; 
 \\
-\mathrm{dz} &amp;= 48 \; \;\textrm{(m)}
+\mathrm{dz} &amp;= 48.000\ \mathrm{m} \; 
 \\
-T &amp;= 15 \; \;\textrm{(°C)}
+z_{C} &amp;= 6.000\ \mathrm{m} \; 
 \\
-z_{C} &amp;= 6 \; \;\textrm{(m)}
+\mathrm{NPSH}_{required} &amp;= 2.000\ \mathrm{m} \; 
 \\
-\mathrm{NPSH}_{required} &amp;= 2 \; \;\textrm{(m)}
+V_{C} &amp;= \left( \frac{ 2 \cdot g \cdot D }{ f \cdot L_{BC} } \cdot \left( 9.16 - 2.16 - z_{C} \right) \right) ^{ \left( \frac{ 1 }{ 2 } \right) } \\&amp;= \left( \frac{ 2 \cdot 9.810\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 350.000\ \mathrm{mm} }{ 0.016 \cdot 12.000\ \mathrm{m} } \cdot \left( 9.16 - 2.16 - 6.000\ \mathrm{m} \right) \right) ^{ \left( \frac{ 1 }{ 2 } \right) } \\&amp;= 5.980\ \mathrm{m} \cdot \mathrm{s}^{-1}  \\
 \\
-V_{C} &amp;= \sqrt { \frac{ 2 \cdot g \cdot D }{ f \cdot L_{BC} } \cdot \left( 9.16 - 2.16 - z_{C} \right) } \\&amp;= \sqrt { \frac{ 2 \cdot 9.810\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 0.350 }{ 0.016 \cdot 12 } \cdot \left( 9.16 - 2.16 - 6 \right) } \\&amp;= 5.980 \; \;\textrm{(m/s)}\\
+A &amp;= 96211.275\ \mathrm{mm}^{2} \; 
 \\
-A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.350 \right) ^{ 2 } }{ 4 } \\&amp;= 0.096 \; \;\textrm{(m2)}\\
-\\
-Q &amp;= A \cdot V_{C} \\&amp;= 0.096 \cdot 5.980 \\&amp;= 0.575 \; \;\textrm{(m3/s)}\\
+Q &amp;= 0.575\ \mathrm{m}^{3} \cdot \mathrm{s}^{-1} \; 
 \end{aligned}
 \end{split}\]</div>
 </div>
