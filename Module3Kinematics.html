@@ -364,23 +364,29 @@ document.write(`
 <p>The exercises in this module range from lecture 11 to lecture 13.</p>
 <div class="cell tag_remove-input docutils container">
 </div>
-<div class="cell tag_remove-input docutils container">
-</div>
-<div class="cell tag_remove-input docutils container">
-</div>
 <p>Global variables:</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}
+\[
 \begin{aligned}
-g &amp;= 9.810 \; \;\textrm{(m/s2)}
- &amp;\rho_{water} &amp;= 1000 \; \;\textrm{(kg/m3)}
- &amp;\rho_{Hg} &amp;= 13550 \; \;\textrm{(kg/m3)}
-\\
- p_{atm} &amp;= 101325 \; \;\textrm{(Pa)}
+\rho_{water} &amp;= 1000\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
+ &amp;\rho_{Hg} &amp;= 13600\ \mathrm{kg} \cdot \mathrm{m}^{-3} \;
 \end{aligned}
-\end{split}\]</div>
+\]</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[
+\begin{aligned}
+g &amp;= 9.810\ \mathrm{m} \cdot \mathrm{s}^{-2} \; 
+ &amp;p_{atm} &amp;= 101.325\ \mathrm{kPa} \;
+\end{aligned}
+\]</div>
 </div>
 </div>
 <section id="problems-for-lectures-11-and-12-fluid-kinematics">
@@ -512,11 +518,11 @@ x &amp;= 4 \; \;\textrm{(m)}
 \\
 y &amp;= 3 \; \;\textrm{(m)}
 \\
-a_{x} &amp;= 16 \cdot x \\&amp;= 16 \cdot 4 \\&amp;= 64 \; \;\textrm{(m/s2)}\\
+a_{x} &amp;= 16 \cdot x  = 16 \cdot 4 &amp;= 64 \; \;\textrm{(m/s2)}
 \\
-a_{y} &amp;= \left( - 32 \right) \cdot x \cdot y + 64 \cdot \left( x \right) ^{ 2 } \cdot y \\&amp;= \left( - 32 \right) \cdot 4 \cdot 3 + 64 \cdot \left( 4 \right) ^{ 2 } \cdot 3 \\&amp;= 2688 \; \;\textrm{(m/s2)}\\
+a_{y} &amp;= \left( - 32 \right) \cdot x \cdot y + 64 \cdot \left( x \right) ^{ 2 } \cdot y  = \left( - 32 \right) \cdot 4 \cdot 3 + 64 \cdot \left( 4 \right) ^{ 2 } \cdot 3 &amp;= 2688 \; \;\textrm{(m/s2)}
 \\
-a &amp;= \sqrt { \left( a_{x} \right) ^{ 2 } + \left( a_{y} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 64 \right) ^{ 2 } + \left( 2688 \right) ^{ 2 } } \\&amp;= 2688.8 \; \;\textrm{(m/s2)}\\
+a &amp;= \sqrt { \left( a_{x} \right) ^{ 2 } + \left( a_{y} \right) ^{ 2 } }  = \sqrt { \left( 64 \right) ^{ 2 } + \left( 2688 \right) ^{ 2 } } &amp;= 2688.8 \; \;\textrm{(m/s2)}
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -627,17 +633,17 @@ y &amp;= 1 \; \;\textrm{(m)}
 \\
 t &amp;= 2 \; \;\textrm{(s)}
 \\
-a_{x_{local}} &amp;= 4 \cdot t \\&amp;= 4 \cdot 2 \\&amp;= 8 \; \;\textrm{(m/s2)}\\
+a_{x_{local}} &amp;= 4 \cdot t  = 4 \cdot 2 &amp;= 8 \; \;\textrm{(m/s2)}
 \\
 a_{y_{local}} &amp;= 10 \; \;\textrm{(m/s2)}
 \\
-a_{local} &amp;= \sqrt { \left( a_{x_{local}} \right) ^{ 2 } + \left( a_{y_{local}} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 8 \right) ^{ 2 } + \left( 10 \right) ^{ 2 } } \\&amp;= 12.81 \; \;\textrm{(m/s2)}\\
+a_{local} &amp;= \sqrt { \left( a_{x_{local}} \right) ^{ 2 } + \left( a_{y_{local}} \right) ^{ 2 } }  = \sqrt { \left( 8 \right) ^{ 2 } + \left( 10 \right) ^{ 2 } } &amp;= 12.81 \; \;\textrm{(m/s2)}
 \\
-a_{x_{convective}} &amp;= \left( 3 \cdot x + 2 \cdot \left( t \right) ^{ 2 } \right) \cdot 3 \\&amp;= \left( 3 \cdot 3 + 2 \cdot \left( 2 \right) ^{ 2 } \right) \cdot 3 \\&amp;= 51 \; \;\textrm{(m/s2)}\\
+a_{x_{convective}} &amp;= \left( 3 \cdot x + 2 \cdot \left( t \right) ^{ 2 } \right) \cdot 3  = \left( 3 \cdot 3 + 2 \cdot \left( 2 \right) ^{ 2 } \right) \cdot 3 &amp;= 51 \; \;\textrm{(m/s2)}
 \\
 a_{y_{convective}} &amp;= \left( 2 \cdot \left( y \right) ^{ 3 } + 10 \cdot t \right) \cdot 6 \cdot \left( y \right) ^{ 2 } \\&amp;= \left( 2 \cdot \left( 1 \right) ^{ 3 } + 10 \cdot 2 \right) \cdot 6 \cdot \left( 1 \right) ^{ 2 } \\&amp;= 132 \; \;\textrm{(m/s2)}\\
 \\
-a_{convective} &amp;= \sqrt { \left( a_{x_{convective}} \right) ^{ 2 } + \left( a_{y_{convective}} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 51 \right) ^{ 2 } + \left( 132 \right) ^{ 2 } } \\&amp;= 141.51 \; \;\textrm{(m/s2)}\\
+a_{convective} &amp;= \sqrt { \left( a_{x_{convective}} \right) ^{ 2 } + \left( a_{y_{convective}} \right) ^{ 2 } }  = \sqrt { \left( 51 \right) ^{ 2 } + \left( 132 \right) ^{ 2 } } &amp;= 141.51 \; \;\textrm{(m/s2)}
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1054,17 +1060,17 @@ x &amp;= 3 \; \;\textrm{(m)}
 \\
 y &amp;= 2 \; \;\textrm{(m)}
 \\
-V_{x} &amp;= \frac{ \left( - y \right) }{ 4 } \\&amp;= \frac{ \left( - 2 \right) }{ 4 } \\&amp;= -0.50 \; \;\textrm{(m/s)}\\
+V_{x} &amp;= \frac{ \left( - y \right) }{ 4 }  = \frac{ \left( - 2 \right) }{ 4 } &amp;= -0.50 \; \;\textrm{(m/s)}
 \\
-V_{y} &amp;= \frac{ x }{ 9 } \\&amp;= \frac{ 3 }{ 9 } \\&amp;= 0.33 \; \;\textrm{(m/s)}\\
+V_{y} &amp;= \frac{ x }{ 9 }  = \frac{ 3 }{ 9 } &amp;= 0.33 \; \;\textrm{(m/s)}
 \\
-V &amp;= \sqrt { \left( V_{x} \right) ^{ 2 } + \left( V_{y} \right) ^{ 2 } } \\&amp;= \sqrt { \left( -0.50 \right) ^{ 2 } + \left( 0.33 \right) ^{ 2 } } \\&amp;= 0.60 \; \;\textrm{(m/s)}\\
+V &amp;= \sqrt { \left( V_{x} \right) ^{ 2 } + \left( V_{y} \right) ^{ 2 } }  = \sqrt { \left( -0.50 \right) ^{ 2 } + \left( 0.33 \right) ^{ 2 } } &amp;= 0.60 \; \;\textrm{(m/s)}
 \\
 a_{x} &amp;= \left( \frac{ \left( - y \right) }{ 4 } \right) \cdot 0 + \left( \frac{ x }{ 9 } \right) \cdot \left( \frac{ \left( - 1 \right) }{ 4 } \right) \\&amp;= \left( \frac{ \left( - 2 \right) }{ 4 } \right) \cdot 0 + \left( \frac{ 3 }{ 9 } \right) \cdot \left( \frac{ \left( - 1 \right) }{ 4 } \right) \\&amp;= -0.08 \; \;\textrm{(m/s)}\\
 \\
 a_{y} &amp;= \left( \frac{ \left( - y \right) }{ 4 } \right) \cdot \left( \frac{ 1 }{ 9 } \right) + \left( \frac{ x }{ 9 } \right) \cdot 0 \\&amp;= \left( \frac{ \left( - 2 \right) }{ 4 } \right) \cdot \left( \frac{ 1 }{ 9 } \right) + \left( \frac{ 3 }{ 9 } \right) \cdot 0 \\&amp;= -0.06 \; \;\textrm{(m/s)}\\
 \\
-a &amp;= \sqrt { \left( a_{x} \right) ^{ 2 } + \left( a_{y} \right) ^{ 2 } } \\&amp;= \sqrt { \left( -0.08 \right) ^{ 2 } + \left( -0.06 \right) ^{ 2 } } \\&amp;= 0.10 \; \;\textrm{(m/s)}\\
+a &amp;= \sqrt { \left( a_{x} \right) ^{ 2 } + \left( a_{y} \right) ^{ 2 } }  = \sqrt { \left( -0.08 \right) ^{ 2 } + \left( -0.06 \right) ^{ 2 } } &amp;= 0.10 \; \;\textrm{(m/s)}
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1206,11 +1212,11 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-D &amp;= 0.5 \; \;\textrm{(mm_flux)}
+D &amp;= 500.00\ \mathrm{mm} \; 
 \\
-Q &amp;= 0.2 \; \;\textrm{(m3/s)}
+Q &amp;= 0.20\ \mathrm{m}^{3} \cdot \mathrm{s}^{-1} \; 
 \\
-V &amp;= \frac{ Q \cdot 4 }{ \pi \cdot \left( D \right) ^{ 2 } } \\&amp;= \frac{ 0.2 \cdot 4 }{ 3.1 \cdot \left( 0.5 \right) ^{ 2 } } \\&amp;= 1.0 \; \;\textrm{(m/s)}\\
+V &amp;= \frac{ Q \cdot 4 }{ \pi \cdot \left( D \right) ^{ 2 } }  = \frac{ 0.20\ \mathrm{m}^{3} \cdot \mathrm{s}^{-1} \cdot 4 }{ 3.14 \cdot \left( 500.00\ \mathrm{mm} \right) ^{ 2 } } &amp;= 1.02\ \mathrm{m} \cdot \mathrm{s}^{-1}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1315,15 +1321,15 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-d_{in} &amp;= 0.100 \; \;\textrm{(m)}
+d_{in} &amp;= 100.000\ \mathrm{mm} \; 
 \\
-V_{in} &amp;= 2 \; \;\textrm{(m/s)}
+V_{in} &amp;= 2.000\ \mathrm{m} \cdot \mathrm{s}^{-1} \; 
 \\
-d_{out} &amp;= 0.060 \; \;\textrm{(m)}
+d_{out} &amp;= 60.000\ \mathrm{mm} \; 
 \\
-Q_{in} &amp;= \pi \cdot \left( d_{in} \right) ^{ 2 } \cdot \frac{ V_{in} }{ 4 } \\&amp;= 3.142 \cdot \left( 0.100 \right) ^{ 2 } \cdot \frac{ 2 }{ 4 } \\&amp;= 0.016 \; \;\textrm{(m3/s)}\\
+Q_{in} &amp;= \pi \cdot \left( d_{in} \right) ^{ 2 } \cdot \frac{ V_{in} }{ 4 }  = 3.142 \cdot \left( 100.000\ \mathrm{mm} \right) ^{ 2 } \cdot \frac{ 2.000\ \mathrm{m} \cdot \mathrm{s}^{-1} }{ 4 } &amp;= 0.016\ \mathrm{m}^{3} \cdot \mathrm{s}^{-1}  
 \\
-V_{out} &amp;= \frac{ Q_{in} \cdot 4 }{ \pi \cdot \left( d_{out} \right) ^{ 2 } } \\&amp;= \frac{ 0.016 \cdot 4 }{ 3.142 \cdot \left( 0.060 \right) ^{ 2 } } \\&amp;= 5.556 \; \;\textrm{(m/s)}\\
+V_{out} &amp;= \frac{ Q_{in} \cdot 4 }{ \pi \cdot \left( d_{out} \right) ^{ 2 } }  = \frac{ 0.016\ \mathrm{m}^{3} \cdot \mathrm{s}^{-1} \cdot 4 }{ 3.142 \cdot \left( 60.000\ \mathrm{mm} \right) ^{ 2 } } &amp;= 5.556\ \mathrm{m} \cdot \mathrm{s}^{-1}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1373,11 +1379,11 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-D_{s} &amp;= 0.030 \; \;\textrm{(m)}
+D_{s} &amp;= 30.000\ \mathrm{mm} \; 
 \\
-Q_{out} &amp;= \frac{ Q_{in} }{ 2 } \\&amp;= \frac{ 0.016 }{ 2 } \\&amp;= 0.008 \; \;\textrm{(m3/s)}\\
+Q_{out} &amp;= \frac{ Q_{in} }{ 2 }  = \frac{ 0.016\ \mathrm{m}^{3} \cdot \mathrm{s}^{-1} }{ 2 } &amp;= 0.008\ \mathrm{m}^{3} \cdot \mathrm{s}^{-1}  
 \\
-V_{2} &amp;= Q_{in} \cdot \frac{ 4 }{ 2 \cdot \pi \cdot \left( D_{s} \right) ^{ 2 } } \\&amp;= 0.016 \cdot \frac{ 4 }{ 2 \cdot 3.142 \cdot \left( 0.030 \right) ^{ 2 } } \\&amp;= 11.111 \; \;\textrm{(m/s)}\\
+V_{2} &amp;= Q_{in} \cdot \frac{ 4 }{ 2 \cdot \pi \cdot \left( D_{s} \right) ^{ 2 } }  = 0.016\ \mathrm{m}^{3} \cdot \mathrm{s}^{-1} \cdot \frac{ 4 }{ 2 \cdot 3.142 \cdot \left( 30.000\ \mathrm{mm} \right) ^{ 2 } } &amp;= 11.111\ \mathrm{m} \cdot \mathrm{s}^{-1}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1524,17 +1530,17 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-D_{1} &amp;= \frac{ 8 }{ 100 } &amp;= 0.08 \; \;\textrm{(m)}
+D_{1} &amp;= 80.00\ \mathrm{mm} \; 
 \\
-U_{1} &amp;= 30 \; \;\textrm{(m/s)}
+U_{1} &amp;= 30.00\ \mathrm{m} \cdot \mathrm{s}^{-1} \; 
 \\
-D_{2} &amp;= \frac{ 25 }{ 100 } &amp;= 0.25 \; \;\textrm{(m)}
+D_{2} &amp;= 250.00\ \mathrm{mm} \; 
 \\
-U_{2} &amp;= 3 \; \;\textrm{(m/s)}
+U_{2} &amp;= 3.00\ \mathrm{m} \cdot \mathrm{s}^{-1} \; 
 \\
-Q_{3} &amp;= \pi \cdot \left( D_{1} \right) ^{ 2 } \cdot \frac{ U_{1} }{ 4 } + \pi \cdot \left( \left( D_{2} \right) ^{ 2 } - \left( D_{1} \right) ^{ 2 } \right) \cdot \frac{ U_{2} }{ 4 } \\&amp;= 3.14 \cdot \left( 0.08 \right) ^{ 2 } \cdot \frac{ 30 }{ 4 } + 3.14 \cdot \left( \left( 0.25 \right) ^{ 2 } - \left( 0.08 \right) ^{ 2 } \right) \cdot \frac{ 3 }{ 4 } \\&amp;= 0.28 \; \;\textrm{(m3/s)}\\
+Q_{3} &amp;= \pi \cdot \left( D_{1} \right) ^{ 2 } \cdot \frac{ U_{1} }{ 4 } + \pi \cdot \left( \left( D_{2} \right) ^{ 2 } - \left( D_{1} \right) ^{ 2 } \right) \cdot \frac{ U_{2} }{ 4 } \\&amp;= 3.14 \cdot \left( 80.00\ \mathrm{mm} \right) ^{ 2 } \cdot \frac{ 30.00\ \mathrm{m} \cdot \mathrm{s}^{-1} }{ 4 } + 3.14 \cdot \left( \left( 250.00\ \mathrm{mm} \right) ^{ 2 } - \left( 80.00\ \mathrm{mm} \right) ^{ 2 } \right) \cdot \frac{ 3.00\ \mathrm{m} \cdot \mathrm{s}^{-1} }{ 4 } \\&amp;= 0.28\ \mathrm{m}^{3} \cdot \mathrm{s}^{-1}  \\
 \\
-U_{3} &amp;= Q_{3} \cdot \frac{ 4 }{ \pi \cdot \left( D_{2} \right) ^{ 2 } } \\&amp;= 0.28 \cdot \frac{ 4 }{ 3.14 \cdot \left( 0.25 \right) ^{ 2 } } \\&amp;= 5.76 \; \;\textrm{(m/s)}\\
+U_{3} &amp;= Q_{3} \cdot \frac{ 4 }{ \pi \cdot \left( D_{2} \right) ^{ 2 } } \\&amp;= 0.28\ \mathrm{m}^{3} \cdot \mathrm{s}^{-1} \cdot \frac{ 4 }{ 3.14 \cdot \left( 250.00\ \mathrm{mm} \right) ^{ 2 } } \\&amp;= 5.76\ \mathrm{m} \cdot \mathrm{s}^{-1}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
