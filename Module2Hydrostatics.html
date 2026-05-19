@@ -454,15 +454,25 @@ document.write(`
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}
+\[
 \begin{aligned}
-g &amp;= 9.810 \; \;\textrm{(m/s2)}
- &amp;\rho_{water} &amp;= 1000 \; \;\textrm{(kg/m3)}
- &amp;\rho_{Hg} &amp;= 13550 \; \;\textrm{(kg/m3)}
-\\
- p_{atm} &amp;= 101325 \; \;\textrm{(Pa)}
+\rho_{water} &amp;= 1000\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
+ &amp;\rho_{Hg} &amp;= 13600\ \mathrm{kg} \cdot \mathrm{m}^{-3} \;
 \end{aligned}
-\end{split}\]</div>
+\]</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[
+\begin{aligned}
+g &amp;= 9.810\ \mathrm{m} \cdot \mathrm{s}^{-2} \; 
+ &amp;p_{atm} &amp;= 101.325\ \mathrm{kPa} \;
+\end{aligned}
+\]</div>
 </div>
 </div>
 <section id="problems-for-lecture-5-introduction-to-hydrostatics">
@@ -553,9 +563,9 @@ Hint<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-p &amp;= 500 \cdot 1000 &amp;= 500000 \; \;\textrm{(Pa)}
+p &amp;= 500.00\ \mathrm{kPa} \; 
 \\
-h_{water} &amp;= \frac{ p }{ g \cdot \rho_{water} } \\&amp;= \frac{ 500000 }{ 9.81 \cdot 1000 } \\&amp;= 50.97 \; \;\textrm{(m)}\\
+h_{water} &amp;= \frac{ p }{ g \cdot \rho_{water} }  = \frac{ 500.00\ \mathrm{kPa} }{ 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} } &amp;= 50.97\ \mathrm{m}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -573,9 +583,9 @@ h_{water} &amp;= \frac{ p }{ g \cdot \rho_{water} } \\&amp;= \frac{ 500000 }{ 9.
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\rho_{Hg_{}} &amp;= 13600 \; \;\textrm{(kg/m3)}
+\rho_{Hg_{}} &amp;= 13600.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
 \\
-h_{Hg} &amp;= \frac{ p }{ g \cdot \rho_{Hg_{}} } \\&amp;= \frac{ 500000 }{ 9.81 \cdot 13600 } \\&amp;= 3.75 \; \;\textrm{(m)}\\
+h_{Hg} &amp;= \frac{ p }{ g \cdot \rho_{Hg_{}} }  = \frac{ 500.00\ \mathrm{kPa} }{ 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 13600.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} } &amp;= 3.75\ \mathrm{m}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -604,9 +614,9 @@ Hint<div class="sd-summary-down docutils">
 \begin{aligned}
 s &amp;= 0.92 \; 
 \\
-\rho_{oil} &amp;= s \cdot \rho_{water} \\&amp;= 0.92 \cdot 1000 \\&amp;= 920.00 \; \;\textrm{(kg/m3)}\\
+\rho_{oil} &amp;= s \cdot \rho_{water}  = 0.92 \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} &amp;= 920.00\ \mathrm{kg} \cdot \mathrm{m}^{-3}  
 \\
-h_{oil} &amp;= \frac{ p }{ g \cdot \rho_{oil} } \\&amp;= \frac{ 500000 }{ 9.81 \cdot 920.00 } \\&amp;= 55.40 \; \;\textrm{(m)}\\
+h_{oil} &amp;= \frac{ p }{ g \cdot \rho_{oil} }  = \frac{ 500.00\ \mathrm{kPa} }{ 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 920.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} } &amp;= 55.40\ \mathrm{m}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -696,17 +706,15 @@ p_{abs}= p_{atm}+ p_{gauge}
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-p_{gauge} &amp;= 305 \cdot 1000 &amp;= 305000 \; \;\textrm{(Pa)}
+p_{gauge} &amp;= 305.00\ \mathrm{kPa} \; 
 \\
-h_{Hg} &amp;= \frac{ 100 }{ 1000 } &amp;= 0.1 \; \;\textrm{(m)}
+h_{Hg} &amp;= 100.00\ \mathrm{mm} \; 
 \\
-p_{abs} &amp;= p_{atm} + p_{gauge} \\&amp;= 101325 + 305000 \\&amp;= 406325 \; \;\textrm{(Pa)}\\
+p_{abs} &amp;= p_{atm} + p_{gauge}  = 101.33\ \mathrm{kPa} + 305.00\ \mathrm{kPa} &amp;= 406.32\ \mathrm{kPa}  
 \\
-p_{chamber} &amp;= \rho_{Hg} \cdot g \cdot h_{Hg} \\&amp;= 13560.0 \cdot 9.8 \cdot 0.1 \\&amp;= 13302.4 \; \;\textrm{(Pa)}\\
+p_{chamber} &amp;= \rho_{Hg} \cdot g \cdot h_{Hg}  = 13560.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 100.00\ \mathrm{mm} &amp;= 13.30\ \mathrm{kPa}  
 \\
-p_{gauge_{2}} &amp;= p_{abs} - p_{chamber} \\&amp;= 406325 - 13302.4 \\&amp;= 393022.6 \; \;\textrm{(Pa)}\\
-\\
-p_{gauge2_{kPa}} &amp;= \frac{ p_{gauge_{2}} }{ 1000 } \\&amp;= \frac{ 393022.6 }{ 1000 } \\&amp;= 393.0 \; \;\textrm{(kPa)}\\
+p_{gauge_{2}} &amp;= p_{abs} - p_{chamber}  = 406.32\ \mathrm{kPa} - 13.30\ \mathrm{kPa} &amp;= 393.02\ \mathrm{kPa}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -804,15 +812,13 @@ Show code cell outputs<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-h &amp;= 2 \; \;\textrm{(m)}
+h &amp;= 2.00\ \mathrm{m} \; 
 \\
-p_{1} &amp;= 50 \cdot 1000 &amp;= 50000 \; \;\textrm{(Pa)}
+p_{1} &amp;= 50.00\ \mathrm{kPa} \; 
 \\
-\rho_{glycerine} &amp;= 1258 \; \;\textrm{(kg/m3)}
+\rho_{glycerine} &amp;= 1258.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
 \\
-p_{2} &amp;= p_{1} + \rho_{glycerine} \cdot g \cdot h \\&amp;= 50000 + 1258 \cdot 9.81 \cdot 2 \\&amp;= 74681.96 \; \;\textrm{(Pa)}\\
-\\
-p_{2_{kPa}} &amp;= \frac{ p_{2} }{ 1000 } \\&amp;= \frac{ 74681.96 }{ 1000 } \\&amp;= 74.68 \; \;\textrm{(kPa)}\\
+p_{2} &amp;= p_{1} + \rho_{glycerine} \cdot g \cdot h  = 50.00\ \mathrm{kPa} + 1258.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 2.00\ \mathrm{m} &amp;= 74.68\ \mathrm{kPa}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -923,21 +929,17 @@ p_{2} = p_{1} + \rho \cdot g \cdot h
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-Z_{1} &amp;= 4.800 \; \;\textrm{(m)}
+Z_{1} &amp;= 4.80\ \mathrm{m} \; 
 \\
-p_{1} &amp;= 34.7 \cdot 1000 &amp;= 34700.000 \; \;\textrm{(Pa)}
+Z_{2} &amp;= 2.20\ \mathrm{m} \; 
 \\
-Z_{2} &amp;= 2.200 \; \;\textrm{(m)}
+h &amp;= Z_{1} - Z_{2}  = 4.80\ \mathrm{m} - 2.20\ \mathrm{m} &amp;= 2.60\ \mathrm{m}  
 \\
-p_{2} &amp;= 57.5 \cdot 1000 &amp;= 57500.000 \; \;\textrm{(Pa)}
+\rho &amp;= \frac{ p_{2} - p_{1} }{ g \cdot h }  = \frac{ 74.68\ \mathrm{kPa} - 50.00\ \mathrm{kPa} }{ 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 2.60\ \mathrm{m} } &amp;= 967.69\ \mathrm{kg} \cdot \mathrm{m}^{-3}  
 \\
-h &amp;= Z_{1} - Z_{2} \\&amp;= 4.800 - 2.200 \\&amp;= 2.600 \; \;\textrm{(m)}\\
+\gamma_{oil} &amp;= \rho \cdot g \\&amp;= 967.69\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \\&amp;= 9493.06\ \mathrm{kg} \cdot \mathrm{m}^{-2} \cdot \mathrm{s}^{-2} \; \;\textrm{($N/m^3$)}\\
 \\
-\rho &amp;= \frac{ p_{2} - p_{1} }{ g \cdot h } \\&amp;= \frac{ 57500.000 - 34700.000 }{ 9.810 \cdot 2.600 } \\&amp;= 893.907 \; \;\textrm{(kg/m3)}\\
-\\
-\gamma_{oil} &amp;= \rho \cdot \frac{ g }{ 1000 } \\&amp;= 893.907 \cdot \frac{ 9.810 }{ 1000 } \\&amp;= 8.769 \; \;\textrm{(kN/m3)}\\
-\\
-s_{oil} &amp;= \frac{ \rho }{ \rho_{water} } \\&amp;= \frac{ 893.907 }{ 1000 } \\&amp;= 0.894  \\
+s_{oil} &amp;= \frac{ \rho }{ \rho_{water} }  = \frac{ 967.69\ \mathrm{kg} \cdot \mathrm{m}^{-3} }{ 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} } &amp;= 0.97  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1052,13 +1054,13 @@ h_{2} = \frac{\rho_{water}\cdot h_{1}}{\rho_{oil}}
 \begin{aligned}
 s &amp;= 0.83 \; 
 \\
-h_{1} &amp;= 110 + 240 &amp;= 350 \; \;\textrm{(mm)}
+h_{1} &amp;= \left( \frac{ 110 + 240 }{ 1000 } \cdot \mathrm{si.m} \right)  = \left( \frac{ 110 + 240 }{ 1000 } \cdot si.m \right) &amp;= 350.00\ \mathrm{mm}  
 \\
-\rho_{oil} &amp;= s \cdot \rho_{water} \\&amp;= 0.83 \cdot 1000 \\&amp;= 830.00 \; \;\textrm{(kg/m3)}\\
+\rho_{oil} &amp;= s \cdot \rho_{water}  = 0.83 \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} &amp;= 830.00\ \mathrm{kg} \cdot \mathrm{m}^{-3}  
 \\
-h_{2} &amp;= 421.69 \; \;\textrm{(Pa)}
+h_{2} &amp;= \frac{ \rho_{water} \cdot h_{1} }{ \rho_{oil} }  = \frac{ 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 350.00\ \mathrm{mm} }{ 830.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} } &amp;= 421.69\ \mathrm{mm}  
 \\
-h &amp;= h_{2} - 240 \\&amp;= 421.69 - 240 \\&amp;= 181.69 \; \;\textrm{(mm)}\\
+h &amp;= h_{2} - \left( \frac{ 240 }{ 1000 } \cdot \mathrm{si.m} \right)  = 421.69\ \mathrm{mm} - \left( \frac{ 240 }{ 1000 } \cdot si.m \right) &amp;= 181.69\ \mathrm{mm}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1150,19 +1152,17 @@ p_{in}=p_v= 70.1 kPa
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-h &amp;= 1000 \; \;\textrm{(m)}
+h &amp;= 1.00\ \mathrm{km} \; 
 \\
-\rho_{sea_{water}} &amp;= 1023 \; \;\textrm{(kg/m3)}
+\rho_{sea_{water}} &amp;= 1023.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
 \\
-g &amp;= 9.81 \; \;\textrm{(m/s2)}
+g &amp;= 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \; 
 \\
-p_{out} &amp;= p_{atm} + \rho_{sea_{water}} \cdot g \cdot h \\&amp;= 101325 + 1023 \cdot 9.81 \cdot 1000 \\&amp;= 10136955.00 \; \;\textrm{(Pa abs)}\\
+p_{in} &amp;= 70.10\ \mathrm{kPa} \; 
 \\
-p_{in} &amp;= 70.1 \cdot 1000 &amp;= 70100.00 \; \;\textrm{(Pa)}
+p_{out} &amp;= p_{atm} + \rho_{sea_{water}} \cdot g \cdot h \\&amp;= 101.33\ \mathrm{kPa} + 1023.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 1.00\ \mathrm{km} \\&amp;= 10.14\ \mathrm{MPa}  \\
 \\
-\Delta_{p} &amp;= 10066855.00 \; \;\textrm{(Pa)}
-\\
-\Delta_{p_{MPa}} &amp;= \frac{ \Delta_{p} }{ 1000000 } \\&amp;= \frac{ 10066855.00 }{ 1000000 } \\&amp;= 10.07 \; \;\textrm{(MPa)}\\
+\Delta_{p} &amp;= p_{out} - p_{in} \\&amp;= 10.14\ \mathrm{MPa} - 70.10\ \mathrm{kPa} \\&amp;= 10.07\ \mathrm{MPa}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1298,19 +1298,19 @@ h_{4} = h_{3} \frac{\rho_{A}}{\rho_{B}}
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-h_{3} &amp;= 1.70 \; \;\textrm{(m)}
+h_{3} &amp;= \left( 2 - 0.3 \right) \cdot \mathrm{si.m}  = \left( 2 - 0.3 \right) \cdot si.m &amp;= 1.70\ \mathrm{m}  
 \\
 s_{A} &amp;= 0.72 \; 
 \\
 s_{B} &amp;= 2.36 \; 
 \\
-\rho_{A} &amp;= 720.00 \; \;\textrm{(kg/m3)}
+\rho_{A} &amp;= s_{A} \cdot \rho_{water}  = 0.72 \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} &amp;= 720.00\ \mathrm{kg} \cdot \mathrm{m}^{-3}  
 \\
-\rho_{B} &amp;= s_{B} \cdot \rho_{water} \\&amp;= 2.36 \cdot 1000 \\&amp;= 2360.00 \; \;\textrm{(kg/m3)}\\
+\rho_{B} &amp;= s_{B} \cdot \rho_{water}  = 2.36 \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} &amp;= 2360.00\ \mathrm{kg} \cdot \mathrm{m}^{-3}  
 \\
-h_{4} &amp;= h_{3} \cdot \left( \frac{ \rho_{A} }{ \rho_{B} } \right) \\&amp;= 1.70 \cdot \left( \frac{ 720.00 }{ 2360.00 } \right) \\&amp;= 0.52  \\
+h_{4} &amp;= h_{3} \cdot \left( \frac{ \rho_{A} }{ \rho_{B} } \right)  = 1.70\ \mathrm{m} \cdot \left( \frac{ 720.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} }{ 2360.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} } \right) &amp;= 518.64\ \mathrm{mm}  
 \\
-Z_{B_{surface}} &amp;= 0.3 + h_{4} \\&amp;= 0.3 + 0.52 \\&amp;= 0.82 \; \;\textrm{(m)}\\
+Z_{B_{surface}} &amp;= \left( 0.3 \cdot \mathrm{si.m} \right) + h_{4}  = \left( 0.3 \cdot si.m \right) + 518.64\ \mathrm{mm} &amp;= 818.64\ \mathrm{mm}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1337,11 +1337,9 @@ Hint<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-h_{5} &amp;= 0.30 \; \;\textrm{(m)}
+h_{5} &amp;= 300.00\ \mathrm{mm} \; 
 \\
-p_{5} &amp;= \rho_{A} \cdot g \cdot h_{3} + \rho_{B} \cdot g \cdot h_{5} \\&amp;= 720.00 \cdot 9.81 \cdot 1.70 + 2360.00 \cdot 9.81 \cdot 0.30 \\&amp;= 18.95 \; \;\textrm{(Pa)}\\
-\\
-p_{5} &amp;= \frac{ p_{5} }{ 1000 } \\&amp;= \frac{ 18.95 }{ 1000 } \\&amp;= 18.95 \; \;\textrm{(kPa)}\\
+p_{5} &amp;= \rho_{A} \cdot g \cdot h_{3} + \rho_{B} \cdot g \cdot h_{5} \\&amp;= 720.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 1.70\ \mathrm{m} + 2360.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 300.00\ \mathrm{mm} \\&amp;= 18.95\ \mathrm{kPa}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1441,13 +1439,13 @@ h = \frac{p_{atm}-p_{3}}{\rho_{wat}\cdot g}
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-p_{3} &amp;= 31.16 \cdot 1000 &amp;= 31160.00 \; \;\textrm{(Pa)}
+p_{3} &amp;= 31.16\ \mathrm{kPa} \; 
 \\
-p_{atm_{ex}} &amp;= 990 \cdot 100 &amp;= 99000 \; \;\textrm{(Pa)}
+p_{atm_{ex}} &amp;= 99.00\ \mathrm{kPa} \; 
 \\
-\rho_{wat} &amp;= 977.80 \; \;\textrm{(kg/m)}
+\rho_{wat} &amp;= 977.80\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
 \\
-h &amp;= \frac{ p_{atm} - p_{3} }{ \rho_{wat} \cdot g } \\&amp;= \frac{ 98994.67 - 31160.00 }{ 977.80 \cdot 9.81 } \\&amp;= 7.07 \; \;\textrm{(m)}\\
+h &amp;= \frac{ p_{atm} - p_{3} }{ \rho_{wat} \cdot g }  = \frac{ 98.99\ \mathrm{kPa} - 31.16\ \mathrm{kPa} }{ 977.80\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} } &amp;= 7.07\ \mathrm{m}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1554,13 +1552,13 @@ H = \frac{\rho_{Hg} h_3}{\rho_{wat}} + h_2
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\rho_{Hg_{}} &amp;= 13600 \; \;\textrm{(kg/m3)}
+\rho_{Hg_{}} &amp;= 13600.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
 \\
-h_{2} &amp;= 0.15 \; \;\textrm{(m)}
+h_{2} &amp;= 150.00\ \mathrm{mm} \; 
 \\
-h_{3} &amp;= 0.20 \; \;\textrm{(m)}
+h_{3} &amp;= 200.00\ \mathrm{mm} \; 
 \\
-H &amp;= \frac{ \rho_{Hg_{}} \cdot h_{3} }{ \rho_{water} } + h_{2} \\&amp;= \frac{ 13600 \cdot 0.20 }{ 1000 } + 0.15 \\&amp;= 2.87 \; \;\textrm{(m)}\\
+H &amp;= \frac{ \rho_{Hg_{}} \cdot h_{3} }{ \rho_{water} } + h_{2} \\&amp;= \frac{ 13600.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 200.00\ \mathrm{mm} }{ 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} } + 150.00\ \mathrm{mm} \\&amp;= 2.87\ \mathrm{m}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1683,19 +1681,19 @@ p_A = \rho_{Hg}\cdot g \cdot h_{Hg} - \rho_{oil}\cdot g \cdot h_{oil} - \rho_{wa
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\rho_{Hg_{}} &amp;= 13600 \; \;\textrm{(kg/m3)}
+\rho_{Hg_{}} &amp;= 13600.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
 \\
 s_{oil} &amp;= 0.82 \; 
 \\
-h_{oil} &amp;= 3 \; \;\textrm{(m)}
+h_{oil} &amp;= 3.00\ \mathrm{m} \; 
 \\
-h_{Hg} &amp;= \frac{ 320 }{ 1000 } &amp;= 0.32 \; \;\textrm{(m)}
+h_{Hg} &amp;= 320.00\ \mathrm{mm} \; 
 \\
-h_{2} &amp;= 4 \; \;\textrm{(m)}
+h_{2} &amp;= 4.00\ \mathrm{m} \; 
 \\
-\rho_{oil} &amp;= 820.00 \; \;\textrm{(kg/m3)}
+\rho_{oil} &amp;= s_{oil} \cdot \rho_{water} \\&amp;= 0.82 \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \\&amp;= 820.00\ \mathrm{kg} \cdot \mathrm{m}^{-3}  \\
 \\
-p_{A} &amp;= \rho_{Hg_{}} \cdot g \cdot h_{Hg} - \left( \rho_{water} \cdot s_{oil} \cdot g \cdot h_{oil} \right) - \rho_{water} \cdot g \cdot \left( h_{2} - h_{oil} \right) \\&amp;= 13600 \cdot 9.81 \cdot 0.32 - \left( 1000 \cdot 0.82 \cdot 9.81 \cdot 3 \right) - 1000 \cdot 9.81 \cdot \left( 4 - 3 \right) \\&amp;= 8750.52 \; \;\textrm{(Pa)}\\
+p_{A} &amp;= \rho_{Hg_{}} \cdot g \cdot h_{Hg} - \left( \rho_{water} \cdot s_{oil} \cdot g \cdot h_{oil} \right) - \rho_{water} \cdot g \cdot \left( h_{2} - h_{oil} \right) \\&amp;= 13600.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 320.00\ \mathrm{mm} - \left( 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 0.82 \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 3.00\ \mathrm{m} \right) - 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \left( 4.00\ \mathrm{m} - 3.00\ \mathrm{m} \right) \\&amp;= 8.75\ \mathrm{kPa}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1829,21 +1827,35 @@ p_A -p_B  = \rho_{kero} \cdot g \cdot h_{kero} + \rho_{Hg} \cdot g \cdot h_{Hg} 
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\rho_{Hg_{}} &amp;= 13550 \; \;\textrm{(kg/m3)}
+\rho_{Hg_{}} &amp;= 13550\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
 \\
-\rho_{benz} &amp;= 876 \; \;\textrm{(kg/m3)}
+\rho_{benz} &amp;= 876\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
 \\
-\rho_{kero} &amp;= 808 \; \;\textrm{(kg/m3)}
+\rho_{kero} &amp;= 808\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
 \\
-h_{benz} &amp;= \frac{ 21 }{ 100 } &amp;= 0.21 \; \;\textrm{(m)}
+h_{benz} &amp;= 210\ \mathrm{mm} \; 
 \\
-h_{Hg} &amp;= \frac{ 9 }{ 100 } &amp;= 0.09 \; \;\textrm{(m)}
+h_{Hg} &amp;= 90\ \mathrm{mm} \; 
 \\
-h_{wat} &amp;= \frac{ 41 - 15 }{ 100 } &amp;= 0.26 \; \;\textrm{(m)}
+h_{wat} &amp;= \left( \frac{ 41 - 15 }{ 100 } \cdot \mathrm{si.m} \right)  = \left( \frac{ 41 - 15 }{ 100 } \cdot si.m \right) &amp;= 260\ \mathrm{mm}  
 \\
-h_{kero} &amp;= \frac{ 41 - 9 }{ 100 } &amp;= 0.32 \; \;\textrm{(m)}
-\\
-\Delta_{p_{AB}} &amp;= \rho_{kero} \cdot g \cdot h_{kero} + \rho_{Hg_{}} \cdot g \cdot h_{Hg} - \rho_{water} \cdot g \cdot h_{wat} - \rho_{benz} \cdot g \cdot h_{benz} \\&amp;= 808 \cdot 9.81 \cdot 0.32 + 13550 \cdot 9.81 \cdot 0.09 - 1000 \cdot 9.81 \cdot 0.26 - 876 \cdot 9.81 \cdot 0.21 \\&amp;= 10144.52 \; \;\textrm{(Pa)}\\
+h_{kero} &amp;= \left( \frac{ 41 - 9 }{ 100 } \cdot \mathrm{si.m} \right)  = \left( \frac{ 41 - 9 }{ 100 } \cdot si.m \right) &amp;= 320\ \mathrm{mm}  
+\end{aligned}
+\end{split}\]</div>
+</div>
+</details>
+</div>
+<div class="cell tag_remove-input tag_hide-output docutils container">
+<details class="hide above-output">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\Delta_{p_{AB}} &amp;= \rho_{kero} \cdot g \cdot h_{kero} + \rho_{Hg_{}} \cdot g \cdot h_{Hg} - \rho_{water} \cdot g \cdot h_{wat} - \rho_{benz} \cdot g \cdot h_{benz} \\&amp;= 808.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 320.00\ \mathrm{mm} + 13550.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 90.00\ \mathrm{mm} - 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 260.00\ \mathrm{mm} - 876.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 210.00\ \mathrm{mm} \\&amp;= 10.14\ \mathrm{kPa}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -1962,23 +1974,23 @@ p_A = \rho_{wat} g (h_3-h_2) - \rho_{Hg} g h_1 + \rho_{oil} g (h_1+h_4)
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\rho_{Hg_{}} &amp;= 13550 \; \;\textrm{(kg/m3)}
+\rho_{Hg_{}} &amp;= 13550.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
 \\
-h_{3} &amp;= 0.600 \; \;\textrm{(m)}
+h_{3} &amp;= 600.00\ \mathrm{mm} \; 
 \\
-h_{2} &amp;= 0.200 \; \;\textrm{(m)}
+h_{2} &amp;= 200.00\ \mathrm{mm} \; 
 \\
-h_{1} &amp;= 0.140 \; \;\textrm{(m)}
+h_{1} &amp;= 140.00\ \mathrm{mm} \; 
 \\
-h_{4} &amp;= 0.090 \; \;\textrm{(m)}
+h_{4} &amp;= 90.00\ \mathrm{mm} \; 
 \\
-s_{oil} &amp;= 0.830 \; 
+s_{oil} &amp;= 0.83 \; 
 \\
-\rho_{oil} &amp;= 830.000 \; \;\textrm{(kg/m3)}
+\rho_{oil} &amp;= s_{oil} \cdot \rho_{water} \\&amp;= 0.83 \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \\&amp;= 830.00\ \mathrm{kg} \cdot \mathrm{m}^{-3}  \\
 \\
-p_{A} &amp;= \rho_{water} \cdot g \cdot \left( h_{3} - h_{2} \right) - \rho_{Hg_{}} \cdot g \cdot h_{1} + \rho_{oil} \cdot g \cdot \left( h_{1} + h_{4} \right) \\&amp;= 1000 \cdot 9.810 \cdot \left( 0.600 - 0.200 \right) - 13550 \cdot 9.810 \cdot 0.140 + 830.000 \cdot 9.810 \cdot \left( 0.140 + 0.090 \right) \\&amp;= -12812.841 \; \;\textrm{(Pa)}\\
+p_{A} &amp;= \rho_{water} \cdot g \cdot \left( h_{3} - h_{2} \right) - \rho_{Hg_{}} \cdot g \cdot h_{1} + \rho_{oil} \cdot g \cdot \left( h_{1} + h_{4} \right) \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \left( 600.00\ \mathrm{mm} - 200.00\ \mathrm{mm} \right) - 13550.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 140.00\ \mathrm{mm} + 830.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \left( 140.00\ \mathrm{mm} + 90.00\ \mathrm{mm} \right) \\&amp;= -12.81\ \mathrm{kPa}  \\
 \\
-p_{A_{abs}} &amp;= p_{A} + p_{atm} \\&amp;= -12812.841 + 98994.672 \\&amp;= 86181.831 \; \;\textrm{(Pa)}\\
+p_{A_{abs}} &amp;= p_{A} + p_{atm} \\&amp;= -12.81\ \mathrm{kPa} + 98.99\ \mathrm{kPa} \\&amp;= 86.18\ \mathrm{kPa}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2099,21 +2111,19 @@ W=(p_g + \rho g h_{oil}) A_p
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-p_{gauge} &amp;= 70000 \; \;\textrm{(Pa)}
+p_{gauge} &amp;= 70.00\ \mathrm{kPa} \; 
 \\
-h_{m} &amp;= 1 \; \;\textrm{(m)}
+h_{m} &amp;= 1.00\ \mathrm{m} \; 
 \\
 S_{oil} &amp;= 0.86 \; 
 \\
-d &amp;= 1 \; \;\textrm{(m)}
+d &amp;= 1.00\ \mathrm{m} \; 
 \\
-A &amp;= \pi \cdot \frac{ \left( d \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 4 } \\&amp;= 0.79 \; \;\textrm{(m2)}\\
+A &amp;= \pi \cdot \frac{ \left( d \right) ^{ 2 } }{ 4 }  = 3.14 \cdot \frac{ \left( 1.00\ \mathrm{m} \right) ^{ 2 } }{ 4 } &amp;= 785398.16\ \mathrm{mm}^{2}  
 \\
-\rho_{oil} &amp;= S_{oil} \cdot \rho_{water} \\&amp;= 0.86 \cdot 1000 \\&amp;= 860.00 \; \;\textrm{(kg/m3)}\\
+\rho_{oil} &amp;= S_{oil} \cdot \rho_{water}  = 0.86 \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} &amp;= 860.00\ \mathrm{kg} \cdot \mathrm{m}^{-3}  
 \\
-W &amp;= \left( p_{gauge} + \rho_{oil} \cdot g \cdot h_{m} \right) \cdot A \\&amp;= \left( 70000 + 860.00 \cdot 9.81 \cdot 1 \right) \cdot 0.79 \\&amp;= 61603.96 \; \;\textrm{(N)}\\
-\\
-W_{} &amp;= \frac{ W }{ 1000 } \\&amp;= \frac{ 61603.96 }{ 1000 } \\&amp;= 61.60 \; \;\textrm{(kN)}\\
+W &amp;= \left( p_{gauge} + \rho_{oil} \cdot g \cdot h_{m} \right) \cdot A \\&amp;= \left( 70.00\ \mathrm{kPa} + 860.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 1.00\ \mathrm{m} \right) \cdot 785398.16\ \mathrm{mm}^{2} \\&amp;= 61.60\ \mathrm{kN}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2238,21 +2248,21 @@ Hint<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-d &amp;= 2 \; \;\textrm{(m)}
+d &amp;= 2.00\ \mathrm{m} \; 
 \\
-y_{top} &amp;= 0.50 \; \;\textrm{(m)}
+y_{top} &amp;= 500.00\ \mathrm{mm} \; 
 \\
-y_{c} &amp;= y_{top} + \frac{ d }{ 2 } \\&amp;= 0.50 + \frac{ 2 }{ 2 } \\&amp;= 1.50 \; \;\textrm{(m)}\\
+y_{c} &amp;= y_{top} + \frac{ d }{ 2 }  = 500.00\ \mathrm{mm} + \frac{ 2.00\ \mathrm{m} }{ 2 } &amp;= 1.50\ \mathrm{m}  
 \\
-h_{c} &amp;= 1.50 \; \;\textrm{(m)}
+h_{c} &amp;= 1.50\ \mathrm{m} \; 
 \\
-A &amp;= \pi \cdot \frac{ \left( d \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 2 \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \; \;\textrm{(m2)}\\
+A &amp;= \pi \cdot \frac{ \left( d \right) ^{ 2 } }{ 4 }  = 3.14 \cdot \frac{ \left( 2.00\ \mathrm{m} \right) ^{ 2 } }{ 4 } &amp;= 3.14\ \mathrm{m}^{2}  
 \\
-F &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000 \cdot 9.81 \cdot 1.50 \cdot 3.14 \\&amp;= 46228.54 \; \;\textrm{(N)}\\
+F &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 1.50\ \mathrm{m} \cdot 3.14\ \mathrm{m}^{2} \\&amp;= 46.23\ \mathrm{kN}  \\
 \\
-I_{c} &amp;= 0.79 \; \;\textrm{(m4)}
+I_{c} &amp;= \pi \cdot \frac{ \left( \frac{ d }{ 2 } \right) ^{ 4 } }{ 4 }  = 3.14 \cdot \frac{ \left( \frac{ 2.00\ \mathrm{m} }{ 2 } \right) ^{ 4 } }{ 4 } &amp;= 785398163397.45\ \mathrm{mm}^{4}  
 \\
-y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I_{c} }{ A \cdot y_{c} } \\&amp;= \frac{ 3.14 \cdot \left( 1.50 \right) ^{ 2 } + 0.79 }{ 3.14 \cdot 1.50 } \\&amp;= 1.67 \; \;\textrm{(m)}\\
+y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I_{c} }{ A \cdot y_{c} }  = \frac{ 3.14\ \mathrm{m}^{2} \cdot \left( 1.50\ \mathrm{m} \right) ^{ 2 } + 785398163397.45\ \mathrm{mm}^{4} }{ 3.14\ \mathrm{m}^{2} \cdot 1.50\ \mathrm{m} } &amp;= 1.67\ \mathrm{m}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2367,25 +2377,25 @@ Hint<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-B &amp;= 3 \; \;\textrm{(m)}
+B &amp;= 3.00\ \mathrm{m} \; 
 \\
-L_{p} &amp;= 4 \; \;\textrm{(m)}
+L_{p} &amp;= 4.00\ \mathrm{m} \; 
 \\
-\theta &amp;= 40 \; \;\textrm{(°)}
+\theta &amp;= 40 \; 
 \\
-L &amp;= 6 \; \;\textrm{(m)}
+L &amp;= 6.00\ \mathrm{m} \; 
 \\
-y_{c} &amp;= L + \frac{ L_{p} }{ 2 } \\&amp;= 6 + \frac{ 4 }{ 2 } \\&amp;= 8.00 \; \;\textrm{(m)}\\
+y_{c} &amp;= L + \frac{ L_{p} }{ 2 }  = 6.00\ \mathrm{m} + \frac{ 4.00\ \mathrm{m} }{ 2 } &amp;= 8.00\ \mathrm{m}  
 \\
-h_{c} &amp;= y_{c} \cdot \sin \left( \operatorname{radians} \theta \right) \\&amp;= 8.00 \cdot \sin \left( \operatorname{radians} 40 \right) \\&amp;= 5.14 \; \;\textrm{(c)}\\
+h_{c} &amp;= y_{c} \cdot \sin \left( \operatorname{radians} \theta \right)  = 8.00\ \mathrm{m} \cdot \sin \left( \operatorname{radians} 40 \right) &amp;= 5.14\ \mathrm{m}  
 \\
-A &amp;= B \cdot L_{p} \\&amp;= 3 \cdot 4 \\&amp;= 12 \; \;\textrm{(m2)}\\
+A &amp;= B \cdot L_{p}  = 3.00\ \mathrm{m} \cdot 4.00\ \mathrm{m} &amp;= 12.00\ \mathrm{m}^{2}  
 \\
-F_{} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000 \cdot 9.81 \cdot 5.14 \cdot 12 \\&amp;= 605351.66 \; \;\textrm{(N)}\\
+F_{} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 5.14\ \mathrm{m} \cdot 12.00\ \mathrm{m}^{2} \\&amp;= 605.35\ \mathrm{kN}  \\
 \\
-I_{c} &amp;= \frac{ B \cdot \left( L_{p} \right) ^{ 3 } }{ 12 } \\&amp;= \frac{ 3 \cdot \left( 4 \right) ^{ 3 } }{ 12 } \\&amp;= 16.00 \; \;\textrm{(m4)}\\
+I_{c} &amp;= \frac{ B \cdot \left( L_{p} \right) ^{ 3 } }{ 12 }  = \frac{ 3.00\ \mathrm{m} \cdot \left( 4.00\ \mathrm{m} \right) ^{ 3 } }{ 12 } &amp;= 16.00\ \mathrm{m}^{4}  
 \\
-y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I_{c} }{ A \cdot y_{c} } \\&amp;= \frac{ 12 \cdot \left( 8.00 \right) ^{ 2 } + 16.00 }{ 12 \cdot 8.00 } \\&amp;= 8.17 \; \;\textrm{(m)}\\
+y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I_{c} }{ A \cdot y_{c} }  = \frac{ 12.00\ \mathrm{m}^{2} \cdot \left( 8.00\ \mathrm{m} \right) ^{ 2 } + 16.00\ \mathrm{m}^{4} }{ 12.00\ \mathrm{m}^{2} \cdot 8.00\ \mathrm{m} } &amp;= 8.17\ \mathrm{m}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2493,27 +2503,27 @@ Hint<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\mathrm{AB} &amp;= 4 \; \;\textrm{(m)}
+\mathrm{AB} &amp;= 4.00\ \mathrm{m} \; 
 \\
-\mathrm{BC} &amp;= 2 \; \;\textrm{(m)}
+\mathrm{BC} &amp;= 2.00\ \mathrm{m} \; 
 \\
-\theta &amp;= 135 \; \;\textrm{(°)}
+\theta &amp;= 135 \; 
 \\
-\theta_{1} &amp;= 180 - \theta \\&amp;= 180 - 135 \\&amp;= 45 \; \;\textrm{(°)}\\
+\theta_{1} &amp;= 180 - \theta  = 180 - 135 &amp;= 45  
 \\
-y_{c} &amp;= \mathrm{AB} + \frac{ \mathrm{BC} }{ 2 } \\&amp;= 4 + \frac{ 2 }{ 2 } \\&amp;= 5.00 \; \;\textrm{(m)}\\
+y_{c} &amp;= \mathrm{AB} + \frac{ \mathrm{BC} }{ 2 }  = 4.00\ \mathrm{m} + \frac{ 2.00\ \mathrm{m} }{ 2 } &amp;= 5.00\ \mathrm{m}  
 \\
-A &amp;= \pi \cdot \frac{ \left( \mathrm{BC} \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 2 \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \; \;\textrm{(m2)}\\
+A &amp;= \pi \cdot \frac{ \left( \mathrm{BC} \right) ^{ 2 } }{ 4 }  = 3.14 \cdot \frac{ \left( 2.00\ \mathrm{m} \right) ^{ 2 } }{ 4 } &amp;= 3.14\ \mathrm{m}^{2}  
 \\
-h_{c} &amp;= y_{c} \cdot \sin \left( \operatorname{radians} \theta_{1} \right) \\&amp;= 5.00 \cdot \sin \left( \operatorname{radians} 45 \right) \\&amp;= 3.54 \; \;\textrm{(m)}\\
+h_{c} &amp;= y_{c} \cdot \sin \left( \operatorname{radians} \theta_{1} \right)  = 5.00\ \mathrm{m} \cdot \sin \left( \operatorname{radians} 45 \right) &amp;= 3.54\ \mathrm{m}  
 \\
-F &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000 \cdot 9.81 \cdot 3.54 \cdot 3.14 \\&amp;= 108961.70 \; \;\textrm{(N)}\\
+F &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 3.54\ \mathrm{m} \cdot 3.14\ \mathrm{m}^{2} \\&amp;= 108.96\ \mathrm{kN}  \\
 \\
-r &amp;= \frac{ \mathrm{BC} }{ 2 } \\&amp;= \frac{ 2 }{ 2 } \\&amp;= 1.00 \; \;\textrm{(m)}\\
+r &amp;= \frac{ \mathrm{BC} }{ 2 }  = \frac{ 2.00\ \mathrm{m} }{ 2 } &amp;= 1.00\ \mathrm{m}  
 \\
-I_{c} &amp;= \pi \cdot \frac{ \left( r \right) ^{ 4 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 1.00 \right) ^{ 4 } }{ 4 } \\&amp;= 0.79 \; \;\textrm{(m4)}\\
+I_{c} &amp;= \pi \cdot \frac{ \left( r \right) ^{ 4 } }{ 4 }  = 3.14 \cdot \frac{ \left( 1.00\ \mathrm{m} \right) ^{ 4 } }{ 4 } &amp;= 785398163397.45\ \mathrm{mm}^{4}  
 \\
-y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I_{c} }{ y_{c} \cdot A } \\&amp;= \frac{ 3.14 \cdot \left( 5.00 \right) ^{ 2 } + 0.79 }{ 5.00 \cdot 3.14 } \\&amp;= 5.05 \; \;\textrm{(m)}\\
+y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I_{c} }{ y_{c} \cdot A }  = \frac{ 3.14\ \mathrm{m}^{2} \cdot \left( 5.00\ \mathrm{m} \right) ^{ 2 } + 785398163397.45\ \mathrm{mm}^{4} }{ 5.00\ \mathrm{m} \cdot 3.14\ \mathrm{m}^{2} } &amp;= 5.05\ \mathrm{m}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2621,25 +2631,25 @@ Hint<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\mathrm{AB} &amp;= 3 \; \;\textrm{(m)}
+\mathrm{AB} &amp;= 3.00\ \mathrm{m} \; 
 \\
-\mathrm{BC} &amp;= 1 \; \;\textrm{(m)}
+\mathrm{BC} &amp;= 1.00\ \mathrm{m} \; 
 \\
-\theta &amp;= 120 \; \;\textrm{(°)}
+\theta &amp;= 120 \; 
 \\
-\theta_{1} &amp;= 180 - \theta \\&amp;= 180 - 120 \\&amp;= 60 \; \;\textrm{(°)}\\
+\theta_{1} &amp;= 180 - \theta  = 180 - 120 &amp;= 60  
 \\
-y_{c} &amp;= \mathrm{AB} + \mathrm{BC} - 4 \cdot \frac{ \mathrm{BC} }{ 3 \cdot \pi } \\&amp;= 3 + 1 - 4 \cdot \frac{ 1 }{ 3 \cdot 3.14 } \\&amp;= 3.58 \; \;\textrm{(m)}\\
+y_{c} &amp;= \mathrm{AB} + \mathrm{BC} - 4 \cdot \frac{ \mathrm{BC} }{ 3 \cdot \pi }  = 3.00\ \mathrm{m} + 1.00\ \mathrm{m} - 4 \cdot \frac{ 1.00\ \mathrm{m} }{ 3 \cdot 3.14 } &amp;= 3.58\ \mathrm{m}  
 \\
-A &amp;= \pi \cdot \frac{ \left( \mathrm{BC} \right) ^{ 2 } }{ 2 } \\&amp;= 3.14 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 2 } \\&amp;= 1.57 \; \;\textrm{(m2)}\\
+A &amp;= \pi \cdot \frac{ \left( \mathrm{BC} \right) ^{ 2 } }{ 2 }  = 3.14 \cdot \frac{ \left( 1.00\ \mathrm{m} \right) ^{ 2 } }{ 2 } &amp;= 1.57\ \mathrm{m}^{2}  
 \\
-h_{c} &amp;= y_{c} \cdot \sin \left( \operatorname{radians} \theta_{1} \right) \\&amp;= 3.58 \cdot \sin \left( \operatorname{radians} 60 \right) \\&amp;= 3.10 \; \;\textrm{(m)}\\
+h_{c} &amp;= y_{c} \cdot \sin \left( \operatorname{radians} \theta_{1} \right)  = 3.58\ \mathrm{m} \cdot \sin \left( \operatorname{radians} 60 \right) &amp;= 3.10\ \mathrm{m}  
 \\
-F &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000 \cdot 9.81 \cdot 3.10 \cdot 1.57 \\&amp;= 47716.31 \; \;\textrm{(N)}\\
+F &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 3.10\ \mathrm{m} \cdot 1.57\ \mathrm{m}^{2} \\&amp;= 47.72\ \mathrm{kN}  \\
 \\
-I &amp;= 0.1098 \cdot \left( \mathrm{BC} \right) ^{ 4 } \\&amp;= 0.1098 \cdot \left( 1 \right) ^{ 4 } \\&amp;= 0.11 \; \;\textrm{(m4)}\\
+I &amp;= 0.1098 \cdot \left( \mathrm{BC} \right) ^{ 4 }  = 0.1098 \cdot \left( 1.00\ \mathrm{m} \right) ^{ 4 } &amp;= 109800000000.00\ \mathrm{mm}^{4}  
 \\
-y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I }{ y_{c} \cdot A } \\&amp;= \frac{ 1.57 \cdot \left( 3.58 \right) ^{ 2 } + 0.11 }{ 3.58 \cdot 1.57 } \\&amp;= 3.60 \; \;\textrm{(m)}\\
+y_{p} &amp;= \frac{ A \cdot \left( y_{c} \right) ^{ 2 } + I }{ y_{c} \cdot A }  = \frac{ 1.57\ \mathrm{m}^{2} \cdot \left( 3.58\ \mathrm{m} \right) ^{ 2 } + 109800000000.00\ \mathrm{mm}^{4} }{ 3.58\ \mathrm{m} \cdot 1.57\ \mathrm{m}^{2} } &amp;= 3.60\ \mathrm{m}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2799,9 +2809,9 @@ h= \sqrt {3} L_{BC}\\
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-L_{BC} &amp;= 1.50 \; \;\textrm{(M)}
+L_{BC} &amp;= 1.50\ \mathrm{m} \; 
 \\
-h &amp;= \sqrt { 3 } \cdot L_{BC} \\&amp;= \sqrt { 3 } \cdot 1.50 \\&amp;= 2.60 \; \;\textrm{(m)}\\
+h &amp;= \left( 3 \right) ^{ \left( \frac{ 1 }{ 2 } \right) } \cdot L_{BC}  = \left( 3 \right) ^{ \left( \frac{ 1 }{ 2 } \right) } \cdot 1.50\ \mathrm{m} &amp;= 2.60\ \mathrm{m}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -2918,11 +2928,11 @@ p = \frac{4*\sigma}{D}
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-d &amp;= \frac{ 2 }{ 1000 } &amp;= 0.002 \; \;\textrm{(m)}
+d &amp;= 2.000\ \mathrm{mm} \; 
 \\
-\sigma &amp;= 0.073 \; \;\textrm{(N/m)}
+\sigma &amp;= 0.073\ \mathrm{kg} \cdot \mathrm{s}^{-2} \; 
 \\
-\Delta_{P} &amp;= 4 \cdot \frac{ \sigma }{ d } \\&amp;= 4 \cdot \frac{ 0.073 }{ 0.002 } \\&amp;= 147.000 \; \;\textrm{(Pa)}\\
+\Delta_{P} &amp;= 4 \cdot \frac{ \sigma }{ d }  = 4 \cdot \frac{ 0.073\ \mathrm{kg} \cdot \mathrm{s}^{-2} }{ 2.000\ \mathrm{mm} } &amp;= 147.000\ \mathrm{Pa}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3013,11 +3023,11 @@ p =\frac {8\sigma}{d}
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-d &amp;= 50 \; \;\textrm{(mm)}
+d &amp;= 50.000\ \mathrm{mm} \; 
 \\
-\sigma &amp;= 0.07 \; \;\textrm{(N/m)}
+\sigma &amp;= 0.073\ \mathrm{kg} \cdot \mathrm{s}^{-2} \; \;\textrm{(N/m)}
 \\
-p &amp;= 8 \cdot \frac{ \sigma }{ \frac{ d }{ 1000 } } \\&amp;= 8 \cdot \frac{ 0.07 }{ \frac{ 50 }{ 1000 } } \\&amp;= 11.76 \; \;\textrm{(Pa)}\\
+p &amp;= 8 \cdot \frac{ \sigma }{ d }  = 8 \cdot \frac{ 0.073\ \mathrm{kg} \cdot \mathrm{s}^{-2} }{ 50.000\ \mathrm{mm} } &amp;= 11.760\ \mathrm{Pa}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3114,21 +3124,21 @@ Hint<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-B &amp;= 3 \; \;\textrm{(m)}
+B &amp;= 3.00\ \mathrm{m} \; 
 \\
-h &amp;= 6 \; \;\textrm{(m)}
+h &amp;= 6.00\ \mathrm{m} \; 
 \\
-r &amp;= 1 \; \;\textrm{(m)}
+r &amp;= 1.00\ \mathrm{m} \; 
 \\
-h_{c} &amp;= h - \frac{ r }{ 2 } \\&amp;= 6 - \frac{ 1 }{ 2 } \\&amp;= 5.50 \; \;\textrm{(m)}\\
+h_{c} &amp;= h - \frac{ r }{ 2 }  = 6.00\ \mathrm{m} - \frac{ 1.00\ \mathrm{m} }{ 2 } &amp;= 5.50\ \mathrm{m}  
 \\
-A &amp;= B \cdot r \\&amp;= 3 \cdot 1 \\&amp;= 3  \\
+A &amp;= B \cdot r  = 3.00\ \mathrm{m} \cdot 1.00\ \mathrm{m} &amp;= 3.00\ \mathrm{m}^{2}  
 \\
-F_{x} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot \frac{ A }{ 1000 } \\&amp;= 1000 \cdot 9.81 \cdot 5.50 \cdot \frac{ 3 }{ 1000 } \\&amp;= 161.87 \; \;\textrm{(kN)}\\
+F_{x} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot \frac{ A }{ 1000 }  = 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 5.50\ \mathrm{m} \cdot \frac{ 3.00\ \mathrm{m}^{2} }{ 1000 } &amp;= 161.87\ \mathrm{N}  
 \\
-I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 } \\&amp;= 3 \cdot \frac{ \left( 1 \right) ^{ 3 } }{ 12 } \\&amp;= 0.25 \; \;\textrm{(m4)}\\
+I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 }  = 3.00\ \mathrm{m} \cdot \frac{ \left( 1.00\ \mathrm{m} \right) ^{ 3 } }{ 12 } &amp;= 250000000000.00\ \mathrm{mm}^{4}  
 \\
-y_{p} &amp;= h_{c} + \frac{ I_{c} }{ h_{c} \cdot A } \\&amp;= 5.50 + \frac{ 0.25 }{ 5.50 \cdot 3 } \\&amp;= 5.52 \; \;\textrm{(m)}\\
+y_{p} &amp;= h_{c} + \frac{ I_{c} }{ h_{c} \cdot A }  = 5.50\ \mathrm{m} + \frac{ 250000000000.00\ \mathrm{mm}^{4} }{ 5.50\ \mathrm{m} \cdot 3.00\ \mathrm{m}^{2} } &amp;= 5.52\ \mathrm{m}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3173,11 +3183,11 @@ w_2 = \rho g V_2 = \rho g B \frac{\pi r^{2}}{4}
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-W_{1} &amp;= \rho_{water} \cdot g \cdot B \cdot \left( h - r \right) \\&amp;= 1000 \cdot 9.81 \cdot 3 \cdot \left( 6 - 1 \right) \\&amp;= 147150.00 \; \;\textrm{(N)}\\
+W_{1} &amp;= \rho_{water} \cdot g \cdot B \cdot \left( h - r \right) \cdot r \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 3.00\ \mathrm{m} \cdot \left( 6.00\ \mathrm{m} - 1.00\ \mathrm{m} \right) \cdot 1.00\ \mathrm{m} \\&amp;= 147.15\ \mathrm{kN}  \\
 \\
-W_{2} &amp;= \rho_{water} \cdot g \cdot B \cdot \pi \cdot \frac{ \left( r \right) ^{ 2 } }{ 4 } \\&amp;= 1000 \cdot 9.81 \cdot 3 \cdot 3.14 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 4 } \\&amp;= 23114.27 \; \;\textrm{(N)}\\
+W_{2} &amp;= \rho_{water} \cdot g \cdot B \cdot \pi \cdot \frac{ \left( r \right) ^{ 2 } }{ 4 }  = 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 3.00\ \mathrm{m} \cdot 3.14 \cdot \frac{ \left( 1.00\ \mathrm{m} \right) ^{ 2 } }{ 4 } &amp;= 23.11\ \mathrm{kN}  
 \\
-W &amp;= \frac{ W_{1} + W_{2} }{ 1000 } \\&amp;= \frac{ 147150.00 + 23114.27 }{ 1000 } \\&amp;= 170.26 \; \;\textrm{(kN)}\\
+W &amp;= W_{1} + W_{2}  = 147.15\ \mathrm{kN} + 23.11\ \mathrm{kN} &amp;= 170.26\ \mathrm{kN}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3237,17 +3247,17 @@ W \Delta x = W_1 \Delta x_1 +  W_2 \Delta x_2
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-A_{2} &amp;= \pi \cdot \frac{ \left( r \right) ^{ 2 } }{ 4 } \\&amp;= 3.14 \cdot \frac{ \left( 1 \right) ^{ 2 } }{ 4 } \\&amp;= 0.79 \; \;\textrm{(m2)}\\
+A_{2} &amp;= \pi \cdot \frac{ \left( r \right) ^{ 2 } }{ 4 }  = 3.14 \cdot \frac{ \left( 1.00\ \mathrm{m} \right) ^{ 2 } }{ 4 } &amp;= 785398.16\ \mathrm{mm}^{2}  
 \\
-A_{1} &amp;= \left( h - r \right) \cdot r \\&amp;= \left( 6 - 1 \right) \cdot 1 \\&amp;= 5 \; \;\textrm{(m2)}\\
+A_{1} &amp;= \left( h - r \right) \cdot r  = \left( 6.00\ \mathrm{m} - 1.00\ \mathrm{m} \right) \cdot 1.00\ \mathrm{m} &amp;= 5.00\ \mathrm{m}^{2}  
 \\
-\Delta_{X_{2}} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi } \\&amp;= 4 \cdot \frac{ 1 }{ 3 \cdot 3.14 } \\&amp;= 0.42 \; \;\textrm{(m)}\\
+\Delta_{X_{2}} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi }  = 4 \cdot \frac{ 1.00\ \mathrm{m} }{ 3 \cdot 3.14 } &amp;= 424.41\ \mathrm{mm}  
 \\
-\Delta_{X_{1}} &amp;= \frac{ r }{ 2 } \\&amp;= \frac{ 1 }{ 2 } \\&amp;= 0.50 \; \;\textrm{(m)}\\
+\Delta_{X_{1}} &amp;= \frac{ r }{ 2 }  = \frac{ 1.00\ \mathrm{m} }{ 2 } &amp;= 500.00\ \mathrm{mm}  
 \\
-W &amp;= 170264.27 \; \;\textrm{(N)}
+W &amp;= 170.26\ \mathrm{kN} \; 
 \\
-\Delta_{X} &amp;= \frac{ W_{1} \cdot \Delta_{X_{1}} + W_{2} \cdot \Delta_{X_{2}} }{ W } \\&amp;= \frac{ 147150.00 \cdot 0.50 + 23114.27 \cdot 0.42 }{ 170264.27 } \\&amp;= 0.49 \; \;\textrm{(m)}\\
+\Delta_{X} &amp;= \frac{ W_{1} \cdot \Delta_{X_{1}} + W_{2} \cdot \Delta_{X_{2}} }{ W }  = \frac{ 147.15\ \mathrm{kN} \cdot 500.00\ \mathrm{mm} + 23.11\ \mathrm{kN} \cdot 424.41\ \mathrm{mm} }{ 170.26\ \mathrm{kN} } &amp;= 489.74\ \mathrm{mm}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3276,9 +3286,9 @@ W &amp;= 170264.27 \; \;\textrm{(N)}
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-F_{r} &amp;= \sqrt { \left( F_{x} \right) ^{ 2 } + \left( W \right) ^{ 2 } } \\&amp;= \sqrt { \left( 161.87 \right) ^{ 2 } + \left( 170264.27 \right) ^{ 2 } } \\&amp;= 170264.34 \; \;\textrm{(kN)}\\
+F_{r} &amp;= \left( \left( F_{x} \right) ^{ 2 } + \left( W \right) ^{ 2 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) }  = \left( \left( 161.87\ \mathrm{N} \right) ^{ 2 } + \left( 170.26\ \mathrm{kN} \right) ^{ 2 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) } &amp;= 170.26\ \mathrm{kN}  
 \\
-\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{x} }{ W } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 161.87 }{ 170264.27 } \right) \right) \\&amp;= 0.05 \; \;\textrm{(°)}\\
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{x} }{ W } \right) \right)  = \operatorname{degrees} \left( \arctan \left( \frac{ 161.87\ \mathrm{N} }{ 170.26\ \mathrm{kN} } \right) \right) &amp;= 0.05 \; \;\textrm{(°)}
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3319,11 +3329,11 @@ Hint<div class="sd-summary-down docutils">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-X_{O} &amp;= 0.49 \; \;\textrm{(m)}
+X_{O} &amp;= 489.74\ \mathrm{mm} \; 
 \\
-Y_{O} &amp;= y_{p} - h + r \\&amp;= 5.52 - 6 + 1 \\&amp;= 0.52 \; \;\textrm{(m)}\\
+Y_{O} &amp;= y_{p} - h + r  = 5.52\ \mathrm{m} - 6.00\ \mathrm{m} + 1.00\ \mathrm{m} &amp;= 515.15\ \mathrm{mm}  
 \\
-\alpha &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ X_{O} }{ Y_{O} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 0.49 }{ 0.52 } \right) \right) \\&amp;= 43.55 \; \;\textrm{(°)}\\
+\alpha &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ X_{O} }{ Y_{O} } \right) \right)  = \operatorname{degrees} \left( \arctan \left( \frac{ 489.74\ \mathrm{mm} }{ 515.15\ \mathrm{mm} } \right) \right) &amp;= 43.55 \; \;\textrm{(°)}
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3378,6 +3388,8 @@ Hint<div class="sd-summary-down docutils">
 <img alt="_images/f5e31d093c42d7e0658a748d0608edb997d2f8e4a879c3974f067af050294851.png" src="_images/f5e31d093c42d7e0658a748d0608edb997d2f8e4a879c3974f067af050294851.png" />
 </div>
 </details>
+</div>
+<div class="cell tag_remove-input docutils container">
 </div>
 <p><strong>Question 7 (b)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -3507,14 +3519,13 @@ F=F_b-W
 <p><strong>Solution</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 2
-L= 300 #mm 
-rho_concrete=2400 #kg/m3
-rho_Hg=13600 #kg/m3
-
-W= rho_concrete*g*(L/1000)**3 #N
-F_b= rho_Hg*g*(L/1000)**3 #N
-F= F_b-W #N
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+L = (300 / 1000 * si.m)
+rho_concrete = (2400 * si.kg / si.m**3)
+rho_Hg = (13600 * si.kg / si.m**3)
+W = rho_concrete * g * L**3
+F_b = rho_Hg * g * L**3
+F = F_b - W
 </pre></div>
 </div>
 </div>
@@ -3527,17 +3538,17 @@ F= F_b-W #N
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-L &amp;= 300 \; \;\textrm{(mm)}
+L &amp;= 300.00\ \mathrm{mm} \; 
 \\
-\rho_{concrete} &amp;= 2400 \; \;\textrm{(kg/m3)}
+\rho_{concrete} &amp;= 2400.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
 \\
-\rho_{Hg} &amp;= 13600 \; \;\textrm{(kg/m3)}
+\rho_{Hg} &amp;= 13600.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; 
 \\
-W &amp;= \rho_{concrete} \cdot g \cdot \left( \frac{ L }{ 1000 } \right) ^{ 3 } \\&amp;= 2400 \cdot 9.81 \cdot \left( \frac{ 300 }{ 1000 } \right) ^{ 3 } \\&amp;= 635.69 \; \;\textrm{(N)}\\
+W &amp;= \rho_{concrete} \cdot g \cdot \left( L \right) ^{ 3 } \\&amp;= 2400.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \left( 300.00\ \mathrm{mm} \right) ^{ 3 } \\&amp;= 635.69\ \mathrm{N}  \\
 \\
-F_{b} &amp;= \rho_{Hg} \cdot g \cdot \left( \frac{ L }{ 1000 } \right) ^{ 3 } \\&amp;= 13600 \cdot 9.81 \cdot \left( \frac{ 300 }{ 1000 } \right) ^{ 3 } \\&amp;= 3602.23 \; \;\textrm{(N)}\\
+F_{b} &amp;= \rho_{Hg} \cdot g \cdot \left( L \right) ^{ 3 } \\&amp;= 13600.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \left( 300.00\ \mathrm{mm} \right) ^{ 3 } \\&amp;= 3.60\ \mathrm{kN}  \\
 \\
-F &amp;= F_{b} - W \\&amp;= 3602.23 - 635.69 \\&amp;= 2966.54 \; \;\textrm{(N)}\\
+F &amp;= F_{b} - W  = 3.60\ \mathrm{kN} - 635.69\ \mathrm{N} &amp;= 2.97\ \mathrm{kN}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3560,27 +3571,33 @@ W-F-F_b=0\\
 F=W-F_b
 \end{split}\]</div>
 <p><strong>Solution</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 2
-W= rho_concrete*g*(L/1000)**3 #N
-F_b= rho_water*g*(L/1000)**3 #N
-F= W-F_b #N
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+W = rho_concrete * g * (L)**3
+F_b = rho_water * g * (L)**3
+F = W - F_b
 </pre></div>
 </div>
 </div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-W &amp;= \rho_{concrete} \cdot g \cdot \left( \frac{ L }{ 1000 } \right) ^{ 3 } \\&amp;= 2400 \cdot 9.81 \cdot \left( \frac{ 300 }{ 1000 } \right) ^{ 3 } \\&amp;= 635.69 \; \;\textrm{(N)}\\
+W &amp;= \rho_{concrete} \cdot g \cdot \left( L \right) ^{ 3 } \\&amp;= 2400.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \left( 300.00\ \mathrm{mm} \right) ^{ 3 } \\&amp;= 635.69\ \mathrm{N}  \\
 \\
-F_{b} &amp;= \rho_{water} \cdot g \cdot \left( \frac{ L }{ 1000 } \right) ^{ 3 } \\&amp;= 1000 \cdot 9.81 \cdot \left( \frac{ 300 }{ 1000 } \right) ^{ 3 } \\&amp;= 264.87 \; \;\textrm{(N)}\\
+F_{b} &amp;= \rho_{water} \cdot g \cdot \left( L \right) ^{ 3 } \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \left( 300.00\ \mathrm{mm} \right) ^{ 3 } \\&amp;= 264.87\ \mathrm{N}  \\
 \\
-F &amp;= W - F_{b} \\&amp;= 635.69 - 264.87 \\&amp;= 370.82 \; \;\textrm{(N)}\\
+F &amp;= W - F_{b}  = 635.69\ \mathrm{N} - 264.87\ \mathrm{N} &amp;= 370.82\ \mathrm{N}  
 \end{aligned}
 \end{split}\]</div>
 </div>
+</details>
 </div>
 </section>
 <hr class="docutils" />
@@ -3617,16 +3634,14 @@ W=\rho g Vol_{displayed}
 \end{split}\]</div>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 4
-
-d= 8/100 #m
-l= 11/100 #m
-h_out= 4/100 #m
-
-A= pi*d**2/4 #m2
-h_in= l-h_out #m
-Vol_displayed= A*h_in #m3
-W= rho_water*g*Vol_displayed #N
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+d = (8 / 100 * si.m)
+l = (11 / 100 * si.m)
+h_out = (4 / 100 * si.m)
+A = pi * d**2 / 4
+h_in = l - h_out
+Vol_displayed = A * h_in
+W = rho_water * g * Vol_displayed
 </pre></div>
 </div>
 </div>
@@ -3639,19 +3654,19 @@ W= rho_water*g*Vol_displayed #N
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-d &amp;= \frac{ 8 }{ 100 } &amp;= 0.0800 \; \;\textrm{(m)}
+d &amp;= 80.00\ \mathrm{mm} \; 
 \\
-l &amp;= \frac{ 11 }{ 100 } &amp;= 0.1100 \; \;\textrm{(m)}
+l &amp;= 110.00\ \mathrm{mm} \; 
 \\
-h_{out} &amp;= \frac{ 4 }{ 100 } &amp;= 0.0400 \; \;\textrm{(m)}
+h_{out} &amp;= 40.00\ \mathrm{mm} \; 
 \\
-A &amp;= \pi \cdot \frac{ \left( d \right) ^{ 2 } }{ 4 } \\&amp;= 3.1416 \cdot \frac{ \left( 0.0800 \right) ^{ 2 } }{ 4 } \\&amp;= 0.0050 \; \;\textrm{(m2)}\\
+A &amp;= \pi \cdot \frac{ \left( d \right) ^{ 2 } }{ 4 }  = 3.14 \cdot \frac{ \left( 80.00\ \mathrm{mm} \right) ^{ 2 } }{ 4 } &amp;= 5026.55\ \mathrm{mm}^{2}  
 \\
-h_{in} &amp;= l - h_{out} \\&amp;= 0.1100 - 0.0400 \\&amp;= 0.0700 \; \;\textrm{(m)}\\
+h_{in} &amp;= l - h_{out}  = 110.00\ \mathrm{mm} - 40.00\ \mathrm{mm} &amp;= 70.00\ \mathrm{mm}  
 \\
-\mathrm{Vol}_{displayed} &amp;= A \cdot h_{in} \\&amp;= 0.0050 \cdot 0.0700 \\&amp;= 0.0004 \; \;\textrm{(m3)}\\
+\mathrm{Vol}_{displayed} &amp;= A \cdot h_{in}  = 5026.55\ \mathrm{mm}^{2} \cdot 70.00\ \mathrm{mm} &amp;= 351858.38\ \mathrm{mm}^{3}  
 \\
-W &amp;= \rho_{water} \cdot g \cdot \mathrm{Vol}_{displayed} \\&amp;= 1000 \cdot 9.8100 \cdot 0.0004 \\&amp;= 3.4517 \; \;\textrm{(N)}\\
+W &amp;= \rho_{water} \cdot g \cdot \mathrm{Vol}_{displayed} \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 351858.38\ \mathrm{mm}^{3} \\&amp;= 3.45\ \mathrm{N}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3678,38 +3693,44 @@ Hint<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><p>When the object is submerged in the water the sum of forces is:</p>
+<p class="sd-card-text">When the object is submerged in the water the sum of forces is:</p>
 <div class="math notranslate nohighlight">
 \[W_{air}-W_{water}=F_b\]</div>
-<p>Replacing the bouyant force we have:</p>
+<p class="sd-card-text">Replacing the buoyant force we have:</p>
 <div class="math notranslate nohighlight">
 \[W_{air}-W_{water}= \rho_{water}gV\]</div>
-<p>Solving the volume:</p>
+<p class="sd-card-text">Solving the volume:</p>
 <div class="math notranslate nohighlight">
 \[V= \frac{W_{air}-W_{water}}{\rho_{water}g}\]</div>
-<p><strong>Solution</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 
-W_air= 300 #N 
-W_water= 232.5 #N 
-Vol= (W_air-W_water)/(g*rho_water) #m3
+</div>
+</details><p><strong>Solution</strong></p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input above-output-prompt docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+W_air = (300 * si.N)
+W_water = (232.5 * si.N)
+Vol = (W_air - W_water) / (g * rho_water)
 </pre></div>
 </div>
 </div>
+<details class="hide below-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell output</span>
+<span class="expanded">Hide code cell output</span>
+</summary>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-W_{air} &amp;= 300 \; \;\textrm{(N)}
+W_{air} &amp;= 300.00\ \mathrm{N} \; 
 \\
-W_{water} &amp;= 232.500 \; \;\textrm{(N)}
+W_{water} &amp;= 232.50\ \mathrm{N} \; 
 \\
-\mathrm{Vol} &amp;= \frac{ W_{air} - W_{water} }{ g \cdot \rho_{water} } \\&amp;= \frac{ 300 - 232.500 }{ 9.810 \cdot 1000 } \\&amp;= 0.007 \; \;\textrm{(m3)}\\
+\mathrm{Vol} &amp;= \frac{ W_{air} - W_{water} }{ g \cdot \rho_{water} }  = \frac{ 300.00\ \mathrm{N} - 232.50\ \mathrm{N} }{ 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} } &amp;= 6880733.94\ \mathrm{mm}^{3}  
 \end{aligned}
 \end{split}\]</div>
 </div>
+</details>
 </div>
 </section>
 </section>
@@ -3754,23 +3775,19 @@ Fb_{total}= \rho g V_{hollow}+ \rho g V_{solid}\\
 <p><strong>Solution</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 1
-L= 1 #m
-W_hollow= 2.4*1000 #N
-W_solid= 10*1000 #N
-s= 2.4
-
-W_total= W_hollow+W_solid #N
-
-Vol_hollow= L**3 #m3
-F_b_hollow= rho_water*g*Vol_hollow #N
-
-rho_solid= s*rho_water #kg/m3
-m_solid= W_solid/g #kg
-Vol_solid= m_solid/rho_solid #m3
-F_b_solid= rho_water*g*Vol_solid #N
-
-F_b= F_b_hollow+F_b_solid #N
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+L = (1 * si.m)
+W_hollow = (2.4 * 1000 * si.N)
+W_solid = (10 * 1000 * si.N)
+s = 2.4
+W_total = W_hollow + W_solid
+Vol_hollow = L**3
+F_b_hollow = rho_water * g * Vol_hollow
+rho_solid = s * rho_water
+m_solid = W_solid / g
+Vol_solid = m_solid / rho_solid
+F_b_solid = rho_water * g * Vol_solid
+F_b = F_b_hollow + F_b_solid
 </pre></div>
 </div>
 </div>
@@ -3783,29 +3800,29 @@ F_b= F_b_hollow+F_b_solid #N
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-L &amp;= 1 \; \;\textrm{(m)}
+L &amp;= 1.00\ \mathrm{m} \; 
 \\
-W_{hollow} &amp;= 2.4 \cdot 1000 &amp;= 2400.0 \; \;\textrm{(N)}
+W_{hollow} &amp;= 2.40\ \mathrm{kN} \; 
 \\
-W_{solid} &amp;= 10 \cdot 1000 &amp;= 10000 \; \;\textrm{(N)}
+W_{solid} &amp;= 10.00\ \mathrm{kN} \; 
 \\
-s &amp;= 2.4 \; 
+s &amp;= 2.40 \; 
 \\
-W_{total} &amp;= W_{hollow} + W_{solid} \\&amp;= 2400.0 + 10000 \\&amp;= 12400.0 \; \;\textrm{(N)}\\
+W_{total} &amp;= W_{hollow} + W_{solid}  = 2.40\ \mathrm{kN} + 10.00\ \mathrm{kN} &amp;= 12.40\ \mathrm{kN}  
 \\
-\mathrm{Vol}_{hollow} &amp;= \left( L \right) ^{ 3 } \\&amp;= \left( 1 \right) ^{ 3 } \\&amp;= 1 \; \;\textrm{(m3)}\\
+\mathrm{Vol}_{hollow} &amp;= \left( L \right) ^{ 3 }  = \left( 1.00\ \mathrm{m} \right) ^{ 3 } &amp;= 1.00\ \mathrm{m}^{3}  
 \\
-F_{b_{hollow}} &amp;= \rho_{water} \cdot g \cdot \mathrm{Vol}_{hollow} \\&amp;= 1000 \cdot 9.8 \cdot 1 \\&amp;= 9810.0 \; \;\textrm{(N)}\\
+F_{b_{hollow}} &amp;= \rho_{water} \cdot g \cdot \mathrm{Vol}_{hollow} \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 1.00\ \mathrm{m}^{3} \\&amp;= 9.81\ \mathrm{kN}  \\
 \\
-\rho_{solid} &amp;= s \cdot \rho_{water} \\&amp;= 2.4 \cdot 1000 \\&amp;= 2400.0 \; \;\textrm{(kg/m3)}\\
+\rho_{solid} &amp;= s \cdot \rho_{water}  = 2.40 \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} &amp;= 2400.00\ \mathrm{kg} \cdot \mathrm{m}^{-3}  
 \\
-m_{solid} &amp;= \frac{ W_{solid} }{ g } \\&amp;= \frac{ 10000 }{ 9.8 } \\&amp;= 1019.4 \; \;\textrm{(kg)}\\
+m_{solid} &amp;= \frac{ W_{solid} }{ g }  = \frac{ 10.00\ \mathrm{kN} }{ 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} } &amp;= 1.02\ \mathrm{Mg}  
 \\
-\mathrm{Vol}_{solid} &amp;= \frac{ m_{solid} }{ \rho_{solid} } \\&amp;= \frac{ 1019.4 }{ 2400.0 } \\&amp;= 0.4 \; \;\textrm{(m3)}\\
+\mathrm{Vol}_{solid} &amp;= \frac{ m_{solid} }{ \rho_{solid} }  = \frac{ 1.02\ \mathrm{Mg} }{ 2400.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} } &amp;= 424736663.27\ \mathrm{mm}^{3}  
 \\
-F_{b_{solid}} &amp;= \rho_{water} \cdot g \cdot \mathrm{Vol}_{solid} \\&amp;= 1000 \cdot 9.8 \cdot 0.4 \\&amp;= 4166.7 \; \;\textrm{(N)}\\
+F_{b_{solid}} &amp;= \rho_{water} \cdot g \cdot \mathrm{Vol}_{solid} \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 424736663.27\ \mathrm{mm}^{3} \\&amp;= 4.17\ \mathrm{kN}  \\
 \\
-F_{b} &amp;= F_{b_{hollow}} + F_{b_{solid}} \\&amp;= 9810.0 + 4166.7 \\&amp;= 13976.7 \; \;\textrm{(N)}\\
+F_{b} &amp;= F_{b_{hollow}} + F_{b_{solid}}  = 9.81\ \mathrm{kN} + 4.17\ \mathrm{kN} &amp;= 13.98\ \mathrm{kN}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3874,9 +3891,9 @@ c \cdot  d \cdot  a \cdot \rho_{water}+ c \cdot  d \cdot  b \cdot \rho_{Hg}= c \
 <p><strong>Solution</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 
-s=7.85 
-Ratio_ab= (s*rho_water-rho_Hg)/(rho_water-s*rho_water)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+s = 7.85
+Ratio_ab = (s * rho_water - rho_Hg) / (rho_water - s * rho_water)
 </pre></div>
 </div>
 </div>
@@ -3884,9 +3901,9 @@ Ratio_ab= (s*rho_water-rho_Hg)/(rho_water-s*rho_water)
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-s &amp;= 7.850 \; 
+s &amp;= 7.85 \; 
 \\
-\mathrm{Ratio}_{ab} &amp;= \frac{ s \cdot \rho_{water} - \rho_{Hg} }{ \rho_{water} - s \cdot \rho_{water} } \\&amp;= \frac{ 7.850 \cdot 1000 - 13600 }{ 1000 - 7.850 \cdot 1000 } \\&amp;= 0.839  \\
+\mathrm{Ratio}_{ab} &amp;= \frac{ s \cdot \rho_{water} - \rho_{Hg} }{ \rho_{water} - s \cdot \rho_{water} } \\&amp;= \frac{ 7.85 \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} - 13600.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} }{ 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} - 7.85 \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} } \\&amp;= 0.84  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -3942,13 +3959,12 @@ Vol_{foam}=\frac{\rho_{water} g Vol_{concrete}-\gamma_{concrete}Vol_{concrete}}{
 <p><strong>Solution</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 2
-L= 0.5 #m
-gamma_concrete= 23.58*1000 #N/m3
-gamma_foam= 0.79*1000 #N/m3
-
-Vol_concrete= L**3 #m3
-Vol_foam= (rho_water*g*Vol_concrete-gamma_concrete*Vol_concrete)/(gamma_foam-rho_water*g) #m3
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+L = (0.5 * si.m)
+gamma_concrete = (23.58 * 1000 * si.N / si.m**3)
+gamma_foam = (0.79 * 1000 * si.N / si.m**3)
+Vol_concrete = L**3
+Vol_foam = (rho_water * g * Vol_concrete - gamma_concrete * Vol_concrete) / (gamma_foam - rho_water * g)
 </pre></div>
 </div>
 </div>
@@ -3961,15 +3977,15 @@ Vol_foam= (rho_water*g*Vol_concrete-gamma_concrete*Vol_concrete)/(gamma_foam-rho
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-L &amp;= 0.50 \; \;\textrm{(m)}
+L &amp;= 500.00\ \mathrm{mm} \; 
 \\
-\gamma_{concrete} &amp;= 23.58 \cdot 1000 &amp;= 23580.00 \; \;\textrm{(N/m3)}
+\gamma_{concrete} &amp;= 23580.00\ \mathrm{kg} \cdot \mathrm{m}^{-2} \cdot \mathrm{s}^{-2} \; 
 \\
-\gamma_{foam} &amp;= 0.79 \cdot 1000 &amp;= 790.00 \; \;\textrm{(N/m3)}
+\gamma_{foam} &amp;= 790.00\ \mathrm{kg} \cdot \mathrm{m}^{-2} \cdot \mathrm{s}^{-2} \; 
 \\
-\mathrm{Vol}_{concrete} &amp;= \left( L \right) ^{ 3 } \\&amp;= \left( 0.50 \right) ^{ 3 } \\&amp;= 0.12 \; \;\textrm{(m3)}\\
+\mathrm{Vol}_{concrete} &amp;= \left( L \right) ^{ 3 }  = \left( 500.00\ \mathrm{mm} \right) ^{ 3 } &amp;= 125000000.00\ \mathrm{mm}^{3}  
 \\
-\mathrm{Vol}_{foam} &amp;= \frac{ \rho_{water} \cdot g \cdot \mathrm{Vol}_{concrete} - \gamma_{concrete} \cdot \mathrm{Vol}_{concrete} }{ \gamma_{foam} - \rho_{water} \cdot g } \\&amp;= \frac{ 1000 \cdot 9.81 \cdot 0.12 - 23580.00 \cdot 0.12 }{ 790.00 - 1000 \cdot 9.81 } \\&amp;= 0.19 \; \;\textrm{(m3)}\\
+\mathrm{Vol}_{foam} &amp;= \frac{ \rho_{water} \cdot g \cdot \mathrm{Vol}_{concrete} - \gamma_{concrete} \cdot \mathrm{Vol}_{concrete} }{ \gamma_{foam} - \rho_{water} \cdot g } \\&amp;= \frac{ 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 125000000.00\ \mathrm{mm}^{3} - 23580.00\ \mathrm{kg} \cdot \mathrm{m}^{-2} \cdot \mathrm{s}^{-2} \cdot 125000000.00\ \mathrm{mm}^{3} }{ 790.00\ \mathrm{kg} \cdot \mathrm{m}^{-2} \cdot \mathrm{s}^{-2} - 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} } \\&amp;= 190825942.35\ \mathrm{mm}^{3}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4046,14 +4062,13 @@ g \cdot L \cdot wide \cdot b \cdot L_T - \frac {L \cdot cos \theta}{2}- W\frac {
 <p><strong>Solution</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 
-s=0.64 
-L_T= 5 #m 
-wide=140/1000 #m
-b=140/1000 #m
-h=1 #m 
-
-W= g*s*rho_water*wide*b*L_T #N
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+s = 0.64
+L_T = (5 * si.m)
+wide = (140 / 1000 * si.m)
+b = (140 / 1000 * si.m)
+h = (1 * si.m)
+W = g * s * rho_water * wide * b * L_T
 </pre></div>
 </div>
 </div>
@@ -4066,37 +4081,25 @@ W= g*s*rho_water*wide*b*L_T #N
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-s &amp;= 0.640 \; 
+s &amp;= 0.64 \; 
 \\
-L_{T} &amp;= 5 \; \;\textrm{(m)}
+L_{T} &amp;= 5.00\ \mathrm{m} \; 
 \\
-\mathrm{wide} &amp;= 0.140 \; \;\textrm{(m)}
+\mathrm{wide} &amp;= 140.00\ \mathrm{mm} \; 
 \\
-b &amp;= 0.140 \; \;\textrm{(m)}
+b &amp;= 140.00\ \mathrm{mm} \; 
 \\
-h &amp;= 1 \; \;\textrm{(m)}
+h &amp;= 1.00\ \mathrm{m} \; 
 \\
-W &amp;= g \cdot s \cdot \rho_{water} \cdot \mathrm{wide} \cdot b \cdot L_{T} \\&amp;= 9.810 \cdot 0.640 \cdot 1000 \cdot 0.140 \cdot 0.140 \cdot 5 \\&amp;= 615.283 \; \;\textrm{(N)}\\
+W &amp;= g \cdot s \cdot \rho_{water} \cdot \mathrm{wide} \cdot b \cdot L_{T} \\&amp;= 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 0.64 \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 140.00\ \mathrm{mm} \cdot 140.00\ \mathrm{mm} \cdot 5.00\ \mathrm{m} \\&amp;= 615.28\ \mathrm{N}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
 </details>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 2
-theta=degrees(asin (h/(L_T-L_))) #°
-</pre></div>
+<div class="cell tag_remove-input docutils container">
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-\theta &amp;= \operatorname{degrees} \left( \arcsin \left( \frac{ h }{ L_{T} - L_{} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arcsin \left( \frac{ 1 }{ 5 - 2.0 } \right) \right) \\&amp;= 19.47 \; \;\textrm{(°)}\\
-\end{aligned}
-\end{split}\]</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 </div>
 </section>
 <hr class="docutils" />
@@ -4156,20 +4159,19 @@ y_p= y_c + \frac {I_c}{y_cA}
 <p><strong>Solution Horizontal Force</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 2
-s=0.88
-h_1=2 #m
-h_2=2 #m
-h_3=2.5 #m
-h_4=1 #m
-B=1#m
-
-rho= s*rho_water #kg/m3
-F_H= rho*g*(h_1+h_2+h_3/2)*(h_3*1) #N
-y_c= h_1+h_2+h_3/2 #m
-I_c= B*h_3**3/12 #m4
-A= B*h_3 #m2
-y_p= y_c+ I_c/(y_c*A)#m
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+s = 0.88
+h_1 = (2 * si.m)
+h_2 = (2 * si.m)
+h_3 = (2.5 * si.m)
+h_4 = (1 * si.m)
+B = (1 * si.m)
+rho = s * rho_water
+F_H = rho * g * (h_1 + h_2 + h_3 / 2) * (h_3 * B)
+y_c = h_1 + h_2 + h_3 / 2
+I_c = B * h_3**3 / 12
+A = B * h_3
+y_p = y_c + I_c / (y_c * A)
 </pre></div>
 </div>
 </div>
@@ -4184,27 +4186,27 @@ y_p= y_c+ I_c/(y_c*A)#m
 \begin{aligned}
 s &amp;= 0.88 \; 
 \\
-h_{1} &amp;= 2 \; \;\textrm{(m)}
+h_{1} &amp;= 2.00\ \mathrm{m} \; 
 \\
-h_{2} &amp;= 2 \; \;\textrm{(m)}
+h_{2} &amp;= 2.00\ \mathrm{m} \; 
 \\
-h_{3} &amp;= 2.50 \; \;\textrm{(m)}
+h_{3} &amp;= 2.50\ \mathrm{m} \; 
 \\
-h_{4} &amp;= 1 \; \;\textrm{(m)}
+h_{4} &amp;= 1.00\ \mathrm{m} \; 
 \\
-B &amp;= 1 \; \;\textrm{(m)}
+B &amp;= 1.00\ \mathrm{m} \; 
 \\
-\rho &amp;= s \cdot \rho_{water} \\&amp;= 0.88 \cdot 1000 \\&amp;= 880.00 \; \;\textrm{(kg/m3)}\\
+\rho &amp;= s \cdot \rho_{water}  = 0.88 \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} &amp;= 880.00\ \mathrm{kg} \cdot \mathrm{m}^{-3}  
 \\
-F_{H} &amp;= \rho \cdot g \cdot \left( h_{1} + h_{2} + \frac{ h_{3} }{ 2 } \right) \cdot \left( h_{3} \cdot 1 \right) \\&amp;= 880.00 \cdot 9.81 \cdot \left( 2 + 2 + \frac{ 2.50 }{ 2 } \right) \cdot \left( 2.50 \cdot 1 \right) \\&amp;= 113305.50 \; \;\textrm{(N)}\\
+F_{H} &amp;= \rho \cdot g \cdot \left( h_{1} + h_{2} + \frac{ h_{3} }{ 2 } \right) \cdot \left( h_{3} \cdot B \right)  = 880.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \left( 2.00\ \mathrm{m} + 2.00\ \mathrm{m} + \frac{ 2.50\ \mathrm{m} }{ 2 } \right) \cdot \left( 2.50\ \mathrm{m} \cdot 1.00\ \mathrm{m} \right) &amp;= 113.31\ \mathrm{kN}  
 \\
-y_{c} &amp;= h_{1} + h_{2} + \frac{ h_{3} }{ 2 } \\&amp;= 2 + 2 + \frac{ 2.50 }{ 2 } \\&amp;= 5.25 \; \;\textrm{(m)}\\
+y_{c} &amp;= h_{1} + h_{2} + \frac{ h_{3} }{ 2 }  = 2.00\ \mathrm{m} + 2.00\ \mathrm{m} + \frac{ 2.50\ \mathrm{m} }{ 2 } &amp;= 5.25\ \mathrm{m}  
 \\
-I_{c} &amp;= B \cdot \frac{ \left( h_{3} \right) ^{ 3 } }{ 12 } \\&amp;= 1 \cdot \frac{ \left( 2.50 \right) ^{ 3 } }{ 12 } \\&amp;= 1.30 \; \;\textrm{(m4)}\\
+I_{c} &amp;= B \cdot \frac{ \left( h_{3} \right) ^{ 3 } }{ 12 }  = 1.00\ \mathrm{m} \cdot \frac{ \left( 2.50\ \mathrm{m} \right) ^{ 3 } }{ 12 } &amp;= 1.30\ \mathrm{m}^{4}  
 \\
-A &amp;= B \cdot h_{3} \\&amp;= 1 \cdot 2.50 \\&amp;= 2.50 \; \;\textrm{(m2)}\\
+A &amp;= B \cdot h_{3}  = 1.00\ \mathrm{m} \cdot 2.50\ \mathrm{m} &amp;= 2.50\ \mathrm{m}^{2}  
 \\
-y_{p} &amp;= y_{c} + \frac{ I_{c} }{ y_{c} \cdot A } \\&amp;= 5.25 + \frac{ 1.30 }{ 5.25 \cdot 2.50 } \\&amp;= 5.35 \; \;\textrm{(m)}\\
+y_{p} &amp;= y_{c} + \frac{ I_{c} }{ y_{c} \cdot A }  = 5.25\ \mathrm{m} + \frac{ 1.30\ \mathrm{m}^{4} }{ 5.25\ \mathrm{m} \cdot 2.50\ \mathrm{m}^{2} } &amp;= 5.35\ \mathrm{m}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4232,12 +4234,11 @@ X= \frac {4r}{3\pi}
 <p><strong>Solution Vertical and Total Force</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 2
-
-F_V= rho*g*((pi*(h_3/2)**2)*1)/2 #N
-X= (4*2.5/2)/(3*pi) #m
-F= sqrt(F_H**2+F_V**2) #N
-theta= degrees(atan(F_V/F_H)) #°
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+F_V = rho * g * ((pi * (h_3 / 2)**2) * B) / 2
+X = (4 * 2.5 / 2) / (3 * pi)
+F = (F_H**2 + F_V**2)**(1/2)
+theta = degrees(atan(F_V / F_H)) #°
 </pre></div>
 </div>
 </div>
@@ -4250,13 +4251,13 @@ theta= degrees(atan(F_V/F_H)) #°
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-F_{V} &amp;= \rho \cdot g \cdot \frac{ \left( \pi \cdot \left( \frac{ h_{3} }{ 2 } \right) ^{ 2 } \right) \cdot 1 }{ 2 } \\&amp;= 880.00 \cdot 9.81 \cdot \frac{ \left( 3.14 \cdot \left( \frac{ 2.50 }{ 2 } \right) ^{ 2 } \right) \cdot 1 }{ 2 } \\&amp;= 21188.08 \; \;\textrm{(N)}\\
+F_{V} &amp;= \rho \cdot g \cdot \frac{ \left( \pi \cdot \left( \frac{ h_{3} }{ 2 } \right) ^{ 2 } \right) \cdot B }{ 2 } \\&amp;= 880.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \frac{ \left( 3.14 \cdot \left( \frac{ 2.50\ \mathrm{m} }{ 2 } \right) ^{ 2 } \right) \cdot 1.00\ \mathrm{m} }{ 2 } \\&amp;= 21.19\ \mathrm{kN}  \\
 \\
-X &amp;= \frac{ 4 \cdot \frac{ 2.5 }{ 2 } }{ 3 \cdot \pi } \\&amp;= \frac{ 4 \cdot \frac{ 2.5 }{ 2 } }{ 3 \cdot 3.14 } \\&amp;= 0.53 \; \;\textrm{(m)}\\
+X &amp;= \frac{ 4 \cdot \frac{ 2.5 }{ 2 } }{ 3 \cdot \pi }  = \frac{ 4 \cdot \frac{ 2.5 }{ 2 } }{ 3 \cdot 3.14 } &amp;= 0.53  
 \\
-F &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 113305.50 \right) ^{ 2 } + \left( 21188.08 \right) ^{ 2 } } \\&amp;= 115269.56 \; \;\textrm{(N)}\\
+F &amp;= \left( \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) }  = \left( \left( 113.31\ \mathrm{kN} \right) ^{ 2 } + \left( 21.19\ \mathrm{kN} \right) ^{ 2 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) } &amp;= 115.27\ \mathrm{kN}  
 \\
-\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 21188.08 }{ 113305.50 } \right) \right) \\&amp;= 10.59 \; \;\textrm{(°)}\\
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right)  = \operatorname{degrees} \left( \arctan \left( \frac{ 21.19\ \mathrm{kN} }{ 113.31\ \mathrm{kN} } \right) \right) &amp;= 10.59 \; \;\textrm{(°)}
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4315,12 +4316,11 @@ A= h_{water} \cdot r+ \frac{\pi r^2}{4}
 <p><strong>Solution</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 1
-B= 3 #m 
-r= 1#m 
-h_water= 4 #m 
-
-F_b= rho_water*g*((h_water*r+(pi*r**2)/4))*B/1000 #kN
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 2
+B = (3 * si.m)
+r = (1 * si.m)
+h_water = (4 * si.m)
+F_b = rho_water * g * ((h_water * r + (pi * r**2) / 4)) * B
 </pre></div>
 </div>
 </div>
@@ -4333,13 +4333,13 @@ F_b= rho_water*g*((h_water*r+(pi*r**2)/4))*B/1000 #kN
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-B &amp;= 3 \; \;\textrm{(m)}
+B &amp;= 3.00\ \mathrm{m} \; 
 \\
-r &amp;= 1 \; \;\textrm{(m)}
+r &amp;= 1.00\ \mathrm{m} \; 
 \\
-h_{water} &amp;= 4 \; \;\textrm{(m)}
+h_{water} &amp;= 4.00\ \mathrm{m} \; 
 \\
-F_{b} &amp;= \rho_{water} \cdot g \cdot \left( h_{water} \cdot r + \frac{ \pi \cdot \left( r \right) ^{ 2 } }{ 4 } \right) \cdot \frac{ B }{ 1000 } \\&amp;= 1000 \cdot 9.8 \cdot \left( 4 \cdot 1 + \frac{ 3.1 \cdot \left( 1 \right) ^{ 2 } }{ 4 } \right) \cdot \frac{ 3 }{ 1000 } \\&amp;= 140.8 \; \;\textrm{(kN)}\\
+F_{b} &amp;= \rho_{water} \cdot g \cdot \left( h_{water} \cdot r + \frac{ \pi \cdot \left( r \right) ^{ 2 } }{ 4 } \right) \cdot B \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \left( 4.00\ \mathrm{m} \cdot 1.00\ \mathrm{m} + \frac{ 3.14 \cdot \left( 1.00\ \mathrm{m} \right) ^{ 2 } }{ 4 } \right) \cdot 3.00\ \mathrm{m} \\&amp;= 140.83\ \mathrm{kN}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4420,9 +4420,9 @@ p_B= \rho g h
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 2
-B= 5 #m
-r= 2 #m
-p_B= rho_water*g*r/1000 #kPa
+B = (5 * si.m)
+r = (2 * si.m)
+p_B = rho_water * g * r
 </pre></div>
 </div>
 </div>
@@ -4435,11 +4435,11 @@ p_B= rho_water*g*r/1000 #kPa
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-B &amp;= 5 \; \;\textrm{(m)}
+B &amp;= 5.00\ \mathrm{m} \; 
 \\
-r &amp;= 2 \; \;\textrm{(m)}
+r &amp;= 2.00\ \mathrm{m} \; 
 \\
-p_{B} &amp;= \rho_{water} \cdot g \cdot \frac{ r }{ 1000 } \\&amp;= 1000 \cdot 9.81 \cdot \frac{ 2 }{ 1000 } \\&amp;= 19.62 \; \;\textrm{(kPa)}\\
+p_{B} &amp;= \rho_{water} \cdot g \cdot r \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 2.00\ \mathrm{m} \\&amp;= 19.62\ \mathrm{kPa}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4466,10 +4466,10 @@ A= b \cdot  h_{projection}\\
 <p><strong>Solution</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 1
-h_c= r/2 #m
-A= r*B #m2
-F_H= rho_water*g*h_c*A/1000 #kN
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+h_c = r / 2
+A = r * B
+F_H = rho_water * g * h_c * A
 </pre></div>
 </div>
 </div>
@@ -4477,11 +4477,11 @@ F_H= rho_water*g*h_c*A/1000 #kN
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-h_{c} &amp;= \frac{ r }{ 2 } \\&amp;= \frac{ 2 }{ 2 } \\&amp;= 1.0 \; \;\textrm{(m)}\\
+h_{c} &amp;= \frac{ r }{ 2 }  = \frac{ 2.00\ \mathrm{m} }{ 2 } &amp;= 1.00\ \mathrm{m}  
 \\
-A &amp;= r \cdot B \\&amp;= 2 \cdot 5 \\&amp;= 10 \; \;\textrm{(m2)}\\
+A &amp;= r \cdot B  = 2.00\ \mathrm{m} \cdot 5.00\ \mathrm{m} &amp;= 10.00\ \mathrm{m}^{2}  
 \\
-F_{H} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot \frac{ A }{ 1000 } \\&amp;= 1000 \cdot 9.8 \cdot 1.0 \cdot \frac{ 10 }{ 1000 } \\&amp;= 98.1 \; \;\textrm{(kN)}\\
+F_{H} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 1.00\ \mathrm{m} \cdot 10.00\ \mathrm{m}^{2} \\&amp;= 98.10\ \mathrm{kN}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4507,9 +4507,9 @@ y_p= y_c + \frac {I_c}{y_cA}
 <p><strong>Solution</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 2
-I_c= B*r**3/12 #m4
-y_p= (A*h_c**2+I_c)/(A*h_c) #m from top of the panel
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+I_c = B * r**3 / 12
+y_p = (A * h_c**2 + I_c) / (A * h_c) #from top of the panel
 </pre></div>
 </div>
 </div>
@@ -4522,9 +4522,9 @@ y_p= (A*h_c**2+I_c)/(A*h_c) #m from top of the panel
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 } \\&amp;= 5 \cdot \frac{ \left( 2 \right) ^{ 3 } }{ 12 } \\&amp;= 3.33 \; \;\textrm{(m4)}\\
+I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 }  = 5.00\ \mathrm{m} \cdot \frac{ \left( 2.00\ \mathrm{m} \right) ^{ 3 } }{ 12 } &amp;= 3.33\ \mathrm{m}^{4}  
 \\
-y_{p} &amp;= \frac{ A \cdot \left( h_{c} \right) ^{ 2 } + I_{c} }{ A \cdot h_{c} } \\&amp;= \frac{ 10 \cdot \left( 1.00 \right) ^{ 2 } + 3.33 }{ 10 \cdot 1.00 } \\&amp;= 1.33 \; \;\textrm{(m from top of the panel)}\\
+y_{p} &amp;= \frac{ A \cdot \left( h_{c} \right) ^{ 2 } + I_{c} }{ A \cdot h_{c} }  = \frac{ 10.00\ \mathrm{m}^{2} \cdot \left( 1.00\ \mathrm{m} \right) ^{ 2 } + 3.33\ \mathrm{m}^{4} }{ 10.00\ \mathrm{m}^{2} \cdot 1.00\ \mathrm{m} } &amp;= 1.33\ \mathrm{m} \; \;\textrm{(from top of the panel)}
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4554,9 +4554,9 @@ X= \frac {4r}{3\pi}
 <p><strong>Solution</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 2
-F_V= rho_water*g*(pi*r**2)/4*B/1000 #kN
-X= (4*r)/(3*pi) #m
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+F_V = rho_water * g * (pi * r**2) / 4 * B
+X = (4 * r) / (3 * pi)
 </pre></div>
 </div>
 </div>
@@ -4564,9 +4564,9 @@ X= (4*r)/(3*pi) #m
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-F_{V} &amp;= \rho_{water} \cdot g \cdot \frac{ \pi \cdot \left( r \right) ^{ 2 } }{ 4 } \cdot \frac{ B }{ 1000 } \\&amp;= 1000 \cdot 9.81 \cdot \frac{ 3.14 \cdot \left( 2 \right) ^{ 2 } }{ 4 } \cdot \frac{ 5 }{ 1000 } \\&amp;= 154.10 \; \;\textrm{(kN)}\\
+F_{V} &amp;= \rho_{water} \cdot g \cdot \frac{ \pi \cdot \left( r \right) ^{ 2 } }{ 4 } \cdot B  = 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \frac{ 3.14 \cdot \left( 2.00\ \mathrm{m} \right) ^{ 2 } }{ 4 } \cdot 5.00\ \mathrm{m} &amp;= 154.10\ \mathrm{kN}  
 \\
-X &amp;= \frac{ 4 \cdot r }{ 3 \cdot \pi } \\&amp;= \frac{ 4 \cdot 2 }{ 3 \cdot 3.14 } \\&amp;= 0.85 \; \;\textrm{(m)}\\
+X &amp;= \frac{ 4 \cdot r }{ 3 \cdot \pi }  = \frac{ 4 \cdot 2.00\ \mathrm{m} }{ 3 \cdot 3.14 } &amp;= 848.83\ \mathrm{mm}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4589,9 +4589,9 @@ tan\theta = \frac {F_x}{F_y}
 <p><strong>Solution</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 2
-F= sqrt(F_H**2+F_V**2) #kN
-theta= degrees(atan(F_V/F_H)) #°
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+F = (F_H**2 + F_V**2)**(1/2)
+theta = degrees(atan(F_V / F_H)) #°
 </pre></div>
 </div>
 </div>
@@ -4604,9 +4604,9 @@ theta= degrees(atan(F_V/F_H)) #°
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-F &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 98.10 \right) ^{ 2 } + \left( 154.10 \right) ^{ 2 } } \\&amp;= 182.67 \; \;\textrm{(kN)}\\
+F &amp;= \left( \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) }  = \left( \left( 98.10\ \mathrm{kN} \right) ^{ 2 } + \left( 154.10\ \mathrm{kN} \right) ^{ 2 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) } &amp;= 182.67\ \mathrm{kN}  
 \\
-\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 154.10 }{ 98.10 } \right) \right) \\&amp;= 57.52 \; \;\textrm{(°)}\\
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right)  = \operatorname{degrees} \left( \arctan \left( \frac{ 154.10\ \mathrm{kN} }{ 98.10\ \mathrm{kN} } \right) \right) &amp;= 57.52 \; \;\textrm{(°)}
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4647,8 +4647,8 @@ tan\theta = \frac {X_O}{Y_O}
 </div>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 2
-beta= degrees(atan(y_p/X)) #°
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+beta = degrees(atan(y_p / X)) #°
 </pre></div>
 </div>
 </div>
@@ -4659,11 +4659,11 @@ beta= degrees(atan(y_p/X)) #°
 </summary>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}
+\[
 \begin{aligned}
-\beta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ y_{p} }{ X } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 1.33 }{ 0.85 } \right) \right) \\&amp;= 57.52 \; \;\textrm{(°)}\\
+\beta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ y_{p} }{ X } \right) \right)  = \operatorname{degrees} \left( \arctan \left( \frac{ 1.33\ \mathrm{m} }{ 848.83\ \mathrm{mm} } \right) \right) &amp;= 57.52 \; \;\textrm{(°)}
 \end{aligned}
-\end{split}\]</div>
+\]</div>
 </div>
 </details>
 </div>
@@ -4720,14 +4720,12 @@ h= \frac {4\sigma cos \theta}{\rho gd}
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 
-d=5 #mm 
-angle= 135 #°
-d_m=d/1000 #m
-
-sigma= 0.51 #N/m
-theta=180-angle #°
-theta_rad=(radians(theta)) #radians
-h=(4*sigma*cos (theta_rad))/(rho_Hg*g*d_m) #m
+d = (5 *0.001 * si.m)
+angle = 135
+sigma = (0.51 * si.N / si.m)
+theta = 180 - angle
+theta_rad = (radians(theta))
+h = (4 * sigma * cos(theta_rad)) / (rho_Hg * g * d)
 </pre></div>
 </div>
 </div>
@@ -4740,19 +4738,17 @@ h=(4*sigma*cos (theta_rad))/(rho_Hg*g*d_m) #m
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-d &amp;= 5 \; \;\textrm{(mm)}
+d &amp;= 5.000\ \mathrm{mm} \; 
 \\
-\mathrm{angle} &amp;= 135 \; \;\textrm{(°)}
+\mathrm{angle} &amp;= 135 \; 
 \\
-d_{m} &amp;= 0.005 \; \;\textrm{(m)}
+\sigma &amp;= 0.510\ \mathrm{kg} \cdot \mathrm{s}^{-2} \; 
 \\
-\sigma &amp;= 0.510 \; \;\textrm{(N/m)}
+\theta &amp;= 180 - \mathrm{angle} \\&amp;= 180 - 135 \\&amp;= 45  \\
 \\
-\theta &amp;= 45 \; \;\textrm{(°)}
+\theta_{rad} &amp;= \operatorname{radians} \left( \theta \right) \\&amp;= \operatorname{radians} \left( 45 \right) \\&amp;= 0.785  \\
 \\
-\theta_{rad} &amp;= 0.785 \; \;\textrm{(radians)}
-\\
-h &amp;= \frac{ 4 \cdot \sigma \cdot \cos \left( \theta_{rad} \right) }{ \rho_{Hg} \cdot g \cdot d_{m} } \\&amp;= \frac{ 4 \cdot 0.510 \cdot \cos \left( 0.785 \right) }{ 13600 \cdot 9.810 \cdot 0.005 } \\&amp;= 0.002 \; \;\textrm{(m)}\\
+h &amp;= \frac{ 4 \cdot \sigma \cdot \cos \left( \theta_{rad} \right) }{ \rho_{Hg} \cdot g \cdot d } \\&amp;= \frac{ 4 \cdot 0.510\ \mathrm{kg} \cdot \mathrm{s}^{-2} \cdot \cos \left( 0.785 \right) }{ 13600.000\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.810\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 5.000\ \mathrm{mm} } \\&amp;= 2.162\ \mathrm{mm}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4825,17 +4821,15 @@ y_p= y_c + \frac {I_c}{y_cA}
 <p><strong>Solution</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 2
-B= 7 #m 
-r= 1#m 
-h_water= 4 #m 
-
-h_c= h_water+r/2 #m
-A= B*r #m2
-F_H= rho_water*g*h_c*A/1000 #kN
-I_c= B*r**3/12 #m4
-
-y_p= h_c+I_c/(h_c*A) #m
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+B = (7 * si.m)
+r = (1 * si.m)
+h_water = (4 * si.m)
+h_c = h_water + r / 2
+A = B * r
+F_H = rho_water * g * h_c * A
+I_c = B * r**3 / 12
+y_p = h_c + I_c / (h_c * A)
 </pre></div>
 </div>
 </div>
@@ -4848,21 +4842,21 @@ y_p= h_c+I_c/(h_c*A) #m
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-B &amp;= 7 \; \;\textrm{(m)}
+B &amp;= 7.00\ \mathrm{m} \; 
 \\
-r &amp;= 1 \; \;\textrm{(m)}
+r &amp;= 1.00\ \mathrm{m} \; 
 \\
-h_{water} &amp;= 4 \; \;\textrm{(m)}
+h_{water} &amp;= 4.00\ \mathrm{m} \; 
 \\
-h_{c} &amp;= h_{water} + \frac{ r }{ 2 } \\&amp;= 4 + \frac{ 1 }{ 2 } \\&amp;= 4.50 \; \;\textrm{(m)}\\
+h_{c} &amp;= h_{water} + \frac{ r }{ 2 }  = 4.00\ \mathrm{m} + \frac{ 1.00\ \mathrm{m} }{ 2 } &amp;= 4.50\ \mathrm{m}  
 \\
-A &amp;= B \cdot r \\&amp;= 7 \cdot 1 \\&amp;= 7 \; \;\textrm{(m2)}\\
+A &amp;= B \cdot r  = 7.00\ \mathrm{m} \cdot 1.00\ \mathrm{m} &amp;= 7.00\ \mathrm{m}^{2}  
 \\
-F_{H} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot \frac{ A }{ 1000 } \\&amp;= 1000 \cdot 9.81 \cdot 4.50 \cdot \frac{ 7 }{ 1000 } \\&amp;= 309.01 \; \;\textrm{(kN)}\\
+F_{H} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 4.50\ \mathrm{m} \cdot 7.00\ \mathrm{m}^{2} \\&amp;= 309.01\ \mathrm{kN}  \\
 \\
-I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 } \\&amp;= 7 \cdot \frac{ \left( 1 \right) ^{ 3 } }{ 12 } \\&amp;= 0.58 \; \;\textrm{(m4)}\\
+I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 }  = 7.00\ \mathrm{m} \cdot \frac{ \left( 1.00\ \mathrm{m} \right) ^{ 3 } }{ 12 } &amp;= 583333333333.33\ \mathrm{mm}^{4}  
 \\
-y_{p} &amp;= h_{c} + \frac{ I_{c} }{ h_{c} \cdot A } \\&amp;= 4.50 + \frac{ 0.58 }{ 4.50 \cdot 7 } \\&amp;= 4.52 \; \;\textrm{(m)}\\
+y_{p} &amp;= h_{c} + \frac{ I_{c} }{ h_{c} \cdot A }  = 4.50\ \mathrm{m} + \frac{ 583333333333.33\ \mathrm{mm}^{4} }{ 4.50\ \mathrm{m} \cdot 7.00\ \mathrm{m}^{2} } &amp;= 4.52\ \mathrm{m}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4898,10 +4892,10 @@ F_B= \rho g \frac {\pi r^2}{4}*B
 <p><strong>Solution</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 1
-F_W= rho_water*g*(h_water+r)*r*B/1000#kN
-F_B= rho_water*g*pi*r**2*B/4/1000 #kN
-F_V= F_W-F_B #kN
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+F_W = rho_water * g * (h_water + r) * r * B
+F_B = rho_water * g * pi * r**(2) * B / 4
+F_V = F_W - F_B
 </pre></div>
 </div>
 </div>
@@ -4909,11 +4903,11 @@ F_V= F_W-F_B #kN
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-F_{W} &amp;= \rho_{water} \cdot g \cdot \left( h_{water} + r \right) \cdot r \cdot \frac{ B }{ 1000 } \\&amp;= 1000 \cdot 9.8 \cdot \left( 4 + 1 \right) \cdot 1 \cdot \frac{ 7 }{ 1000 } \\&amp;= 343.4 \; \;\textrm{(kN)}\\
+F_{W} &amp;= \rho_{water} \cdot g \cdot \left( h_{water} + r \right) \cdot r \cdot B \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \left( 4.00\ \mathrm{m} + 1.00\ \mathrm{m} \right) \cdot 1.00\ \mathrm{m} \cdot 7.00\ \mathrm{m} \\&amp;= 343.35\ \mathrm{kN}  \\
 \\
-F_{B} &amp;= \rho_{water} \cdot g \cdot \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ B }{ 4 } \cdot \frac{1} { 1000 } \\&amp;= 1000 \cdot 9.8 \cdot 3.1 \cdot \left( 1 \right) ^{ 2 } \cdot \frac{ 7 }{ 4 } \cdot \frac{1} { 1000 } \\&amp;= 53.9 \; \;\textrm{(kN)}\\
+F_{B} &amp;= \rho_{water} \cdot g \cdot \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ B }{ 4 }  = 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 3.14 \cdot \left( 1.00\ \mathrm{m} \right) ^{ 2 } \cdot \frac{ 7.00\ \mathrm{m} }{ 4 } &amp;= 53.93\ \mathrm{kN}  
 \\
-F_{V} &amp;= F_{W} - F_{B} \\&amp;= 343.4 - 53.9 \\&amp;= 289.4 \; \;\textrm{(kN)}\\
+F_{V} &amp;= F_{W} - F_{B}  = 343.35\ \mathrm{kN} - 53.93\ \mathrm{kN} &amp;= 289.42\ \mathrm{kN}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4938,11 +4932,10 @@ F_V\bar X= F_{B} \bar X_{B}- F_{w} \bar X_{w}
 <p><strong>Solution</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 3
-
-X_W= r/2 #m
-X_B = 4*r/(3*pi) #m 
-X= (F_W*X_W -F_B*X_B)/ F_V #m
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+X_W = r / 2
+X_B = 4 * r / (3 * pi)
+X = (F_W * X_W - F_B * X_B) / F_V
 </pre></div>
 </div>
 </div>
@@ -4950,11 +4943,11 @@ X= (F_W*X_W -F_B*X_B)/ F_V #m
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-X_{W} &amp;= \frac{ r }{ 2 } \\&amp;= \frac{ 1 }{ 2 } \\&amp;= 0.500 \; \;\textrm{(m)}\\
+X_{W} &amp;= \frac{ r }{ 2 }  = \frac{ 1.00\ \mathrm{m} }{ 2 } &amp;= 500.00\ \mathrm{mm}  
 \\
-X_{B} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi } \\&amp;= 4 \cdot \frac{ 1 }{ 3 \cdot 3.142 } \\&amp;= 0.424 \; \;\textrm{(m)}\\
+X_{B} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi }  = 4 \cdot \frac{ 1.00\ \mathrm{m} }{ 3 \cdot 3.14 } &amp;= 424.41\ \mathrm{mm}  
 \\
-X &amp;= \frac{ F_{W} \cdot X_{W} - F_{B} \cdot X_{B} }{ F_{V} } \\&amp;= \frac{ 343.350 \cdot 0.500 - 53.933 \cdot 0.424 }{ 289.417 } \\&amp;= 0.514 \; \;\textrm{(m)}\\
+X &amp;= \frac{ F_{W} \cdot X_{W} - F_{B} \cdot X_{B} }{ F_{V} }  = \frac{ 343.35\ \mathrm{kN} \cdot 500.00\ \mathrm{mm} - 53.93\ \mathrm{kN} \cdot 424.41\ \mathrm{mm} }{ 289.42\ \mathrm{kN} } &amp;= 514.09\ \mathrm{mm}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -4977,9 +4970,9 @@ tan\theta= \frac {F_V}{F_H}
 <p><strong>Solution</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 1
-F_R= sqrt(F_H**2+F_V**2) #kN
-theta= degrees(atan(F_V/F_H)) #°
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+F_R = (F_H**(2) + F_V**(2))**(1/2)
+theta = degrees(atan(F_V / F_H)) #°
 </pre></div>
 </div>
 </div>
@@ -4992,9 +4985,9 @@ theta= degrees(atan(F_V/F_H)) #°
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-F_{R} &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 309.0 \right) ^{ 2 } + \left( 289.4 \right) ^{ 2 } } \\&amp;= 423.4 \; \;\textrm{(kN)}\\
+F_{R} &amp;= \left( \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) }  = \left( \left( 309.01\ \mathrm{kN} \right) ^{ 2 } + \left( 289.42\ \mathrm{kN} \right) ^{ 2 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) } &amp;= 423.38\ \mathrm{kN}  
 \\
-\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 289.4 }{ 309.0 } \right) \right) \\&amp;= 43.1 \; \;\textrm{(°)}\\
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right)  = \operatorname{degrees} \left( \arctan \left( \frac{ 289.42\ \mathrm{kN} }{ 309.01\ \mathrm{kN} } \right) \right) &amp;= 43.12 \; \;\textrm{(°)}
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5032,7 +5025,7 @@ Answer<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 </div>
-</details><p>a)  <span class="math notranslate nohighlight">\(132.4 \; kN \; 4.159 \; m \;\)</span>below the surface</p>
+</details><p>a)  <span class="math notranslate nohighlight">\(132.4 \; kN \; 4.519 \; m \;\)</span>below the surface</p>
 <p>b) <span class="math notranslate nohighlight">\(140.8 \; kN \)</span></p>
 <p>c) <span class="math notranslate nohighlight">\(0.424 \; m \;\)</span>left of OC</p>
 <p>d) <span class="math notranslate nohighlight">\(193.3 \; kN \;acting \; at\; 46.8 \; ° \;\)</span>above the horizontal</p>
@@ -5064,16 +5057,15 @@ y_p= y_c + \frac {I_c}{y_cA}
 <p><strong>Solution</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 
-B= 3 #m 
-r= 1#m 
-h_water= 4 #m 
-h_c= h_water+r/2 #m
-A= B*r #m2
-F_H= rho_water*g*h_c*A/1000 #kN
-I_c= B*r**3/12 #m4
-
-y_p= h_c+I_c/(h_c*A) #m
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+B = (3 * si.m)
+r = (1 * si.m)
+h_water = (4 * si.m)
+h_c = h_water + r / 2
+A = B * r
+F_H = rho_water * g * h_c * A
+I_c = B * r**(3) / 12
+y_p = h_c + I_c / (h_c * A)
 </pre></div>
 </div>
 </div>
@@ -5086,21 +5078,21 @@ y_p= h_c+I_c/(h_c*A) #m
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-B &amp;= 3 \; \;\textrm{(m)}
+B &amp;= 3.00\ \mathrm{m} \; 
 \\
-r &amp;= 1 \; \;\textrm{(m)}
+r &amp;= 1.00\ \mathrm{m} \; 
 \\
-h_{water} &amp;= 4 \; \;\textrm{(m)}
+h_{water} &amp;= 4.00\ \mathrm{m} \; 
 \\
-h_{c} &amp;= h_{water} + \frac{ r }{ 2 } \\&amp;= 4 + \frac{ 1 }{ 2 } \\&amp;= 4.500 \; \;\textrm{(m)}\\
+h_{c} &amp;= h_{water} + \frac{ r }{ 2 }  = 4.00\ \mathrm{m} + \frac{ 1.00\ \mathrm{m} }{ 2 } &amp;= 4.50\ \mathrm{m}  
 \\
-A &amp;= B \cdot r \\&amp;= 3 \cdot 1 \\&amp;= 3 \; \;\textrm{(m2)}\\
+A &amp;= B \cdot r  = 3.00\ \mathrm{m} \cdot 1.00\ \mathrm{m} &amp;= 3.00\ \mathrm{m}^{2}  
 \\
-F_{H} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot \frac{ A }{ 1000 } \\&amp;= 1000 \cdot 9.810 \cdot 4.500 \cdot \frac{ 3 }{ 1000 } \\&amp;= 132.435 \; \;\textrm{(kN)}\\
+F_{H} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 4.50\ \mathrm{m} \cdot 3.00\ \mathrm{m}^{2} \\&amp;= 132.44\ \mathrm{kN}  \\
 \\
-I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 } \\&amp;= 3 \cdot \frac{ \left( 1 \right) ^{ 3 } }{ 12 } \\&amp;= 0.250 \; \;\textrm{(m4)}\\
+I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 }  = 3.00\ \mathrm{m} \cdot \frac{ \left( 1.00\ \mathrm{m} \right) ^{ 3 } }{ 12 } &amp;= 250000000000.00\ \mathrm{mm}^{4}  
 \\
-y_{p} &amp;= h_{c} + \frac{ I_{c} }{ h_{c} \cdot A } \\&amp;= 4.500 + \frac{ 0.250 }{ 4.500 \cdot 3 } \\&amp;= 4.519 \; \;\textrm{(m)}\\
+y_{p} &amp;= h_{c} + \frac{ I_{c} }{ h_{c} \cdot A }  = 4.50\ \mathrm{m} + \frac{ 250000000000.00\ \mathrm{mm}^{4} }{ 4.50\ \mathrm{m} \cdot 3.00\ \mathrm{m}^{2} } &amp;= 4.52\ \mathrm{m}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5124,9 +5116,9 @@ F_V= \rho g Vol
 <p><strong>Solution</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 1
-V= h_water*r*B + pi*r**2*B/4 #m3
-F_v= rho_water*g*V/1000 #N
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+V = h_water * r * B + pi * r**(2) * B / 4
+F_v = rho_water * g * V
 </pre></div>
 </div>
 </div>
@@ -5139,9 +5131,9 @@ F_v= rho_water*g*V/1000 #N
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-V &amp;= h_{water} \cdot r \cdot B + \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ B }{ 4 } \\&amp;= 4 \cdot 1 \cdot 3 + 3.1 \cdot \left( 1 \right) ^{ 2 } \cdot \frac{ 3 }{ 4 } \\&amp;= 14.4 \; \;\textrm{(m3)}\\
+V &amp;= h_{water} \cdot r \cdot B + \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ B }{ 4 }  = 4.00\ \mathrm{m} \cdot 1.00\ \mathrm{m} \cdot 3.00\ \mathrm{m} + 3.14 \cdot \left( 1.00\ \mathrm{m} \right) ^{ 2 } \cdot \frac{ 3.00\ \mathrm{m} }{ 4 } &amp;= 14.36\ \mathrm{m}^{3}  
 \\
-F_{v} &amp;= \rho_{water} \cdot g \cdot \frac{ V }{ 1000 } \\&amp;= 1000 \cdot 9.8 \cdot \frac{ 14.4 }{ 1000 } \\&amp;= 140.8 \; \;\textrm{(N)}\\
+F_{v} &amp;= \rho_{water} \cdot g \cdot V  = 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 14.36\ \mathrm{m}^{3} &amp;= 140.83\ \mathrm{kN}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5167,12 +5159,12 @@ W_{total}\bar X= W_{rect} \bar X_{rect}+ W_{circle} \bar X_{circle}
 <p><strong>Solution</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 
-X_circle = 4*r/(3*pi) #m
-X_rect= r/2 #m
-W_circle= rho_water*g*pi*r**2*B/4 #N
-W_rect= rho_water*g*B*r*h_water #N
-X= (W_circle*X_circle+W_rect*X_rect)/(W_circle+W_rect)#m
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+X_circle = 4 * r / (3 * pi)
+X_rect = r / 2
+W_circle = (rho_water * g * pi * r**(2) * B / 4)
+W_rect = (rho_water * g * B * r * h_water)
+X = (W_circle * X_circle + W_rect * X_rect) / (W_circle + W_rect)
 </pre></div>
 </div>
 </div>
@@ -5185,15 +5177,15 @@ X= (W_circle*X_circle+W_rect*X_rect)/(W_circle+W_rect)#m
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-X_{circle} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi } \\&amp;= 4 \cdot \frac{ 1 }{ 3 \cdot 3.142 } \\&amp;= 0.424 \; \;\textrm{(m)}\\
+X_{circle} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi }  = 4 \cdot \frac{ 1.00\ \mathrm{m} }{ 3 \cdot 3.14 } &amp;= 424.41\ \mathrm{mm}  
 \\
-X_{rect} &amp;= \frac{ r }{ 2 } \\&amp;= \frac{ 1 }{ 2 } \\&amp;= 0.500 \; \;\textrm{(m)}\\
+X_{rect} &amp;= \frac{ r }{ 2 }  = \frac{ 1.00\ \mathrm{m} }{ 2 } &amp;= 500.00\ \mathrm{mm}  
 \\
-W_{circle} &amp;= \rho_{water} \cdot g \cdot \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ B }{ 4 } \\&amp;= 1000 \cdot 9.810 \cdot 3.142 \cdot \left( 1 \right) ^{ 2 } \cdot \frac{ 3 }{ 4 } \\&amp;= 23114.268 \; \;\textrm{(N)}\\
+W_{circle} &amp;= \left( \rho_{water} \cdot g \cdot \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ B }{ 4 } \right)  = \left( 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 3.14 \cdot \left( 1.00\ \mathrm{m} \right) ^{ 2 } \cdot \frac{ 3.00\ \mathrm{m} }{ 4 } \right) &amp;= 23.11\ \mathrm{kN}  
 \\
-W_{rect} &amp;= \rho_{water} \cdot g \cdot B \cdot r \cdot h_{water} \\&amp;= 1000 \cdot 9.810 \cdot 3 \cdot 1 \cdot 4 \\&amp;= 117720.000 \; \;\textrm{(N)}\\
+W_{rect} &amp;= 117.72\ \mathrm{kN} \; 
 \\
-X &amp;= \frac{ W_{circle} \cdot X_{circle} + W_{rect} \cdot X_{rect} }{ W_{circle} + W_{rect} } \\&amp;= \frac{ 23114.268 \cdot 0.424 + 117720.000 \cdot 0.500 }{ 23114.268 + 117720.000 } \\&amp;= 0.488 \; \;\textrm{(m)}\\
+X &amp;= \frac{ W_{circle} \cdot X_{circle} + W_{rect} \cdot X_{rect} }{ W_{circle} + W_{rect} }  = \frac{ 23.11\ \mathrm{kN} \cdot 424.41\ \mathrm{mm} + 117.72\ \mathrm{kN} \cdot 500.00\ \mathrm{mm} }{ 23.11\ \mathrm{kN} + 117.72\ \mathrm{kN} } &amp;= 487.59\ \mathrm{mm}  
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5216,9 +5208,9 @@ tan\theta= \frac {F_v}{F_H}
 <p><strong>Solution</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 2
-F_R= sqrt(F_H**2+F_v**2) #kN
-theta= degrees(atan(F_v/F_H)) #°
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+F_R = (F_H**(2) + F_v**(2))**(1/2)
+theta = degrees(atan(F_v / F_H)) #°
 </pre></div>
 </div>
 </div>
@@ -5226,9 +5218,9 @@ theta= degrees(atan(F_v/F_H)) #°
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-F_{R} &amp;= \sqrt { \left( F_{H} \right) ^{ 2 } + \left( F_{v} \right) ^{ 2 } } \\&amp;= \sqrt { \left( 132.44 \right) ^{ 2 } + \left( 140.83 \right) ^{ 2 } } \\&amp;= 193.32 \; \;\textrm{(kN)}\\
+F_{R} &amp;= \left( \left( F_{H} \right) ^{ 2 } + \left( F_{v} \right) ^{ 2 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) }  = \left( \left( 132.44\ \mathrm{kN} \right) ^{ 2 } + \left( 140.83\ \mathrm{kN} \right) ^{ 2 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) } &amp;= 193.32\ \mathrm{kN}  
 \\
-\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{v} }{ F_{H} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 140.83 }{ 132.44 } \right) \right) \\&amp;= 46.76 \; \;\textrm{(°)}\\
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{v} }{ F_{H} } \right) \right)  = \operatorname{degrees} \left( \arctan \left( \frac{ 140.83\ \mathrm{kN} }{ 132.44\ \mathrm{kN} } \right) \right) &amp;= 46.76 \; \;\textrm{(°)}
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5263,7 +5255,7 @@ alpha= degrees(atan((y_p-h_water)/X))#° The angles are igual, for that reason t
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\alpha &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ y_{p} - h_{water} }{ X } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 4.519 - 4 }{ 0.488 } \right) \right) \\&amp;= 46.761 \; \;\textrm{(° The angles are igual, for that reason the force acts through O.)}\\
+\alpha &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ y_{p} - h_{water} }{ X } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 4.519\ \mathrm{m} - 4.000\ \mathrm{m} }{ 487.594\ \mathrm{mm} } \right) \right) \\&amp;= 46.761 \; \;\textrm{(° The angles are igual, for that reason the force acts through O.)}\\
 \end{aligned}
 \end{split}\]</div>
 </div>
@@ -5293,12 +5285,12 @@ Hint<div class="sd-summary-down docutils">
 </details><p><strong>Solution</strong></p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 
-X_circle = 4*r/(3*pi) #m
-X_rect= r/2 #m
-W_circle= rho_water*g*pi*r**2*wide/4 #N
-W_rect= rho_water*g*wide*r*h_water #N
-X= (W_circle*X_circle+W_rect*X_rect)/(W_circle+W_rect)#m
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 3
+X_circle = 4 * r / (3 * pi)
+X_rect = r / 2
+W_circle = (rho_water * g * pi * r**(2) * wide / 4)
+W_rect = (rho_water * g * wide * r * h_water)
+X = (W_circle * X_circle + W_rect * X_rect) / (W_circle + W_rect)
 </pre></div>
 </div>
 </div>
@@ -5311,15 +5303,15 @@ X= (W_circle*X_circle+W_rect*X_rect)/(W_circle+W_rect)#m
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-X_{circle} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi } \\&amp;= 4 \cdot \frac{ 1 }{ 3 \cdot 3.142 } \\&amp;= 0.424 \; \;\textrm{(m)}\\
+X_{circle} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi }  = 4 \cdot \frac{ 1.000\ \mathrm{m} }{ 3 \cdot 3.142 } &amp;= 424.413\ \mathrm{mm}  
 \\
-X_{rect} &amp;= \frac{ r }{ 2 } \\&amp;= \frac{ 1 }{ 2 } \\&amp;= 0.500 \; \;\textrm{(m)}\\
+X_{rect} &amp;= \frac{ r }{ 2 }  = \frac{ 1.000\ \mathrm{m} }{ 2 } &amp;= 500.000\ \mathrm{mm}  
 \\
-W_{circle} &amp;= \rho_{water} \cdot g \cdot \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ \mathrm{wide} }{ 4 } \\&amp;= 1000 \cdot 9.810 \cdot 3.142 \cdot \left( 1 \right) ^{ 2 } \cdot \frac{ 0.140 }{ 4 } \\&amp;= 1078.666 \; \;\textrm{(N)}\\
+W_{circle} &amp;= \left( \rho_{water} \cdot g \cdot \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ \mathrm{wide} }{ 4 } \right) \\&amp;= \left( 1000.000\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.810\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 3.142 \cdot \left( 1.000\ \mathrm{m} \right) ^{ 2 } \cdot \frac{ 0.140 }{ 4 } \right) \\&amp;= 1078.666\ \mathrm{kg} \cdot \mathrm{s}^{-2}  \\
 \\
-W_{rect} &amp;= \rho_{water} \cdot g \cdot \mathrm{wide} \cdot r \cdot h_{water} \\&amp;= 1000 \cdot 9.810 \cdot 0.140 \cdot 1 \cdot 4 \\&amp;= 5493.600 \; \;\textrm{(N)}\\
+W_{rect} &amp;= 5493.600\ \mathrm{kg} \cdot \mathrm{s}^{-2} \; 
 \\
-X &amp;= \frac{ W_{circle} \cdot X_{circle} + W_{rect} \cdot X_{rect} }{ W_{circle} + W_{rect} } \\&amp;= \frac{ 1078.666 \cdot 0.424 + 5493.600 \cdot 0.500 }{ 1078.666 + 5493.600 } \\&amp;= 0.488 \; \;\textrm{(m)}\\
+X &amp;= \frac{ W_{circle} \cdot X_{circle} + W_{rect} \cdot X_{rect} }{ W_{circle} + W_{rect} } \\&amp;= \frac{ 1078.666\ \mathrm{kg} \cdot \mathrm{s}^{-2} \cdot 424.413\ \mathrm{mm} + 5493.600\ \mathrm{kg} \cdot \mathrm{s}^{-2} \cdot 500.000\ \mathrm{mm} }{ 1078.666\ \mathrm{kg} \cdot \mathrm{s}^{-2} + 5493.600\ \mathrm{kg} \cdot \mathrm{s}^{-2} } \\&amp;= 487.594\ \mathrm{mm}  \\
 \end{aligned}
 \end{split}\]</div>
 </div>
