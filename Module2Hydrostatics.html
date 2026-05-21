@@ -3935,9 +3935,15 @@ W &amp;= g \cdot s \cdot \rho_{water} \cdot \mathrm{wide} \cdot b \cdot L_{T} \\
 <span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>rho_water*g*wide*b*L*(L_T-L/2)-W*L_T/2
-192.276*L*(5 - L/2) - 1538.2
-L:  2.00000000000000 m
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">155</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">L</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;L&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">ans</span><span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">rho_water</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">wide</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="n">L</span><span class="o">*</span><span class="p">(</span><span class="n">L_T</span><span class="o">-</span><span class="n">L</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">-</span><span class="n">W</span><span class="o">*</span><span class="n">L_T</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">L</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">L_</span><span class="o">=</span><span class="nb">round</span><span class="p">(</span><span class="n">ans</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">1</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;rho_water*g*wide*b*L*(L_T-L/2)-W*L_T/2&#39;</span><span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;Symbol&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -4279,22 +4285,11 @@ h= \frac {4\sigma cos \theta}{\rho gd}
 \]</div>
 </div>
 </details><p><strong>Solution</strong></p>
-<div class="cell tag_hide-output docutils container">
-<div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
-d = (5 *0.001 * si.m)
-angle = 135
-sigma = (0.51 * si.N / si.m)
-theta = 180 - angle
-theta_rad = (radians(theta))
-h = (4 * sigma * cos(theta_rad)) / (rho_Hg * g * d)
-</pre></div>
-</div>
-</div>
-<details class="hide below-input">
+<div class="cell tag_hide-output tag_remove-input docutils container">
+<details class="hide above-output">
 <summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell output</span>
-<span class="expanded">Hide code cell output</span>
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
@@ -4325,14 +4320,7 @@ h &amp;= \frac{ 4 \cdot \sigma \cdot \cos \left( \theta_{rad} \right) }{ \rho_{H
 <p>b.***Calculate the size of the vertical force on the panel.</p>
 <p>c.****Calculate the line of action of the vertical force on the panel.</p>
 <p>d.****Calculate the size and line of action of the resultant hydrostatic force on the panel.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
-<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;figures/83.png&quot;</span><span class="p">)</span>
-<span class="n">img</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="_images/fafbb75b6f34c2bcad838cdd41a1e74f95ae8b1a348c28cf02f2b294aacd026b.png" src="_images/fafbb75b6f34c2bcad838cdd41a1e74f95ae8b1a348c28cf02f2b294aacd026b.png" />
 </div>
@@ -4344,12 +4332,12 @@ Answer<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">a)  <span class="math notranslate nohighlight">\(309 \; kN \; at \; 4.519 \; m\)</span> below the water surface</p>
+<p class="sd-card-text">b) <span class="math notranslate nohighlight">\(289 \; kN \)</span></p>
+<p class="sd-card-text">c) <span class="math notranslate nohighlight">\(0.514 \; m \)</span> left of side panel</p>
+<p class="sd-card-text">d)  <span class="math notranslate nohighlight">\(423 \; kN \; at \; 43.1 \; °\)</span> below the horizontal</p>
 </div>
-</details><p>a)  <span class="math notranslate nohighlight">\(309 \; kN \; at \; 4.519 \; m\)</span> below the water surface</p>
-<p>b) <span class="math notranslate nohighlight">\(289 \; kN \)</span></p>
-<p>c) <span class="math notranslate nohighlight">\(0.514 \; m \)</span> left of side panel</p>
-<p>d)  <span class="math notranslate nohighlight">\(423 \; kN \; at \; 43.1 \; °\)</span> below the horizontal</p>
-<p><strong>Question 13 (a)</strong></p>
+</details><p><strong>Question 13 (a)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Hint<div class="sd-summary-down docutils">
@@ -4357,13 +4345,12 @@ Hint<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><p>To calculate the  hydrostatic force, the following equations should be used:</p>
+<p class="sd-card-text">To calculate the  hydrostatic force, the following equations should be used:</p>
 <div class="math notranslate nohighlight">
 \[
 F= \sqrt {F_H^2+F_V^2}
 \]</div>
-<p>The horizontal force is calculated in the vertical projection of the semi-cylindrical indendation ABC.</p>
+<p class="sd-card-text">The horizontal force is calculated in the vertical projection of the semi-cylindrical indendation ABC.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 F_H= \rho g h_c A_{projection}\\
@@ -4380,50 +4367,8 @@ I_c= \frac {bh^3}{12}\\
 \[
 y_p= y_c + \frac {I_c}{y_cA}
 \]</div>
-<p><strong>Solution</strong></p>
-<div class="cell tag_hide-output docutils container">
-<div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
-B = (7 * si.m)
-r = (1 * si.m)
-h_water = (4 * si.m)
-h_c = h_water + r / 2
-A = B * r
-F_H = rho_water * g * h_c * A
-I_c = B * r**3 / 12
-y_p = h_c + I_c / (h_c * A)
-</pre></div>
 </div>
-</div>
-<details class="hide below-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell output</span>
-<span class="expanded">Hide code cell output</span>
-</summary>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-B &amp;= 7.00\ \mathrm{m} \; 
-\\
-r &amp;= 1.00\ \mathrm{m} \; 
-\\
-h_{water} &amp;= 4.00\ \mathrm{m} \; 
-\\
-h_{c} &amp;= h_{water} + \frac{ r }{ 2 }  = 4.00\ \mathrm{m} + \frac{ 1.00\ \mathrm{m} }{ 2 } &amp;= 4.50\ \mathrm{m}  
-\\
-A &amp;= B \cdot r  = 7.00\ \mathrm{m} \cdot 1.00\ \mathrm{m} &amp;= 7.00\ \mathrm{m}^{2}  
-\\
-F_{H} &amp;= \rho_{water} \cdot g \cdot h_{c} \cdot A \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 4.50\ \mathrm{m} \cdot 7.00\ \mathrm{m}^{2} \\&amp;= 309.01\ \mathrm{kN}  \\
-\\
-I_{c} &amp;= B \cdot \frac{ \left( r \right) ^{ 3 } }{ 12 }  = 7.00\ \mathrm{m} \cdot \frac{ \left( 1.00\ \mathrm{m} \right) ^{ 3 } }{ 12 } &amp;= 583333333333.33\ \mathrm{mm}^{4}  
-\\
-y_{p} &amp;= h_{c} + \frac{ I_{c} }{ h_{c} \cdot A }  = 4.50\ \mathrm{m} + \frac{ 583333333333.33\ \mathrm{mm}^{4} }{ 4.50\ \mathrm{m} \cdot 7.00\ \mathrm{m}^{2} } &amp;= 4.52\ \mathrm{m}  
-\end{aligned}
-\end{split}\]</div>
-</div>
-</details>
-</div>
+</details><p><strong>Solution</strong></p>
 <p><strong>Question 13 (b)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -4432,9 +4377,8 @@ Hint<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><p>The vertical force acting on any area is equal to the weight of the volume of liquid above it,for that reason, the following equations can be used.</p>
-<p><span class="math notranslate nohighlight">\(F_y\)</span> = Weight of fluid above the panel</p>
+<p class="sd-card-text">The vertical force acting on any area is equal to the weight of the volume of liquid above it,for that reason, the following equations can be used.</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(F_y\)</span> = Weight of fluid above the panel</p>
 <div class="math notranslate nohighlight">
 \[
 F_V= \rho g Vol
@@ -4451,29 +4395,8 @@ F_W= \rho g (h_{water}+r) r *B\\
 \[
 F_B= \rho g \frac {\pi r^2}{4}*B
 \]</div>
-<p><strong>Solution</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
-F_W = rho_water * g * (h_water + r) * r * B
-F_B = rho_water * g * pi * r**(2) * B / 4
-F_V = F_W - F_B
-</pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-F_{W} &amp;= \rho_{water} \cdot g \cdot \left( h_{water} + r \right) \cdot r \cdot B \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot \left( 4.00\ \mathrm{m} + 1.00\ \mathrm{m} \right) \cdot 1.00\ \mathrm{m} \cdot 7.00\ \mathrm{m} \\&amp;= 343.35\ \mathrm{kN}  \\
-\\
-F_{B} &amp;= \rho_{water} \cdot g \cdot \pi \cdot \left( r \right) ^{ 2 } \cdot \frac{ B }{ 4 }  = 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 3.14 \cdot \left( 1.00\ \mathrm{m} \right) ^{ 2 } \cdot \frac{ 7.00\ \mathrm{m} }{ 4 } &amp;= 53.93\ \mathrm{kN}  
-\\
-F_{V} &amp;= F_{W} - F_{B}  = 343.35\ \mathrm{kN} - 53.93\ \mathrm{kN} &amp;= 289.42\ \mathrm{kN}  
-\end{aligned}
-\end{split}\]</div>
-</div>
-</div>
+</details><p><strong>Solution</strong></p>
 <p><strong>Question 13 (c)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -4482,38 +4405,16 @@ Hint<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><p>To calculate the line of action is necessary to use the moment equation</p>
+<p class="sd-card-text">To calculate the line of action is necessary to use the moment equation</p>
 <div class="math notranslate nohighlight">
 \[
 F_V\bar X= F_{B} \bar X_{B}- F_{w} \bar X_{w}
 \]</div>
-<p>Where:</p>
-<p><span class="math notranslate nohighlight">\( F_W \)</span> is acting in the middle from O</p>
-<p><span class="math notranslate nohighlight">\(F_V\)</span> is acting at <span class="math notranslate nohighlight">\( X= \frac{4r}{3\pi}\)</span></p>
-<p><strong>Solution</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
-X_W = r / 2
-X_B = 4 * r / (3 * pi)
-X = (F_W * X_W - F_B * X_B) / F_V
-</pre></div>
+<p class="sd-card-text">Where:</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\( F_W \)</span> is acting in the middle from O</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(F_V\)</span> is acting at <span class="math notranslate nohighlight">\( X= \frac{4r}{3\pi}\)</span></p>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-X_{W} &amp;= \frac{ r }{ 2 }  = \frac{ 1.00\ \mathrm{m} }{ 2 } &amp;= 500.00\ \mathrm{mm}  
-\\
-X_{B} &amp;= 4 \cdot \frac{ r }{ 3 \cdot \pi }  = 4 \cdot \frac{ 1.00\ \mathrm{m} }{ 3 \cdot 3.14 } &amp;= 424.41\ \mathrm{mm}  
-\\
-X &amp;= \frac{ F_{W} \cdot X_{W} - F_{B} \cdot X_{B} }{ F_{V} }  = \frac{ 343.35\ \mathrm{kN} \cdot 500.00\ \mathrm{mm} - 53.93\ \mathrm{kN} \cdot 424.41\ \mathrm{mm} }{ 289.42\ \mathrm{kN} } &amp;= 514.09\ \mathrm{mm}  
-\end{aligned}
-\end{split}\]</div>
-</div>
-</div>
+</details><p><strong>Solution</strong></p>
 <p><strong>Question 13 (d)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -4522,39 +4423,14 @@ Hint<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><p>The size and line of action of the resultant force can be calculated as:</p>
+<p class="sd-card-text">The size and line of action of the resultant force can be calculated as:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 F_R= \sqrt {F_H^2+F_V^2}\\
 tan\theta= \frac {F_V}{F_H}
 \end{split}\]</div>
-<p><strong>Solution</strong></p>
-<div class="cell tag_hide-output docutils container">
-<div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
-F_R = (F_H**(2) + F_V**(2))**(1/2)
-theta = degrees(atan(F_V / F_H)) #°
-</pre></div>
 </div>
-</div>
-<details class="hide below-input">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell output</span>
-<span class="expanded">Hide code cell output</span>
-</summary>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-F_{R} &amp;= \left( \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) }  = \left( \left( 309.01\ \mathrm{kN} \right) ^{ 2 } + \left( 289.42\ \mathrm{kN} \right) ^{ 2 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) } &amp;= 423.38\ \mathrm{kN}  
-\\
-\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ F_{V} }{ F_{H} } \right) \right)  = \operatorname{degrees} \left( \arctan \left( \frac{ 289.42\ \mathrm{kN} }{ 309.01\ \mathrm{kN} } \right) \right) &amp;= 43.12 \; \;\textrm{(°)}
-\end{aligned}
-\end{split}\]</div>
-</div>
-</details>
-</div>
+</details><p><strong>Solution</strong></p>
 </section>
 <hr class="docutils" />
 <section id="question-14">
@@ -4567,14 +4443,7 @@ F_{R} &amp;= \left( \left( F_{H} \right) ^{ 2 } + \left( F_{V} \right) ^{ 2 } \r
 <p>e.	****Show that the hydrostatic force acts through the hinge O.</p>
 <p>f.	****What does this mean for the size of force required to open the gate?</p>
 <p>g.	How could you have known the answer for (c) without calculating the resultant hydrostatic force?</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
-<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;figures/84.png&quot;</span><span class="p">)</span>
-<span class="n">img</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <img alt="_images/dfdd7f0c20fa2de77681b2fe91427545b8c72e8eab17fd5559d10e419c00dd50.png" src="_images/dfdd7f0c20fa2de77681b2fe91427545b8c72e8eab17fd5559d10e419c00dd50.png" />
 </div>
@@ -4586,12 +4455,12 @@ Answer<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">a)  <span class="math notranslate nohighlight">\(132.4 \; kN \; 4.519 \; m \;\)</span>below the surface</p>
+<p class="sd-card-text">b) <span class="math notranslate nohighlight">\(140.8 \; kN \)</span></p>
+<p class="sd-card-text">c) <span class="math notranslate nohighlight">\(0.424 \; m \;\)</span>left of OC</p>
+<p class="sd-card-text">d) <span class="math notranslate nohighlight">\(193.3 \; kN \;acting \; at\; 46.8 \; ° \;\)</span>above the horizontal</p>
 </div>
-</details><p>a)  <span class="math notranslate nohighlight">\(132.4 \; kN \; 4.519 \; m \;\)</span>below the surface</p>
-<p>b) <span class="math notranslate nohighlight">\(140.8 \; kN \)</span></p>
-<p>c) <span class="math notranslate nohighlight">\(0.424 \; m \;\)</span>left of OC</p>
-<p>d) <span class="math notranslate nohighlight">\(193.3 \; kN \;acting \; at\; 46.8 \; ° \;\)</span>above the horizontal</p>
-<p><strong>Question 14 (a)</strong></p>
+</details><p><strong>Question 14 (a)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Hint<div class="sd-summary-down docutils">
@@ -4599,8 +4468,7 @@ Hint<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><div class="math notranslate nohighlight">
+<div class="math notranslate nohighlight">
 \[\begin{split}
 F_H= \rho g h_c A_{projection}\\
 \end{split}\]</div>
@@ -4616,25 +4484,13 @@ I_c= \frac {bh^3}{12}\\
 \[
 y_p= y_c + \frac {I_c}{y_cA}
 \]</div>
-<p><strong>Solution</strong></p>
-<div class="cell tag_hide-output docutils container">
-<div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
-B = (3 * si.m)
-r = (1 * si.m)
-h_water = (4 * si.m)
-h_c = h_water + r / 2
-A = B * r
-F_H = rho_water * g * h_c * A
-I_c = B * r**(3) / 12
-y_p = h_c + I_c / (h_c * A)
-</pre></div>
 </div>
-</div>
-<details class="hide below-input">
+</details><p><strong>Solution</strong></p>
+<div class="cell tag_hide-output tag_remove-input docutils container">
+<details class="hide above-output">
 <summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell output</span>
-<span class="expanded">Hide code cell output</span>
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
@@ -4668,26 +4524,19 @@ Hint<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><p>The vertical force acting on any area is equal to the weight of the volume of liquid above it,for that reason, the following equations can be used.</p>
-<p><span class="math notranslate nohighlight">\(F_y\)</span> = Weight of fluid above the panel</p>
+<p class="sd-card-text">The vertical force acting on any area is equal to the weight of the volume of liquid above it,for that reason, the following equations can be used.</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(F_y\)</span> = Weight of fluid above the panel</p>
 <div class="math notranslate nohighlight">
 \[
 F_V= \rho g Vol
 \]</div>
-<p><strong>Solution</strong></p>
-<div class="cell tag_hide-output docutils container">
-<div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
-V = h_water * r * B + pi * r**(2) * B / 4
-F_v = rho_water * g * V
-</pre></div>
 </div>
-</div>
-<details class="hide below-input">
+</details><p><strong>Solution</strong></p>
+<div class="cell tag_hide-output tag_remove-input docutils container">
+<details class="hide above-output">
 <summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell output</span>
-<span class="expanded">Hide code cell output</span>
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
@@ -4709,31 +4558,21 @@ Hint<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><p>To calculate the line of action is necessary to use the moment equation</p>
+<p class="sd-card-text">To calculate the line of action is necessary to use the moment equation</p>
 <div class="math notranslate nohighlight">
 \[
 W_{total}\bar X= W_{rect} \bar X_{rect}+ W_{circle} \bar X_{circle}
 \]</div>
-<p>Where:</p>
-<p><span class="math notranslate nohighlight">\( \bar X_{rect} \)</span> is acting in <span class="math notranslate nohighlight">\(r/2\)</span></p>
-<p><span class="math notranslate nohighlight">\( \bar X_{circle}\)</span> is acting at <span class="math notranslate nohighlight">\( X= \frac{4r}{3\pi}\)</span></p>
-<p><strong>Solution</strong></p>
-<div class="cell tag_hide-output docutils container">
-<div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
-X_circle = 4 * r / (3 * pi)
-X_rect = r / 2
-W_circle = (rho_water * g * pi * r**(2) * B / 4)
-W_rect = (rho_water * g * B * r * h_water)
-X = (W_circle * X_circle + W_rect * X_rect) / (W_circle + W_rect)
-</pre></div>
+<p class="sd-card-text">Where:</p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\( \bar X_{rect} \)</span> is acting in <span class="math notranslate nohighlight">\(r/2\)</span></p>
+<p class="sd-card-text"><span class="math notranslate nohighlight">\( \bar X_{circle}\)</span> is acting at <span class="math notranslate nohighlight">\( X= \frac{4r}{3\pi}\)</span></p>
 </div>
-</div>
-<details class="hide below-input">
+</details><p><strong>Solution</strong></p>
+<div class="cell tag_hide-output tag_remove-input docutils container">
+<details class="hide above-output">
 <summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell output</span>
-<span class="expanded">Hide code cell output</span>
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
@@ -4761,21 +4600,19 @@ Hint<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><div class="math notranslate nohighlight">
+<div class="math notranslate nohighlight">
 \[\begin{split}
 F_R= \sqrt {F_H^2+F_V^2}\\
 tan\theta= \frac {F_v}{F_H}
 \end{split}\]</div>
-<p><strong>Solution</strong></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
-F_R = (F_H**(2) + F_v**(2))**(1/2)
-theta = degrees(atan(F_v / F_H)) #°
-</pre></div>
 </div>
-</div>
+</details><p><strong>Solution</strong></p>
+<div class="cell tag_remove-input tag_hide-output docutils container">
+<details class="hide above-output">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
+</summary>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
 \[\begin{split}
@@ -4786,6 +4623,7 @@ F_{R} &amp;= \left( \left( F_{H} \right) ^{ 2 } + \left( F_{v} \right) ^{ 2 } \r
 \end{aligned}
 \end{split}\]</div>
 </div>
+</details>
 </div>
 <p><strong>Question 14 (e)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -4795,23 +4633,17 @@ Hint<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-</div>
-</details><div class="math notranslate nohighlight">
+<div class="math notranslate nohighlight">
 \[
 \theta=arctan(\frac{F_v}{H_H})
 \]</div>
-<p><strong>Solution</strong></p>
-<div class="cell tag_hide-output docutils container">
-<div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> long 
-alpha= degrees(atan((y_p-h_water)/X))#° The angles are igual, for that reason the force acts through O.
-</pre></div>
 </div>
-</div>
-<details class="hide below-input">
+</details><p><strong>Solution</strong></p>
+<div class="cell tag_hide-output tag_remove-input docutils container">
+<details class="hide above-output">
 <summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell output</span>
-<span class="expanded">Hide code cell output</span>
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
@@ -4845,21 +4677,11 @@ Hint<div class="sd-summary-down docutils">
 <p class="sd-card-text">Pressure vectors all act through O.</p>
 </div>
 </details><p><strong>Solution</strong></p>
-<div class="cell tag_hide-output docutils container">
-<div class="cell_input above-output-prompt docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 3
-X_circle = 4 * r / (3 * pi)
-X_rect = r / 2
-W_circle = (rho_water * g * pi * r**(2) * wide / 4)
-W_rect = (rho_water * g * wide * r * h_water)
-X = (W_circle * X_circle + W_rect * X_rect) / (W_circle + W_rect)
-</pre></div>
-</div>
-</div>
-<details class="hide below-input">
+<div class="cell tag_hide-output tag_remove-input docutils container">
+<details class="hide above-output">
 <summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell output</span>
-<span class="expanded">Hide code cell output</span>
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
