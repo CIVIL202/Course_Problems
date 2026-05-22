@@ -1599,12 +1599,7 @@ Hint<div class="sd-summary-down docutils">
 <p class="sd-card-text">Then equate their pressures.</p>
 <p class="sd-card-text"><a class="reference external" href="https://auckland.au.panopto.com/Panopto/Pages/Viewer.aspx?id=2973dc87-4bd2-4e15-b7b7-b2a000389869">Click here for a video explaining the problem</a></p>
 </div>
-</details><div class="cell tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<img alt="_images/079a3671bbfaae38ed60f6aa072473f532e5574be390ee513f1be33c72e60459.png" src="_images/079a3671bbfaae38ed60f6aa072473f532e5574be390ee513f1be33c72e60459.png" />
-</div>
-</div>
-</section>
+</details></section>
 <hr class="docutils" />
 <section id="id6">
 <h4>Question 8 (**)<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h4>
@@ -3904,20 +3899,24 @@ W &amp;= g \cdot s \cdot \rho_{water} \cdot \mathrm{wide} \cdot b \cdot L_{T} \\
 </div>
 <div class="cell tag_remove-input docutils container">
 </div>
-<div class="cell tag_hide-output tag_remove-input docutils container">
-<details class="hide above-output">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell outputs</span>
-<span class="expanded">Hide code cell outputs</span>
-</summary>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>rho_water*g*wide*b*L*(L_T-L/2)-W*L_T/2
-192.276*L*(5 - L/2) - 1538.2
-L:  2.00000000000000 m
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">render</span> 2
+ans= solve(rho_water*g*wide*b*L*(L_T-L/2)-W*L_T/2,L)
+L = L_ #m
 </pre></div>
 </div>
 </div>
-</details>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\mathrm{ans} &amp;= \operatorname{solve} \left( \rho_{water} \cdot g \cdot \mathrm{wide} \cdot b \cdot L \cdot \left( L_{T} - \frac{ L }{ 2 } \right) - W \cdot \frac{ L_{T} }{ 2 } ,\  L \right) \\&amp;= \operatorname{solve} \left( 1000 \cdot 9.81 \cdot 0.14 \cdot 0.14 \cdot 2.0 \cdot \left( 5 - \frac{ 2.0 }{ 2 } \right) - 615.28 \cdot \frac{ 5 }{ 2 } ,\  2.0 \right) \\&amp;= [2.0,\ 8.0]  \\
+\\
+L &amp;= 2.0 \; \;\textrm{(m)}
+\end{aligned}
+\end{split}\]</div>
+</div>
 </div>
 <div class="cell tag_hide-output tag_remove-input docutils container">
 <details class="hide above-output">
@@ -3927,11 +3926,11 @@ L:  2.00000000000000 m
 </summary>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}
+\[
 \begin{aligned}
-\theta &amp;= \operatorname{degrees} \left( \arcsin \left( \frac{ h }{ L_{T} - L_{} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arcsin \left( \frac{ 1 }{ 5 - 2.0 } \right) \right) \\&amp;= 19.47 \; \;\textrm{(°)}\\
+\theta &amp;= \operatorname{degrees} \left( \arcsin \left( \frac{ h }{ L_{T} - L_{} } \right) \right)  = \operatorname{degrees} \left( \arcsin \left( \frac{ 1 }{ 5 - 2.0 } \right) \right) &amp;= 19.47 \; \;\textrm{(°)}
 \end{aligned}
-\end{split}\]</div>
+\]</div>
 </div>
 </details>
 </div>
