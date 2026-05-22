@@ -1001,16 +1001,16 @@ Answer<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(
-a) \;5.55 \; m/s
+a) \;5.56 \; m/s
 \)</span></p>
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(
 b) \;34.57 \; kPa
 \)</span></p>
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(
-c) \;420 \; N\; at\; 27.9\; °\; above\; East
+c) \;419.65 \; N\; at\; 27.9\; °\; above\; East
 \)</span></p>
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(
-d) \;91 \;L/s\;;\; 5.15\; m/s\;;\; 9.3 \;m/s
+d) \;91 \;L/s\;;\; 5.15\; m/s\;;\; 9.26 \;m/s
 \)</span></p>
 </div>
 </details><p><strong>Question 4 (a)</strong></p>
@@ -1031,7 +1031,46 @@ Q_1=Q_2+Q_3
 v_1A_1=v_2A_2+v_3A_3
 \]</div>
 </div>
-</details><div class="cell tag_remove-input docutils container">
+</details><p><strong>Solution</strong></p>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input tag_hide-output docutils container">
+<details class="hide above-output">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+D_{1} &amp;= 150.000\ \mathrm{mm} \; 
+\\
+D_{2} &amp;= 100.000\ \mathrm{mm} \; 
+\\
+D_{3} &amp;= 50.000\ \mathrm{mm} \; 
+\\
+v_{2} &amp;= 10.000\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \; 
+\\
+v_{3} &amp;= 10.000\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \; 
+\\
+A_{2} &amp;= \pi \cdot \frac{ \left( D_{2} \right) ^{ 2 } }{ 4 }  = 3.142 \cdot \frac{ \left( 100.000\ \mathrm{mm} \right) ^{ 2 } }{ 4 } &amp;= 7853.982\ \mathrm{mm}^{2}  
+\\
+A_{3} &amp;= \pi \cdot \frac{ \left( D_{3} \right) ^{ 2 } }{ 4 }  = 3.142 \cdot \frac{ \left( 50.000\ \mathrm{mm} \right) ^{ 2 } }{ 4 } &amp;= 1963.495\ \mathrm{mm}^{2}  
+\\
+A_{1} &amp;= \pi \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ 4 }  = 3.142 \cdot \frac{ \left( 150.000\ \mathrm{mm} \right) ^{ 2 } }{ 4 } &amp;= 17671.459\ \mathrm{mm}^{2}  
+\\
+Q_{2} &amp;= v_{2} \cdot A_{2}  = 10.000\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \cdot 7853.982\ \mathrm{mm}^{2} &amp;= 0.079\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0}  
+\\
+Q_{3} &amp;= v_{3} \cdot A_{3}  = 10.000\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \cdot 1963.495\ \mathrm{mm}^{2} &amp;= 0.020\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0}  
+\\
+Q_{1} &amp;= Q_{2} + Q_{3}  = 0.079\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0} + 0.020\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0} &amp;= 0.098\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0}  
+\\
+v_{1} &amp;= \frac{ Q_{1} }{ A_{1} }  = \frac{ 0.098\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0} }{ 17671.459\ \mathrm{mm}^{2} } &amp;= 5.556\ \mathrm{m} \cdot \mathrm{s}^{-1.0}  
+\end{aligned}
+\end{split}\]</div>
+</div>
+</details>
 </div>
 <p><strong>Question 4 (b)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -1053,7 +1092,24 @@ z_1+\frac {p_1}{\rho g}+\frac{v_1^2}{2g}=z_2+\frac {p_2}{\rho g}+\frac{v_2^2}{2g
 \frac {p_1}{\rho g}=\frac{v_2^2}{2g}-\frac{v_1^2}{2g}\\
 \end{split}\]</div>
 </div>
-</details><p><strong>Question 4 (c)</strong></p>
+</details><p><strong>Solution</strong></p>
+<div class="cell tag_remove-input tag_hide-output docutils container">
+<details class="hide above-output">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+p_{1} &amp;= \left( \frac{ \left( v_{2} \right) ^{ 2 } - \left( v_{1} \right) ^{ 2 } }{ 2 \cdot g } \right) \cdot \rho_{water} \cdot g \\&amp;= \left( \frac{ \left( 10.00\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \right) ^{ 2 } - \left( 5.56\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \right) ^{ 2 } }{ 2 \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} } \right) \cdot 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \\&amp;= 34.57\ \mathrm{kPa}  \\
+\end{aligned}
+\end{split}\]</div>
+</div>
+</details>
+</div>
+<p><strong>Question 4 (c)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Hint<div class="sd-summary-down docutils">
@@ -1094,22 +1150,30 @@ F= \sqrt{F_x^2+F_y^2}
 <span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">102</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;figures/139s.png&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">img</span>
-
-<span class="nn">File ~/.local/lib/python3.12/site-packages/PIL/Image.py:3635,</span> in <span class="ni">open</span><span class="nt">(fp, mode, formats)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3633</span> <span class="k">if</span> <span class="n">is_path</span><span class="p">(</span><span class="n">fp</span><span class="p">):</span>
-<span class="g g-Whitespace">   </span><span class="mi">3634</span>     <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">fspath</span><span class="p">(</span><span class="n">fp</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">3635</span>     <span class="n">fp</span> <span class="o">=</span> <span class="n">builtins</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3636</span>     <span class="n">exclusive_fp</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="g g-Whitespace">   </span><span class="mi">3637</span> <span class="k">else</span><span class="p">:</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;figures/139s.png&#39;
-</pre></div>
+<img alt="_images/056a33fc5b40add5ce21b4bc54763067d981d7c5c970f3ed66008c35dc6c7217.png" src="_images/056a33fc5b40add5ce21b4bc54763067d981d7c5c970f3ed66008c35dc6c7217.png" />
 </div>
+</details>
+</div>
+<p><strong>Solution</strong></p>
+<div class="cell tag_remove-input tag_hide-output docutils container">
+<details class="hide above-output">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+F_{x} &amp;= p_{1} \cdot A_{1} - \rho_{water} \cdot Q_{2} \cdot v_{2} + \rho_{water} \cdot Q_{1} \cdot v_{1} \\&amp;= 34.57\ \mathrm{kPa} \cdot 17671.46\ \mathrm{mm}^{2} - 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 0.08\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0} \cdot 10.00\ \mathrm{m} \cdot \mathrm{s}^{-1.0} + 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 0.10\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0} \cdot 5.56\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \\&amp;= 370.88\ \mathrm{N}  \\
+\\
+F_{y} &amp;= \rho_{water} \cdot Q_{3} \cdot \left( - v_{3} \right) \\&amp;= 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 0.02\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0} \cdot \left( - 10.00\ \mathrm{m} \cdot \mathrm{s}^{-1.0} \right) \\&amp;= -196.35\ \mathrm{N}  \\
+\\
+F &amp;= \left( \left( F_{x} \right) ^{ 2 } + \left( F_{y} \right) ^{ 2 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) } \\&amp;= \left( \left( 370.88\ \mathrm{N} \right) ^{ 2 } + \left( -196.35\ \mathrm{N} \right) ^{ 2 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) } \\&amp;= 419.65\ \mathrm{N}  \\
+\\
+\theta &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ \operatorname{abs} \left( F_{y} \right) }{ F_{x} } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ \operatorname{abs} \left( -196.35\ \mathrm{N} \right) }{ 370.88\ \mathrm{N} } \right) \right) \\&amp;= 27.90  \\
+\end{aligned}
+\end{split}\]</div>
 </div>
 </details>
 </div>
@@ -1167,7 +1231,34 @@ v_2= 1.8 v_1
 \frac {p_1}{\rho g}+\frac{v_1^2}{2g}=\frac{(1.8 v_1)^2}{2g}+h_f\\
 \end{split}\]</div>
 </div>
-</details><div class="cell tag_remove-input docutils container">
+</details><p><strong>Solution</strong></p>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input tag_hide-output docutils container">
+<details class="hide above-output">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+h_{f} &amp;= 500.000\ \mathrm{mm} \; 
+\\
+\mathrm{ratio}_{Q} &amp;= \frac{ Q_{2} }{ Q_{1} }  = \frac{ 0.079\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0} }{ 0.098\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0} } &amp;= 0.800  
+\\
+\mathrm{ratio}_{v} &amp;= \mathrm{ratio}_{Q} \cdot \frac{ \left( D_{1} \right) ^{ 2 } }{ \left( D_{2} \right) ^{ 2 } }  = 0.800 \cdot \frac{ \left( 150.000\ \mathrm{mm} \right) ^{ 2 } }{ \left( 100.000\ \mathrm{mm} \right) ^{ 2 } } &amp;= 1.800  
+\\
+v_{1} &amp;= \left( \frac{ \left( \frac{ p_{1} }{ \rho_{water} \cdot g } - h_{f} \right) \cdot 2 \cdot g }{ \left( \mathrm{ratio}_{v} \right) ^{ 2 } - 1 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) } \\&amp;= \left( \frac{ \left( \frac{ 34.568\ \mathrm{kPa} }{ 1000.000\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.810\ \mathrm{m} \cdot \mathrm{s}^{-2} } - 500.000\ \mathrm{mm} \right) \cdot 2 \cdot 9.810\ \mathrm{m} \cdot \mathrm{s}^{-2} }{ \left( 1.800 \right) ^{ 2 } - 1 } \right) ^{ \left( \frac{ 1 }{ 2 } \right) } \\&amp;= 5.146\ \mathrm{m} \cdot \mathrm{s}^{-1.0}  \\
+\\
+v_{2} &amp;= \mathrm{ratio}_{v} \cdot v_{1}  = 1.800 \cdot 5.146\ \mathrm{m} \cdot \mathrm{s}^{-1.0} &amp;= 9.263\ \mathrm{m} \cdot \mathrm{s}^{-1.0}  
+\\
+Q &amp;= 0.091\ \mathrm{m}^{3.0} \cdot \mathrm{s}^{-1.0} \; 
+\end{aligned}
+\end{split}\]</div>
+</div>
+</details>
 </div>
 </section>
 </section>
@@ -1220,7 +1311,7 @@ Answer<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(
-565 \; N\; to\; the\; right
+565.49 \; N\; to\; the\; right
 \)</span></p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -1235,7 +1326,8 @@ Hint<div class="sd-summary-down docutils">
 <p class="sd-card-text">Ignore friction losses.</p>
 <p class="sd-card-text">Apply NⅡ.</p>
 </div>
-</details><div class="cell tag_remove-input tag_hide-output docutils container">
+</details><p><strong>Solution</strong></p>
+<div class="cell tag_remove-input tag_hide-output docutils container">
 <details class="hide above-output">
 <summary aria-label="Toggle hidden content">
 <span class="collapsed">Show code cell outputs</span>
@@ -1246,7 +1338,55 @@ Hint<div class="sd-summary-down docutils">
 </div>
 </details>
 </div>
-<hr class="docutils" />
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Show code cell outputs<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">NⅡ：
+$<span class="math notranslate nohighlight">\(
+\sum F_x= \rho Q(v_{out_x}-v_{in_x})\\
+-R_x = \rho Q(v_{2x} - v_{1x})
+\)</span>$</p>
+</div>
+</details><div class="cell tag_remove-input tag_hide-output docutils container">
+<details class="hide above-output">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
+</summary>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+D &amp;= \frac{ 50 }{ 1000 } &amp;= 0.050 \; \;\textrm{(m)}
+\\
+v_{1} &amp;= 12 \; \;\textrm{(m/s)}
+\\
+v_{2} &amp;= -12 \; \;\textrm{(m/s)}
+\\
+A &amp;= \pi \cdot \frac{ \left( D \right) ^{ 2 } }{ 4 } \\&amp;= 3.142 \cdot \frac{ \left( 0.050 \right) ^{ 2 } }{ 4 } \\&amp;= 0.002 \; \;\textrm{(m2)}\\
+\\
+Q &amp;= v_{1} \cdot A \\&amp;= 12 \cdot 0.002 \\&amp;= 0.024 \; \;\textrm{(m3/s)}\\
+\\
+R_{x} &amp;= \left( - \rho_{water} \right) \cdot Q \cdot \left( v_{2} - v_{1} \right) \\&amp;= \left( - 1000.000\ \mathrm{kg} \cdot \mathrm{m}^{-3} \right) \cdot 0.024 \cdot \left( -12 - 12 \right) \\&amp;= 565.487\ \mathrm{kg} \cdot \mathrm{m}^{-3} \; \;\textrm{(N)}\\
+\end{aligned}
+\end{split}\]</div>
+</div>
+</details>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Show code cell outputs<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">The force of the water on vane is 565 N to the right.(NⅢ)</p>
+</div>
+</details><hr class="docutils" />
 </section>
 <section id="id5">
 <h3>Question 3 (***)[R]<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
@@ -1302,13 +1442,13 @@ Answer<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(
-a) \;1.077 \; kN\; to\; the\; right
+a) \;1.08 \; kN\; to\; the\; right
 \)</span></p>
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(
-b) \;0.626 \; kN\; downwards
+b) \;626.39 \; N\; downwards
 \)</span></p>
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(
-c) \;1.246 \; kN\; at\;30.2\;°\;below\;east
+c) \;1.25 \; kN\; at\;30.17\;°\;below\;east
 \)</span></p>
 </div>
 </details><p><strong>Question 4 (a)</strong></p>
@@ -1398,7 +1538,7 @@ Answer<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(
-298 \; m
+298.24 \; m
 \)</span></p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
