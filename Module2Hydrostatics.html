@@ -3692,8 +3692,7 @@ Fb_{total}= Fb_{hollow}+ Fb_{solid}\\
 Fb_{total}= \rho g V_{hollow}+ \rho g V_{solid}\\
 \end{split}\]</div>
 </div>
-</details><p><strong>Solution</strong></p>
-<p><span class="math notranslate nohighlight">\( F_b&gt;W_{total}\\ \)</span></p>
+</details><p><span class="math notranslate nohighlight">\( F_b&gt;W_{total}\\ \)</span></p>
 <p>The two block tied together will float</p>
 </section>
 <hr class="docutils" />
@@ -3813,32 +3812,7 @@ Vol_{foam}(\gamma_{foam}-\rho_{water}g)=\rho_{water} g Vol_{concrete}-\gamma_{co
 Vol_{foam}=\frac{\rho_{water} g Vol_{concrete}-\gamma_{concrete}Vol_{concrete}}{\gamma_{foam}-\rho_{water}g}
 \]</div>
 </div>
-</details><p><strong>Solution</strong></p>
-<div class="cell tag_hide-output tag_remove-input docutils container">
-<details class="hide above-output">
-<summary aria-label="Toggle hidden content">
-<span class="collapsed">Show code cell outputs</span>
-<span class="expanded">Hide code cell outputs</span>
-</summary>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-L &amp;= 500.00\ \mathrm{mm} \; 
-\\
-\gamma_{concrete} &amp;= 23580.00\ \mathrm{kg} \cdot \mathrm{m}^{-2} \cdot \mathrm{s}^{-2} \; 
-\\
-\gamma_{foam} &amp;= 790.00\ \mathrm{kg} \cdot \mathrm{m}^{-2} \cdot \mathrm{s}^{-2} \; 
-\\
-\mathrm{Vol}_{concrete} &amp;= \left( L \right) ^{ 3 }  = \left( 500.00\ \mathrm{mm} \right) ^{ 3 } &amp;= 125000000.00\ \mathrm{mm}^{3}  
-\\
-\mathrm{Vol}_{foam} &amp;= \frac{ \rho_{water} \cdot g \cdot \mathrm{Vol}_{concrete} - \gamma_{concrete} \cdot \mathrm{Vol}_{concrete} }{ \gamma_{foam} - \rho_{water} \cdot g } \\&amp;= \frac{ 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} \cdot 125000000.00\ \mathrm{mm}^{3} - 23580.00\ \mathrm{kg} \cdot \mathrm{m}^{-2} \cdot \mathrm{s}^{-2} \cdot 125000000.00\ \mathrm{mm}^{3} }{ 790.00\ \mathrm{kg} \cdot \mathrm{m}^{-2} \cdot \mathrm{s}^{-2} - 1000.00\ \mathrm{kg} \cdot \mathrm{m}^{-3} \cdot 9.81\ \mathrm{m} \cdot \mathrm{s}^{-2} } \\&amp;= 190825942.35\ \mathrm{mm}^{3}  \\
-\end{aligned}
-\end{split}\]</div>
-</div>
-</details>
-</div>
-</section>
+</details></section>
 </section>
 <section id="advanced-buoyancy-problems">
 <h3>Advanced Buoyancy problems<a class="headerlink" href="#advanced-buoyancy-problems" title="Permalink to this heading">#</a></h3>
@@ -3937,7 +3911,7 @@ W &amp;= g \cdot s \cdot \rho_{water} \cdot \mathrm{wide} \cdot b \cdot L_{T} \\
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">155</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">311</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
 <span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">L</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s2">&quot;L&quot;</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">ans</span><span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">rho_water</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">wide</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="n">L</span><span class="o">*</span><span class="p">(</span><span class="n">L_T</span><span class="o">-</span><span class="n">L</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">-</span><span class="n">W</span><span class="o">*</span><span class="n">L_T</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">L</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">L_</span><span class="o">=</span><span class="nb">round</span><span class="p">(</span><span class="n">ans</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">1</span><span class="p">)</span>
@@ -4016,8 +3990,7 @@ I_c= \frac {b \cdot h^3}{12}\\
 y_p= y_c + \frac {I_c}{y_cA}
 \]</div>
 </div>
-</details><p><strong>Solution Horizontal Force</strong></p>
-<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Hint Horizontal Force<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
@@ -4145,8 +4118,7 @@ p_A=0
 p_B= \rho g h
 \]</div>
 </div>
-</details><p><strong>Solution</strong></p>
-<p><strong>Question 11 (b)</strong></p>
+</details><p><strong>Question 11 (b)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Hint<div class="sd-summary-down docutils">
@@ -4164,8 +4136,7 @@ F_H= \rho \cdot  g \cdot  h_c \cdot A_{projection}\
 A= b \cdot  h_{projection}\\
 \end{split}\]</div>
 </div>
-</details><p><strong>Solution</strong></p>
-<p><strong>Question 11 (c)</strong></p>
+</details><p><strong>Question 11 (c)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Hint<div class="sd-summary-down docutils">
@@ -4183,8 +4154,7 @@ I_c= \frac {bh^3}{12}\\
 y_p= y_c + \frac {I_c}{y_cA}
 \]</div>
 </div>
-</details><p><strong>Solution</strong></p>
-<p><strong>Question 11 (d)</strong></p>
+</details><p><strong>Question 11 (d)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Hint<div class="sd-summary-down docutils">
@@ -4204,8 +4174,7 @@ F_V= \rho g Vol\\
 X= \frac {4r}{3\pi}
 \]</div>
 </div>
-</details><p><strong>Solution</strong></p>
-<p><strong>Question 11 (e)</strong></p>
+</details><p><strong>Question 11 (e)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Hint<div class="sd-summary-down docutils">
@@ -4220,8 +4189,7 @@ F_r=\sqrt{F_x^2+F_y^2}\\
 tan\theta = \frac {F_x}{F_y}
 \end{split}\]</div>
 </div>
-</details><p><strong>Solution</strong></p>
-<p><strong>Question 11 (f)</strong></p>
+</details><p><strong>Question 11 (f)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Hint<div class="sd-summary-down docutils">
@@ -4236,8 +4204,7 @@ Hint<div class="sd-summary-down docutils">
 tan\theta = \frac {X_O}{Y_O}
 \]</div>
 </div>
-</details><p><strong>Solution</strong></p>
-</section>
+</details></section>
 <hr class="docutils" />
 <section id="id33">
 <h4>Question 12 (***)<a class="headerlink" href="#id33" title="Permalink to this heading">#</a></h4>
@@ -4368,8 +4335,7 @@ I_c= \frac {bh^3}{12}\\
 y_p= y_c + \frac {I_c}{y_cA}
 \]</div>
 </div>
-</details><p><strong>Solution</strong></p>
-<p><strong>Question 13 (b)</strong></p>
+</details><p><strong>Question 13 (b)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Hint<div class="sd-summary-down docutils">
@@ -4396,8 +4362,7 @@ F_W= \rho g (h_{water}+r) r *B\\
 F_B= \rho g \frac {\pi r^2}{4}*B
 \]</div>
 </div>
-</details><p><strong>Solution</strong></p>
-<p><strong>Question 13 (c)</strong></p>
+</details><p><strong>Question 13 (c)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Hint<div class="sd-summary-down docutils">
@@ -4414,8 +4379,7 @@ F_V\bar X= F_{B} \bar X_{B}- F_{w} \bar X_{w}
 <p class="sd-card-text"><span class="math notranslate nohighlight">\( F_W \)</span> is acting in the middle from O</p>
 <p class="sd-card-text"><span class="math notranslate nohighlight">\(F_V\)</span> is acting at <span class="math notranslate nohighlight">\( X= \frac{4r}{3\pi}\)</span></p>
 </div>
-</details><p><strong>Solution</strong></p>
-<p><strong>Question 13 (d)</strong></p>
+</details><p><strong>Question 13 (d)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Hint<div class="sd-summary-down docutils">
@@ -4430,8 +4394,7 @@ F_R= \sqrt {F_H^2+F_V^2}\\
 tan\theta= \frac {F_V}{F_H}
 \end{split}\]</div>
 </div>
-</details><p><strong>Solution</strong></p>
-</section>
+</details></section>
 <hr class="docutils" />
 <section id="question-14">
 <h4>Question 14 (** - ****)<a class="headerlink" href="#question-14" title="Permalink to this heading">#</a></h4>
@@ -4455,10 +4418,12 @@ Answer<div class="sd-summary-down docutils">
 <div class="sd-summary-up docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">a)  <span class="math notranslate nohighlight">\(132.4 \; kN \; 4.519 \; m \;\)</span>below the surface</p>
-<p class="sd-card-text">b) <span class="math notranslate nohighlight">\(140.8 \; kN \)</span></p>
-<p class="sd-card-text">c) <span class="math notranslate nohighlight">\(0.424 \; m \;\)</span>left of OC</p>
-<p class="sd-card-text">d) <span class="math notranslate nohighlight">\(193.3 \; kN \;acting \; at\; 46.8 \; ° \;\)</span>above the horizontal</p>
+<p class="sd-card-text">a)  <span class="math notranslate nohighlight">\(132.44 \; kN \; 4.52 \; m \;\)</span>below the surface</p>
+<p class="sd-card-text">b) <span class="math notranslate nohighlight">\(140.83 \; kN \)</span></p>
+<p class="sd-card-text">c) <span class="math notranslate nohighlight">\(424.41 \; mm \;\)</span>left of OC</p>
+<p class="sd-card-text">d) <span class="math notranslate nohighlight">\(193.32 \; kN \;acting \; at\; 46.76 \; ° \;\)</span>above the horizontal</p>
+<p class="sd-card-text">e) <span class="math notranslate nohighlight">\(46.76 \; ° \;\)</span>The angles are igual, for that reason the force acts through O.</p>
+<p class="sd-card-text">g) <span class="math notranslate nohighlight">\(487.59 \; mm \)</span></p>
 </div>
 </details><p><strong>Question 14 (a)</strong></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
@@ -4646,12 +4611,14 @@ Hint<div class="sd-summary-down docutils">
 <span class="expanded">Hide code cell outputs</span>
 </summary>
 <div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\begin{split}
-\begin{aligned}
-\alpha &amp;= \operatorname{degrees} \left( \arctan \left( \frac{ y_{p} - h_{water} }{ X } \right) \right) \\&amp;= \operatorname{degrees} \left( \arctan \left( \frac{ 4.519\ \mathrm{m} - 4.000\ \mathrm{m} }{ 487.594\ \mathrm{mm} } \right) \right) \\&amp;= 46.761 \; \;\textrm{(° The angles are igual, for that reason the force acts through O.)}\\
-\end{aligned}
-\end{split}\]</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">313</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">alpha</span><span class="o">=</span> <span class="n">degrees</span><span class="p">(</span><span class="n">atan</span><span class="p">((</span><span class="n">y_p</span><span class="o">-</span><span class="n">h_water</span><span class="p">)</span><span class="o">/</span><span class="n">X</span><span class="p">))</span><span class="c1">#° The angles are igual, for that reason the force acts through O.</span>
+
+<span class="ne">NameError</span>: name &#39;X&#39; is not defined
+</pre></div>
+</div>
 </div>
 </details>
 </div>
